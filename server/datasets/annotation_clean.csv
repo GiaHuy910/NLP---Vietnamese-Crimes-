@@ -1,0 +1,22 @@
+﻿sentence,entities
+nhưng do yêu chị N.,n|PERSON
+"Thông tin từ công an huyện Quan Hóa, trước đó công an thị trấn Hồi Xuân (huyện Quan Hóa) nhận được tin báo của anh Lê Tiến Thắng về việc bị Nguyễn Văn Tùng lừa đảo, chiếm đoạt 12,7 triệu đồng.",công an huyện Quan Hóa|ORGANIZATION; công an thị trấn Hồi Xuân|ORGANIZATION; Lê Tiến Thắng|PERSON; Nguyễn Văn Tùng|PERSON
+"Mở rộng điều tra, công an bắt giữ thêm 3 đối tượng chuyên tiêu thụ tài sản phạm pháp, gồm: vợ chồng chủ cửa hàng ĐTDĐ “Trung Beer” ở Q.4 là Trịnh Quang Trung (SN 1979) – Trịnh Thị Lan (SN 1982) và 1 nhân viên của tiệm này là Trịnh Tố Tâm (SN 1990, cùng quê Nam Định).",Trung Beer|ORGANIZATION; Q.4|LOCATION; Trịnh Quang Trung|PERSON; Trịnh Thị Lan|PERSON; Trịnh Tố Tâm|PERSON; Nam Định|LOCATION
+"Viên_Minh tự còn gọi là chùa Giáng nằm ven đê sông Hồng thuộc xã Quang_Lãng , huyện Phú_Xuyên , Hà_Tây ( cũ ) nay thuộc Hà_Nội .",Viên Minh tự|LOCATION; chùa Giáng|LOCATION; sông Hồng|LOCATION; xã Quang Lãng|LOCATION; huyện Phú Xuyên|LOCATION; Hà Tây|LOCATION; Hà Nội|LOCATION
+"Khuôn_viên chùa với đường_đi_lối_lại luôn_luôn sạch_sẽ , cây_cối được tỉa_tót cẩn_thận .",NONE
+"Chất_thải nhựa và túi nilông do con_người thải trực_tiếp hoặc bị cuốn trôi theo nước mưa xuống sông , ao hồ cống_rãnh ...",NONE
+Khi chị S.A.,S.A|PERSON
+Theo ông T.,T|PERSON
+"Về phía nạn nhân, do được người dân đưa đi cấp cứu kịp thời, nên hiện đã qua cơn nguy kịch.",NONE
+Bị cáo định để con đi trước rồi sẽ chết theo.,NONE
+"Khi mọi người đến, Sự nói dối, con trai bị ngã ở trên lớp.",NONE
+Người phụ_nữ này có hứa mức thời_hạn lấy chồng chỉ 12 tháng .,NONE
+"Thứ nhất, để các lãnh đạo sợ sẽ phải chấp thuận cho các công ty được khai thác cát sỏi trong đó có công ty của Phương.",Phương|ORGANIZATION
+7.,NONE
+"và làm đơn trình_báo Công_an xã Quy_Đức , huyện Bình_Chánh khi mất liên_lạc với N.",n|PERSON; trình báo|ORGANIZATION; Công an xã Quy Đức|ORGANIZATION; huyện Bình Chánh|LOCATION
+"Những ngày qua , ông D.",D|PERSON
+"Nghi vấn nên người dân ra kiểm tra thì nhận thấy mùi sơn nồng nặc, cùng lúc có 1 đối tượng mặc áo mưa chạy về hướng tòa nhà CT16.",tòa nhà CT16|LOCATION
+Các quyết định và lệnh trên đã được Viện kiểm sát nhân dân cùng cấp phê chuẩn.,NONE
+"Sau đó, Tâm đưa cháu Thắng vào giường nằm ngủ.",Tâm|PERSON; Thắng|PERSON
+""" Ở tất_cả tỉnh_thành , chỗ nào cũng thấy tràn_lan rác_thải túi nilông "" - G S.Toàn nêu .",g|PERSON; S.Toàn|PERSON
+"Cũng trong 6 tháng có hơn 67.000 DN đăng_ký thành_lập mới , gần 22.000 DN trở_lại hoạt_động .",NONE

@@ -1,0 +1,127 @@
+﻿sentence,entities
+"Khoảng 13 giờ ngày 8/1, Tổ công tác thuộc Phòng PC 65, Công an tỉnh Thanh Hóa đang làm nhiệm vụ tuần tra kiểm soát trên đường Lê Hồng Phong thì nghe tiếng người dân truy hô “cướp, cướp”.",PC 65|ORGANIZATION; Công an tỉnh Thanh Hóa|ORGANIZATION; đường Lê Hồng Phong|LOCATION
+"(vợ của Tâm) đang làm việc, đến nhà Tâm thăm hỏi với lý do có con trai là cháu Thắng vừa mất.",Tâm|PERSON; Tâm|PERSON; Thắng|PERSON
+""" Gia_đình tôi giờ tan_nát hết , danh_dự và mặt_mũi của tôi cũng mất hết , không dám nhìn mặt ai .",NONE
+"Tổng_cục Cảnh_sát khẩn_trương khảo_sát , hướng_dẫn Công_an các địa_phương đấu_tranh , xử_lý triệt_để việc mua_bán trái_phép quân_trang , quân_dụng và các loại công_cụ hỗ_trợ .",Tổng_cục Cảnh_sát|ORGANIZATION
+"Vào lúc 0h ngày 8/12/2023, khi anh Toàn đang đi xe máy SH về nhà, nhóm của An đã chặn đầu xe anh.",Toàn|PERSON; An|PERSON
+"Ngoài_ra , vé đêm nhạc ở Hà_Nội , Đà_Nẵng lẫn TP.",Hà_Nội|LOCATION; Đà_Nẵng|LOCATION
+chấp_nhận bỏ_qua tất_cả nhưng bà O.,O|PERSON
+tỉnh dậy thì Danh nói đã quay clip nên phải tiếp tục quan hệ tình dục.,Danh|PERSON
+chưa ngủ còn chị N.,N|PERSON
+Công_ty TNHH giấy Lee & Man Việt_Nam có công_nghệ sản_xuất giấy tốt nhất ngành giấy Việt_Nam .,Công_ty TNHH giấy Lee & Man|ORGANIZATION; Việt_Nam|LOCATION; Việt_Nam|LOCATION
+mất dây chuyền nên gia đình phát hiện vụ việc và làm đơn tố cáo gửi công an,NONE
+Cựu thư ký ông Xuân Anh cho hay do có mối quan hệ thân quen với Vũ ‘nhôm’ nên đã mượn tạm căn nhà tại đường Nguyễn Thái Học để ở nhờ.,Xuân Anh|PERSON; Vũ ‘nhôm|PERSON; đường Nguyễn Thái Học|LOCATION
+"Trao_đổi với Tuổi_Trẻ , ông Lâm_Phước_Thọ , giám_đốc Chi_nhánh cấp_nước Phú_Quốc , cho_biết hiện_tại nguồn nước ở hồ Dương_Đông vẫn còn , nhưng do nhà_máy nước đã hết công_suất nên phải cấp_nước luân_phiên theo khu_vực cho dân sử_dụng .",Tuổi_Trẻ|ORGANIZATION; Lâm_Phước_Thọ|PERSON; Phú_Quốc|LOCATION; hồ Dương_Đông|LOCATION
+"Tuy nhiên, cơ quan công an đã làm rõ hơn về lời khai của các nhân chứng, người có liên quan khác, cho thấy sự phù hợp với lời khai của nạn nhân Phạm Thảo Tr (26 tuổi, là du học sinh Mỹ) từ đó có thêm chứng cứ cáo buộc hành vi của bị can Lê Phú Cự.",Phạm Thảo Tr|PERSON; Mỹ|LOCATION; Lê Phú Cự|PERSON
+"Nhưng đến tháng 4-2017 , thành_phố ban_hành quyết_định 22 ( thay_thế quyết_định 150 ) quy_định cho_phép được xây_dựng một_số công_trình tạm và chủ_đầu_tư phải tự tháo_dỡ mà không được bồi_thường .",NONE
+chính là nạn_nhân trong vụ án giết người đưa đi phi_tang xác ở Tây_Ninh .,Tây_Ninh|LOCATION
+"Đến 18 giờ cùng ngày, Tuấn đến cơ quan công an đầu thú.",Tuấn|PERSON
+"Ngày 20/4, Toại gặp Hữu, bảo đưa 2 triệu đồng để nhờ người đi phá hoại ô tô.",Toại|PERSON; Hữu|PERSON
+"Chiều 16/3, UBND tỉnh Bắc Ninh đã tổ chức họp báo thông tin vụ việc nhiều lãnh đạo tỉnh Bắc Ninh bị đe dọa.",UBND tỉnh Bắc Ninh|ORGANIZATION
+"Không_những vậy , ông B.",B|PERSON
+"Những túi này được chuẩn bị đem bán cho những người nhẹ dạ, tin vào những lời quảng cáo mê tín dị đoan.",NONE
+"Bi đe dọa, chị S.A.",Bi|PERSON; S.A|PERSON
+Lúc này chị Tr bất ngờ tỉnh dậy khi có ai chạm vào người.,Tr|PERSON
+"Thời_gian gần đây , ông B.",B|PERSON
+Minh_Anh ( tổng_hợp ) Catriona_Gray và Clint_Bondad .,Minh_Anh|PERSON; Catriona_Gray|PERSON; Clint_Bondad|PERSON
+Bằng khen của ca_sĩ Ngọc_Sơn .,Ngọc_Sơn|PERSON
+Hồ sơ mô phỏng test 001 tại Quận mô phỏng 001 thể hiện Nguyễn Gia An đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 001.,Quận mô phỏng 001|LOCATION; Nguyễn Gia An|PERSON; Tổ chức thử nghiệm Mẫu 001|ORGANIZATION
+"Ở Quận mô phỏng 002, đại diện Tổ chức thử nghiệm Mẫu 002 nhận văn bản từ Trần Gia An trong tình huống giả định test 002.",Quận mô phỏng 002|LOCATION; Tổ chức thử nghiệm Mẫu 002|ORGANIZATION; Trần Gia An|PERSON
+Bản tin giả lập test 003 ghi Lê Gia An gặp Tổ chức thử nghiệm Mẫu 003 tại Quận mô phỏng 003 để rà soát thủ tục.,Lê Gia An|PERSON; Tổ chức thử nghiệm Mẫu 003|ORGANIZATION; Quận mô phỏng 003|LOCATION
+"Tại Quận mô phỏng 004, Phạm Gia An và Tổ chức thử nghiệm Mẫu 004 đối chiếu thông tin theo kịch bản mẫu test 004.",Quận mô phỏng 004|LOCATION; Phạm Gia An|PERSON; Tổ chức thử nghiệm Mẫu 004|ORGANIZATION
+Phiếu minh họa test 005 cho biết Tổ chức thử nghiệm Mẫu 005 đã trao đổi với Hoàng Gia An ở Quận mô phỏng 005.,Tổ chức thử nghiệm Mẫu 005|ORGANIZATION; Hoàng Gia An|PERSON; Quận mô phỏng 005|LOCATION
+Hồ sơ mô phỏng test 006 tại Quận mô phỏng 006 thể hiện Phan Gia An đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 006.,Quận mô phỏng 006|LOCATION; Phan Gia An|PERSON; Tổ chức thử nghiệm Mẫu 006|ORGANIZATION
+"Ở Quận mô phỏng 007, đại diện Tổ chức thử nghiệm Mẫu 007 nhận văn bản từ Vũ Gia An trong tình huống giả định test 007.",Quận mô phỏng 007|LOCATION; Tổ chức thử nghiệm Mẫu 007|ORGANIZATION; Vũ Gia An|PERSON
+Bản tin giả lập test 008 ghi Đặng Gia An gặp Tổ chức thử nghiệm Mẫu 008 tại Quận mô phỏng 008 để rà soát thủ tục.,Đặng Gia An|PERSON; Tổ chức thử nghiệm Mẫu 008|ORGANIZATION; Quận mô phỏng 008|LOCATION
+"Tại Quận mô phỏng 009, Bùi Gia An và Tổ chức thử nghiệm Mẫu 009 đối chiếu thông tin theo kịch bản mẫu test 009.",Quận mô phỏng 009|LOCATION; Bùi Gia An|PERSON; Tổ chức thử nghiệm Mẫu 009|ORGANIZATION
+Phiếu minh họa test 010 cho biết Tổ chức thử nghiệm Mẫu 010 đã trao đổi với Đỗ Gia An ở Quận mô phỏng 010.,Tổ chức thử nghiệm Mẫu 010|ORGANIZATION; Đỗ Gia An|PERSON; Quận mô phỏng 010|LOCATION
+Hồ sơ mô phỏng test 011 tại Quận mô phỏng 011 thể hiện Nguyễn Gia Bình đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 011.,Quận mô phỏng 011|LOCATION; Nguyễn Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 011|ORGANIZATION
+"Ở Quận mô phỏng 012, đại diện Tổ chức thử nghiệm Mẫu 012 nhận văn bản từ Trần Gia Bình trong tình huống giả định test 012.",Quận mô phỏng 012|LOCATION; Tổ chức thử nghiệm Mẫu 012|ORGANIZATION; Trần Gia Bình|PERSON
+Bản tin giả lập test 013 ghi Lê Gia Bình gặp Tổ chức thử nghiệm Mẫu 013 tại Quận mô phỏng 013 để rà soát thủ tục.,Lê Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 013|ORGANIZATION; Quận mô phỏng 013|LOCATION
+"Tại Quận mô phỏng 014, Phạm Gia Bình và Tổ chức thử nghiệm Mẫu 014 đối chiếu thông tin theo kịch bản mẫu test 014.",Quận mô phỏng 014|LOCATION; Phạm Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 014|ORGANIZATION
+Phiếu minh họa test 015 cho biết Tổ chức thử nghiệm Mẫu 015 đã trao đổi với Hoàng Gia Bình ở Quận mô phỏng 015.,Tổ chức thử nghiệm Mẫu 015|ORGANIZATION; Hoàng Gia Bình|PERSON; Quận mô phỏng 015|LOCATION
+Hồ sơ mô phỏng test 016 tại Quận mô phỏng 016 thể hiện Phan Gia Bình đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 016.,Quận mô phỏng 016|LOCATION; Phan Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 016|ORGANIZATION
+"Ở Quận mô phỏng 017, đại diện Tổ chức thử nghiệm Mẫu 017 nhận văn bản từ Vũ Gia Bình trong tình huống giả định test 017.",Quận mô phỏng 017|LOCATION; Tổ chức thử nghiệm Mẫu 017|ORGANIZATION; Vũ Gia Bình|PERSON
+Bản tin giả lập test 018 ghi Đặng Gia Bình gặp Tổ chức thử nghiệm Mẫu 018 tại Quận mô phỏng 018 để rà soát thủ tục.,Đặng Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 018|ORGANIZATION; Quận mô phỏng 018|LOCATION
+"Tại Quận mô phỏng 019, Bùi Gia Bình và Tổ chức thử nghiệm Mẫu 019 đối chiếu thông tin theo kịch bản mẫu test 019.",Quận mô phỏng 019|LOCATION; Bùi Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 019|ORGANIZATION
+Phiếu minh họa test 020 cho biết Tổ chức thử nghiệm Mẫu 020 đã trao đổi với Đỗ Gia Bình ở Quận mô phỏng 020.,Tổ chức thử nghiệm Mẫu 020|ORGANIZATION; Đỗ Gia Bình|PERSON; Quận mô phỏng 020|LOCATION
+Hồ sơ mô phỏng test 021 tại Quận mô phỏng 021 thể hiện Nguyễn Gia Chi đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 021.,Quận mô phỏng 021|LOCATION; Nguyễn Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 021|ORGANIZATION
+"Ở Quận mô phỏng 022, đại diện Tổ chức thử nghiệm Mẫu 022 nhận văn bản từ Trần Gia Chi trong tình huống giả định test 022.",Quận mô phỏng 022|LOCATION; Tổ chức thử nghiệm Mẫu 022|ORGANIZATION; Trần Gia Chi|PERSON
+Bản tin giả lập test 023 ghi Lê Gia Chi gặp Tổ chức thử nghiệm Mẫu 023 tại Quận mô phỏng 023 để rà soát thủ tục.,Lê Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 023|ORGANIZATION; Quận mô phỏng 023|LOCATION
+"Tại Quận mô phỏng 024, Phạm Gia Chi và Tổ chức thử nghiệm Mẫu 024 đối chiếu thông tin theo kịch bản mẫu test 024.",Quận mô phỏng 024|LOCATION; Phạm Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 024|ORGANIZATION
+Phiếu minh họa test 025 cho biết Tổ chức thử nghiệm Mẫu 025 đã trao đổi với Hoàng Gia Chi ở Quận mô phỏng 025.,Tổ chức thử nghiệm Mẫu 025|ORGANIZATION; Hoàng Gia Chi|PERSON; Quận mô phỏng 025|LOCATION
+Hồ sơ mô phỏng test 026 tại Quận mô phỏng 026 thể hiện Phan Gia Chi đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 026.,Quận mô phỏng 026|LOCATION; Phan Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 026|ORGANIZATION
+"Ở Quận mô phỏng 027, đại diện Tổ chức thử nghiệm Mẫu 027 nhận văn bản từ Vũ Gia Chi trong tình huống giả định test 027.",Quận mô phỏng 027|LOCATION; Tổ chức thử nghiệm Mẫu 027|ORGANIZATION; Vũ Gia Chi|PERSON
+Bản tin giả lập test 028 ghi Đặng Gia Chi gặp Tổ chức thử nghiệm Mẫu 028 tại Quận mô phỏng 028 để rà soát thủ tục.,Đặng Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 028|ORGANIZATION; Quận mô phỏng 028|LOCATION
+"Tại Quận mô phỏng 029, Bùi Gia Chi và Tổ chức thử nghiệm Mẫu 029 đối chiếu thông tin theo kịch bản mẫu test 029.",Quận mô phỏng 029|LOCATION; Bùi Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 029|ORGANIZATION
+Phiếu minh họa test 030 cho biết Tổ chức thử nghiệm Mẫu 030 đã trao đổi với Đỗ Gia Chi ở Quận mô phỏng 030.,Tổ chức thử nghiệm Mẫu 030|ORGANIZATION; Đỗ Gia Chi|PERSON; Quận mô phỏng 030|LOCATION
+Hồ sơ mô phỏng test 031 tại Quận mô phỏng 031 thể hiện Nguyễn Gia Dũng đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 031.,Quận mô phỏng 031|LOCATION; Nguyễn Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 031|ORGANIZATION
+"Ở Quận mô phỏng 032, đại diện Tổ chức thử nghiệm Mẫu 032 nhận văn bản từ Trần Gia Dũng trong tình huống giả định test 032.",Quận mô phỏng 032|LOCATION; Tổ chức thử nghiệm Mẫu 032|ORGANIZATION; Trần Gia Dũng|PERSON
+Bản tin giả lập test 033 ghi Lê Gia Dũng gặp Tổ chức thử nghiệm Mẫu 033 tại Quận mô phỏng 033 để rà soát thủ tục.,Lê Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 033|ORGANIZATION; Quận mô phỏng 033|LOCATION
+"Tại Quận mô phỏng 034, Phạm Gia Dũng và Tổ chức thử nghiệm Mẫu 034 đối chiếu thông tin theo kịch bản mẫu test 034.",Quận mô phỏng 034|LOCATION; Phạm Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 034|ORGANIZATION
+Phiếu minh họa test 035 cho biết Tổ chức thử nghiệm Mẫu 035 đã trao đổi với Hoàng Gia Dũng ở Quận mô phỏng 035.,Tổ chức thử nghiệm Mẫu 035|ORGANIZATION; Hoàng Gia Dũng|PERSON; Quận mô phỏng 035|LOCATION
+Hồ sơ mô phỏng test 036 tại Quận mô phỏng 036 thể hiện Phan Gia Dũng đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 036.,Quận mô phỏng 036|LOCATION; Phan Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 036|ORGANIZATION
+"Ở Quận mô phỏng 037, đại diện Tổ chức thử nghiệm Mẫu 037 nhận văn bản từ Vũ Gia Dũng trong tình huống giả định test 037.",Quận mô phỏng 037|LOCATION; Tổ chức thử nghiệm Mẫu 037|ORGANIZATION; Vũ Gia Dũng|PERSON
+Bản tin giả lập test 038 ghi Đặng Gia Dũng gặp Tổ chức thử nghiệm Mẫu 038 tại Quận mô phỏng 038 để rà soát thủ tục.,Đặng Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 038|ORGANIZATION; Quận mô phỏng 038|LOCATION
+"Tại Quận mô phỏng 039, Bùi Gia Dũng và Tổ chức thử nghiệm Mẫu 039 đối chiếu thông tin theo kịch bản mẫu test 039.",Quận mô phỏng 039|LOCATION; Bùi Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 039|ORGANIZATION
+Phiếu minh họa test 040 cho biết Tổ chức thử nghiệm Mẫu 040 đã trao đổi với Đỗ Gia Dũng ở Quận mô phỏng 040.,Tổ chức thử nghiệm Mẫu 040|ORGANIZATION; Đỗ Gia Dũng|PERSON; Quận mô phỏng 040|LOCATION
+Hồ sơ mô phỏng test 041 tại Quận mô phỏng 041 thể hiện Nguyễn Gia Giang đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 041.,Quận mô phỏng 041|LOCATION; Nguyễn Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 041|ORGANIZATION
+"Ở Quận mô phỏng 042, đại diện Tổ chức thử nghiệm Mẫu 042 nhận văn bản từ Trần Gia Giang trong tình huống giả định test 042.",Quận mô phỏng 042|LOCATION; Tổ chức thử nghiệm Mẫu 042|ORGANIZATION; Trần Gia Giang|PERSON
+Bản tin giả lập test 043 ghi Lê Gia Giang gặp Tổ chức thử nghiệm Mẫu 043 tại Quận mô phỏng 043 để rà soát thủ tục.,Lê Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 043|ORGANIZATION; Quận mô phỏng 043|LOCATION
+"Tại Quận mô phỏng 044, Phạm Gia Giang và Tổ chức thử nghiệm Mẫu 044 đối chiếu thông tin theo kịch bản mẫu test 044.",Quận mô phỏng 044|LOCATION; Phạm Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 044|ORGANIZATION
+Phiếu minh họa test 045 cho biết Tổ chức thử nghiệm Mẫu 045 đã trao đổi với Hoàng Gia Giang ở Quận mô phỏng 045.,Tổ chức thử nghiệm Mẫu 045|ORGANIZATION; Hoàng Gia Giang|PERSON; Quận mô phỏng 045|LOCATION
+Hồ sơ mô phỏng test 046 tại Quận mô phỏng 046 thể hiện Phan Gia Giang đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 046.,Quận mô phỏng 046|LOCATION; Phan Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 046|ORGANIZATION
+"Ở Quận mô phỏng 047, đại diện Tổ chức thử nghiệm Mẫu 047 nhận văn bản từ Vũ Gia Giang trong tình huống giả định test 047.",Quận mô phỏng 047|LOCATION; Tổ chức thử nghiệm Mẫu 047|ORGANIZATION; Vũ Gia Giang|PERSON
+Bản tin giả lập test 048 ghi Đặng Gia Giang gặp Tổ chức thử nghiệm Mẫu 048 tại Quận mô phỏng 048 để rà soát thủ tục.,Đặng Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 048|ORGANIZATION; Quận mô phỏng 048|LOCATION
+"Tại Quận mô phỏng 049, Bùi Gia Giang và Tổ chức thử nghiệm Mẫu 049 đối chiếu thông tin theo kịch bản mẫu test 049.",Quận mô phỏng 049|LOCATION; Bùi Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 049|ORGANIZATION
+Phiếu minh họa test 050 cho biết Tổ chức thử nghiệm Mẫu 050 đã trao đổi với Đỗ Gia Giang ở Quận mô phỏng 050.,Tổ chức thử nghiệm Mẫu 050|ORGANIZATION; Đỗ Gia Giang|PERSON; Quận mô phỏng 050|LOCATION
+Hồ sơ mô phỏng test 051 tại Quận mô phỏng 051 thể hiện Nguyễn Gia Hà đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 051.,Quận mô phỏng 051|LOCATION; Nguyễn Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 051|ORGANIZATION
+"Ở Quận mô phỏng 052, đại diện Tổ chức thử nghiệm Mẫu 052 nhận văn bản từ Trần Gia Hà trong tình huống giả định test 052.",Quận mô phỏng 052|LOCATION; Tổ chức thử nghiệm Mẫu 052|ORGANIZATION; Trần Gia Hà|PERSON
+Bản tin giả lập test 053 ghi Lê Gia Hà gặp Tổ chức thử nghiệm Mẫu 053 tại Quận mô phỏng 053 để rà soát thủ tục.,Lê Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 053|ORGANIZATION; Quận mô phỏng 053|LOCATION
+"Tại Quận mô phỏng 054, Phạm Gia Hà và Tổ chức thử nghiệm Mẫu 054 đối chiếu thông tin theo kịch bản mẫu test 054.",Quận mô phỏng 054|LOCATION; Phạm Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 054|ORGANIZATION
+Phiếu minh họa test 055 cho biết Tổ chức thử nghiệm Mẫu 055 đã trao đổi với Hoàng Gia Hà ở Quận mô phỏng 055.,Tổ chức thử nghiệm Mẫu 055|ORGANIZATION; Hoàng Gia Hà|PERSON; Quận mô phỏng 055|LOCATION
+Hồ sơ mô phỏng test 056 tại Quận mô phỏng 056 thể hiện Phan Gia Hà đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 056.,Quận mô phỏng 056|LOCATION; Phan Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 056|ORGANIZATION
+"Ở Quận mô phỏng 057, đại diện Tổ chức thử nghiệm Mẫu 057 nhận văn bản từ Vũ Gia Hà trong tình huống giả định test 057.",Quận mô phỏng 057|LOCATION; Tổ chức thử nghiệm Mẫu 057|ORGANIZATION; Vũ Gia Hà|PERSON
+Bản tin giả lập test 058 ghi Đặng Gia Hà gặp Tổ chức thử nghiệm Mẫu 058 tại Quận mô phỏng 058 để rà soát thủ tục.,Đặng Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 058|ORGANIZATION; Quận mô phỏng 058|LOCATION
+"Tại Quận mô phỏng 059, Bùi Gia Hà và Tổ chức thử nghiệm Mẫu 059 đối chiếu thông tin theo kịch bản mẫu test 059.",Quận mô phỏng 059|LOCATION; Bùi Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 059|ORGANIZATION
+Phiếu minh họa test 060 cho biết Tổ chức thử nghiệm Mẫu 060 đã trao đổi với Đỗ Gia Hà ở Quận mô phỏng 060.,Tổ chức thử nghiệm Mẫu 060|ORGANIZATION; Đỗ Gia Hà|PERSON; Quận mô phỏng 060|LOCATION
+Hồ sơ mô phỏng test 061 tại Quận mô phỏng 061 thể hiện Nguyễn Gia Khanh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 061.,Quận mô phỏng 061|LOCATION; Nguyễn Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 061|ORGANIZATION
+"Ở Quận mô phỏng 062, đại diện Tổ chức thử nghiệm Mẫu 062 nhận văn bản từ Trần Gia Khanh trong tình huống giả định test 062.",Quận mô phỏng 062|LOCATION; Tổ chức thử nghiệm Mẫu 062|ORGANIZATION; Trần Gia Khanh|PERSON
+Bản tin giả lập test 063 ghi Lê Gia Khanh gặp Tổ chức thử nghiệm Mẫu 063 tại Quận mô phỏng 063 để rà soát thủ tục.,Lê Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 063|ORGANIZATION; Quận mô phỏng 063|LOCATION
+"Tại Quận mô phỏng 064, Phạm Gia Khanh và Tổ chức thử nghiệm Mẫu 064 đối chiếu thông tin theo kịch bản mẫu test 064.",Quận mô phỏng 064|LOCATION; Phạm Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 064|ORGANIZATION
+Phiếu minh họa test 065 cho biết Tổ chức thử nghiệm Mẫu 065 đã trao đổi với Hoàng Gia Khanh ở Quận mô phỏng 065.,Tổ chức thử nghiệm Mẫu 065|ORGANIZATION; Hoàng Gia Khanh|PERSON; Quận mô phỏng 065|LOCATION
+Hồ sơ mô phỏng test 066 tại Quận mô phỏng 066 thể hiện Phan Gia Khanh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 066.,Quận mô phỏng 066|LOCATION; Phan Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 066|ORGANIZATION
+"Ở Quận mô phỏng 067, đại diện Tổ chức thử nghiệm Mẫu 067 nhận văn bản từ Vũ Gia Khanh trong tình huống giả định test 067.",Quận mô phỏng 067|LOCATION; Tổ chức thử nghiệm Mẫu 067|ORGANIZATION; Vũ Gia Khanh|PERSON
+Bản tin giả lập test 068 ghi Đặng Gia Khanh gặp Tổ chức thử nghiệm Mẫu 068 tại Quận mô phỏng 068 để rà soát thủ tục.,Đặng Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 068|ORGANIZATION; Quận mô phỏng 068|LOCATION
+"Tại Quận mô phỏng 069, Bùi Gia Khanh và Tổ chức thử nghiệm Mẫu 069 đối chiếu thông tin theo kịch bản mẫu test 069.",Quận mô phỏng 069|LOCATION; Bùi Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 069|ORGANIZATION
+Phiếu minh họa test 070 cho biết Tổ chức thử nghiệm Mẫu 070 đã trao đổi với Đỗ Gia Khanh ở Quận mô phỏng 070.,Tổ chức thử nghiệm Mẫu 070|ORGANIZATION; Đỗ Gia Khanh|PERSON; Quận mô phỏng 070|LOCATION
+Hồ sơ mô phỏng test 071 tại Quận mô phỏng 071 thể hiện Nguyễn Gia Lan đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 071.,Quận mô phỏng 071|LOCATION; Nguyễn Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 071|ORGANIZATION
+"Ở Quận mô phỏng 072, đại diện Tổ chức thử nghiệm Mẫu 072 nhận văn bản từ Trần Gia Lan trong tình huống giả định test 072.",Quận mô phỏng 072|LOCATION; Tổ chức thử nghiệm Mẫu 072|ORGANIZATION; Trần Gia Lan|PERSON
+Bản tin giả lập test 073 ghi Lê Gia Lan gặp Tổ chức thử nghiệm Mẫu 073 tại Quận mô phỏng 073 để rà soát thủ tục.,Lê Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 073|ORGANIZATION; Quận mô phỏng 073|LOCATION
+"Tại Quận mô phỏng 074, Phạm Gia Lan và Tổ chức thử nghiệm Mẫu 074 đối chiếu thông tin theo kịch bản mẫu test 074.",Quận mô phỏng 074|LOCATION; Phạm Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 074|ORGANIZATION
+Phiếu minh họa test 075 cho biết Tổ chức thử nghiệm Mẫu 075 đã trao đổi với Hoàng Gia Lan ở Quận mô phỏng 075.,Tổ chức thử nghiệm Mẫu 075|ORGANIZATION; Hoàng Gia Lan|PERSON; Quận mô phỏng 075|LOCATION
+Hồ sơ mô phỏng test 076 tại Quận mô phỏng 076 thể hiện Phan Gia Lan đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 076.,Quận mô phỏng 076|LOCATION; Phan Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 076|ORGANIZATION
+"Ở Quận mô phỏng 077, đại diện Tổ chức thử nghiệm Mẫu 077 nhận văn bản từ Vũ Gia Lan trong tình huống giả định test 077.",Quận mô phỏng 077|LOCATION; Tổ chức thử nghiệm Mẫu 077|ORGANIZATION; Vũ Gia Lan|PERSON
+Bản tin giả lập test 078 ghi Đặng Gia Lan gặp Tổ chức thử nghiệm Mẫu 078 tại Quận mô phỏng 078 để rà soát thủ tục.,Đặng Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 078|ORGANIZATION; Quận mô phỏng 078|LOCATION
+"Tại Quận mô phỏng 079, Bùi Gia Lan và Tổ chức thử nghiệm Mẫu 079 đối chiếu thông tin theo kịch bản mẫu test 079.",Quận mô phỏng 079|LOCATION; Bùi Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 079|ORGANIZATION
+Phiếu minh họa test 080 cho biết Tổ chức thử nghiệm Mẫu 080 đã trao đổi với Đỗ Gia Lan ở Quận mô phỏng 080.,Tổ chức thử nghiệm Mẫu 080|ORGANIZATION; Đỗ Gia Lan|PERSON; Quận mô phỏng 080|LOCATION
+Hồ sơ mô phỏng test 081 tại Quận mô phỏng 081 thể hiện Nguyễn Gia Minh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 081.,Quận mô phỏng 081|LOCATION; Nguyễn Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 081|ORGANIZATION
+"Ở Quận mô phỏng 082, đại diện Tổ chức thử nghiệm Mẫu 082 nhận văn bản từ Trần Gia Minh trong tình huống giả định test 082.",Quận mô phỏng 082|LOCATION; Tổ chức thử nghiệm Mẫu 082|ORGANIZATION; Trần Gia Minh|PERSON
+Bản tin giả lập test 083 ghi Lê Gia Minh gặp Tổ chức thử nghiệm Mẫu 083 tại Quận mô phỏng 083 để rà soát thủ tục.,Lê Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 083|ORGANIZATION; Quận mô phỏng 083|LOCATION
+"Tại Quận mô phỏng 084, Phạm Gia Minh và Tổ chức thử nghiệm Mẫu 084 đối chiếu thông tin theo kịch bản mẫu test 084.",Quận mô phỏng 084|LOCATION; Phạm Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 084|ORGANIZATION
+Phiếu minh họa test 085 cho biết Tổ chức thử nghiệm Mẫu 085 đã trao đổi với Hoàng Gia Minh ở Quận mô phỏng 085.,Tổ chức thử nghiệm Mẫu 085|ORGANIZATION; Hoàng Gia Minh|PERSON; Quận mô phỏng 085|LOCATION
+Hồ sơ mô phỏng test 086 tại Quận mô phỏng 086 thể hiện Phan Gia Minh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 086.,Quận mô phỏng 086|LOCATION; Phan Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 086|ORGANIZATION
+"Ở Quận mô phỏng 087, đại diện Tổ chức thử nghiệm Mẫu 087 nhận văn bản từ Vũ Gia Minh trong tình huống giả định test 087.",Quận mô phỏng 087|LOCATION; Tổ chức thử nghiệm Mẫu 087|ORGANIZATION; Vũ Gia Minh|PERSON
+Bản tin giả lập test 088 ghi Đặng Gia Minh gặp Tổ chức thử nghiệm Mẫu 088 tại Quận mô phỏng 088 để rà soát thủ tục.,Đặng Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 088|ORGANIZATION; Quận mô phỏng 088|LOCATION
+"Tại Quận mô phỏng 089, Bùi Gia Minh và Tổ chức thử nghiệm Mẫu 089 đối chiếu thông tin theo kịch bản mẫu test 089.",Quận mô phỏng 089|LOCATION; Bùi Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 089|ORGANIZATION
+Phiếu minh họa test 090 cho biết Tổ chức thử nghiệm Mẫu 090 đã trao đổi với Đỗ Gia Minh ở Quận mô phỏng 090.,Tổ chức thử nghiệm Mẫu 090|ORGANIZATION; Đỗ Gia Minh|PERSON; Quận mô phỏng 090|LOCATION
+Hồ sơ mô phỏng test 091 tại Quận mô phỏng 091 thể hiện Nguyễn Gia Ngọc đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 091.,Quận mô phỏng 091|LOCATION; Nguyễn Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 091|ORGANIZATION
+"Ở Quận mô phỏng 092, đại diện Tổ chức thử nghiệm Mẫu 092 nhận văn bản từ Trần Gia Ngọc trong tình huống giả định test 092.",Quận mô phỏng 092|LOCATION; Tổ chức thử nghiệm Mẫu 092|ORGANIZATION; Trần Gia Ngọc|PERSON
+Bản tin giả lập test 093 ghi Lê Gia Ngọc gặp Tổ chức thử nghiệm Mẫu 093 tại Quận mô phỏng 093 để rà soát thủ tục.,Lê Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 093|ORGANIZATION; Quận mô phỏng 093|LOCATION
+"Tại Quận mô phỏng 094, Phạm Gia Ngọc và Tổ chức thử nghiệm Mẫu 094 đối chiếu thông tin theo kịch bản mẫu test 094.",Quận mô phỏng 094|LOCATION; Phạm Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 094|ORGANIZATION
+Phiếu minh họa test 095 cho biết Tổ chức thử nghiệm Mẫu 095 đã trao đổi với Hoàng Gia Ngọc ở Quận mô phỏng 095.,Tổ chức thử nghiệm Mẫu 095|ORGANIZATION; Hoàng Gia Ngọc|PERSON; Quận mô phỏng 095|LOCATION
+Hồ sơ mô phỏng test 096 tại Quận mô phỏng 096 thể hiện Phan Gia Ngọc đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 096.,Quận mô phỏng 096|LOCATION; Phan Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 096|ORGANIZATION
+"Ở Quận mô phỏng 097, đại diện Tổ chức thử nghiệm Mẫu 097 nhận văn bản từ Vũ Gia Ngọc trong tình huống giả định test 097.",Quận mô phỏng 097|LOCATION; Tổ chức thử nghiệm Mẫu 097|ORGANIZATION; Vũ Gia Ngọc|PERSON
+Bản tin giả lập test 098 ghi Đặng Gia Ngọc gặp Tổ chức thử nghiệm Mẫu 098 tại Quận mô phỏng 098 để rà soát thủ tục.,Đặng Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 098|ORGANIZATION; Quận mô phỏng 098|LOCATION
+"Tại Quận mô phỏng 099, Bùi Gia Ngọc và Tổ chức thử nghiệm Mẫu 099 đối chiếu thông tin theo kịch bản mẫu test 099.",Quận mô phỏng 099|LOCATION; Bùi Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 099|ORGANIZATION
+Phiếu minh họa test 100 cho biết Tổ chức thử nghiệm Mẫu 100 đã trao đổi với Đỗ Gia Ngọc ở Quận mô phỏng 100.,Tổ chức thử nghiệm Mẫu 100|ORGANIZATION; Đỗ Gia Ngọc|PERSON; Quận mô phỏng 100|LOCATION
