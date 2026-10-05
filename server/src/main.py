@@ -19,25 +19,25 @@ class ProcessRequest(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Xin chào, đây là API đầu tiên của tôi!"}
+    return {"message": "Hello, this is my first API!"}
 
 @app.get("/api/process")
 def process_get():
-    return {"message": "API thu nhat nhan input (GET)"}
+    return {"message": "First API receiving input (GET)"}
 
 @app.post("/api/process")
 def process_post(req: ProcessRequest):
     return {
-        "message": "Đã nhận văn bản thành công!",
+        "message": "Text received successfully!",
         "input_text": req.text,
         "status": "success",
-        "analysis": f"Văn bản có {len(req.text or '')} ký tự."
+        "analysis": f"Text contains {len(req.text or '')} characters."
     }
 
 @app.get("/api/process-file")
 @app.post("/api/process-file")
 def process_file():
-    return {"message": "API thu hai nhan File"}
+    return {"message": "Second API receiving File"}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=3001, reload=True)

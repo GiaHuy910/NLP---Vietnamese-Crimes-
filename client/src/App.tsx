@@ -27,7 +27,7 @@ function App() {
       setResponseResult(data);
     } catch (error) {
       console.error(error);
-      setResponseResult({ error: "Không thể kết nối đến server backend (http://localhost:3001)" });
+      setResponseResult({ error: "Cannot connect to backend server (http://localhost:3001)" });
     } finally {
       setLoading(false);
     }
@@ -61,7 +61,7 @@ function App() {
             <input
               type="text"
               className="form-control rounded-0"
-              placeholder="Type in news (nhập tin tức vụ án...)"
+              placeholder="Enter crime news or article text..."
               aria-label="News content"
               value={input}
               onChange={handleChange}
@@ -83,7 +83,7 @@ function App() {
 
         {responseResult && (
           <div className="w-100 mt-2 p-3 bg-dark border border-secondary rounded text-start text-white">
-            <h6 className="text-info border-bottom pb-2">Kết quả phân tích từ Server:</h6>
+            <h6 className="text-info border-bottom pb-2">Analysis Result from Server:</h6>
             <pre className="text-light m-0" style={{ whiteSpace: "pre-wrap" }}>
               {JSON.stringify(responseResult, null, 2)}
             </pre>
