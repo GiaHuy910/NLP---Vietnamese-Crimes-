@@ -5,7 +5,16 @@ from pathlib import Path
 from .errors import NERPipelineError
 
 
-ENTITY_TYPES = ("PERSON", "ORGANIZATION", "LOCATION")
+ENTITY_TYPES = (
+    "PERSON",
+    "ORG",
+    "LOC",
+    "DATE/TIME",
+    "MONEY",
+    "PRODUCT",
+    "DRUG",
+    "LAW",
+)
 LABELS = (
     "O",
     "B-PERSON",

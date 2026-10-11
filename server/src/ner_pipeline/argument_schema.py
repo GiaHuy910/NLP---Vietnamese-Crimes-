@@ -1,21 +1,8 @@
 ﻿import json
 from pathlib import Path
-from typing import Any
 
 from .errors import NERPipelineError
-from .paths import DATASET_DIR
 from .schema import ENTITY_TYPES
-
-
-SCHEMA_PATH = DATASET_DIR / "argument_ner_schema.json"
-
-LEGACY_TO_CANONICAL = {
-    "PERSON": "PERSON",
-    "ORGANIZATION": "ORG",
-    "ORG": "ORG",
-    "LOCATION": "LOC",
-    "LOC": "LOC",
-}
 
 ARGUMENT_TYPES = (
     "DOI_TUONG",
@@ -30,86 +17,111 @@ ARGUMENT_TYPES = (
     "DIA_DIEM",
 )
 
+_LABEL_ALIASES = {
+    "PERSON": "PERSON",
+    "ORG": "ORG",
+    "ORGANIZATION": "ORG",
+    "LOC": "LOC",
+    "LOCATION": "LOC",
+    "DATE/TIME": "DATE/TIME",
+    "MONEY": "MONEY",
+    "PRODUCT": "PRODUCT",
+    "DRUG": "DRUG",
+    "LAW": "LAW",
+}
 
-def load_argument_schema(path: Path = SCHEMA_PATH) -> dict[str, Any]:
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8-sig"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise NERPipelineError(
-            f"Khong doc duoc argument schema {path}: {exc}"
-        ) from exc
+_DEFAULT_MAPPING = {
+    "DOI_TUONG": ["PERSON", "ORG"],
+    "NAN_NHAN": ["PERSON", "ORG"],
+    "CO_QUAN": ["ORG"],
+    "TAI_SAN": ["MONEY", "PRODUCT"],
+    "TANG_VAT": ["PRODUCT", "DRUG"],
+    "HUNG_KHI": ["PRODUCT"],
+    "TOI_DANH": ["LAW"],
+    "MUC_AN": ["DATE/TIME", "MONEY"],
+    "THOI_GIAN": ["DATE/TIME"],
+    "DIA_DIEM": ["LOC"],
+}
 
-    if not isinstance(payload, dict):
-        raise NERPipelineError("Argument schema phai la JSON object.")
-
-    ner_labels = payload.get("ner_labels")
-    mapping = payload.get("argument_mapping")
-
-    if not isinstance(ner_labels, list) or not all(
-        isinstance(label, str) for label in ner_labels
-    ):
-        raise NERPipelineError("ner_labels phai la danh sach chuoi.")
-
-    if not isinstance(mapping, dict):
-        raise NERPipelineError("argument_mapping phai la JSON object.")
-
-    if set(mapping) != set(ARGUMENT_TYPES):
-        raise NERPipelineError(
-            "argument_mapping phai co dung 10 loai Argument da quy dinh."
-        )
-
-    canonical_labels = {
-        LEGACY_TO_CANONICAL.get(label, label) for label in ner_labels
-    }
-
-    for argument, labels in mapping.items():
-        if not isinstance(labels, list) or not all(
-            isinstance(label, str) for label in labels
-        ):
-            raise NERPipelineError(
-                f"Mapping cua {argument} phai la danh sach nhan."
-            )
-
-        unknown = set(labels) - canonical_labels
-        if unknown:
-            raise NERPipelineError(
-                f"Nhan khong duoc khai bao trong ner_labels: {sorted(unknown)}"
-            )
-
-    return payload
+_SCHEMA_PATH = Path(__file__).with_name("argument_schema.json")
 
 
+def normalize_ner_label(label):
+    if not isinstance(label, str):
+        raise NERPipelineError(f"Invalid NER label: {label!r}")
 
-def normalize_ner_label(label: str) -> str:
-    raw_label = label.strip().upper()
-    normalized = LEGACY_TO_CANONICAL.get(raw_label, raw_label)
-
-    schema = load_argument_schema()
-    declared_labels = {
-        LEGACY_TO_CANONICAL.get(item.upper(), item.upper())
-        for item in schema["ner_labels"]
-    }
-
-    if normalized not in declared_labels:
-        raise NERPipelineError(f"Nhãn NER không hỗ trợ: {label}")
+    normalized = _LABEL_ALIASES.get(label.strip().upper())
+    if normalized is None or normalized not in ENTITY_TYPES:
+        raise NERPipelineError(f"Unknown NER label: {label}")
 
     return normalized
 
 
+def load_argument_schema(path=None):
+    schema_path = Path(path) if path is not None else _SCHEMA_PATH
 
-def arguments_for_ner_label(
-    label: str, path: Path = SCHEMA_PATH
-) -> list[str]:
-    canonical = normalize_ner_label(label)
-    schema = load_argument_schema(path)
-    result = []
-
-    for argument, labels in schema["argument_mapping"].items():
-        canonical_labels = {
-            LEGACY_TO_CANONICAL.get(item.upper(), item.upper())
-            for item in labels
+    if schema_path.exists():
+        try:
+            with schema_path.open("r", encoding="utf-8-sig") as file:
+                schema = json.load(file)
+        except (OSError, json.JSONDecodeError) as exc:
+            raise NERPipelineError(
+                f"Cannot load argument schema: {exc}"
+            ) from exc
+    else:
+        schema = {
+            "ner_labels": list(ENTITY_TYPES),
+            "argument_mapping": _DEFAULT_MAPPING,
         }
-        if canonical in canonical_labels:
-            result.append(argument)
 
-    return result
+    if not isinstance(schema, dict):
+        raise NERPipelineError("Schema must be a JSON object")
+
+    ner_labels = schema.get("ner_labels")
+    mapping = schema.get("argument_mapping")
+
+    if not isinstance(ner_labels, list) or len(ner_labels) != 8:
+        raise NERPipelineError("Schema must contain exactly 8 NER labels")
+
+    try:
+        normalized_labels = [normalize_ner_label(label) for label in ner_labels]
+    except NERPipelineError:
+        raise
+
+    if len(set(normalized_labels)) != 8 or set(normalized_labels) != set(ENTITY_TYPES):
+        raise NERPipelineError("Schema NER labels do not match ENTITY_TYPES")
+
+    if not isinstance(mapping, dict) or set(mapping) != set(ARGUMENT_TYPES):
+        raise NERPipelineError("Invalid argument_mapping keys")
+
+    normalized_mapping = {}
+    for argument_type, labels in mapping.items():
+        if not isinstance(labels, list):
+            raise NERPipelineError(
+                f"Mapping for {argument_type} must be a list"
+            )
+
+        try:
+            normalized_mapping[argument_type] = [
+                normalize_ner_label(label) for label in labels
+            ]
+        except NERPipelineError as exc:
+            raise NERPipelineError(
+                f"Invalid mapping for {argument_type}: {exc}"
+            ) from exc
+
+    return {
+        "ner_labels": normalized_labels,
+        "argument_mapping": normalized_mapping,
+    }
+
+
+def arguments_for_ner_label(label):
+    normalized_label = normalize_ner_label(label)
+    schema = load_argument_schema()
+
+    return [
+        argument_type
+        for argument_type, ner_labels in schema["argument_mapping"].items()
+        if normalized_label in ner_labels
+    ]
