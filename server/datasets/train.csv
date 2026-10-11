@@ -1,246 +1,559 @@
 ﻿sentence,entities
-nhưng do yêu chị N.,N|PERSON
-"Thông tin từ công an huyện Quan Hóa, trước đó công an thị trấn Hồi Xuân (huyện Quan Hóa) nhận được tin báo của anh Lê Tiến Thắng về việc bị Nguyễn Văn Tùng lừa đảo, chiếm đoạt 12,7 triệu đồng.",công an huyện Quan Hóa|ORGANIZATION; công an thị trấn Hồi Xuân|ORGANIZATION; Lê Tiến Thắng|PERSON; Nguyễn Văn Tùng|PERSON
-"Mở rộng điều tra, công an bắt giữ thêm 3 đối tượng chuyên tiêu thụ tài sản phạm pháp, gồm: vợ chồng chủ cửa hàng ĐTDĐ “Trung Beer” ở Q.4 là Trịnh Quang Trung (SN 1979) – Trịnh Thị Lan (SN 1982) và 1 nhân viên của tiệm này là Trịnh Tố Tâm (SN 1990, cùng quê Nam Định).",Trung Beer|ORGANIZATION; Q.4|LOCATION; Trịnh Quang Trung|PERSON; Trịnh Thị Lan|PERSON; Trịnh Tố Tâm|PERSON; Nam Định|LOCATION
-"Viên_Minh tự còn gọi là chùa Giáng nằm ven đê sông Hồng thuộc xã Quang_Lãng , huyện Phú_Xuyên , Hà_Tây ( cũ ) nay thuộc Hà_Nội .",Viên_Minh tự|LOCATION; chùa Giáng|LOCATION; sông Hồng|LOCATION; xã Quang_Lãng|LOCATION; huyện Phú_Xuyên|LOCATION; Hà_Tây|LOCATION; Hà_Nội|LOCATION
-"Khuôn_viên chùa với đường_đi_lối_lại luôn_luôn sạch_sẽ , cây_cối được tỉa_tót cẩn_thận .",NONE
-"Chất_thải nhựa và túi nilông do con_người thải trực_tiếp hoặc bị cuốn trôi theo nước mưa xuống sông , ao hồ cống_rãnh ...",NONE
-Khi chị S.A.,S.A|PERSON
-Theo ông T.,T|PERSON
-"Về phía nạn nhân, do được người dân đưa đi cấp cứu kịp thời, nên hiện đã qua cơn nguy kịch.",NONE
-Bị cáo định để con đi trước rồi sẽ chết theo.,NONE
-"Khi mọi người đến, Sự nói dối, con trai bị ngã ở trên lớp.",NONE
-Người phụ_nữ này có hứa mức thời_hạn lấy chồng chỉ 12 tháng .,NONE
-"Thứ nhất, để các lãnh đạo sợ sẽ phải chấp thuận cho các công ty được khai thác cát sỏi trong đó có công ty của Phương.",Phương|ORGANIZATION
-7.,NONE
-"và làm đơn trình_báo Công_an xã Quy_Đức , huyện Bình_Chánh khi mất liên_lạc với N.",trình_báo|ORGANIZATION; Công_an xã Quy_Đức|ORGANIZATION; huyện Bình_Chánh|LOCATION; N|PERSON
-"Những ngày qua , ông D.",D|PERSON
-"Nghi vấn nên người dân ra kiểm tra thì nhận thấy mùi sơn nồng nặc, cùng lúc có 1 đối tượng mặc áo mưa chạy về hướng tòa nhà CT16.",tòa nhà CT16|LOCATION
-Các quyết định và lệnh trên đã được Viện kiểm sát nhân dân cùng cấp phê chuẩn.,NONE
-"Sau đó, Tâm đưa cháu Thắng vào giường nằm ngủ.",Tâm|PERSON; Thắng|PERSON
-""" Ở tất_cả tỉnh_thành , chỗ nào cũng thấy tràn_lan rác_thải túi nilông "" - G S.Toàn nêu .",G|PERSON; S.Toàn|PERSON
-"Cũng trong 6 tháng có hơn 67.000 DN đăng_ký thành_lập mới , gần 22.000 DN trở_lại hoạt_động .",NONE
-\- Cha giết con rồi chôn xác trong nhà 10 ngày mới bị phát hiện.,NONE
-Các điều_tra_viên hiện có 2 ngày để quyết_định có nên trả tự_do cho nam ca_sĩ hay nộp đơn truy_tố anh .,NONE
-"Tại đây, cán bộ công an đã dùng máy điện thoại của bà H.",H|PERSON
-"- Được gặp luật sư trước ngày bị đưa ra xét xử, Phan Sào Nam không cầm được nước mắt khi nhắc đến gia đình.",Phan Sào Nam|PERSON
-"Công an xác định, vào rạng sáng 21/4, tại sân chung cư Nơ 14C và CT16 khu đô thị Định Công, có 6 ô tô bị tạt sơn màu đỏ, phải sơn lại xe.",Nơ 14C|LOCATION; CT16|LOCATION; khu đô thị Định Công|LOCATION
-"Công an tỉnh Vĩnh Long đã khởi tố bị can, bắt tạm giam ông Phạm Văn Cung, nguyên giám đốc Trung tâm Cô nhi viện Suối nguồn tình thương",Công an tỉnh Vĩnh Long|ORGANIZATION; Phạm Văn Cung|PERSON; Trung tâm Cô nhi viện Suối nguồn tình thương|ORGANIZATION
-"Tối_ngày 11/6 , mạng xã_hội lan_truyền một video tường_thuật lại 2 nhóm thanh_niên đánh nhau , ném ghế nhựa và có hai thanh_niên mặc áo đen cầm gậy đuổi đánh một người mặc áo trắng .",NONE
-"Còn nhớ , trong màn đối giữa Khánh_Nam và Việt_Hương , Hoài_Linh phải thốt lên : "" Đây là thử_thách quá dễ với Khánh_Nam , vì nét duyên của anh có rất nhiều , ngay cả bạn diễn cứng nghề như Việt_Hương mà suýt_nữa cũng bị "" bật "" ra khỏi vai diễn rồi "" .",Khánh_Nam|PERSON; Việt_Hương|PERSON; Hoài_Linh|PERSON; Khánh_Nam|PERSON; Việt_Hương|PERSON
-"Kiểm tra trên người đối tượng, cảnh sát thu giữ một lắc vàng (khoảng 4 chỉ, trị giá hơn 20 triệu) mà tên này vừa cướp trước đó tại tiệm vàng Lan Hương (số 230, đường Lê Hoàn, TP Thanh Hóa) cùng một dao nhọn dùng để gây án.",số 230|LOCATION; đường Lê Hoàn|LOCATION; TP Thanh Hóa|LOCATION
-"Theo dự định ban đầu của Sự, sau khi lo hậu sự xong cho con trai, chị ta sẽ cùng con gái là cháu Nguyễn Thanh Thúy (SN 2008) tự tử chết theo để ba mẹ con được ở bên nhau.",Sự|PERSON; sự|PERSON; Nguyễn Thanh Thúy|PERSON
-Tâm đồng ý giúp vợ chồng anh H.,H|PERSON
-"Cuối tháng 1/2018, Công an TP.HCM đã có quyết định phục hồi điều tra vụ án.",Công an TP.HCM|ORGANIZATION
-"Vụ việc đang được công an TT-Huế và Bình Phước phối hợp điều tra, làm rõ.",công an TT-Huế|ORGANIZATION; Bình Phước|LOCATION
-"Cáo trạng xác định, Võ Mạnh Cường trực tiếp thỏa thuận bán 4/7 thuốc cho Công ty VNPharma, thông qua 15 hợp đồng, với tổng số lượng là 838.100 hộp, trị giá hơn 54 tỷ đồng.",Võ Mạnh Cường|PERSON; Công ty VNPharma|ORGANIZATION
-Dự_án này sẽ được thực_hiện càng sớm càng tốt để đáp_ứng nhu_cầu sử_dụng trong thời_gian tới .,NONE
-"Theo một nguồn_tin , các đơn_vị nghiệp_vụ của Công_an TP.",Công_an|ORGANIZATION
-"Tuy nhiên, VKSND Tối cao cho rằng, căn cứ vào lời khai của các bị cáo Phan Quốc Việt, Trịnh Thanh Hùng, Vũ Đình Hiệp (Phó TGĐ Việt Á) và dữ liệu điện tử, sao kê tài khoản ngân hàng của Việt, kết quả thực nghiệm điều tra và các tài liệu chứng cứ khác thấy đủ cơ sở xác định, ông Phạm Công Tạc nhận của Phan Quốc Việt 50.000 USD.",VKSND Tối cao|ORGANIZATION; Phan Quốc Việt|PERSON; Trịnh Thanh Hùng|PERSON; Vũ Đình Hiệp|PERSON; Việt Á|ORGANIZATION; Phạm Công Tạc|PERSON; Phan Quốc Việt|PERSON
-"Thực hiện ý định, trưa ngày 14/12/2015, sau khi ăn cơm xong, Sự lấy 2 viên thuốc ngủ đã chuẩn bị từ trước đưa cho cháu Thắng uống và nằm ngủ cùng con trai.",Sự|PERSON; Thắng|PERSON
-"Sau đó, Cự phản cung cho rằng do sức khoẻ không đảm bảo nên đã khai không đúng.",Cự|PERSON
-HCM ) .,HCM|PERSON
-Những bộ bàn_ghế đã cũ .,NONE
-30 triệu đồng để gửi về cho gia_đình .,NONE
-Sư_thầy Thích_Thanh_Vịnh vui_vẻ dẫn phóng_viên thăm quan khuôn_viên rợp bóng cây_xanh của chùa .,Thích_Thanh_Vịnh|PERSON
-"Thanh Lê - Giữa trưa, tên cướp một mình đi xe máy đến hiệu vàng vờ hỏi mua hàng sau đó giật nữ trang trên tay nhân viên rồi bỏ chạy.",Thanh Lê|PERSON
-Nghĩ như_thế nên tôi không_bao_giờ hối_tiếc hào_quang của quá_khứ .,NONE
-Clint_Bondad từng dành những lời ngọt_ngào cho cô bạn gái Hoa_hậu .,Clint_Bondad|PERSON
-"Bộ_trưởng Công_an Tô_Lâm vừa ban_hành Công_điện gửi các tổng_cục , bộ_Tư_lệnh , đơn_vị trực_thuộc Bộ ; các học_viện , trường Công_an nhân_dân ; Công_an , Cảnh_sát phòng cháy , chữa_cháy các tỉnh , thành_phố trực_thuộc Trung_ương về việc tăng_cường đấu_tranh , xử_lý với hoạt_động mua_bán , sử_dụng trái_phép quân_trang , quân_dụng , công_cụ hỗ_trợ ngành Công_an .",Tô_Lâm|PERSON; Công_an nhân_dân|ORGANIZATION
-"Dự kiến ngày 30/5 tới đây, TAND quận Tân Phú (TPHCM) sẽ mở phiên xét xử sơ thẩm lần 2 đối với bị cáo Lương Đức Thắng (39 tuổi, ngụ quận Tân Phú) về tội ”Hành hạ người khác”.",TAND quận Tân Phú|ORGANIZATION; TPHCM|LOCATION; Lương Đức Thắng|PERSON
-""" Diva sàn_diễn "" có tất_cả những gì cần_thiết để trở_thành hình_ảnh thương_hiệu Miss_Supranational "" .",NONE
-"Công khai, đã lên kế hoạch vụ trộm từ trước vì biết cửa hàng FPT Shop có chứa tiền mặt.",FPT Shop|ORGANIZATION
-Sau mối quan_hệ bất_chính của vợ ông B.,B|PERSON
-"“Bị cáo biết nhận tiền của doanh nghiệp là sai nên định cầm số tiền cất vào vali, khi đi công tác có cơ hội sẽ trả lại.",NONE
-""" Em giống như một điều thiêng_liêng không_thể chạm vào được .",NONE
-""" Theo ước_tính , hiện_tại lượng rác_thải nhựa trên biển vào_khoảng 140 triệu tấn / năm , mỗi năm tăng thêm 10 triệu tấn .",NONE
-"Sau đó, Linh chiếm đoạt chiếc điện của chị Thu mang về cất giấu ở tủ nhà mình.",Linh|PERSON; Thu|PERSON
-"Ham trúng số, có nạn nhân đã sẵn sàng chuyển khoản 300 triệu đồng",NONE
-"Chồng cô - Hứa_Tấn_Hanh - là một thương_gia giàu_có , gia_cảnh bề_thế tại Hong_Kong , từng hẹn_hò với Lưu_Gia_Linh năm 1986 và trải qua một đời vợ trước khi nên duyên với Lý_Gia_Hân .",Hứa_Tấn_Hanh|PERSON; Hong_Kong|LOCATION; Lưu_Gia_Linh|PERSON; Lý_Gia_Hân|PERSON
-"Trong quá_trình sáng_tác , khó_khăn lớn nhất đối_với Công_Nam là gì ?",Công_Nam|PERSON
-"Về thời_gian , hiện_thời chúng_tôi có kế_hoạch sẽ thực_hiện chương_trình ấy một_cách sâu_rộng trong mùa an_cư năm nay , tức vào_khoảng tháng tư - tháng năm_âm_lịch .",NONE
-"Thời_gian gần đây , Hiếu thấy trên tài_khoản Zalo của nạn_nhân chụp hình thân_mật với người khác .",Hiếu|PERSON
-"Đến lúc này, cơ quan điều tra xác định Tiến chính nghi can số một liên quan đến vụ án mạng khuya ngày 21/1.",Tiến|PERSON
-"Trước đó, anh Lò Văn Lợi nhờ Linh xin việc cho bạn gái mình là chị Siu H’ Thu (SN 1995, quê Gia Lai).",Lò Văn Lợi|PERSON; Linh|PERSON; Siu H’ Thu|PERSON; Gia Lai|LOCATION
-Trang dùng tay đánh mạnh vào gáy chị Hoàn rồi dùng khăn tắm quấn đè lên mặt cho đến khi nạn nhân tắt thở.,Hoàn|PERSON
-Việc kê_biên từng hoãn nhiều lần cũng từ đề_nghị của Ngân_hàng Agribank_Bình_Chánh .,Agribank_Bình_Chánh|ORGANIZATION
-"Nức nở suốt phiên xét xử, được nói lời sau cùng, bị cáo cho hay, thời gian tạm giam đã giúp bị cáo nhận ra mình quá sai lầm.",NONE
-Dấu_tích trận mưa_đá sau nổ_mìn còn khắp nhà dân - Ảnh : TRẦN_MAI .,TRẦN_MAI|PERSON
-Em là một người đặc_biệt giáng xuống trần_thế để thay_đổi thế_giới .,NONE
-"Theo lời khai của bị cáo Chu Ngọc Anh, vào khoảng tháng 8/2020, bị cáo Việt có nhắn tin xin gặp để báo cáo về kết quả chống dịch và đưa túi quà.",Chu Ngọc Anh|PERSON; Việt|PERSON
-Anh Quỳnh là một người Nam luôn hâm_mộ và cảm_thấy may_mắn khi được ở chung đội với anh .,Anh Quỳnh|PERSON
-và Trịnh_Văn_Đông là anh_em ruột trong một gia_đình .,Trịnh_Văn_Đông|PERSON
-"Khi bà Đ đến nơi, John không xuất hiện, mà tiếp bà là một người đàn ông da đen, không rõ tên tuổi, lai lịch.",Đ|PERSON; John|PERSON
-Anh được trao bằng khen vì đã có nhiều hoạt_động xuất_sắc trong sự_nghiệp bảo_tồn văn_hoá Việt_Nam .,Việt_Nam|LOCATION
-"Cụ_thể , lắp_đặt các camera ở các giao_lộ kết_nối với hệ_thống công_nghệ để tự phát_hiện , xác_định các lỗi vi_phạm , sau đó sẽ lên danh_sách các phương_tiện vi_phạm với những thông_tin cụ_thể .",NONE
-"Theo Appledaily , Lý_Gia_Hân đã tiến_hành ghi_hình tại phim_trường Hoành_Điếm ( Chiết_Giang ) từ hôm 13/9 .",Appledaily|ORGANIZATION; Lý_Gia_Hân|PERSON; Hoành_Điếm|LOCATION; Chiết_Giang|LOCATION
-"Hiện_tại , hồ nước Dương_Đông chỉ có_thể cung_cấp được mỗi ngày khoảng 20.000 m3 nước .",hồ nước Dương_Đông|LOCATION
-và vợ ông B ..,B|PERSON
-để lại trong nhóm tìm người mang thai hộ nên đã chủ động liên hệ.,NONE
-Vụ việc được trình báo công an.,NONE
-Công_an quận Đống_Đa tiếp_tục tung lực_lượng truy bắt những người liên_quan khác để xử_lý .,Công_an quận Đống_Đa|ORGANIZATION
-"Tại phòng trọ , nạn_nhân nói rằng đây là lần cuối hai người gặp nhau nhưng Hiếu không đồng_ý .",Hiếu|PERSON
-"Lúc này, y đã bị Công an TP Đồng Xoài (tỉnh Bình Phước) khởi tố và bắt tạm giam về hành vi lừa đảo chiếm đoạt tài sản ( Thông đã giả danh Thanh tra Ngân hàng Nhà nước Việt Nam để lừa đảo chiếm đoạt số tiền 50 triệu đồng của Giám đốc ngân hàng Nhà nước tỉnh Bình Phước).",Công an TP Đồng Xoài|ORGANIZATION; tỉnh Bình Phước|LOCATION; Thông|PERSON; Thanh tra Ngân hàng Nhà nước Việt Nam|ORGANIZATION; tỉnh Bình Phước|LOCATION
-"Theo đó, trưa 4/12 khi tuần tra địa bàn, tổ trinh sát hình sự đặc nhiệm công an Q.Phú Nhuận phát hiện 2 tên Anh và Cường điều khiển xe gắn máy BKS: 59E1-088.97 rảo quanh nhiều tuyến đường ở Q.Phú Nhuận có dấu hiệu khả nghi.",công an Q.Phú Nhuận|ORGANIZATION; Anh|PERSON; Cường|PERSON
-“ Chuyện gì đến cũng đã đến .,NONE
-Nạn nhân Cao Mỹ Duyên có 3 luật sư bảo vệ quyền và lợi ích hợp pháp.,Cao Mỹ Duyên|PERSON
-Còn sinh_viên Huỳnh_Tuấn_Khương ( Trường ĐH Khoa_học_tự_nhiên - ĐHQG TP.,Huỳnh_Tuấn_Khương|PERSON; Trường ĐH Khoa_học_tự_nhiên|ORGANIZATION; ĐHQG TP|ORGANIZATION
-"Tại cuộc thi này , tôi không muốn tham_lam nữa và sẽ tiếp_tục cố_gắng cho chặng đường tiếp_theo "" .",NONE
-"Bỗng nhiên có một số tiền lớn rơi ""trúng đầu"", có người bị kéo đến xin tiền, có người chỉ kịp làm ""đại gia"" vài ngày rồi hết, có người cuối đời lại phải đi ăn mày hoặc có trường hợp trúng số nhưng không được nhận.",NONE
-Quán quân Người_mẫu Quý bà Việt_Nam nhận tổng giải_thưởng trị_giá 200 triệu đồng ; Á quân 1 - giải_thưởng trị_giá 150 triệu đồng ; Á quân 2 giải_thưởng trị_giá 100 triệu đồng .,NONE
-(15 tuổi) đi bắt Đ.,Đ|PERSON
-"cứ nhìn trân_trân vào căn nhà_trọ , nơi con_gái ông bị sát_hại rồi lặng_lẽ đi về phía chiếc xe tang , nơi con_gái đang nằm trong đó để đưa con_gái về nhà .",NONE
-"Thắng đã thành lập công ty cổ phần Thương mại và lữ hành quốc tế Phúc Đức (xóm Chợ, phường Đại Mỗ, Nam Từ Liêm, Hà Nội).",Thắng|PERSON; công ty cổ phần Thương mại và lữ hành quốc tế Phúc Đức|ORGANIZATION; xóm Chợ|LOCATION; phường Đại Mỗ|LOCATION; Nam Từ Liêm|LOCATION; Hà Nội|LOCATION
-"Liên quan đến vụ du học sinh Mỹ tố bị anh rể hờ là đại gia hiếp dâm gây xôn xao dư luận, diễn biến mới nhất, cơ quan CSĐT Công an TP.HCM vừa có kết luận điều tra bổ sung vụ án.",Mỹ|LOCATION; Công an TP.HCM|ORGANIZATION
-Riêng hai bị_cáo Lương_Văn_Khăm và Vi_Thị_Lý chưa được chia tiền như đã hứa ban_đầu .,Lương_Văn_Khăm|PERSON; Vi_Thị_Lý|PERSON
-"Khi quán nhậu đóng cửa, Tuyền ra phía trước cửa lớn tiếng gọi: “con Nhi đâu ra đây.",Tuyền|PERSON; Nhi|PERSON
-"Trong đó 6 luật sư bào chữa theo quy định của pháp luật đối với 6 bị cáo, 3 bị cáo không có luật sư bào chữa là Cầm Văn Chương, Bùi Thị Kim Thu, Phạm Văn Dũng.",Cầm Văn Chương|PERSON; Bùi Thị Kim Thu|PERSON; Phạm Văn Dũng|PERSON
-"Đối với Raymundo Y.Mararac, tài liệu điều tra xác định, từ ngày 29/1/2009- 15/6/2012, Raymundo được thuê làm việc cho Health 2000 Canada, giữ chức vụ Giám đốc điều hành tại Philippines.",Raymundo Y.Mararac|PERSON; Health 2000|ORGANIZATION; Canada|LOCATION; Philippines|LOCATION
-"Còn Tuyền có nhiệm vụ thuê ô tô, ở ngoài cảnh giới, khi đồng bọn gây án xong thì chở đi tẩu thoát.",Tuyền|PERSON
-Người đại_diện truyền_thông của Chris_Brown tại Sony_Music thì vẫn chưa lên_tiếng bình_luận .,Chris_Brown|PERSON
-"Tại biên_bản này , đơn_vị phá đá thừa_nhận việc nổ mìn phá đá không đảm_bảo an_toàn khiến đá rơi vào nhà dân , đồng_thời chấp_nhận bồi_thường .",NONE
-"Trong đó, Chủ tịch Việt Á đưa cho ông Chu Ngọc Anh 200.000 USD (tương đương hơn 4,6 tỷ đồng), đưa cho ông Phạm Công Tạc 50.000 USD (tương đương hơn 1,1 tỷ đồng).",Chu Ngọc Anh|PERSON; Phạm Công Tạc|PERSON
-“ Thử_hỏi Chung_Tử_Đơn một câu : Đạo_đức nghề_nghiệp của anh ở đâu ?,Chung_Tử_Đơn|PERSON
-"Bực tức, Sơn rủ Cầu đến nơi ông Nghĩa làm việc để trả thù.",Sơn|PERSON; Cầu|PERSON; Nghĩa|PERSON
-"Theo đó, cơ quan công an vẫn giữ quan điểm đề nghị truy tố bị can Lê Phú Cự (51 tuổi, quê Quảng Ngãi, trú Q.1) về tội “hiếp dâm” theo khoản 1, điều 111, Bộ luật Hình sự năm 1999 (được sửa đổi, bổ sung năm 2009), với khung hình phạt từ 2 – 7 năm tù.",Lê Phú Cự|PERSON; Quảng Ngãi|LOCATION; Q.1|LOCATION
-và 'giam lỏng’ đến khoảng 10h cùng ngày thì chở Đ.,Đ|PERSON
-"Gợi_ý với các bộ , ngành , địa_phương về nội_dung thảo_luận tại phiên họp trực_tuyến , Thủ_tướng nêu cần tập_trung vào các vấn_đề tồn_tại như Luật quy_hoạch , vấn_đề sân golf , rồi tự_chủ đơn_vị sự_nghiệp công , đặc_biệt giải_ngân rất chậm cả đầu_tư công và ODA .",NONE
-"Hành nghề ngoại cảm từ năm 2014, Thắng khiến nhiều người sập bẫy lừa.",Thắng|PERSON
-không đi làm nên cuộc sống phụ thuộc Thắng về mặt kinh tế.,Thắng|PERSON
-"Mỗi túi được đóng gói gồm 1 chai nước hương liệu, 1 lá bùa, trong đó có hướng dẫn cách sử dụng.",NONE
-"Không dừng lại ở đó, như con thú say mồi, Phong còn vung dao bổ tiếp một nhát vào đầu bà Vân rồi lại trèo qua tường chạy trốn.",Phong|PERSON; Vân|PERSON
-chỉ biết thông_tin về việc kỷ_luật cảnh_cáo ông V.V .,V.V|PERSON
-xin nickchat trên mạng.,NONE
-"Mâu thuẫn với vợ, vác dao đâm chết mẹ vợ Ngày 25/6, Công an tỉnh Tây Ninh đang tiếp tục làm rõ vụ án mạng xảy ra trên địa bàn xã Tân Hội, huyện Tân Châu.",Công an tỉnh Tây Ninh|ORGANIZATION; xã Tân Hội|LOCATION; huyện Tân Châu|LOCATION
-"Sau khi gây án, Tuyền bỏ về nhà, còn Nhi được đưa vào bệnh viện cấp cứu.",Tuyền|PERSON; Nhi|PERSON
-Scandal rầm_rộ nhất là vụ anh hành_hung cô bạn gái cũ Rihanna vào năm 2009 .,Rihanna|PERSON
-"Cầu này tối đa chỉ cho phương tiện, cả tải trọng xe và hàng hóa không quá 8 tấn lưu thông.",NONE
-"Nhân viên bảo vệ hiệu vàng Lan Hương cho biết, thời điểm tên cướp ra tay vào buổi trưa vắng nên nhân viên bán hàng bị bất ngờ.",Lan Hương|PERSON
-"Từ ngày 28/10/2012 đến ngày 3/8/2014, Raymundo đã 13 lần nhập cảnh vào Việt Nam để tham gia vào các hoạt động kinh doanh thuốc.",Raymundo|PERSON; Việt Nam|LOCATION
-"Chris_Brown đã hoàn_thành thời_gian chịu án_treo vào năm 2015 , nhưng sau đó lại dính thêm một loạt rắc_rối pháp_lý khác .",Chris_Brown|PERSON
-"Bởi đối_với tôi , bản_thân đã đạt được quá nhiều thứ và tôi muốn chia_sẻ điều này cho người khác .",NONE
-Đến chiều nay nghi phạm đã bị cơ quan chức năng bắt giữ sau hơn một giờ gây án.,NONE
-"Khoảng 0h30 ngày 21/9, Quang đã rủ Tuấn, Hòa cùng T.",Quang|PERSON; Tuấn|PERSON; Hòa|PERSON
-"Nói về thầy của mình , sư_thầy Vịnh cho_biết Đức_Pháp chủ Thích Phổ_Tuệ là một người rất ham lao_động , lúc_nào cũng làm_việc không ngơi tay_chân , hết chăm cây_cối lại trông_nom ban thờ , khi xong công_việc thì lại coi sách .",Vịnh|PERSON; Thích Phổ_Tuệ|PERSON
-Việc đấu tranh bóc gỡ đường dây của Tâm gặp nhiều khó khăn.,Tâm|PERSON
-"Trong thời gian này, T.",T|PERSON
-"Sau Công_văn 31 của Trung_ương Giáo_hội Phật_giáo Việt_Nam , thông_tin từ Hoà_thượng Thích_Huệ_Thông - Phó Tổng_thư_ký Hội_đồng_trị_sự kiêm Chánh_văn_phòng 2 Trung_ương Giáo_hội Phật_giáo Việt_Nam - cho_biết giáo_hội sẽ có chương_trình triển_khai sâu_rộng trong mùa an_cư sắp tới ...",Trung_ương Giáo_hội Phật_giáo Việt_Nam|ORGANIZATION; Thích_Huệ_Thông|PERSON; Trung_ương Giáo_hội Phật_giáo Việt_Nam|ORGANIZATION
-\- Đây là một nội_dung Phật sự mà Văn_phòng Trung_ương Giáo_hội Phật_giáo Việt_Nam đã chuẩn_bị kế_hoạch trong năm vừa_qua .,Văn_phòng Trung_ương Giáo_hội Phật_giáo Việt_Nam|ORGANIZATION
-"Vì_vậy , theo ông Thọ , phải hai tháng rưỡi nữa việc cấp_nước mới trở_lại như cũ .",Thọ|PERSON
-"Vụ án đường dây đánh bạc nghìn tỷ trên internet có 13 bị can được đình chỉ điều tra, trong đó có ""cánh tay phải"" của Phan Sào Nam.",Phan Sào Nam|PERSON
-"Do thương lượng, thỏa thuận nhiều lần giữa 2 bên không đạt nên tháng 8/2014, bà Trương Thị Thu Thủy ký hợp đồng ủy quyền cho LS Trần Hữu Kiển làm người đại diện tham gia việc chia thừa kế sao cho bà nhận được số tiền tối thiếu là 1 tỉ đồng (sau khi trừ các chi phí dịch vụ).",Trương Thị Thu Thủy|PERSON; Trần Hữu Kiển|PERSON
-"Chỉ riêng năm 2015 , có khoảng 100 ca_khúc trước năm 1975 được cấp phép phổ_biến trở_lại .",NONE
-"Tuy nhiên, Vinh vẫn tiếp tục đe dọa, yêu cầu chuyển tiền.",Vinh|PERSON
-Theo Pháp luật TP,Pháp luật TP|ORGANIZATION
-"Không_chỉ hứng_chịu trân mưa_đá , nhà dân còn bị nứt vì rung chấn - Ảnh : TRẦN_MAI .",TRẦN_MAI|PERSON
-"Lực lượng công an lập tức triển khai kế hoạch chặn bắt, đến địa phận xã Trừng Xá, đã khống chế các đối tượng, thu giữ 1 thanh kiếm kim loại, 1 tuýp sắt, 1 thùng vỏ chai bia thủy tinh và 5 mô tô.",xã Trừng Xá|LOCATION
-"Một cục đá lớn xé nát chiếc tủ , kẹt lại bên trong tủ - Ảnh : TRẦN_MAI .",TRẦN_MAI|PERSON
-"Tuy nhiên, bị cáo đã rút toàn bộ tiền để chi tiêu và vẫn nói chưa thỏa thuận xong.",NONE
-Thoại đã 4 lần đưa tiền mặt và 3 lần chuyển khoản cho Phong với số tiền khoảng 80 triệu đồng.,Thoại|PERSON; Phong|PERSON
-"Catriona_Gray và Clint_Bondad gặp_gỡ nhau khi họ chỉ mới 18 tuổi , trong dịp quay một đoạn quảng_cáo truyền_hình vào năm 2012 .",Catriona_Gray|PERSON; Clint_Bondad|PERSON
-"Xuất_hiện tại chương_trình Sing_My_Song như một “ hiện_tượng ” với ca_khúc tự sáng_tác – Chí_Phèo , Bùi_Công_Nam đã chiếm được cảm_tình của đông_đảo khán_giả cũng như nhận được sự đánh_giá cao của những người có chuyên_môn .",Chí_Phèo|PERSON; Bùi_Công_Nam|PERSON
-"Chỉ cơ quan điều tra, những người thân cận nhất trong gia đình mới được tiếp xúc với nạn nhân Mão.",Mão|PERSON
-"Chị Đ đã phải xin trả trước 30 triệu đồng, số tiền còn lại thì sẽ trả dần và Quân đồng ý.",Đ|PERSON; Quân|PERSON
-"Sau khi lấy được lòng tin của bị hại, Tùng nhiều lần yêu cầu anh Thắng chuyển tiền cho mình (tổng số tiền là 12.700.000đ) với lý do để lo việc, nhưng thực chất là sử dụng vào mục đích cá nhân.",Tùng|PERSON; Thắng|PERSON
-"Do_đó , ông Phong cho_rằng cần phải nghiên_cứu quy_hoạch phát_triển đô_thị một_cách tống_thể mới giải_quyết được bài_toán giao_thông .",Phong|PERSON
-"Tháng 5/2021, TAND TPHCM đã tuyên hủy bản án sơ thẩm để điều tra, xét xử lại.",TAND TPHCM|ORGANIZATION
-"Trong tình huống mô phỏng đào tạo 001, Nguyễn Minh An gửi hồ sơ đến Công ty mô phỏng Sao Bắc 001 tại Phường Mẫu 001.",Nguyễn Minh An|PERSON; Công ty mô phỏng Sao Bắc 001|ORGANIZATION; Phường Mẫu 001|LOCATION
-Biên bản giả lập đào tạo 002 ghi nhận Công ty mô phỏng Sao Bắc 002 tiếp nhận tài liệu của Trần Minh An ở Phường Mẫu 002.,Công ty mô phỏng Sao Bắc 002|ORGANIZATION; Trần Minh An|PERSON; Phường Mẫu 002|LOCATION
-"Tại Phường Mẫu 003, Lê Minh An trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 003 trong buổi diễn tập đào tạo 003.",Phường Mẫu 003|LOCATION; Lê Minh An|PERSON; Công ty mô phỏng Sao Bắc 003|ORGANIZATION
-Hồ sơ minh họa đào tạo 004 cho biết Phạm Minh An làm việc với Công ty mô phỏng Sao Bắc 004 tại Phường Mẫu 004.,Phạm Minh An|PERSON; Công ty mô phỏng Sao Bắc 004|ORGANIZATION; Phường Mẫu 004|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 005, Công ty mô phỏng Sao Bắc 005 phối hợp với Hoàng Minh An ở Phường Mẫu 005.",Công ty mô phỏng Sao Bắc 005|ORGANIZATION; Hoàng Minh An|PERSON; Phường Mẫu 005|LOCATION
-"Tại Phường Mẫu 006, Công ty mô phỏng Sao Bắc 006 nhận phiếu do Phan Minh An chuyển đến theo mẫu đào tạo 006.",Phường Mẫu 006|LOCATION; Công ty mô phỏng Sao Bắc 006|ORGANIZATION; Phan Minh An|PERSON
-"Trong tình huống mô phỏng đào tạo 007, Vũ Minh An gửi hồ sơ đến Công ty mô phỏng Sao Bắc 007 tại Phường Mẫu 007.",Vũ Minh An|PERSON; Công ty mô phỏng Sao Bắc 007|ORGANIZATION; Phường Mẫu 007|LOCATION
-Biên bản giả lập đào tạo 008 ghi nhận Công ty mô phỏng Sao Bắc 008 tiếp nhận tài liệu của Đặng Minh An ở Phường Mẫu 008.,Công ty mô phỏng Sao Bắc 008|ORGANIZATION; Đặng Minh An|PERSON; Phường Mẫu 008|LOCATION
-"Tại Phường Mẫu 009, Bùi Minh An trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 009 trong buổi diễn tập đào tạo 009.",Phường Mẫu 009|LOCATION; Bùi Minh An|PERSON; Công ty mô phỏng Sao Bắc 009|ORGANIZATION
-Hồ sơ minh họa đào tạo 010 cho biết Đỗ Minh An làm việc với Công ty mô phỏng Sao Bắc 010 tại Phường Mẫu 010.,Đỗ Minh An|PERSON; Công ty mô phỏng Sao Bắc 010|ORGANIZATION; Phường Mẫu 010|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 011, Công ty mô phỏng Sao Bắc 011 phối hợp với Nguyễn Minh Bình ở Phường Mẫu 011.",Công ty mô phỏng Sao Bắc 011|ORGANIZATION; Nguyễn Minh Bình|PERSON; Phường Mẫu 011|LOCATION
-"Tại Phường Mẫu 012, Công ty mô phỏng Sao Bắc 012 nhận phiếu do Trần Minh Bình chuyển đến theo mẫu đào tạo 012.",Phường Mẫu 012|LOCATION; Công ty mô phỏng Sao Bắc 012|ORGANIZATION; Trần Minh Bình|PERSON
-"Trong tình huống mô phỏng đào tạo 013, Lê Minh Bình gửi hồ sơ đến Công ty mô phỏng Sao Bắc 013 tại Phường Mẫu 013.",Lê Minh Bình|PERSON; Công ty mô phỏng Sao Bắc 013|ORGANIZATION; Phường Mẫu 013|LOCATION
-Biên bản giả lập đào tạo 014 ghi nhận Công ty mô phỏng Sao Bắc 014 tiếp nhận tài liệu của Phạm Minh Bình ở Phường Mẫu 014.,Công ty mô phỏng Sao Bắc 014|ORGANIZATION; Phạm Minh Bình|PERSON; Phường Mẫu 014|LOCATION
-"Tại Phường Mẫu 015, Hoàng Minh Bình trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 015 trong buổi diễn tập đào tạo 015.",Phường Mẫu 015|LOCATION; Hoàng Minh Bình|PERSON; Công ty mô phỏng Sao Bắc 015|ORGANIZATION
-Hồ sơ minh họa đào tạo 016 cho biết Phan Minh Bình làm việc với Công ty mô phỏng Sao Bắc 016 tại Phường Mẫu 016.,Phan Minh Bình|PERSON; Công ty mô phỏng Sao Bắc 016|ORGANIZATION; Phường Mẫu 016|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 017, Công ty mô phỏng Sao Bắc 017 phối hợp với Vũ Minh Bình ở Phường Mẫu 017.",Công ty mô phỏng Sao Bắc 017|ORGANIZATION; Vũ Minh Bình|PERSON; Phường Mẫu 017|LOCATION
-"Tại Phường Mẫu 018, Công ty mô phỏng Sao Bắc 018 nhận phiếu do Đặng Minh Bình chuyển đến theo mẫu đào tạo 018.",Phường Mẫu 018|LOCATION; Công ty mô phỏng Sao Bắc 018|ORGANIZATION; Đặng Minh Bình|PERSON
-"Trong tình huống mô phỏng đào tạo 019, Bùi Minh Bình gửi hồ sơ đến Công ty mô phỏng Sao Bắc 019 tại Phường Mẫu 019.",Bùi Minh Bình|PERSON; Công ty mô phỏng Sao Bắc 019|ORGANIZATION; Phường Mẫu 019|LOCATION
-Biên bản giả lập đào tạo 020 ghi nhận Công ty mô phỏng Sao Bắc 020 tiếp nhận tài liệu của Đỗ Minh Bình ở Phường Mẫu 020.,Công ty mô phỏng Sao Bắc 020|ORGANIZATION; Đỗ Minh Bình|PERSON; Phường Mẫu 020|LOCATION
-"Tại Phường Mẫu 021, Nguyễn Minh Chi trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 021 trong buổi diễn tập đào tạo 021.",Phường Mẫu 021|LOCATION; Nguyễn Minh Chi|PERSON; Công ty mô phỏng Sao Bắc 021|ORGANIZATION
-Hồ sơ minh họa đào tạo 022 cho biết Trần Minh Chi làm việc với Công ty mô phỏng Sao Bắc 022 tại Phường Mẫu 022.,Trần Minh Chi|PERSON; Công ty mô phỏng Sao Bắc 022|ORGANIZATION; Phường Mẫu 022|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 023, Công ty mô phỏng Sao Bắc 023 phối hợp với Lê Minh Chi ở Phường Mẫu 023.",Công ty mô phỏng Sao Bắc 023|ORGANIZATION; Lê Minh Chi|PERSON; Phường Mẫu 023|LOCATION
-"Tại Phường Mẫu 024, Công ty mô phỏng Sao Bắc 024 nhận phiếu do Phạm Minh Chi chuyển đến theo mẫu đào tạo 024.",Phường Mẫu 024|LOCATION; Công ty mô phỏng Sao Bắc 024|ORGANIZATION; Phạm Minh Chi|PERSON
-"Trong tình huống mô phỏng đào tạo 025, Hoàng Minh Chi gửi hồ sơ đến Công ty mô phỏng Sao Bắc 025 tại Phường Mẫu 025.",Hoàng Minh Chi|PERSON; Công ty mô phỏng Sao Bắc 025|ORGANIZATION; Phường Mẫu 025|LOCATION
-Biên bản giả lập đào tạo 026 ghi nhận Công ty mô phỏng Sao Bắc 026 tiếp nhận tài liệu của Phan Minh Chi ở Phường Mẫu 026.,Công ty mô phỏng Sao Bắc 026|ORGANIZATION; Phan Minh Chi|PERSON; Phường Mẫu 026|LOCATION
-"Tại Phường Mẫu 027, Vũ Minh Chi trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 027 trong buổi diễn tập đào tạo 027.",Phường Mẫu 027|LOCATION; Vũ Minh Chi|PERSON; Công ty mô phỏng Sao Bắc 027|ORGANIZATION
-Hồ sơ minh họa đào tạo 028 cho biết Đặng Minh Chi làm việc với Công ty mô phỏng Sao Bắc 028 tại Phường Mẫu 028.,Đặng Minh Chi|PERSON; Công ty mô phỏng Sao Bắc 028|ORGANIZATION; Phường Mẫu 028|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 029, Công ty mô phỏng Sao Bắc 029 phối hợp với Bùi Minh Chi ở Phường Mẫu 029.",Công ty mô phỏng Sao Bắc 029|ORGANIZATION; Bùi Minh Chi|PERSON; Phường Mẫu 029|LOCATION
-"Tại Phường Mẫu 030, Công ty mô phỏng Sao Bắc 030 nhận phiếu do Đỗ Minh Chi chuyển đến theo mẫu đào tạo 030.",Phường Mẫu 030|LOCATION; Công ty mô phỏng Sao Bắc 030|ORGANIZATION; Đỗ Minh Chi|PERSON
-"Trong tình huống mô phỏng đào tạo 031, Nguyễn Minh Dũng gửi hồ sơ đến Công ty mô phỏng Sao Bắc 031 tại Phường Mẫu 031.",Nguyễn Minh Dũng|PERSON; Công ty mô phỏng Sao Bắc 031|ORGANIZATION; Phường Mẫu 031|LOCATION
-Biên bản giả lập đào tạo 032 ghi nhận Công ty mô phỏng Sao Bắc 032 tiếp nhận tài liệu của Trần Minh Dũng ở Phường Mẫu 032.,Công ty mô phỏng Sao Bắc 032|ORGANIZATION; Trần Minh Dũng|PERSON; Phường Mẫu 032|LOCATION
-"Tại Phường Mẫu 033, Lê Minh Dũng trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 033 trong buổi diễn tập đào tạo 033.",Phường Mẫu 033|LOCATION; Lê Minh Dũng|PERSON; Công ty mô phỏng Sao Bắc 033|ORGANIZATION
-Hồ sơ minh họa đào tạo 034 cho biết Phạm Minh Dũng làm việc với Công ty mô phỏng Sao Bắc 034 tại Phường Mẫu 034.,Phạm Minh Dũng|PERSON; Công ty mô phỏng Sao Bắc 034|ORGANIZATION; Phường Mẫu 034|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 035, Công ty mô phỏng Sao Bắc 035 phối hợp với Hoàng Minh Dũng ở Phường Mẫu 035.",Công ty mô phỏng Sao Bắc 035|ORGANIZATION; Hoàng Minh Dũng|PERSON; Phường Mẫu 035|LOCATION
-"Tại Phường Mẫu 036, Công ty mô phỏng Sao Bắc 036 nhận phiếu do Phan Minh Dũng chuyển đến theo mẫu đào tạo 036.",Phường Mẫu 036|LOCATION; Công ty mô phỏng Sao Bắc 036|ORGANIZATION; Phan Minh Dũng|PERSON
-"Trong tình huống mô phỏng đào tạo 037, Vũ Minh Dũng gửi hồ sơ đến Công ty mô phỏng Sao Bắc 037 tại Phường Mẫu 037.",Vũ Minh Dũng|PERSON; Công ty mô phỏng Sao Bắc 037|ORGANIZATION; Phường Mẫu 037|LOCATION
-Biên bản giả lập đào tạo 038 ghi nhận Công ty mô phỏng Sao Bắc 038 tiếp nhận tài liệu của Đặng Minh Dũng ở Phường Mẫu 038.,Công ty mô phỏng Sao Bắc 038|ORGANIZATION; Đặng Minh Dũng|PERSON; Phường Mẫu 038|LOCATION
-"Tại Phường Mẫu 039, Bùi Minh Dũng trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 039 trong buổi diễn tập đào tạo 039.",Phường Mẫu 039|LOCATION; Bùi Minh Dũng|PERSON; Công ty mô phỏng Sao Bắc 039|ORGANIZATION
-Hồ sơ minh họa đào tạo 040 cho biết Đỗ Minh Dũng làm việc với Công ty mô phỏng Sao Bắc 040 tại Phường Mẫu 040.,Đỗ Minh Dũng|PERSON; Công ty mô phỏng Sao Bắc 040|ORGANIZATION; Phường Mẫu 040|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 041, Công ty mô phỏng Sao Bắc 041 phối hợp với Nguyễn Minh Giang ở Phường Mẫu 041.",Công ty mô phỏng Sao Bắc 041|ORGANIZATION; Nguyễn Minh Giang|PERSON; Phường Mẫu 041|LOCATION
-"Tại Phường Mẫu 042, Công ty mô phỏng Sao Bắc 042 nhận phiếu do Trần Minh Giang chuyển đến theo mẫu đào tạo 042.",Phường Mẫu 042|LOCATION; Công ty mô phỏng Sao Bắc 042|ORGANIZATION; Trần Minh Giang|PERSON
-"Trong tình huống mô phỏng đào tạo 043, Lê Minh Giang gửi hồ sơ đến Công ty mô phỏng Sao Bắc 043 tại Phường Mẫu 043.",Lê Minh Giang|PERSON; Công ty mô phỏng Sao Bắc 043|ORGANIZATION; Phường Mẫu 043|LOCATION
-Biên bản giả lập đào tạo 044 ghi nhận Công ty mô phỏng Sao Bắc 044 tiếp nhận tài liệu của Phạm Minh Giang ở Phường Mẫu 044.,Công ty mô phỏng Sao Bắc 044|ORGANIZATION; Phạm Minh Giang|PERSON; Phường Mẫu 044|LOCATION
-"Tại Phường Mẫu 045, Hoàng Minh Giang trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 045 trong buổi diễn tập đào tạo 045.",Phường Mẫu 045|LOCATION; Hoàng Minh Giang|PERSON; Công ty mô phỏng Sao Bắc 045|ORGANIZATION
-Hồ sơ minh họa đào tạo 046 cho biết Phan Minh Giang làm việc với Công ty mô phỏng Sao Bắc 046 tại Phường Mẫu 046.,Phan Minh Giang|PERSON; Công ty mô phỏng Sao Bắc 046|ORGANIZATION; Phường Mẫu 046|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 047, Công ty mô phỏng Sao Bắc 047 phối hợp với Vũ Minh Giang ở Phường Mẫu 047.",Công ty mô phỏng Sao Bắc 047|ORGANIZATION; Vũ Minh Giang|PERSON; Phường Mẫu 047|LOCATION
-"Tại Phường Mẫu 048, Công ty mô phỏng Sao Bắc 048 nhận phiếu do Đặng Minh Giang chuyển đến theo mẫu đào tạo 048.",Phường Mẫu 048|LOCATION; Công ty mô phỏng Sao Bắc 048|ORGANIZATION; Đặng Minh Giang|PERSON
-"Trong tình huống mô phỏng đào tạo 049, Bùi Minh Giang gửi hồ sơ đến Công ty mô phỏng Sao Bắc 049 tại Phường Mẫu 049.",Bùi Minh Giang|PERSON; Công ty mô phỏng Sao Bắc 049|ORGANIZATION; Phường Mẫu 049|LOCATION
-Biên bản giả lập đào tạo 050 ghi nhận Công ty mô phỏng Sao Bắc 050 tiếp nhận tài liệu của Đỗ Minh Giang ở Phường Mẫu 050.,Công ty mô phỏng Sao Bắc 050|ORGANIZATION; Đỗ Minh Giang|PERSON; Phường Mẫu 050|LOCATION
-"Tại Phường Mẫu 051, Nguyễn Minh Hà trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 051 trong buổi diễn tập đào tạo 051.",Phường Mẫu 051|LOCATION; Nguyễn Minh Hà|PERSON; Công ty mô phỏng Sao Bắc 051|ORGANIZATION
-Hồ sơ minh họa đào tạo 052 cho biết Trần Minh Hà làm việc với Công ty mô phỏng Sao Bắc 052 tại Phường Mẫu 052.,Trần Minh Hà|PERSON; Công ty mô phỏng Sao Bắc 052|ORGANIZATION; Phường Mẫu 052|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 053, Công ty mô phỏng Sao Bắc 053 phối hợp với Lê Minh Hà ở Phường Mẫu 053.",Công ty mô phỏng Sao Bắc 053|ORGANIZATION; Lê Minh Hà|PERSON; Phường Mẫu 053|LOCATION
-"Tại Phường Mẫu 054, Công ty mô phỏng Sao Bắc 054 nhận phiếu do Phạm Minh Hà chuyển đến theo mẫu đào tạo 054.",Phường Mẫu 054|LOCATION; Công ty mô phỏng Sao Bắc 054|ORGANIZATION; Phạm Minh Hà|PERSON
-"Trong tình huống mô phỏng đào tạo 055, Hoàng Minh Hà gửi hồ sơ đến Công ty mô phỏng Sao Bắc 055 tại Phường Mẫu 055.",Hoàng Minh Hà|PERSON; Công ty mô phỏng Sao Bắc 055|ORGANIZATION; Phường Mẫu 055|LOCATION
-Biên bản giả lập đào tạo 056 ghi nhận Công ty mô phỏng Sao Bắc 056 tiếp nhận tài liệu của Phan Minh Hà ở Phường Mẫu 056.,Công ty mô phỏng Sao Bắc 056|ORGANIZATION; Phan Minh Hà|PERSON; Phường Mẫu 056|LOCATION
-"Tại Phường Mẫu 057, Vũ Minh Hà trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 057 trong buổi diễn tập đào tạo 057.",Phường Mẫu 057|LOCATION; Vũ Minh Hà|PERSON; Công ty mô phỏng Sao Bắc 057|ORGANIZATION
-Hồ sơ minh họa đào tạo 058 cho biết Đặng Minh Hà làm việc với Công ty mô phỏng Sao Bắc 058 tại Phường Mẫu 058.,Đặng Minh Hà|PERSON; Công ty mô phỏng Sao Bắc 058|ORGANIZATION; Phường Mẫu 058|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 059, Công ty mô phỏng Sao Bắc 059 phối hợp với Bùi Minh Hà ở Phường Mẫu 059.",Công ty mô phỏng Sao Bắc 059|ORGANIZATION; Bùi Minh Hà|PERSON; Phường Mẫu 059|LOCATION
-"Tại Phường Mẫu 060, Công ty mô phỏng Sao Bắc 060 nhận phiếu do Đỗ Minh Hà chuyển đến theo mẫu đào tạo 060.",Phường Mẫu 060|LOCATION; Công ty mô phỏng Sao Bắc 060|ORGANIZATION; Đỗ Minh Hà|PERSON
-"Trong tình huống mô phỏng đào tạo 061, Nguyễn Minh Khanh gửi hồ sơ đến Công ty mô phỏng Sao Bắc 061 tại Phường Mẫu 061.",Nguyễn Minh Khanh|PERSON; Công ty mô phỏng Sao Bắc 061|ORGANIZATION; Phường Mẫu 061|LOCATION
-Biên bản giả lập đào tạo 062 ghi nhận Công ty mô phỏng Sao Bắc 062 tiếp nhận tài liệu của Trần Minh Khanh ở Phường Mẫu 062.,Công ty mô phỏng Sao Bắc 062|ORGANIZATION; Trần Minh Khanh|PERSON; Phường Mẫu 062|LOCATION
-"Tại Phường Mẫu 063, Lê Minh Khanh trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 063 trong buổi diễn tập đào tạo 063.",Phường Mẫu 063|LOCATION; Lê Minh Khanh|PERSON; Công ty mô phỏng Sao Bắc 063|ORGANIZATION
-Hồ sơ minh họa đào tạo 064 cho biết Phạm Minh Khanh làm việc với Công ty mô phỏng Sao Bắc 064 tại Phường Mẫu 064.,Phạm Minh Khanh|PERSON; Công ty mô phỏng Sao Bắc 064|ORGANIZATION; Phường Mẫu 064|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 065, Công ty mô phỏng Sao Bắc 065 phối hợp với Hoàng Minh Khanh ở Phường Mẫu 065.",Công ty mô phỏng Sao Bắc 065|ORGANIZATION; Hoàng Minh Khanh|PERSON; Phường Mẫu 065|LOCATION
-"Tại Phường Mẫu 066, Công ty mô phỏng Sao Bắc 066 nhận phiếu do Phan Minh Khanh chuyển đến theo mẫu đào tạo 066.",Phường Mẫu 066|LOCATION; Công ty mô phỏng Sao Bắc 066|ORGANIZATION; Phan Minh Khanh|PERSON
-"Trong tình huống mô phỏng đào tạo 067, Vũ Minh Khanh gửi hồ sơ đến Công ty mô phỏng Sao Bắc 067 tại Phường Mẫu 067.",Vũ Minh Khanh|PERSON; Công ty mô phỏng Sao Bắc 067|ORGANIZATION; Phường Mẫu 067|LOCATION
-Biên bản giả lập đào tạo 068 ghi nhận Công ty mô phỏng Sao Bắc 068 tiếp nhận tài liệu của Đặng Minh Khanh ở Phường Mẫu 068.,Công ty mô phỏng Sao Bắc 068|ORGANIZATION; Đặng Minh Khanh|PERSON; Phường Mẫu 068|LOCATION
-"Tại Phường Mẫu 069, Bùi Minh Khanh trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 069 trong buổi diễn tập đào tạo 069.",Phường Mẫu 069|LOCATION; Bùi Minh Khanh|PERSON; Công ty mô phỏng Sao Bắc 069|ORGANIZATION
-Hồ sơ minh họa đào tạo 070 cho biết Đỗ Minh Khanh làm việc với Công ty mô phỏng Sao Bắc 070 tại Phường Mẫu 070.,Đỗ Minh Khanh|PERSON; Công ty mô phỏng Sao Bắc 070|ORGANIZATION; Phường Mẫu 070|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 071, Công ty mô phỏng Sao Bắc 071 phối hợp với Nguyễn Minh Lan ở Phường Mẫu 071.",Công ty mô phỏng Sao Bắc 071|ORGANIZATION; Nguyễn Minh Lan|PERSON; Phường Mẫu 071|LOCATION
-"Tại Phường Mẫu 072, Công ty mô phỏng Sao Bắc 072 nhận phiếu do Trần Minh Lan chuyển đến theo mẫu đào tạo 072.",Phường Mẫu 072|LOCATION; Công ty mô phỏng Sao Bắc 072|ORGANIZATION; Trần Minh Lan|PERSON
-"Trong tình huống mô phỏng đào tạo 073, Lê Minh Lan gửi hồ sơ đến Công ty mô phỏng Sao Bắc 073 tại Phường Mẫu 073.",Lê Minh Lan|PERSON; Công ty mô phỏng Sao Bắc 073|ORGANIZATION; Phường Mẫu 073|LOCATION
-Biên bản giả lập đào tạo 074 ghi nhận Công ty mô phỏng Sao Bắc 074 tiếp nhận tài liệu của Phạm Minh Lan ở Phường Mẫu 074.,Công ty mô phỏng Sao Bắc 074|ORGANIZATION; Phạm Minh Lan|PERSON; Phường Mẫu 074|LOCATION
-"Tại Phường Mẫu 075, Hoàng Minh Lan trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 075 trong buổi diễn tập đào tạo 075.",Phường Mẫu 075|LOCATION; Hoàng Minh Lan|PERSON; Công ty mô phỏng Sao Bắc 075|ORGANIZATION
-Hồ sơ minh họa đào tạo 076 cho biết Phan Minh Lan làm việc với Công ty mô phỏng Sao Bắc 076 tại Phường Mẫu 076.,Phan Minh Lan|PERSON; Công ty mô phỏng Sao Bắc 076|ORGANIZATION; Phường Mẫu 076|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 077, Công ty mô phỏng Sao Bắc 077 phối hợp với Vũ Minh Lan ở Phường Mẫu 077.",Công ty mô phỏng Sao Bắc 077|ORGANIZATION; Vũ Minh Lan|PERSON; Phường Mẫu 077|LOCATION
-"Tại Phường Mẫu 078, Công ty mô phỏng Sao Bắc 078 nhận phiếu do Đặng Minh Lan chuyển đến theo mẫu đào tạo 078.",Phường Mẫu 078|LOCATION; Công ty mô phỏng Sao Bắc 078|ORGANIZATION; Đặng Minh Lan|PERSON
-"Trong tình huống mô phỏng đào tạo 079, Bùi Minh Lan gửi hồ sơ đến Công ty mô phỏng Sao Bắc 079 tại Phường Mẫu 079.",Bùi Minh Lan|PERSON; Công ty mô phỏng Sao Bắc 079|ORGANIZATION; Phường Mẫu 079|LOCATION
-Biên bản giả lập đào tạo 080 ghi nhận Công ty mô phỏng Sao Bắc 080 tiếp nhận tài liệu của Đỗ Minh Lan ở Phường Mẫu 080.,Công ty mô phỏng Sao Bắc 080|ORGANIZATION; Đỗ Minh Lan|PERSON; Phường Mẫu 080|LOCATION
-"Tại Phường Mẫu 081, Nguyễn Minh Minh trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 081 trong buổi diễn tập đào tạo 081.",Phường Mẫu 081|LOCATION; Nguyễn Minh Minh|PERSON; Công ty mô phỏng Sao Bắc 081|ORGANIZATION
-Hồ sơ minh họa đào tạo 082 cho biết Trần Minh Minh làm việc với Công ty mô phỏng Sao Bắc 082 tại Phường Mẫu 082.,Trần Minh Minh|PERSON; Công ty mô phỏng Sao Bắc 082|ORGANIZATION; Phường Mẫu 082|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 083, Công ty mô phỏng Sao Bắc 083 phối hợp với Lê Minh Minh ở Phường Mẫu 083.",Công ty mô phỏng Sao Bắc 083|ORGANIZATION; Lê Minh Minh|PERSON; Phường Mẫu 083|LOCATION
-"Tại Phường Mẫu 084, Công ty mô phỏng Sao Bắc 084 nhận phiếu do Phạm Minh Minh chuyển đến theo mẫu đào tạo 084.",Phường Mẫu 084|LOCATION; Công ty mô phỏng Sao Bắc 084|ORGANIZATION; Phạm Minh Minh|PERSON
-"Trong tình huống mô phỏng đào tạo 085, Hoàng Minh Minh gửi hồ sơ đến Công ty mô phỏng Sao Bắc 085 tại Phường Mẫu 085.",Hoàng Minh Minh|PERSON; Công ty mô phỏng Sao Bắc 085|ORGANIZATION; Phường Mẫu 085|LOCATION
-Biên bản giả lập đào tạo 086 ghi nhận Công ty mô phỏng Sao Bắc 086 tiếp nhận tài liệu của Phan Minh Minh ở Phường Mẫu 086.,Công ty mô phỏng Sao Bắc 086|ORGANIZATION; Phan Minh Minh|PERSON; Phường Mẫu 086|LOCATION
-"Tại Phường Mẫu 087, Vũ Minh Minh trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 087 trong buổi diễn tập đào tạo 087.",Phường Mẫu 087|LOCATION; Vũ Minh Minh|PERSON; Công ty mô phỏng Sao Bắc 087|ORGANIZATION
-Hồ sơ minh họa đào tạo 088 cho biết Đặng Minh Minh làm việc với Công ty mô phỏng Sao Bắc 088 tại Phường Mẫu 088.,Đặng Minh Minh|PERSON; Công ty mô phỏng Sao Bắc 088|ORGANIZATION; Phường Mẫu 088|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 089, Công ty mô phỏng Sao Bắc 089 phối hợp với Bùi Minh Minh ở Phường Mẫu 089.",Công ty mô phỏng Sao Bắc 089|ORGANIZATION; Bùi Minh Minh|PERSON; Phường Mẫu 089|LOCATION
-"Tại Phường Mẫu 090, Công ty mô phỏng Sao Bắc 090 nhận phiếu do Đỗ Minh Minh chuyển đến theo mẫu đào tạo 090.",Phường Mẫu 090|LOCATION; Công ty mô phỏng Sao Bắc 090|ORGANIZATION; Đỗ Minh Minh|PERSON
-"Trong tình huống mô phỏng đào tạo 091, Nguyễn Minh Ngọc gửi hồ sơ đến Công ty mô phỏng Sao Bắc 091 tại Phường Mẫu 091.",Nguyễn Minh Ngọc|PERSON; Công ty mô phỏng Sao Bắc 091|ORGANIZATION; Phường Mẫu 091|LOCATION
-Biên bản giả lập đào tạo 092 ghi nhận Công ty mô phỏng Sao Bắc 092 tiếp nhận tài liệu của Trần Minh Ngọc ở Phường Mẫu 092.,Công ty mô phỏng Sao Bắc 092|ORGANIZATION; Trần Minh Ngọc|PERSON; Phường Mẫu 092|LOCATION
-"Tại Phường Mẫu 093, Lê Minh Ngọc trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 093 trong buổi diễn tập đào tạo 093.",Phường Mẫu 093|LOCATION; Lê Minh Ngọc|PERSON; Công ty mô phỏng Sao Bắc 093|ORGANIZATION
-Hồ sơ minh họa đào tạo 094 cho biết Phạm Minh Ngọc làm việc với Công ty mô phỏng Sao Bắc 094 tại Phường Mẫu 094.,Phạm Minh Ngọc|PERSON; Công ty mô phỏng Sao Bắc 094|ORGANIZATION; Phường Mẫu 094|LOCATION
-"Trong kịch bản thử nghiệm đào tạo 095, Công ty mô phỏng Sao Bắc 095 phối hợp với Hoàng Minh Ngọc ở Phường Mẫu 095.",Công ty mô phỏng Sao Bắc 095|ORGANIZATION; Hoàng Minh Ngọc|PERSON; Phường Mẫu 095|LOCATION
-"Tại Phường Mẫu 096, Công ty mô phỏng Sao Bắc 096 nhận phiếu do Phan Minh Ngọc chuyển đến theo mẫu đào tạo 096.",Phường Mẫu 096|LOCATION; Công ty mô phỏng Sao Bắc 096|ORGANIZATION; Phan Minh Ngọc|PERSON
-"Trong tình huống mô phỏng đào tạo 097, Vũ Minh Ngọc gửi hồ sơ đến Công ty mô phỏng Sao Bắc 097 tại Phường Mẫu 097.",Vũ Minh Ngọc|PERSON; Công ty mô phỏng Sao Bắc 097|ORGANIZATION; Phường Mẫu 097|LOCATION
-Biên bản giả lập đào tạo 098 ghi nhận Công ty mô phỏng Sao Bắc 098 tiếp nhận tài liệu của Đặng Minh Ngọc ở Phường Mẫu 098.,Công ty mô phỏng Sao Bắc 098|ORGANIZATION; Đặng Minh Ngọc|PERSON; Phường Mẫu 098|LOCATION
-"Tại Phường Mẫu 099, Bùi Minh Ngọc trao đổi biểu mẫu với Công ty mô phỏng Sao Bắc 099 trong buổi diễn tập đào tạo 099.",Phường Mẫu 099|LOCATION; Bùi Minh Ngọc|PERSON; Công ty mô phỏng Sao Bắc 099|ORGANIZATION
-Hồ sơ minh họa đào tạo 100 cho biết Đỗ Minh Ngọc làm việc với Công ty mô phỏng Sao Bắc 100 tại Phường Mẫu 100.,Đỗ Minh Ngọc|PERSON; Công ty mô phỏng Sao Bắc 100|ORGANIZATION; Phường Mẫu 100|LOCATION
+"""Nhưng hiện cháu đã bị trả về vì lý do điểm không đạt"", lời bà Trường.",NONE
+"Bà hẹn với khán_giả , sẽ có một đêm nhạc thật tuyệt_vời vào ngày 11/3/2017 tại Trung_tâm hội_nghị Quốc_gia Mỹ_Đình .",Quốc_gia Mỹ_Đình|LOCATION
+"Thông_tin trên báo Người Lao_Động , khi bị bắt , ban_đầu , Prokoffva_Elena không hợp_tác với công_an , không chịu cung_cấp mật_mã mở khoá điện_thoại .",NONE
+"Tân Uyên) cùng con trai 1 tuổi là cháu Hoàng Tuấn Phát trông coi ki-ốt bán tạp hóa tại xã Tân Vĩnh Hiệp, TX.",Tân Uyên|LOCATION; Hoàng Tuấn Phát|PERSON; xã Tân Vĩnh Hiệp|LOCATION; TX|LOCATION
+"Mặc “ cơn bão ” chỉ_trích đang bủa_vây , song Đàm_Vĩnh_Hưng lại dành chữ “ thương ” cho hai người “ đàn_em ” mà anh yêu_quý trong nghề .",NONE
+"Thủ_tướng đã phê_duyệt đề_án thị_trường điện cạnh_tranh với 3 cấp_độ , bao_gồm : thị_trường phát_điện cạnh_tranh , thị_trường bán_buôn điện cạnh_tranh và thị_trường bán_lẻ điện cạnh_tranh .",NONE
+Bị cáo buộc phải phòng vệ chứ không cố ý gây thương tích.,NONE
+Bảo vệ đã cố can ngăn nhưng bị người này xô ngã.,NONE
+Cháu C. vùng bỏ chạy suýt té thể hiện sự hoảng sợ và về kể ngay cho cha mẹ biết.,NONE
+"Ngoài 6 xuồng tuần_tra , Mỹ còn chuyển_giao các trang_thiết_bị và cơ_sở_vật_chất , bao_gồm một trung_tâm huấn_luyện , một xưởng bảo dưỡng , một thang nâng xuồng , các phương tiện , và máy mô phỏng hàng hải , với tổng trị_giá 20 triệu USD .",NONE
+"Thông tin chính thức từ Văn phòng công an TP.HCM xác nhận, công an Q.Tân Bình đã ra quyết định khởi tố vụ án “chống người thi hành công vụ” xảy ra tại trường đại học Hùng Vương TP.HCM, có trụ sở đóng tại đường Nguyễn Trọng Tuyển, P.2, Q.Tân Bình.",công an TP.HCM|ORGANIZATION; công an Q.Tân Bình|ORGANIZATION; đại học Hùng Vương TP.HCM|ORGANIZATION; Nguyễn Trọng Tuyển|LOCATION; P.2|LOCATION
+"Ngoài_ra , nhiều người đã quen làm thủ_tục trực_tuyến chuyến bay , check - in tại các kiôt ở sân_bay nên tình_trạng xếp_hàng dài đợi hoàn_tất giấy_tờ lên máy_bay được cải_thiện đáng_kể .",NONE
+May_mắn là không có người bị_thương .,NONE
+"Gia đình cho biết, Lương có dấu hiệu mệt mỏi, căng thẳng từ khi bị thu hồi chứng chỉ hành nghề vào tháng 8/2018.",NONE
+"Ông Võ Văn Minh có khả năng đối diện với án tù 12 – 20 năm Ông Minh nhận 500 triệu đồng từ nhóm nhân viên, có làm biên nhận về việc nhận tiền, rồi đem tiền bỏ vào cốp xe AirBlade.",Võ Văn Minh|PERSON
+"Công an, truy đuổi theo Nhu qua nhiều tuyến đường trên địa bàn quận Ninh Kiều.",quận Ninh Kiều|LOCATION
+"Tại đây, cảnh sát đã bắt quả tang 21 đối tượng liên quan đến tổ chức cá cược lô đề và thu giữ tang vật gồm 19 điện thoại di động, cùng nhiều tài liệu.",NONE
+"Người bị hại Vũ Anh Tuấn trả lời trước tòa rằng mình tham gia trong tổ công tác số 3, được phân công nhiệm vụ đảm bảo giữ gìn ANTT.",NONE
+"Trước đó, vào khoảng tháng 2/2019, Sinh làm thuê bốc dỡ tấm tôn lợp cho nhà bà Dung.",NONE
+"Theo kết quả điều tra ban đầu, tổng số tiền thiệt hại tính đến thời điểm tháng 1/2023 là 774 tỷ đồng.",NONE
+"Hôm nay (18/1), Công an tỉnh Lạng Sơn cho biết vừa ra quyết định khởi tố vụ án, khởi tố các bị can về tội mua bán tài liệu bí mật nhà nước xảy ra tại kỳ thi chuyên viên chính năm 2021 ở Lạng Sơn.",Công an tỉnh Lạng Sơn|ORGANIZATION
+"Đối_tượng Vi_Văn_Mùi được triệu_tập lên trụ_sở để xác_minh , làm rõ và sau đó bị tạm giữ để điều_tra .",Vi_Văn_Mùi|PERSON
+"Sau khi cửa thang máy đóng lại, ông Linh đã giở trò đồi bại, dâm ô bé gái.",NONE
+"Hiện công an huyện Hương Khê đang tiến hành điều tra, hoàn tất hồ sơ vụ án",huyện|ORGANIZATION; Hương Khê|LOCATION
+'Anh em sẵn sàng không có Tết' – Đại tá Châu khẳng định.,NONE
+"Theo bản án sơ thẩm, Võ Ngọc Thúy sống bằng nghề mua bán bông ở thành phố Sa Đéc, tỉnh Đồng Tháp.",Võ Ngọc Thúy|PERSON; thành phố Sa Đéc|LOCATION; tỉnh Đồng Tháp|LOCATION
+"Thông_tin diễn_viên Mai_Phương đang phải chống_chọi với căn_bệnh ung_thư phổi giai_đoạn cuối khiến mọi người không khỏi lo_lắng , xót_xa .",NONE
+"Hà_Thu bộc_bạch : “ Suy cho cùng , đây vẫn là một sân_chơi cho chính các nghệ_sĩ tự khám_phá chính mình và mang đến những màn trình_diễn hấp_dẫn cho khán_giả .",NONE
+"Ngày 25-8 , Công_an TP Hà_Nội cho_biết thời_gian gần đây đơn_vị này liên_tục nhận thông_tin người_dân tố_cáo bị đối_tượng lừa_đảo dưới hình_thức rao_bán tiền giả trên mạng xã_hội gây mất an_ninh trật_tự .",Công_an TP Hà_Nội|ORGANIZATION
+"Cáo trạng xác định hành vi nhận tiền, thoả thuận sẽ nhận tiền để sửa nâng điểm cho thí sinh của các bị can có dấu hiệu của tội Nhận hối lộ, Đưa hối lộ và Môi giới hối lộ.",NONE
+"Ngoài_ra , phía tập_đoàn cũng đã thoả_thuận với chủ trọ để thuê nguyên dãy trọ trong vòng 6 tháng .",NONE
+"Anh Tiến bị một nhát trúng vùng lưng, bị đứt hẳn cung sau xương sườn đốt sống thứ 4.",NONE
+"Thiếu tá Nguyễn Thị Lan Hương (Công an huyện Lạc Thủy, Hòa Bình) và đồng đội đã lập nhiều chiến công trong các vụ án buôn bán, tàng trữ trái phép chất ma túy.",Nguyễn Thị Lan Hương|PERSON; huyện Lạc Thủy|LOCATION; Hòa Bình|LOCATION
+"Một cây_gỗ trên diện_tích rừng_sản_xuất của gia_đình ông Mai_Văn_Thuấn , ở xã Thiết_Ống vừa bị lâm_tặc cưa hạ , đã được Hạt kiểm_lâm huyện Bá_Thước đánh_dấu ngày 22-5 - Ảnh : Hạt kiểm_lâm huyện Bá_Thước cung_cấp .",Mai_Văn_Thuấn|PERSON; xã Thiết_Ống|LOCATION; kiểm_lâm|ORGANIZATION; huyện Bá_Thước đánh_dấu|LOCATION; kiểm_lâm|ORGANIZATION; huyện Bá_Thước cung_cấp|LOCATION
+"không đội mũ bảo hiểm, bị CSGT phát hiện, kiểm tra.",NONE
+"Trong thời_gian lưu lại Đà_Nẵng , nhóm chỉ_huy tàu sẽ đến chào xã giao lãnh_đạo thành_phố Đà_Nẵng , Bộ_Tư_lệnh Vùng 3 Hải_quân và tham_quan một_số danh_thắng tại Đà_Nẵng và Hội_An .",Đà_Nẵng|LOCATION; Đà_Nẵng|LOCATION; Vùng 3 Hải_quân|ORGANIZATION; Đà_Nẵng|LOCATION; Hội_An|LOCATION
+"Hiện, cơ quan chức năng đang tiến hành điều tra tiếp.",NONE
+Nếu chủ đầu tư đưa vào sử dụng mà chưa đủ điều kiện thì đương nhiên đầu tư phải chịu trách nhiệm.,NONE
+"Ông Trần Xuân Hải , phó chủ tịch UBND tỉnh Đắk Nông , phát biểu tại hội nghị - Ảnh : TRUNG_TÂN .",Trần Xuân Hải|PERSON; tỉnh Đắk Nông|ORGANIZATION
+"Biết được gia_cảnh của chị T. , ông V. hàng_xóm thường_xuyên sang nhà để “ hỏi_han ” .",NONE
+"Chiều 5/11/2023, Hơn gọi điện thoại lại thì Chung nói Hơn đến cầu Trần Hưng Đạo (TP Phan Thiết, Bình Thuận) nhận 1 bì ma túy đá mang về tỉnh Phú Yên giao.",Trần Hưng Đạo|LOCATION; TP Phan Thiết|LOCATION; Bình Thuận|LOCATION; Phú Yên|LOCATION
+"VFC đã giải ngân cho công ty VTC hơn 199 tỷ đồng và hơn 3,2 triệu USD.",NONE
+"Tại cơ_quan công , đối_tượng Phước khai nhận , ngày 12/4 , Phước rủ nhóm bạn đến phòng trọ ở phường Tân_Quy_Đông , TP. Sa_Đéc để nhậu .",phường Tân_Quy_Đông|LOCATION; TP. Sa_Đéc|LOCATION
+"Giờ nhà sập hoàn_toàn , không biết hai mẹ_con lấy đâu ra kinh_phí để mà làm lại "" , anh Lịch nói .",NONE
+Các dự_án xây bệnh_viện sẽ đúng tiến_độ khi vướng_mắc về thẩm_định được giải_quyết và các ban quản_lý dự_án hoạt_động chuyên_nghiệp hơn - Ảnh : QUANG_ĐỊNH .,NONE
+"Ai cũng thầm hiểu sự hụt hẫng, lo lắng mà anh Thiên đang trải qua.",NONE
+"Phần_lớn số rác_thải này đang trôi_nổi trên các sông suối , đại_dương , trong lòng đất ... và đang tồn_tại trên Trái_đất như một món nợ của con_người .",NONE
+Trong lúc xô xát bà Thủy đã cầm dao Thái Lan tấn công và đâm 1 nhát vào bụng của ông Long làm ông này gục tại chỗ.,NONE
+Đơn_vị đồng_thời yêu_cầu công_ty này phải có trách_nhiệm hoàn_thành các nghĩa_vụ đối_với người tham_gia bán hàng đa_cấp theo quy_định của pháp_luật .,NONE
+"Ngày 15/5/2019, ông Nguyễn Minh Vương đến dọn nhà theo thỏa thuận với khách thuê mới phát hiện 2 thùng nhựa bê tông chứa thi thể bên trong nên báo công an.",Nguyễn Minh Vương|PERSON
+"Phượng dùng xăng chứa trong chai 1,5 lít tưới vào người chị D. rồi bật lửa đốt.",NONE
+"Khi đến bệnh viên, T. và L. thực hiện theo hướng dẫn của Hải.",NONE
+"Thông_tin trên được bà Ngô_Thị_Thanh_Hằng - phó Bí_thư thường_trực Thành_uỷ Hà_Nội , cho_biết tại hội_nghị Ban_chấp_hành Đảng_bộ thành_phố Hà_Nội lần thứ 11 , diễn ra ngày 19-11 .",Đảng_bộ thành_phố Hà_Nội|ORGANIZATION
+"Chưa dừng lại ở đó, Hoàng chạy bộ đến trước một quán cơm, dùng hung khí đâm liên tiếp anh Đ.",NONE
+"Qua truy xét vụ cướp tại phòng giao dịch Lũy Bán Bích của ngân hàng TMCP An Bình (tức ABBank), Công an Q.Tân Phú đã bắt giữ 3 đối tượng.",ABBank|ORGANIZATION; Công an Q.|ORGANIZATION; Tân Phú|LOCATION
+"Tuy_nhiên , do nắng_nóng kéo_dài , thời_tiết hanh khô nên việc dập lửa gặp rất nhiều khó_khăn .",NONE
+"Qua trích xuất hình ảnh camera an ninh dọc các tuyến đường, công an đã xác định được nhóm đối tượng gây án.",NONE
+"Khi đến khúc cua trên đường dân sinh, cách chốt kiểm soát khoảng 2km, Trung úy Đức tiếp cận, ép xe 2 hai thanh niên dừng phương tiện.",NONE
+"Dấu_hiệu vi_phạm không được xử_lý ngay từ đầu làm cho hoạt_động đánh_bạc qua game Rikvip tràn_lan , gây ra hậu_quả như ngày hôm_nay .",NONE
+"Lúc này, 1 thanh niên chạy xe tới có “nhã ý” chở về giúp vì trời sắp tối.",NONE
+Thầy giáo ở Bình Dương nhắn tin qua mạng xã hội rồi gạ gẫm đưa nữ sinh 12 tuổi đến khách sạn ở quận 9 vui vẻ và thậm chí dùng điện thoại quay lại cảnh nóng.,quận 9|LOCATION
+"Ngay khi tôi chia_sẻ thông_tin này trên trang cá_nhân , một nữ khán_giả đã đặt mua 50 vé để mời người_thân , bạn_bè ” .",NONE
+"Trước đó vào tối 5-6 , vợ_chồng hai nạn_nhân đi câu mực và bị mất_tích tại khu_vực đảo Vĩnh_Thực , TP Móng_Cái .",đảo Vĩnh_Thực|LOCATION; TP Móng_Cái|LOCATION
+"Nghi phạm Hải khai, bản thân mình và chị Nguyễn Thị L. (40 tuổi, trú tại xã Phúc Hòa, Tân Yên) đều đã có gia đình riêng.",Nguyễn Thị L|PERSON; xã Phúc Hòa|LOCATION; Tân Yên|LOCATION
+"Theo Bộ Công an, ngay sau khi Giang Kim Đạt bị bắt, Bộ trưởng Trần Đại Quang đã trực tiếp làm việc với Ban Chuyên án, biểu dương chiến công đặc biệt xuất sắc của các lực lượng tham gia chuyên án; yêu cầu Cơ quan An ninh điều tra khẩn trương điều tra, mở rộng vụ án, sớm đưa đối tượng ra xử lý nghiêm minh trước pháp luật.",Công an|ORGANIZATION
+Người_dân đang đòi_hỏi một biện_pháp thật_sự hợp_lý ?,NONE
+"Theo nội dung truy tố, năm 2013, Phao quen và nảy sinh tình cảm với N. (SN 2001).",NONE
+"Ngày 5/9 , tin nhanh từ Công_an tỉnh Quảng_Ngãi , đơn_vị này vừa tạm giữ hình_sự đối_với 9 đối_tượng về hành_vi gây_rối trật_tự công_cộng .",Công_an tỉnh Quảng_Ngãi|ORGANIZATION
+"Sáng ngày 10/10, TAND TP.HCM mở phiên xét xử sơ thẩm đối với ông Tất Thành Cang (nguyên Phó Bí thư thường trực Thành uỷ TP.HCM), Trần Công Thiện (cựu Tổng giám đốc Công ty TNHH MTV đầu tư và xây dựng Tân Thuận) cùng 8 đồng phạm nguyên là thuộc cấp của ông Cang tại Văn phòng Thành ủy và Công ty TNHH MTV Đầu tư và Xây dựng Tân Thuận (Công ty Tân Thuận) về tội “Vi phạm quy định về quản lý, sử dụng tài sản nhà nước gây thất thoát lãng phí”.",TAND TP.HCM|ORGANIZATION; Tất Thành Cang|PERSON; Thành uỷ TP.HCM|ORGANIZATION; Trần Công Thiện|PERSON; Công ty TNHH MTV đầu tư và xây dựng Tân Thuận|ORGANIZATION; Văn phòng Thành ủy|ORGANIZATION; Công ty TNHH MTV Đầu tư và Xây dựng Tân Thuận|ORGANIZATION; Công ty Tân Thuận|ORGANIZATION
+"Lửa được dập tắt, Sơn đưa nạn nhân đi cấp cứu.",NONE
+"Nhận tin báo, Công an huyện Nhơn Trạch nhanh chóng có mặt khám nghiệm hiện trường, trích xuất camera truy tìm đối tượng liên quan.",Công an huyện|ORGANIZATION; Nhơn Trạch|LOCATION
+"Theo kết quả điều tra ban đầu, Bùi Văn Quỳnh và Đặng Bá Hiệp đã có các hành vi lợi dụng chức vụ, quyền hạn để can thiệp bất hợp pháp vào hoạt động đấu thầu.",Bùi Văn Quỳnh|PERSON; Đặng Bá Hiệp|PERSON
+"Dù đã thông tuyến nhưng quốc_lộ 1A vẫn còn một_số điểm ngập , xe_cộ qua_lại cần phải hết_sức cẩn_trọng - Ảnh : B.D .",NONE
+Bọn chúng thường đi theo nhóm từ 3-4 tên bằng taxi tới địa điểm gây án.,NONE
+4 nạn_nhân gồm : Kiên_Ngọc Đ.,Kiên_Ngọc Đ|PERSON
+"Trước đó không lâu , nàng hậu 2012 từng khiến người hâm_mộ trầm_trồ , xuýt_xoa khi tái_xuất sau sinh với vóc_dáng thon gọn như thời son_rỗi cùng nhan_sắc ngày_càng xinh_đẹp , ngọt_ngào .",NONE
+"Hiện_tại , facebook của Phùng_Ngọc_Huy đã khoá .",NONE
+"Được biết, giữa Hưng và chị Nương đã sống với nhau hơn 10 năm qua.",NONE
+"Quá trình điều tra, Thanh bị Công an khởi tố.",NONE
+"“Trên cơ sở phân tích nêu trên, VKSND tỉnh Nghệ An đề nghị HĐXX căn cứ điểm C, khoản 1, điều 355 và điểm D, khoản 1, điều 358 của Bộ luật Hình sự, hủy bản án sơ thẩm của TAND huyện Hưng Nguyên để điều tra, xét xử lại vụ án”, đại diện VKSND tỉnh Nghệ An nói",VKSND tỉnh Nghệ An|ORGANIZATION; huyện Hưng Nguyên|LOCATION; VKSND tỉnh Nghệ An|ORGANIZATION
+"Sau đó, Công ty Quản lý Nhà có đề xuất cho Công ty Hoa Tháng Năm của bà Thúy tham gia 30% dự án.",Quản lý|ORGANIZATION
+"Chiến_sỹ Nguyễn_Thế_Minh đã dũng_cảm xông vào khống_chế , tước vũ_khí của đối_tượng Đức .",NONE
+"Bình chỉ đạo nhân viên công ty đóng gói thành bộ, dán nhãn mác giả của công ty Phúc Hà.",NONE
+"Chia_sẻ với PV , nghệ_sĩ Quốc_Khánh cho_hay : "" Tôi làm cái gì cũng cần sự tự_tin , với lần xét_duyệt lần này , tôi cảm_thấy mình chưa tự_tin lắm nên không làm , chứ không có lý_do nào cả "" .",NONE
+Trong cao_điểm tết có giải_pháp để hạn_chế phương_tiện qua đường Trường_Sơn ( Q. Tân_Bình ) .,Trường_Sơn|LOCATION; Tân_Bình|LOCATION
+"Ngày tôi lập_nghiệp , thị_trường chiếm_lĩnh bởi dòng nhạc pop , ballad nên nhiều ca_sĩ có chất giọng từ đó nổi_tiếng .",NONE
+"Công an xác định, Nam là hung thủ giết 3 người nhà và tình nghi giết hại 1 người khác trong diễn biến chiều 11/3.",NONE
+"“Khi đó tôi có hỏi về nhân thân của nạn nhân thì một số người cho biết, nạn nhân là người ở huyện Đông Hưng và lấy chồng ở huyện Tiền Hải.",huyện Đông Hưng|LOCATION; huyện Tiền Hải|LOCATION
+"Đến sáng 17/3, thấy đã muộn nhưng ông Nhựt vẫn chưa dậy nên người thân vào gọi thì phát hiện ông Nhựt đã chết trên giường và trên người có phủ mền.",NONE
+Lưu_lượng nước về hồ trung_bình khoảng 1.000 m3 / s .,NONE
+"Xét thấy hành vi của Phúc dùng dao đánh chém vào đầu nạn_nhân , đe dọa đến tính mạng người khác nên Công_an TP. Buôn_Ma Thuột đã khởi tố Phúc về tội Giết người , được quy định tại Điều 123 Bộ luật Hình sự .",Công_an TP.|ORGANIZATION; Buôn_Ma Thuột|LOCATION
+""" , đài Phượng_Hoàng đặt câu_hỏi .",NONE
+"Theo nguồn_tin riêng của Tuổi_Trẻ Online , hiện tài_xế Hiếu đang bị Cơ_quan cảnh_sát điều_tra Công_an quận Hai_Bà_Trưng tạm giữ hình_sự để điều_tra làm rõ vụ tai_nạn .",Công_an quận|ORGANIZATION; Hai_Bà_Trưng|LOCATION
+Đại diện VKS giữ quyền công tố tại toà tiếp tục xét hỏi bị cáo Lý Nguyễn Chung: - Có ai xúi giục và tham gia cùng bị cáo không?,NONE
+Trương Minh Hiếu đang chạy xe ôm gần đó nảy sinh ý định hiếp dâm nên chạy lại mời D. đi xe.,NONE
+"Trước đó , chiều 2-9 , anh Đạo cùng vợ và hai con vào khu du_lịch Bò_Cạp_Vàng chơi .",NONE
+"Nhiều đường_dây rác dân_lập chưa quản_lý chặt dẫn đến việc họ muốn làm gì thì làm , tự đi thu tiền , tự đặt ra lịch thu_gom rác .",NONE
+"Mái nhà_xưởng bị cháy có nguy_cơ đổ sập , rất nguy_hiểm nên việc chữa_cháy gặp nhiều khó_khăn .",NONE
+"Cảnh sát nhanh chóng vào cuộc, truy xét.",NONE
+"Jiang Miao và Niu Li Li tạo ra các ứng dụng trên điện thoại di động (app) mang tên: “vaytocdo”, “Moreloan” và “VD online”.",NONE
+"Ngày 7/8 , đại_diện Công_an tỉnh Đồng_Nai cho biết , đã bắt đối_tượng Phạm_Hoài_Linh ( SN 1999 , quê phường Long_Hưng , quận Ô_Môn , TP. Cần_Thơ ; tạm_trú huyện Long_Thành ) để điều_tra về hành_vi giết người .",Công_an tỉnh Đồng_Nai|ORGANIZATION; phường Long_Hưng|LOCATION; quận Ô_Môn|LOCATION; TP. Cần_Thơ|LOCATION; huyện Long_Thành|LOCATION
+"Con gây trọng tội với hàng xóm, ông Nguyễn Văn Bảy vội gom góp hết tiền của, mang cả nhà đi cầm cố được gần 500 triệu đồng mang tới cho chị Xinh (vợ anh Phong) nhằm bù đắp lại một phần mất mát của chị.",NONE
+"Ông Nguyễn Xuân Hùng, Trưởng CA huyện Phú Bình xác nhận và cho biết, toàn bộ hồ sơ, đối tượng gây án - CA huyện Phú Bình đã bàn giao cho CA tỉnh Thái Nguyên để tiếp tục điều tra.",Nguyễn Xuân Hùng|PERSON; huyện Phú Bình|LOCATION; huyện Phú Bình|LOCATION; tỉnh|ORGANIZATION; Thái Nguyên|LOCATION
+"“ Ước cầm dao trên tay , chạy đến chỗ đổ xăng đòi đâm D ..",NONE
+"Đọc xong vừa thương vừa xúc_động "" , nghệ_sĩ Vân_Dung viết .",NONE
+"Đối chất tại tòa, bị cáo Hiệp cho biết, bản thân không nhớ có chuẩn bị 50.000 USD để đưa cho ông Tạc hay không.",NONE
+"Bên cạnh đó , để đảm_bảo bộ trang_phục được hoàn_hảo nhất tại đấu_trường Miss_Universe 2016 , thí_sinh Thái_Trung_Tín cùng đại_diện của công_ty Unicorp đã sang Philippines vào cuối tuần qua .",Thái_Trung_Tín|PERSON
+"Tại hiện_trường , các đơn_vị nghiệp_vụ tiến_hành đo_đạc diện_tích , lấy mẫu xét_nghiệm các vị_trí được san_lấp bằng xỉ than trong bãi tập_kết công_ty trên nhằm củng_cố hồ_sơ điều_tra .",NONE
+"Sau đó, người thân của Hoa phát hiện nên trình báo vụ việc với cơ quan Công an.",NONE
+"Ngày 6-11 , đội CSGT Công_an quận 2 , TP. HCM đã ra quyết_định xử_phạt vi_phạm hành_chính đối_với ông Đào_Minh_Thành ( 35 tuổi , ngụ quận 2 , đang công_tác tại một công_ty nhà_nước tại quận 2 ) về nhiều lỗi vi_phạm khi điều_khiển phương_tiện tham_gia giao_thông .",CSGT Công_an quận 2|ORGANIZATION; TP. HCM|LOCATION; Đào_Minh_Thành|PERSON
+Nội_tạng của cháu bé có nhiều vết bầm nhưng bên ngoài không có dấu_hiệu bị tổn_thương .,NONE
+"Theo các chuyên_gia có_mặt tại hội_thảo , việc tách thành 2 điều_luật theo hướng riêng_biệt giữa việc buôn_bán người và buôn_bán người dưới 16 tuổi để định_danh , định khung_hình_phạt sẽ nghiêm_khắc hơn , các điều_khoản cụ_thể hơn .",NONE
+XEM CLIP: (Nguồn clip: BVPL) Nghi phạm Cầm Văn Chương (SN 1974) là bạn nghiện ma túy cùng nhóm của Bùi Văn Công.,Cầm Văn Chương|PERSON; Bùi Văn Công|PERSON
+"Trước đó , ngày 29/5 , Nguyễn_Đình_Đệ ( SN 1993 ) và Nguyễn_Quang_Khánh ( SN 1988 ) , cùng trú tại huyện Đông_Hưng , tỉnh Thái_Bình , đi xe ô_tô nhãn_hiệu Toyota_Corola BKS : 14A -261.82 đến một cửa_hiệu cầm_đồ thuộc phường Bãi_Cháy , TP. Hạ_Long , tỉnh Quảng_Ninh để cầm_cố chiếc xe trên lấy 600 triệu đồng .",Nguyễn_Đình_Đệ|PERSON; Nguyễn_Quang_Khánh|PERSON; huyện Đông_Hưng|LOCATION; tỉnh Thái_Bình|LOCATION; phường Bãi_Cháy|LOCATION; TP. Hạ_Long|LOCATION; tỉnh Quảng_Ninh|LOCATION
+Bước đầu Công an xác định ông Phạm Hồng Cẩm cầm cố các ô tô với giá 100 triệu đồng/chiếc.,Phạm Hồng Cẩm|PERSON
+Xem thêm : > > > Nhà_văn Di_Li bất_ngờ ' hẹn_hò ' với nghệ_sĩ bút lửa Dzũ_Kha Lạc_Thành,NONE
+"Sau này mới biết cô ta hơn anh 6 tuổi, làm nghề gái gọi dịch vụ, được chồng Lan kiếm cho một công việc khác ổn định rồi thuê một căn nhà ở phố Hồ Đắc Di.",Hồ Đắc Di|LOCATION
+"Ông Trịnh Văn Quyết cho hay, đang tiếp tục nhờ gia đình tác động người thân, bạn bè để có tiền khắc phục hậu quả; đồng thời mong được tạo điều kiện để xử lý tài sản của mình (bất động sản, cổ phiếu…) nhằm khắc phục hậu quả vụ án.",NONE
+"Ba vị này bị kỷ_luật liên_quan đến vụ kiểm_tra , cung_cấp thông_tin , phát_ngôn về các hoạt_động kiểm_tra của cơ_quan quản_lý thị_trường với Công_ty_cổ_phần Con_Cưng .",NONE
+Hai người dự định tổ chức đám cưới vào tháng 9 tới.,NONE
+Chuyện bí_mật là chuyện của công_an .,NONE
+"Ngay sau đó, người dân đã nhanh chóng thông báo cho cơ quan công an địa phương.",NONE
+"Đỉnh điểm, Huân, Đức, Thắng dùng tay, cây ba trắc và bình nước siêu tốc đánh Dũng.",NONE
+"Trên cơ sở kết quả kiểm tra, tổ công tác đã tiến hành nhổ, niêm phong, thu giữ toàn bộ số cây nêu trên và tạm giữ một số đồ vật, tài liệu khác có liên quan.",NONE
+Các đại_biểu HĐND TP biểu_quyết tán_thành việc miễn_nhiệm với ông Lê_Văn_Khoa - Ảnh : TỰ_TRUNG .,TP|ORGANIZATION
+Công_ty này do ông Lê_Văn_Bé làm tổng_giám_đốc Dự_án có quy_mô xây_dựng 230 căn nhà với tổng diện_tích xây_dựng 22.754 m2 và 1 căn thương_mại - dịch_vụ có diện_tích 1.447 m2 .,Lê_Văn_Bé|PERSON
+Các quyết_định và lệnh này đã được Viện_kiểm_sát nhân_dân Tối_cao phê_chuẩn .,NONE
+"Trong lúc đang ăn, giữa hai bên xảy ra mâu thuẫn rồi dùng dao, gậy, bát đũa đánh nhau tới tấp.",NONE
+"Công an huyện Bình Chánh, TP.HCM ngày 30/11 vẫn đang điều tra, làm rõ vụ án vợ chồng cháy như đuốc trong phòng trọ, đều bị bỏng nặng",huyện|ORGANIZATION; Bình Chánh|LOCATION; TP.HCM|ORGANIZATION
+"Chúng_ta cũng đã có hai ĐH quốc_gia được xếp_hạng vào các trường chất_lượng trên thế_giới , vì_vậy không có_lý gì làm_luật mới mà gây xáo_trộn về tổ_chức , mô_hình "" .",NONE
+"D - là em vợ, vừa đi làm về cũng bị V gây hấn, xô ngã.",NONE
+"Do đó, hành vi của đối tượng này đủ yếu tố để cấu thành tội “gây rối trật tự công cộng”.",NONE
+Anh Nhẫn dọn đồ lên xe bỏ nhà đi.,NONE
+"Trên cơ sở đơn tố cáo, qua công tác thanh tra, UBND huyện Phú Lộc phát hiện, ông Phúc đã lợi dụng chức vụ, quyền hạn để tự ý kê khai 22 thửa đất ở thôn Tam Vị (xã Lộc Bổn).",huyện|ORGANIZATION; Phú Lộc|LOCATION; thôn Tam Vị|LOCATION; xã Lộc Bổn|LOCATION
+"Chiếc xe bị nạn do tránh xe đi ngược chiều nên mất lái và lật trong điều_kiện thời_tiết xấu , mưa lớn .",NONE
+"Đây là cá_thể rùa biển thuộc loài động_vật nguy_cấp , quý , hiếm được ưu_tiên bảo_vệ , nằm trong Sách_đỏ và đang có nguy_cơ tuyệt_chủng trên thế_giới .",NONE
+"Theo đúng kế hoạch, ngày 25/4, Amodia đã nhận valy 2 đáy từ một người đàn ông tại Bamaco - Mali.",Bamaco|LOCATION; Mali|LOCATION
+"Sau đó ngày 4-4-1999, Công an tỉnh Bình Thuận ban hành Thông báo truy tìm số 206 kèm ảnh đương sự Lê Minh Sơn.",Công an tỉnh Bình Thuận|ORGANIZATION
+"Khởi_tố vụ án nam thanh_niên đâm chết bạn gái ở Ninh_Bình Liên_quan đến vụ án_mạng xảy ra vào sáng ngày 1/4 , tại khu_vực đường Tôn_Đức_Thắng , phường Đông_Thành , TP. Ninh_Bình , sáng 4/4 , cơ_quan CSĐT Công_an tỉnh Ninh_Bình đã ra quyết khởi_tố vụ án , khởi_tố bị_can và ra_lệnh bắt tạm giam đối_với Phạm_Văn_Nghị ( SN 1988 , trú tại huyện Kim_Sơn , Ninh_Bình ) về tội Giết người .",Ninh_Bình Liên_quan|LOCATION; đường Tôn_Đức_Thắng|LOCATION; phường Đông_Thành|LOCATION; TP. Ninh_Bình|LOCATION; Công_an tỉnh|ORGANIZATION; Ninh_Bình|LOCATION; huyện Kim_Sơn|LOCATION; Ninh_Bình|LOCATION
+"Cơ quan CSĐT Công an tỉnh đã ra quyết định khởi tố vụ án mua bán, chứa chấp, tổ chức sử dụng trái phép chất ma túy để điều tra theo quy định của pháp luật",Công an tỉnh|ORGANIZATION
+"Người đàn ông sau đó khẳng định họ chỉ là anh em họ của nhau, còn nữ ca sĩ đã khóa fanpage.",NONE
+"Có thể vì lý do này, ông Điệt đã sát hại con rồi tự sát.",NONE
+"Thứ ba , đổi_mới toàn_diện các quy_định về xác_minh tài_sản , thu_nhập , đặc_biệt là về các trường_hợp xác_minh , căn_cứ xác_minh , nội_dung xác_minh và trình_tự , thủ_tục tiến_hành xác_minh nhằm chủ_động phòng_ngừa , phát_hiện và xử_lý vi_phạm , qua đó góp_phần nâng_cao hiệu_lực , hiệu_quả của công_tác PCTN .",NONE
+"Đến 20h30 phút cùng ngày, An ra khỏi nơi ẩn nấp và đi cầu thang xuống tầng trệt và đi vào đường hầm không rõ khu nào.",NONE
+"Câu trả_lời của Duy_Mạnh về “ Tiền nhiều để làm gì ” khiến cư_dân mạng vô_cùng thích_thú Trong thời_gian vừa_qua , câu_hỏi “ Tiền nhiều để làm gì ?",NONE
+)!,NONE
+"Vào lúc 1h sáng nay, kiểm tra hành chính tại cơ sở karaoke Hoàng Kim (khu phố 8, phường 1, TP. Đông Hà, Quảng Trị), Công an TP Đông Hà phát hiện tại 2 phòng hát của cơ sở này có 14 người đang tụ tập (gồm 9 khách và 5 nhân viên).",khu phố 8|LOCATION; phường 1|LOCATION; TP. Đông Hà|LOCATION; Quảng Trị|LOCATION; Công an TP|ORGANIZATION; Đông Hà|LOCATION
+"Theo điều tra ban đầu, chiều tối 3/5, Minh đến nhà rẫy của anh Trần Nho Vương (SN 1995, trú huyện Lâm Hà, tỉnh Lâm Đồng, là cháu bên vợ) tại thôn 5 (xã Đắk Ha, huyện Đắk Glong, tỉnh Đắk Nông) uống bia.",Trần Nho Vương|PERSON; huyện Lâm Hà|LOCATION; tỉnh Lâm Đồng|LOCATION; thôn 5|LOCATION; xã Đắk Ha|LOCATION; huyện Đắk Glong|LOCATION; tỉnh Đắk Nông|LOCATION
+"Vì trước_đây cũng đã có một ngôi trường tên là Anh_Dũng , nên tôi nghĩ đặt tên trường là Đàng_Hoàng cũng ổn "" .",Đàng_Hoàng|LOCATION
+Hình ảnh người phụ nữ băm thịt nhìn từ phòng xét xử.,NONE
+"Nhiều người hàng xóm khẳng định: bình thường Tiến hiền lành, ít nói nhưng mỗi khi “phê” thuốc vào là biến thành hung thần, ai cũng khiếp sợ.",NONE
+"Quá_trình điều_tra , ông Dục đã khai nhận hành_vi trên .",NONE
+Hiện_trường vụ hỗn_chiến .,NONE
+"Bị cáo Nguyễn Vũ Hải (cựu Phó cục trưởng Cục Đăng kiểm) 4-5 năm tù về tội “Lợi dụng chức vụ, quyền hạn trong khi thi hành công vụ”; bị cáo Trần Anh Quân (cựu quyền Trưởng phòng kiểm định xe cơ giới) từ 17-18 năm tù về tội “Nhận hối lộ”.",Nguyễn Vũ Hải|PERSON; Cục Đăng kiểm|ORGANIZATION; Trần Anh Quân|PERSON; xe cơ giới|ORGANIZATION
+"Về đến nhà, Hải đưa cho mẹ 500 ngàn đồng và nói đó là tiền bị cáo đi phụ xe có được.",NONE
+"Tại cơ quan điều tra, gã đàn ông bệnh hoạn này đã thừa nhận trước khi đến gặp bà H. ít giờ (cũng trong ngày 15/12/2011), hắn đã làm quen, dụ dỗ đưa chị T.T.",NONE
+"Khi đi đến khu 3A, phường Giếng Đáy, hai ông cháu phát hiện đối tượng ở gần đó, lập tức hô hoán nhờ người dân xung quanh bắt giữ và đưa về Công an TP. Tại cơ quan công an, Ngọc thừa nhận toàn bộ hành vi dâm ô đối với cháu L. Cơ quan Công an huyện Vũ Thư, Thái Bình đã tạm giữ đối tượng Phan Văn Lợi (SN 1981) về hành vi dâm ô bé gái 15 tuổi khi đi cùng người thân đến truyền nước",3A|LOCATION; phường Giếng Đáy|LOCATION; TP|ORGANIZATION; huyện Vũ Thư|LOCATION; Thái Bình|LOCATION; Phan Văn Lợi|PERSON
+"Vì_vậy , thông_tin nam ca_sĩ không có_mặt trong top 5 khiến nhiều người ngỡ_ngàng .",NONE
+"Lúc này, Quấn nghi ngờ, ghen tuông bà L. ngoại tình.",NONE
+"Hai trẻ này sống lang thang, cùng nghiện game và mới quen biết nhau được vài tháng.",NONE
+Cả 2 bên đứng dậy định xông vào đánh nhau thì được mọi người can ngăn.,NONE
+"Diện_tích mà ông Cầu cấp lớn hơn nhiều so với quy_định là không quá 4,5 m2 mỗi mộ .",NONE
+"- Trong buổi chiều 3/4, phiên tòa diễn ra với phần xét hỏi đối với các bị hại.",NONE
+"Cơ quan công an đã vào cuộc làm rõ, bắt Huy và Lương để phục vụ điều tra.",NONE
+"Trưởng và Phó công_an xã Minh_Đức ngay sau khi vụ án xảy ra đã được chính_quyền cùng gia_đình đưa đi cấp_cứu tại bệnh_viện Đa_khoa khu_vực Phố_Nối , sau đó tiếp_tục được chuyển lên bệnh_viện Việt_Đức Hà_Nội để điều_trị vì vết_thương nặng .",xã|ORGANIZATION; Minh_Đức|LOCATION; khu_vực Phố_Nối|ORGANIZATION; Việt_Đức Hà_Nội|LOCATION
+"Nguyễn Trung Kiên là đối tượng quản lý điều hành nhóm ""D… and Sexies"", liên lạc với khách mua dâm và gái bán dâm, còn Bùi Anh Quân, có vai trò cùng điều hành quán lý gái bán dâm ""Babby"" trên nhóm.",Bùi Anh Quân|PERSON
+"Theo báo Tây_Ninh , Dứt dùng xe_máy mang BKS 70 K 1-079.92 để vận_chuyển số ma_tuý trên qua biên_giới .",Tây_Ninh|ORGANIZATION
+"Thuận An, tỉnh Bình Dương.",Thuận An|LOCATION; tỉnh Bình Dương|LOCATION
+"Theo người dân, trước Tết Nguyên đán, giữa Vũ và Nam xảy mâu thuẫn từ việc nẹt pô xe; cả hai được người thân tổ chức hòa giải ổn thỏa, nhưng đến nay lại xảy ra án mạng.",NONE
+"Long rút dao bấm đâm nhiều nhát vào chị D. Anh Lăng Viết D., thấy vậy chạy vào can ngăn cũng bị Long đâm nhiều nhát, gục xuống, tử vong tại chỗ.",Lăng Viết D|PERSON
+"Theo đó, các tang vật và tiền do Cơ quan Cảnh sát điều tra (Bộ Công an) chuyển sang Cục THADS gồm 2 giai đoạn.",Cảnh sát điều tra|ORGANIZATION; Công an|ORGANIZATION; THADS|ORGANIZATION
+"Hiện_giờ chưa_thể nói cụ_thể từng thủ_tục giảm được bao_nhiêu ngày , nhưng tinh_thần chắc_chắn là phải chủ_động , hiệu_quả hơn trước vì được thực_hiện ở gần cơ_sở hơn "" - ông Điền nói .",NONE
+"Sau khi cấy phôi thai, nạn nhân được đưa về Việt Nam dưỡng thai.",NONE
+"Như_vậy , bên cạnh cách làm thủ_tục trực_tiếp tại quầy ở sân_bay , hành_khách của Vietnam_Airlines có thêm nhiều lựa_chọn tiện_lợi khác như tự làm thủ_tục trực_tuyến ( qua website , ứng_dụng di_động , tại các kiosk ở sân_bay ) , làm thủ_tục qua điện_thoại ( telephone check - in ) và làm thủ_tục ngoài sân_bay ( in - town check - in ) ...",NONE
+"Sau khi bàn bạc, Lan và thuộc cấp thống nhất chọn 4 công ty gồm: An Đông, Quang Thuận, Sunny World và Setra để phát hành 25 mã trái phiếu khống, trị giá hơn 30.869 tỷ đồng.",Sunny World|PERSON
+"Được biết, trong quá trình làm ăn, ông Thử nợ số tiền lên tới hàng chục tỷ đồng.",NONE
+Liệu việc TAND quận 1 thụ lý giải quyết vụ án đã đúng thẩm quyền hay chưa?,TAND quận 1|ORGANIZATION
+"Nếu phạm lỗi nặng hơn thì trọng_tài "" cảnh_cáo "" bằng thẻ_vàng .",NONE
+"Gia_đình nạn_nhân gồm có vợ_chồng và 3 con , 2 trai 1 gái , cuộc_sống khá_giả .",NONE
+"Quay lại đường đua năm nào , Hoài_Lâm gần_như lột_xác , anh thay_đổi ngoại_hình , nhuộm tóc xăm hình và muốn thử sức với nhạc Hip - hop .",NONE
+Cư_dân mạng còn tinh_ý phát_hiện chiếc balo mà Phạm_Băng_Băng mang là hàng_hiệu LV có giá khoảng 54 triệu đồng .,NONE
+"Ảnh_hưởng mùi hôi từ các xe chở rác khiến các quán nước , quán ăn ven đường_quốc_lộ 50 ( Bình_Chánh , TP. HCM ) vắng khách - Ảnh : MAI_THƯƠNG .",50|LOCATION; Bình_Chánh|LOCATION; TP|LOCATION; . HCM|ORGANIZATION
+"Sáng cùng ngày , mưa_lũ cũng gây sạt_lở một điểm trên tuyến quốc_lộ 9 đi qua huyện Đắkrông .",9|LOCATION; huyện Đắkrông|LOCATION
+"Tại lễ ra_mắt , ông Phạm_Minh_Chính - uỷ_viên Bộ_Chính_trị , bí_thư Trung_ương Đảng , trưởng_Ban Tổ_chức trung_ương - đánh_giá đây là việc_làm có ý_nghĩa rất thiết_thực với công_tác xây_dựng chỉnh_đốn Đảng cũng như trong công_cuộc xây_dựng và bảo_vệ Tổ_quốc .",NONE
+Dự_kiến phiên_toà sẽ diễn ra trong 10 ngày .,NONE
+"Bằng các biện pháp nghiệp vụ, Phòng Cảnh sát hình sự Công an tỉnh Đồng Nai phối hợp Công an huyện Vĩnh Cửu và Công an TP Biên Hòa đã bắt giữ Tùng tại phường Bửu Long sau 4 giờ gây án.",Phòng Cảnh sát hình sự Công an tỉnh|ORGANIZATION; Đồng Nai|LOCATION; Công an|ORGANIZATION; huyện Vĩnh Cửu|LOCATION; Công an|ORGANIZATION; TP Biên Hòa|LOCATION; phường Bửu Long|LOCATION
+Nguyên nhân vụ việc đang được Công an huyện Phú Ninh điều tra làm rõ.,huyện|ORGANIZATION; Phú Ninh|LOCATION
+"Ông Võ_Thành_Ngoan - phó giám_đốc Sở NN & PTNN tỉnh Đồng_Tháp - cho_biết trên chiều_dài sông Tiền dòng chính chạy qua Đồng_Tháp 123km , có đến 101km bờ sông bị xói_lở .",Võ_Thành_Ngoan|PERSON; Sở NN|ORGANIZATION; PTNN tỉnh|ORGANIZATION; Đồng_Tháp|LOCATION; Tiền|LOCATION; Đồng_Tháp|LOCATION
+"Danh_tính đối_tượng bị bắt_giữ được xác_định là Huỳnh_Thanh_Duy ( 28 tuổi ) , trú số 22/99 đường Đặng_Huy_Trứ , phường Phước_Vĩnh , TP._Huế .",Huỳnh_Thanh_Duy|PERSON; đường Đặng_Huy_Trứ|LOCATION; phường Phước_Vĩnh|LOCATION; TP._Huế|LOCATION
+"Ngay sau khi video được phát_tán rộng trên mạng xã_hội , nhiều người cho_rằng Phi_Thanh_Vân “ chúc_mừng đểu ” Hương_Giang_Idol .",NONE
+"Cơ quan công an xác định, cho đến khi gia đình ông K. đến nhà Hằng ở Tây Hồ đánh ghen, lúc đó ông K. mới biết căn nhà mà người tình bán cho bạn mình là nhà cô ta đi thuê.",Tây Hồ|LOCATION
+Bị cáo Phạm Vũ Phong (giám đốc Công ty Nam Phong) 12 năm tù về tội “Vi phạm quy định về đấu thầu gây hậu quả nghiêm trọng” và 7 năm tù về tội “Đưa hối lộ”.,Phạm Vũ Phong|PERSON
+"Tại thảm_đỏ , dàn sao và khách mời tự_tin thể_hiện phong_cách thời_trang đầy cảm_hứng , tạo nên một sân_khấu thời_trang thảm_đỏ lộng_lẫy .",NONE
+"Nghi can là đối tượng bất hảo Theo một số người dân ở xã Mai Hoá, huyện Tuyên Hoá (Quảng Bình), đối tượng Nguyễn Mạnh Hùng (SN 1986), nghi can trong vụ án giết người giấu xác dưới nền nhà là thành phần bất hảo.",xã Mai Hoá|LOCATION; huyện Tuyên Hoá|LOCATION; Quảng Bình|LOCATION
+"Lúc này, Nguyễn Vũ Trí cầm đầu nhóm khoảng 40 người đến thửa đất nói trên và cầm theo nhiều hung khí như: dao tự chế, dao “phóng lợn”, tuýp sắt, gạch ống... la hét lớn tiếng.",Nguyễn Vũ Trí|PERSON
+Thế là con thứ 2 trong một gia đình có 3 anh chị em.,NONE
+"Sau khi xem_xét toàn_diện vụ án , HĐXX tuyên_phạt bị_cáo Nguyễn_Quốc_Toàn 17 năm tù_giam về tội Tàng_trữ trái_phép chất ma_tuý .",Nguyễn_Quốc_Toàn|PERSON
+Mặc dù Hiệp không có khả năng xin việc nhưng vì muốn có tiền trả nợ và ăn tiêu nên Hiệp đã lừa chị N. để chiếm đoạt số tiền trên.,NONE
+"(SN 1995, con dâu ông Hải) bị thương, đang được điều trị tại bệnh viện.",NONE
+Phiên tòa dự kiến kéo dài tới ngày 21/9.,NONE
+"Sau khi biết chuyện, bố mẹ cháu Trang đã ngăn cấm Hải, sau đó đuổi việc hắn.",NONE
+"Nhận thấy hành vi của các đối tượng thể hiện bản chất manh động, coi thường pháp luật và gây tâm lý lo lắng cho người dân, Công an huyện Duy Xuyên đã nhanh chóng vào cuộc xác minh, bắt giữ 2 nghi phạm trên",Công an huyện|ORGANIZATION; Duy Xuyên|LOCATION
+"Ngoài_ra , việc thu phí dịch_vụ trông giữ xe ở một_số nhà chung_cư chưa đúng quy_định của thành_phố , nhiều nhà chung_cư còn thiếu nơi sinh_hoạt cộng_đồng , công_tác phòng cháy , chữa_cháy còn có nguy_cơ tiềm_ẩn rủi_ro , nguy_hiểm cao ...",NONE
+"Sau khi VKS ra cáo trạng lần hai, ngày 4/7/2017, TAND quận Hoàn Kiếm mở phiên sơ thẩm lần hai.",TAND quận Hoàn Kiếm|ORGANIZATION
+"15 tổ công tác liên ngành 141 sẽ lùi thời gian cắm chốt từ 22h đêm cho đến sáng trực tại các nút giao thông trọng điểm"", Phó giám đốc công an thành phố chỉ đạo.",công an thành phố|ORGANIZATION
+"Theo cáo_trạng , từ năm 2011 đến 2014 , ông Huỳnh_Nam_Dũng và ông Nguyễn_Phước_Hoà đã thông_qua việc họp hội_đồng quản_lý tài_sản nợ - tài_sản , có thống_nhất chủ_trương để Sở_Giao_dịch MHB chuyển gần 5.000 tỉ đồng cho Công_ty CP Chứng_khoán MHB ( MHBS ) để hợp_tác đầu_tư trái_phiếu chính_phủ .",Huỳnh_Nam_Dũng|PERSON; Nguyễn_Phước_Hoà|PERSON; Chứng_khoán MHB|ORGANIZATION
+"Trao đổi với PV VietNamNet sáng nay (12/7), Trưởng Công an huyện Ninh Giang (Hải Dương) cho biết, đêm qua, Công an Ninh Giang phối hợp với Phòng Hình sự Công an tỉnh Hải Dương tổ chức truy bắt được nhóm đối tượng gây ra cái chết cho 1 nam sinh trên địa bàn.",Công an huyện|ORGANIZATION; Ninh Giang|LOCATION; Hải Dương|LOCATION; Công an|ORGANIZATION; Ninh Giang|LOCATION; Phòng Hình sự|ORGANIZATION; Công an|ORGANIZATION; tỉnh Hải Dương|LOCATION
+"Sau đó, Bảo nghe kể lại nên tức giận rủ một người bạn tên Nhí cầm hung khi đi tìm Vinh.",NONE
+"Cơ_quan điều_tra Viện KSND tối_cao đã có văn_bản kiến_nghị trại tạm giam T16 , Bộ Công_an xem_xét xử_lý kỷ luật_hành_chính và có biện_pháp phòng_ngừa vi_phạm , tội_phạm .",Viện KSND tối_cao|ORGANIZATION; giam T16|ORGANIZATION; Bộ Công_an xem_xét|ORGANIZATION
+"Đội CSGT Chợ Lớn thuộc phòng CSGT đường bộ - đường sắt (PC67) - Công an TP.HCM vừa bàn giao nghi can Huỳnh Văn Lợi (28 tuổi, ngụ quận 8 cho Công an quận 5 để xử lý về hành vi “cướp giật tài sản”.",Đội CSGT Chợ Lớn|ORGANIZATION; phòng CSGT đường bộ|ORGANIZATION; đường sắt|ORGANIZATION; PC67|ORGANIZATION; Công an TP.HCM|ORGANIZATION; Huỳnh Văn Lợi|PERSON; quận 8|LOCATION; quận 5|LOCATION
+"Tại hệ_thống bưu_điện : liên hệ bưu điện , bưu cục thành phố , quận , huyện tại các tỉnh và địa_phương .",NONE
+"Theo anh , Hà_My có khuyết_điểm là quá nhát và sợ_hãi không dám đương_đầu mọi chuyện , lại rất tự_ti nên không_bao_giờ mở lời nhờ anh giúp_đỡ .",NONE
+"Theo báo_cáo của Cục Đăng_kiểm Việt_Nam , xe_khách biển kiểm_soát 17 B -014.76 được sản_xuất năm 2009 tại Việt_Nam .",Cục Đăng_kiểm Việt_Nam|ORGANIZATION
+"- Bước đầu, các cơ quan chức năng nhận định, nguyên nhân voi chết là do tác động từ bên ngoài, không phải chết tự nhiên và không loại trừ khả năng 2 con voi bị săn bắn để lấy ngà, lông đuôi.",NONE
+"Tưởng thật, bà Mai đã vui vẻ đến địa chỉ trên để lấy tiền.",NONE
+"Về phía gia đình ông Thép, mặc dù đã có kiến nghị lên các cơ quan chức năng nhưng cho đến giờ vụ việc vẫn “im lặng” và những đối tượng đánh ông Thép vẫn còn nhởn nhơ ngoài vòng pháp luật.",NONE
+"Tuyên công nhận thỏa thuận ly hôn giữa bà Thảo và ông Vũ, giữ nguyên bản án sơ thẩm về những thỏa thuận của ông Vũ và bà Thảo về hôn nhân, cấp dưỡng.",NONE
+Vụ_việc được ghi lại bằng camera ẩn trên truyền_hình ở Seychelles ( quốc_đảo thuộc Ấn_Độ_Dương ) vào cuối tuần qua .,Seychelles|ORGANIZATION
+"Đặc_biệt vì lý_do đó , các ngân_hàng tài_trợ vốn cho dự_án yêu_cầu buộc phải có nhà_đầu_tư thay_thế nhà_đầu_tư Yên_Khánh mới chấp_thuận tiếp_tục cho vay vốn tín_dụng .",NONE
+"Chiều 3/4, Công an quận Hoàng Mai, Hà Nội cho biết, vừa khởi tố bị can, bắt tạm giam để điều tra về hành vi Giả mạo trong công tác đối bị can Lê Văn Cương (SN 1980), Giám đốc Trung tâm đăng kiểm 2932D.",Công an quận|ORGANIZATION; Hoàng Mai|LOCATION; Hà Nội|ORGANIZATION; Lê Văn Cương|PERSON; đăng kiểm|ORGANIZATION
+Vụ việc đang được lực lượng Công an mở rộng điều tra,NONE
+"Sau khi rút dao, Tuân bồi thêm cho lái xe taxi một nhát vào lưng.",NONE
+"Ngày 8-9/4/2012, Cấn Huyền T. (SN 1994) và Nguyễn Thị H. (SN 1995) cùng chị gái là Nguyễn Thị Thu M. (SN 1992, cùng trú ở Thạch Thất, Hà Nội) đến nhà trọ của Hương chơi.",Cấn|PERSON; Huyền T|PERSON; Nguyễn Thị H|PERSON; Nguyễn Thị Thu M|PERSON; Thạch Thất|LOCATION; Hà Nội|LOCATION
+Nhân viên nhà nghỉ gọi xe đưa Thường và chị T. đi cấp cứu.,NONE
+"Kiểm tra các đối tượng, tổ công tác phát hiện quả tang 2 bánh heroin, 522,40g ma túy tổng hợp (Ketamin), 205 viên hồng phiến cùng một số vật chứng liên quan khác.",NONE
+"Sáng 18-5 , con cá_ngừ "" khủng "" này được đưa lên cảng và câng nặng đến 367kg .",NONE
+"Tuy nhiên, bà Thoa không đồng ý vì buổi sáng đưa 120 ngàn đồng nhưng Hào Anh chê ít không nhận.",NONE
+"Tại một nhà hàng, vợ chồng Việt kiều bị đánh đập, buộc phải viết giấy vay nợ tiền tỷ...",NONE
+"Vắng bóng đã lâu trên mặt_trận thảm_đỏ , có_lẽ như Phương_Vy đã không còn bắt kịp với nhịp_độ thời_trang của thời_đại .",NONE
+Dù bị cáo nói không có chủ trương nhưng CQĐT đã chứng mình có chủ trương này,NONE
+"Qua tố_giác , cơ_quan công_an xác_định , Ngân có hành_vi xâm_hại 2 bé gái và đã khẩn_trương truy bắt .",NONE
+"Trong thời gian yêu nhau, bị cáo Xuân cho nhân tình vay số tiền hơn 10 triệu đồng để chi tiêu cá nhân.",NONE
+"Ông Nguyễn_Thanh_Hùng - phó giám_đốc Trung_tâm Ứng_dụng nông_nghiệp công_nghệ_cao tỉnh Đồng_Tháp , cho_biết năm nay thời_tiết diễn_biến tương_đối bất_thường với những cơn mưa cùng độ_ẩm cao khiến người trồng hoa lo_lắng .",Ứng_dụng nông_nghiệp công_nghệ_cao tỉnh Đồng_Tháp|ORGANIZATION
+"Tác_phẩm vẫn giữ được tinh_thần và tinh_tuý của bản_gốc nhưng lại có nét độc_đáo , thú_vị riêng của ngôn_ngữ điện_ảnh .",NONE
+Các quyết định và lệnh trên cũng đã được Viện KSND cùng cấp phê chuẩn.,NONE
+- Nam cùng một số đối tượng lên mạng học cách thức điều chế ma túy rồi mua nguyên liệu về tự sản xuất và bán cho các con nghiện.,NONE
+"Trên đường đi, Trực đốt một số pháo sáng, giữ lại 2 quả pháo dù và 4 quả pháo sáng, giấu vào loa thùng để mang vào sân vận động Hàng Đẫy.",NONE
+"Sau bữa cơm trưa, lợi dụng lúc vắng người, gã đàn ông 64 tuổi ở Vĩnh Long thực hiện hành vi dâm ô, gây tổn thương vùng kín bé gái 6 tuổi",Vĩnh Long|LOCATION
+"Về trách nhiệm của người mẹ, luật sư Tạ Anh Tuấn cho rằng, cơ quan điều tra cũng cần phải làm rõ vai trò của người mẹ trong vụ án.",NONE
+"Đến 13h cùng ngày, Thúy đi học, còn Sự vẫn ngủ cùng cháu Thắng.",NONE
+"Ngay sau khi công_trình Trường mầm_non Vườn_Xanh , đường Trần_Văn_Lai , phường Mỹ_Đình 1 , quận Nam_Từ_Liêm , Hà_Nội , bất_ngờ đổ sập lúc 3h sáng nay 25-9 trong lúc đang xây_dựng dở_dang , Hà_Nội đã huy_động một loạt cơ_quan liên_quan vào_cuộc để làm rõ .",Trần_Văn_Lai|LOCATION; phường Mỹ_Đình 1|LOCATION; quận Nam_Từ_Liêm|LOCATION; Hà_Nội|LOCATION; Hà_Nội|LOCATION
+"Được biết , MV "" Đèn_lồng đom_đóm "" được thực_hiện dựa trên ca_khúc bản ballad do nhạc_sĩ Tăng_Nhật_Tuệ sáng_tác dành cho học_trò Tino .",Tăng_Nhật_Tuệ sáng_tác|PERSON
+"Hiện , vụ_việc đang được cơ_quan_chức_năng điều_tra làm rõ .",NONE
+"Cũng hiếm có vụ nào mà luật sư của “bị hại” lại chịu sức ép đến từ dư luận rất lớn như thế này, dù họ đang hành nghề một cách rất nghiêm túc.",NONE
+"Với thủ đoạn này, Thơ đã lừa được nhiều cá nhân ở nước ngoài mong muốn về nước.",NONE
+"Đại_biểu Nguyễn_Tạo ( Lâm_Đồng ) cho biết thời_gian qua tình_trạng các vụ đuối nước thương_tâm xảy ra liên_tiếp , nhiều vụ_việc ba , bốn trẻ đi học về ra hồ tắm và bỏ_mạng vì không biết bơi .",Nguyễn_Tạo|PERSON
+"Ngoài ra, lực lượng Công an tỉnh còn đấu tranh làm rõ hành vi đánh bạc bằng hình thức mua bán số lô số đề của một số đối tượng",Công an tỉnh|ORGANIZATION
+"Sau khi bản án có hiệu lực, ông Thành làm đơn yêu cầu bà Hương trả tiền.",NONE
+"Người này yêu cầu ông C. đến ngân hàng mở tài khoản mới, sau đó gửi thông tin đăng nhập tài khoản Internet Banking cho các đối tượng nêu trên tự quản lý và yêu cầu ông C. chuyển số tiền 1 tỷ đồng để chứng minh thu nhập và chứng minh mình không có liên quan đến vụ án.",NONE
+"Công an quận Ba Đình quyết định khởi tố vụ án, khởi tố bị can đối với Trương Văn Thanh để điều tra về hành vi gây rối trật tự công cộng.",Công an quận Ba Đình|ORGANIZATION; Trương Văn Thanh|PERSON
+"Hai đối tượng hứa hẹn rằng số cổ phần nhà đầu tư sở hữu sẽ tăng giá trị theo thời gian và có thể sang nhượng lại, khi công ty được niêm yết trên sàn chứng khoán thì có thể thu lợi rất nhiều lần.",NONE
+"Thấy con gái thỉnh thoảng có mang sách vở đến nhờ đầu bếp của nhà hàng giảng bài hộ, chị C. không hề nghi ngờ, cho đến khi chị thấy con gái có những biểu hiện khác thường.",NONE
+"Theo đó , công_an quận 10 ( TP. HCM ) đã tiến_hành đưa cô_gái đi giám_định pháp_y , kết_luận giám_định pháp_y có ghi : Phát_hiện tế_bào nam trong âm_đạo và một vết xước dài tại khu_vực âm_đạo .",công_an quận 10|ORGANIZATION; TP. HCM|ORGANIZATION
+"Tại đây , lực_lượng chức_năng phát_hiện người này đang vận_chuyển 1.100 viên thuốc lắc , hơn 1 kg ma_tuý đá .",NONE
+"Tại phiên tòa phúc thẩm, Tú thành khẩn khai nhận hành vi sai trái của mình.",NONE
+"Về công_tác khắc_phục hậu_quả cơn bão số 10 , đến ngày 19-9 , đã có khoảng 55-60 % số nhà dân bị tốc mái được khắc_phục bước_đầu , phấn_đấu đến ngày 23-9 sẽ khắc_phục xong 100 % nhà dân đảm_bảo ổn_định trở_lại sinh_hoạt bình_thường .",NONE
+"Nạn nhân là anh Huỳnh Văn Hoàng (25 tuổi, ngụ xã Ngọc Hòa, huyện Giồng Riềng).",Huỳnh Văn Hoàng|PERSON; xã Ngọc Hòa|LOCATION; huyện Giồng Riềng|LOCATION
+Cũng theo lời khai của bị cáo Danh 4.500 tỷ đồng trong số vay 4.700 tỷ của BIDV hiện vẫn chưa sử dụng cho việc tăng vốn điều lệ.,NONE
+Rạng sáng 12/6 đối tượng Trương Lê Đình Phúc đến thuê phòng bay lắc với giá 3 triệu đồng để chiêu đãi nhóm bạn bằng tiệc ma tuý.,NONE
+"Tuy nhiên, mọi người đều bình đẳng trước pháp luật, còng số 8 không nương vị cho một ai khi hành vi phạm tội có đủ căn cứ để chứng minh.",NONE
+"Công an tỉnh Bến Tre hôm nay (7/12) cho biết cơ quan CSĐT vừa khởi tố bị can, bắt tạm giam Võ Thị Minh Nguyệt (40 tuổi, ngụ huyện Ba Tri) để điều tra hành vi “Tham ô tài sản” và “Thiếu trách nhiệm gây hậu quả nghiêm trọng”.",Công an tỉnh|ORGANIZATION; Bến Tre|LOCATION; Võ Thị Minh Nguyệt|PERSON; huyện Ba Tri|LOCATION
+"Các chuyến tàu ở thị_trấn Thạnh_An ( huyện Cần_Giờ ) ra đảo Thạnh_An sáng nay cũng cập bến xã đảo mang theo nhiều thực_phẩm tươi_sống như rau , thịt phục_vụ bà_con .",Thạnh_An|LOCATION; huyện Cần_Giờ|LOCATION; đảo|ORGANIZATION; Thạnh_An|LOCATION; đảo|ORGANIZATION
+M,NONE
+"Làm việc với cảnh sát, Minh thừa nhận hành vi của mình và khai đã dùng hơn 910 triệu đồng mua xe máy, điện thoại, trang sức, máy tính cùng các chi phí khác khi bỏ trốn, trong số đó có dùng vào đánh bạc",NONE
+Đáng nói dù khác về thời điểm (cách nhau 20 ngày) nhưng nội dung lại giống nhau đáng ngạc nhiên.,NONE
+"- Bằng thủ đoạn làm giả giấy tờ, hợp đồng đầu tư kinh doanh bất động sản, một giáo viên tiểu học đã lừa đảo, chiếm đoạt hàng chục tỉ đồng.",NONE
+"Anh được bệnh_viện An_Bình chẩn_đoán gãy xương chính mũi , gãy thành trước xoang , tụ máu phù_nề mô mềm vùng trán , máu chảy nhiều … Còn người anh họ thì bị đánh tét đầu , máu chảy nhiều , phải khâu nhiều mũi , toàn_thân đau vì bị đánh .",An_Bình|ORGANIZATION
+"Theo kết quả điều tra ban đầu, từ tháng 8/2020, các đối tượng đã bàn bạc tạo nhóm tìm nguồn mua dữ liệu cá nhân bán cho các đối tượng có nhu cầu.",NONE
+"Việc này , theo đơn khiếu_nại của ông Hùng , đã làm hai người con của ông không_thể đi xuất_khẩu lao_động và kết_nạp Đảng .",NONE
+"Sau đó, gia đình Tuấn tự nguyện bồi thường cho nạn nhân 50 triệu đồng, bà Bình đã làm đơn bãi nại cho Tuấn.",NONE
+Chỉ còn duy_nhất tỉnh Bến_Tre đến nay chưa phát_hiện dịch .,Bến_Tre|ORGANIZATION
+Theo đó chứng_nhận Cục Hàng_không Việt_Nam đạt CAT 1 về giám_sát an_toàn hàng_không của FAA sẽ được trao trong cuộc làm_việc này .,NONE
+Khá đông lực lượng an ninh được huy động bảo vệ phiên xử.,NONE
+"Bà T., kêu cứu thì bị hai thanh niên đánh đập khiến nạn nhân bị thương ở vùng mặt, gãy 1 chiếc răng.",NONE
+"Lợi dụng đường vắng, Huynh dùng dao khống chế, đâm nhiều nhát khiến tài xế gục xuống rồi lấy đi hơn 1 triệu đồng tiền mặt",NONE
+"Nói một_cách thẳng_thắn thì em đang mượn phim anh để mang tới những người xung_quanh em thêm những cảm_xúc yêu_thương trong cuộc_sống , như_thế mọi người sẽ vui , sẽ càng gắn_bó và thấu_hiểu nhau hơn .",NONE
+"Riêng các ngành thâm_dụng lao_động cao như dệt_may , chế_biến , phục_vụ nhà_hàng , khách_sạn thì mức_độ thiếu_hụt trung_bình từ 8-10 % do nhu_cầu lao_động trong năm mới có gia_tăng .",NONE
+"Theo ông Vinh , trong lần lập báo_cáo giám_sát môi_trường của TTC Hotel_Phan_Thiết , Chi_nhánh nhận_thấy có một_số chỉ_tiêu không đạt chuẩn quy_định và Chi_nhánh đã đề_xuất Công_ty cho sửa_chữa và đã có văn_bản báo các cơ_quan_chức_năng xin sửa_chữa hệ_thống .",NONE
+"Trong ba ngày qua , thời_tiết tại Quảng_Bình rất nóng .",Quảng_Bình|ORGANIZATION
+"Chia_sẻ với PV báo Người Đưa_Tin , ông Vũ_Xuân_Thành - Chánh thanh_tra bộ VH , TT & DL cho_biết : "" Hội Nghệ_nhân và Thương_hiệu Việt_Nam đã làm đúng thẩm_quyền khi trao bằng khen cho ca_sĩ Ngọc_Sơn .",Vũ_Xuân_Thành|PERSON; VH|ORGANIZATION; TT|ORGANIZATION; DL|ORGANIZATION; Hội Nghệ_nhân|ORGANIZATION
+"Sau khi nhận hồ sơ gốc vụ tài xế xe container đâm Innova đi lùi trên cao tốc, TAND tối cao sẽ làm việc với các cơ quan tố tụng và chuyên gia.",NONE
+"Lẻn vào nhà để trộm cắp, thấy chị Quế đang ngủ, Quân dùng dao đánh mạnh vào gáy và nhiều nhát vào mặt",NONE
+"Cùng xem một_số hình_ảnh đẹp trong liveshow "" Khuya nay anh đi rồi "" của Hồ_Quang 8 : Nghệ_sĩ Hoài_Linh trong đêm nhạc "" Khuya nay anh đi rồi "" của Hồ_Quang 8 .",NONE
+Đại diện phía bà Thảo cho biết thời buổi ấy không có bằng chứng gì.,NONE
+"Trước đó, 18h30 cùng ngày người dân phát hiện ông T. nằm gục trong hẻm, khi tiếp cận thì thấy ông này bị đâm, mất máu nhiều.",NONE
+"Theo đó, ông Tùng dùng kìm cộng lực cắt dây xích khóa kho chứa thuốc bảo vệ thực vật, cắt lưới B40 trước cửa sân nhà và đèn chiếu sáng, sau đó gọi điện thoại cho công an xã báo bị mất trộm.",NONE
+Cả hai khai nhận vận_chuyển cho ma_tuý cho một đối_tượng người Campuchia đem về TP. HCM tiêu_thụ .,TP. HCM|ORGANIZATION
+"Đặc_biệt cần kiểm_soát chặt đường vào khu_vực ấp 6 , xã Vĩnh_Lộc B , bảo_vệ khu_vực có 15 hộ chăn_nuôi chưa có dịch và cung_cấp quần_áo bảo_hộ cho thương_lái mặc khi vào mua heo .",6|LOCATION; xã Vĩnh_Lộc B|LOCATION
+"Theo đó , Ban Chỉ_đạo đổi_mới , phát_triển kinh_tế tập_thể , hợp_tác_xã ( Ban chỉ_đạo ) do Phó thủ_tướng Vương_Đình_Huệ làm trưởng_ban .",NONE
+"Trước đó, một xe khách loại 45 chỗ dừng trả khách tại khu phố Hòa Long, phường Lái Thiêu; bước xuống là người phụ nữ cùng nhiều túi xách.",khu phố Hòa Long|LOCATION; phường Lái Thiêu|LOCATION
+"Cụ_thể , cựu thành_viên F T.Island Choi Jong_Hoon bị văn_phòng công_tố quận trung_tâm Seoul kết_án với tội_danh hiếp_dâm phụ_nữ .",Choi Jong_Hoon|PERSON; quận|ORGANIZATION; trung_tâm Seoul kết_án|LOCATION
+"- Lực lượng an ninh hàng không liên tiếp phát hiện, xử lý nhiều hành khách người Trung Quốc làm ‘đạo chích’ trên máy bay.",NONE
+"Công an tỉnh Thanh Hóa cho biết, trước đó, qua công tác nắm tình hình, Phòng CSĐT tội phạm về kinh tế đã phát hiện Hoàng Văn Cường là chủ 6 cửa hàng bán linh phụ kiện điện thoại di động trên địa bàn TP Thanh Hóa và TP Sầm Sơn có dấu hiệu buôn lậu nên đã lập án đấu tranh.",Công an tỉnh|ORGANIZATION; Thanh Hóa|LOCATION; Phòng CSĐT tội phạm|ORGANIZATION; kinh tế|ORGANIZATION; TP Thanh Hóa|LOCATION; TP Sầm Sơn|LOCATION
+"Sáng nay ( ngày 9/8 ) , cơ_quan điều_tra Quân_khu 9 và Công_an TP. Cần_Thơ đã đến bãi đậu xe của một nhà_hàng trên đường Trần_Văn_Khéo ( quận Ninh_Kiều ) , để kiểm_tra chiếc xe bị nghi gắn biển số đỏ giả .",Quân_khu 9|ORGANIZATION; Công_an TP.|ORGANIZATION; Cần_Thơ|LOCATION; Trần_Văn_Khéo|LOCATION; quận Ninh_Kiều|LOCATION
+"Những ngày qua, thêm nhiều phụ nữ đến Phòng Cảnh sát hình sự Công an tỉnh Quảng Ngãi trình báo sự việc bị sập bẫy “trai Tây” qua mạng Facebook, lừa đảo 2,5 tỷ đồng.",Cảnh sát hình sự Công an tỉnh Quảng Ngãi|ORGANIZATION
+"cho một người đàn_ông ở tỉnh Bắc_Hà mua về làm vợ , để lấy 3 vạn nhân_dân_tệ ( khoảng 90 triệu đồng ) .",tỉnh Bắc_Hà|LOCATION
+"Tin từ CA TP Đông Hà cho biết, đơn vị này đang tiến hành điều tra vụ việc chị Thanh bị đối tượng lạ mặt đổ xăng lên người, châm lửa đốt khiến nạn nhân bị bỏng nặng xảy ra trên địa bàn vào sáng nay.",CA TP|ORGANIZATION; Đông Hà|LOCATION
+"Liên quan đến trường gà quy mô này, Ban giám đốc Công an TP.HCM đã tạm đình chỉ công tác khoảng 10 cán bộ Công an công tác tại Công an địa phương và 1 phòng nghiệp vụ Công an TP.HCM.",Công an TP.HCM|ORGANIZATION; Công an TP.HCM|ORGANIZATION
+"Công_an huyện đang tiếp_tục đấu_tranh để làm rõ vụ_việc , hiện chưa khai_thác được thông_tin từ đối_tượng này .",huyện|ORGANIZATION
+"VKSND TP Hà Nội vừa hoàn tất cáo trạng truy tố bị can Dương Quang Bình (SN 1977, ở quận Hoàn Kiếm) vì tội Giết người.",VKSND TP Hà Nội|ORGANIZATION; Dương Quang Bình|PERSON; quận Hoàn Kiếm|LOCATION
+Cảnh sát cũng được huy động để đảm bảo an ninh trong suốt thời gian diễn ra phiên xử.,NONE
+"Cơ quan công an nhận định, đằng sau đối tượng là một đường dây liên tỉnh cần phải đấu tranh mở rộng.",NONE
+"12 đối tượng bị bắt, trong đó, Bùi Văn Thái là đối tượng cầm đầu và đã bị bắt tại TPHCM, hiện đang di lý về Quảng Bình.",Bùi Văn Thái|PERSON
+"Chiều ngày 30/11, phiên xét xử Trần Phương Bình, Phan Văn Anh Vũ và các đồng phạm tiếp tục với phần xét hỏi của luật sư Nguyễn Hữu Thế Trạch (bào chữa cho Phan Văn Anh Vũ) đối với bị cáo Bình.",Phan Văn Anh|PERSON; Nguyễn Hữu Thế Trạch|PERSON; Phan Văn Anh|PERSON
+"Mỹ_nhân tự cổ như danh_tướng , Bất_hứa nhân_gian kiến bạch_đầu .",NONE
+trong những lần bà trở_lại Việt_Nam .,NONE
+Mới_đây UBND tỉnh Quảng_Nam cũng đã ban_hành kế_hoạch thực_hiện phong_trào chống rác_thải nhựa trên địa_bàn tỉnh .,tỉnh Quảng_Nam|ORGANIZATION
+"Theo thông tin ban đầu, khoảng cuối năm 2023, Công và Phú vào tỉnh Kon Tum để hoạt động cho vay tiền với hình thức trả góp cả gốc và lãi hàng ngày.",Kon Tum|ORGANIZATION
+"Theo đó , bộ phim “ Vực thẳm vô_hình ” có nhiều cảnh bạo_lực được miêu_tả trực_tiếp , gây cảm_giác sợ_hãi cho người xem .",NONE
+"Trong khi Thắng ""khỉ"" vùng dậy bỏ chạy theo hướng đường Lê Hồng Phong, Đức Thắng nhìn thấy Trương Đình Kiên nên đã xông tới chém liên tiếp nhiều nhát vào đầu, vào người Kiên, khiến nạn nhân bị trọng thương.",Lê Hồng Phong|LOCATION
+"Tối 8/1, Công an quận Hà Đông, Hà Nội cho biết, đơn vị vừa bắt giữ đối tượng Nguyễn Thị Kim Dung (SN 1978, ở Xuân Mai, Chương Mỹ, Hà Nội) để điều tra hành vi cho vay lãi nặng trong giao dịch dân sự.",Công an quận Hà Đông|ORGANIZATION; Hà Nội|LOCATION; Nguyễn Thị Kim Dung|PERSON; Xuân Mai|LOCATION; Chương Mỹ|LOCATION; Hà Nội|LOCATION
+Toàn xã này có 7 điểm trường như_vậy .,NONE
+Nữ nghệ_sĩ cho_biết tất_cả phục_trang trong phim đều do chị dày công chuẩn_bị .,NONE
+"Uy hiếp đến sự ổn định của chính quyền nhân dân, gây phương hại đến an ninh quốc gia và trật tự an toàn xã hội.",NONE
+"Ngày 4/11, Công an TP Phan Rang – Tháp Chàm, tỉnh Ninh Thuận thông tin, Thạch và Khoa (31-33 tuổi, đều quê Ninh Thuận) bị điều tra về hành vi Cướp giật và Trộm cắp tài sản.",Công an|ORGANIZATION; TP Phan Rang|LOCATION; Tháp Chàm|LOCATION; tỉnh Ninh Thuận|LOCATION; Ninh Thuận|LOCATION
+"Anh ta đe dọa sẽ đăng hình ảnh, video khỏa thân của chị L. lên khắp các trang mạng xã hội nếu chị này không thực hiện yêu cầu.",NONE
+Vấn_đề thứ hai được Thủ_tướng gợi_mở là làm_sao có được giải_pháp đột_phá thực_sự để tháo_gỡ những điểm nghẽn trong môi_trường kinh_doanh .,NONE
+"Nếu có nhu cầu vay vốn, người dân nên tìm hiểu kỹ và trực tiếp đến trụ sở, chi nhánh các ngân hàng để được tư vấn, hướng dẫn thủ tục vay tiền nhằm bảo vệ quyền lợi của mình trước pháp luật.",NONE
+"Bị tòa tuyên phạt 3 năm tù về tội vi phạm các quy định về điều khiển phương tiện giao thông đường bộ, bị cáo cho rằng mình bị oan nên lên facebook viết lời tuyệt mệnh, sau đó nhảy lầu tòa án tự tử",NONE
+"Ông Bình khai rằng ông biết Vũ "" nhôm "" có năng_lực về bất_động_sản trong khi bản_thân ông có những khoản nợ liên_quan đến bất_động_sản .",NONE
+"Theo cáo trạng, đầu tháng 2/2020, Hương thuê nguyên cơ sở số 178 đường Minh Mạng (phường Khuê Mỹ, quận Ngũ Hành Sơn).",Minh Mạng|LOCATION; phường Khuê Mỹ|LOCATION; quận Ngũ Hành Sơn|LOCATION
+"- Đối với hợp đồng bảo hiểm nhân thọ và hợp đồng bảo hiểm sức khỏe, doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài có trách nhiệm trả tiền bảo hiểm cho người được bảo hiểm khi sự kiện bảo hiểm xảy ra trước thời điểm đơn phương chấm dứt thực hiện hợp đồng bảo hiểm và có quyền khấu trừ phí bảo hiểm đến thời điểm đơn phương chấm dứt thực hiện hợp đồng bảo hiểm.",NONE
+"Vụ án đang được Công an tỉnh Nghệ An tiếp tục mở rộng điều tra, làm rõ.",Công an tỉnh Nghệ An|ORGANIZATION
+"Phát hiện sự việc, người dân chạy tới khống chế và tước con dao của Thừa, giải cứu cho chị Như.",NONE
+"Thượng tá Nguyễn Quốc Hùng - Trưởng Công an huyện Kiến Thụy cho biết: “Công an huyện đang tích cực điều tra, xem xét vụ việc, nếu đủ căn cứ sẽ khởi tố hành vi dâm ô của ông Lỉnh trước pháp luật”.",Công an huyện|ORGANIZATION; Kiến Thụy|LOCATION; Công an huyện|ORGANIZATION
+"Thuốc lắc thành_phẩm với một lượng không nhỏ từ 10.000 - 15.000 viên được đưa về cất_giấu tại nơi ở của Ngọc , tại toà nhà Parkson_Hùng_Vương .",NONE
+Bị cáo không giết vợ.,NONE
+"Bà Hằng tham gia kiểm đếm kho tiền tiền với nhiệm vụ giám sát việc kiểm đếm, đối chiếu số lượng giữa sổ sách thực tế và trên hệ thống.",NONE
+"Theo điều tra, Diễm và chồng trước đây từng làm công nhân và bán nước giải khát nhưng sau đó nghỉ việc, thành lập nên Công ty TNHH dịch vụ tư vấn môi giới bất động sản Gia Kỳ (đăng ký trụ sở tại phường Khánh Bình, thị xã Tân Uyên) do Diễm đại diện theo pháp luật.",phường Khánh Bình|LOCATION; thị xã Tân Uyên|LOCATION
+"Người_dân cho_biết nhiều hộ còn câu trộm điện rất nguy_hiểm , hệ_thống nước chữa_cháy tại chung_cư 42 Nguyễn_Huệ cũng không_thể bơm lên lầu 9 , nếu xảy ra cháy nổ sẽ không_thể xử_lý tại_chỗ được .",Nguyễn_Huệ|LOCATION
+Anh Huy phát_hiện một lượng lớn tiền với mệnh_giá 500.000 đồng nằm trên khe máy rút_tiền của cây ATM .,NONE
+"""Ông Thái đã bị bắt giữ và khám xét nhà riêng tại thị trấn Hưng Nguyên.",thị trấn Hưng Nguyên|LOCATION
+"Lúc này, nhân viên thấy chị T. từ trong phòng bò ra ngoài hành lang, trên người có nhiều vết thương.",NONE
+""" Sự phát_triển của Giáo_hội Phật_giáo luôn song_hành , đóng_góp vào sự phát_triển chung của TP. Nhân_dịp Tết_Mậu_Tuất 2018 , xin gửi đến toàn_thể các tăng_ni , phật_tử lời chúc_mừng năm mới dồi_dào sức_khoẻ và tràn_đầy hạnh_phúc "" – ông Cang nói .",TP|ORGANIZATION
+"” Tội_phạm vừa nghe thấy vậy , cho_rằng sự_việc đã bại_lộ , đành cúi đầu nhận tội .",NONE
+"Sau khi xây_dựng xong bộ câu_hỏi , Tổng_cục Đường_bộ sẽ tổ_chức hội_thảo lấy ý_kiến rộng_rãi để hoàn_thiện trước khi ban_hành bộ câu_hỏi chính_thức .",NONE
+"Mua AVG cao hơn giá trị thật Theo cáo trạng, trước khi MobiFone mua cổ phần của AVG, tình hình tài chính của công ty này rất khó khăn, kinh doanh không hiệu quả, thua lỗ kéo dài, nợ vay lớn.",NONE
+"Kim_Phượng chia_sẻ : "" Tôi đã mời luật_sư và gửi đơn yêu_cầu khởi_tố vụ án này vì hành_vi hiếp_dâm của hoạ_sĩ N.L .",NONE
+"Hằng ngày, ở nhà, Đ.",NONE
+"Yêu cầu bị can tự giác ra đầu thú để hưởng chính sách khoan hồng, đồng thời đảm bảo thực hiện quyền tự bào chữa và trình bày các nội dung liên quan vụ án theo quy định tại Điều 16, Điều 60 Bộ luật TTHS năm 2015.",NONE
+"Cụ_thể như đưa tin không đúng sự_thật , lợi_dụng hoạt_động báo_chí để trục_lợi , vòi_vĩnh gây sức_ép cho doanh_nghiệp , địa_phương ký hợp_đồng quảng_cáo gây bức_xúc trong dư_luận , gây ảnh_hưởng xấu đến đội_ngũ làm báo chân_chính .",NONE
+Bà chính là người sáng_lập nên môn_phái Cổ_Mộ - môn_phái mà sau_này Tiểu_Long_Nữ và Dương_Quá theo học .,NONE
+"Theo hình ảnh trích xuất từ camera an ninh, khoảng 8h sáng ngày 18/8, chị Thoa đi xe máy chở một phụ nữ khác đi trên đoạn đường thuộc khu phố Thống Nhất, phường Dĩ An, thị xã Dĩ An.",khu phố Thống Nhất|LOCATION; phường Dĩ An|LOCATION; thị xã Dĩ An|LOCATION
+Phạm_Đức_Mạnh đã ra cơ_quan Công_an đầu_thú .,NONE
+"Anh B.N.H cho biết, 2 con bò của gia đình có giá trị trên 40 triệu đồng.",NONE
+"Điều cơ_bản được bà Hường chỉ ra là phải chỉ rõ chúng_ta có đủ hệ_thống , đủ nguồn_lực để có_thể bảo_vệ , đảm_bảo được giá_trị nổi_bật toàn_cầu mà cụ_thể là 4 tiêu_chí đề ra cũng như khuyến_khích Hạ_Long có cách tiếp_cận chủ_động , thay_vì chờ người_ta đến phê_bình thì phải tổ_chức các chuyến đánh_giá tư_vấn độc_lập , như các chủ_đề : quản_lý rác_thải , quản_lý phát_triển du_lịch bền_vững ...",NONE
+"Cụ thể có 3 đơn vị gồm: Cục CSĐT tội phạm về kinh tế và tham nhũng (C03) - Bộ Công an, phòng 15 của Cục C03, phòng CSĐT tội phạm về kinh tế và tham nhũng (PC03) - Công an TP.HCM, mỗi đơn vị được thưởng 15 triệu đồng.",Cục CSĐT tội phạm về kinh tế|ORGANIZATION; tham nhũng|ORGANIZATION; C03|ORGANIZATION; Bộ Công an|ORGANIZATION; C03|ORGANIZATION; phòng CSĐT tội phạm|ORGANIZATION; kinh tế|ORGANIZATION; tham nhũng|ORGANIZATION; PC03|ORGANIZATION; Công an TP.HCM|ORGANIZATION
+"Sau khi khiếu nại, tỉnh ban hành tiếp 2 quyết định điều chỉnh song do không đồng tình, ông Mười khởi kiện và thắng kiện.",NONE
+"Thời điểm này, người dân nghe thấy tiếng la hét đã chạy qua căn nhà này thì phát hiện ông Trần Chí (SN 1964, người thuê trọ) đã tử vong.",Trần Chí|PERSON
+"Khi có thông tin về gia đình chị Hằng, Lê Trung Linh gửi ra Hà Nội cho Thảo bằng đường bưu điện.",NONE
+Ngay sau đó tổ công tác của phòng Cảnh sát hình sự đã di lý Việt về TP.HCM để phục vụ công tác mở rộng điều tra.,phòng Cảnh sát hình sự|ORGANIZATION; TP.HCM|ORGANIZATION
+"Báo Thời_đại thông_tin thêm , sau khi nhận tin báo , công_an đã có_mặt khám_nghiệm hiện_trường , tử_thi , lấy lời khai và điều_tra .",NONE
+"Tại phiên tòa sơ thẩm, bị cáo Thắng có đơn xin xét xử vắng mặt và được tòa chấp nhận.",NONE
+"Vụ việc xảy ra trên sóng livestream của Trang Nemo có lượng người theo dõi khủng nên chỉ vài phút sau, sự việc này ""ầm ĩ"" trên mạng xã hội, gây tập trung đông người hiếu kỳ .",NONE
+"Diễn biễn tại phiên tòa, HĐXX đánh giá bị cáo Hải chưa thực hiện ăn năn hối cải, còn khai báo lòng vòng các câu hỏi.",NONE
+Một con hổ đang ăn bữa sáng - Ảnh : LÊ_PHAN .,NONE
+Xem thêm : > > > NSND Bùi_Bài_Bình : Người đàn_ông ' khùng ' nhưng hiền của điện_ảnh VN Lạc_Thành,NONE
+Dân mạng đánh_giá những câu nói của Trương_Bá_Chi khá xốc_nổi .,NONE
+"Do tin tưởng, anh M. đã nhiều lần đưa cho Châu tổng cộng hơn 300 triệu đồng để xin việc và nhờ mua một xe SH.",NONE
+"Sau một thời gian, khi người đầu tư yêu cầu rút tiền thì Dương không cho rút và điều chỉnh chế độ BOT làm cho những người đầu tư liên tục bị lỗ dẫn đến hết tiền trên tài khoản.",NONE
+Ngân hàng Nhà nước khẳng định việc khởi tố nguyên Phó thống đốc không ảnh hưởng đến công tác điều hành chính sách tiền tệ và hoạt động ngân hàng,Ngân hàng Nhà nước|ORGANIZATION
+"Thấy chúng_tôi bất_ngờ , chị Ngọc giải_thích : "" Đỡ cực ở đây là so với cách làm của một_số nơi khác .",NONE
+"Điều đáng nói , một_số người_dân sinh_sống quanh khu_vực này cho rằng , đoàn mô_tô phân_khối lớn này khi ngang qua địa_bàn đã chạy nhanh , nẹt pô inh_ỏi .",NONE
+"Là một diễn_viên gạo_cội , đây là thành_quả của anh trong một thời_gian dài hoạt_động nghệ_thuật .",NONE
+"Trên đường quay về, khi đi qua nhà chị Triệu Thị B. (trú cùng thôn), Ngoạt phát hiện có con ngan nên nảy sinh ý định bắt trộm về để làm mồi nhậu.",Triệu Thị B|PERSON
+"Tương tự, bị cáo Phạm Văn Nhiệm kêu oan trước việc án sơ thẩm kết tội mình giết người, hiếp dâm và cho rằng bị cảnh sát ép cung...",Phạm Văn Nhiệm|PERSON
+"Hồi tháng 10, Công an Kiên Giang đã kiểm tra quán bar này và phát hiện 105 dương tính với ma túy.",Công an Kiên Giang|ORGANIZATION
+"Đối tượng Chu Mạnh Tuấn Bằng các biện pháp nghiệp vụ, tổ công tác nhanh chóng làm rõ thanh niên trên chỉ là kẻ giả mạo nên đã đưa anh ta về trụ sở phòng CSHS số 7 Thiền Quang để làm rõ hành vi giả danh.",Chu Mạnh Tuấn Bằng|PERSON; CSHS|ORGANIZATION
+"Cướp được 3,8 tỷ đồng, Mỹ, Lợi ra ngoài lên xe máy tẩu thoát.",NONE
+"* Trong khi bác_sĩ Hoàng_Công_Lương ra toà thì ông Trương_Quý_Dương , nguyên giám_đốc BVĐK Hoà_Bình lại vắng_mặt và đi nước_ngoài .",BVĐK Hoà_Bình|ORGANIZATION
+Số tiền giao dịch đánh bạc trên không gian mạng là 156 triệu đồng.,NONE
+"Sau màn chào hỏi, gã trai ngoại quốc mời cháu L. và nhóm bạn (chưa xác định được nhân thân) đi ăn tối.",NONE
+"Ngay sau đó chị H. được đưa đi bệnh viện cấp cứu, rất may chị không bị ảnh hưởng đến tính mạng, hiện đang được điều trị tích cực tại bệnh viện Xanh Pôn.",Xanh Pôn|LOCATION
+"Làm_việc với cơ_quan_chức_năng , tài_xế xe_tải khai nhận số shisha này được thuê chở từ TP. HCM ra TP Hà_Nội tiêu_thụ .",. HCM|ORGANIZATION; Hà_Nội tiêu_thụ|ORGANIZATION
+"Ngọn lửa bùng lên mạnh , cột khói bốc cao hàng chục mét , bao_trùm nhiều diện_tích trong công_ty .",NONE
+"Theo đó , chiều 9/4 , khi đi chợ về thì bà Trần_Thị_Hải ( vợ ông Đ .",Trần_Thị_Hải|PERSON
+"Theo đó , trên mạng xã_hội đang lan_truyền hình_ảnh một bé trai 4 tuổi được cho là đang theo học tại Trường mầm_non B Trực_Đại , thuộc xã Trực_Đại , huyện Trực_Ninh , tỉnh Nam_Định bị nhốt vào phòng tách khỏi các bạn học khác , một đầu dây được dùng buộc vào cổ áo phía sau gáy và đầu còn lại thì buộc vào khung sắt cửa_sổ .",B Trực_Đại|LOCATION; xã Trực_Đại|LOCATION; huyện Trực_Ninh|LOCATION; tỉnh Nam_Định|LOCATION
+"Nhận được tin báo , Công_an phường Trung_Hoà và tổ đội dân_phòng đã đến căng dây , phong_toả một đoạn đường để tránh người_dân đi qua gặp nguy_hiểm .",phường|ORGANIZATION; Trung_Hoà|LOCATION
+Đoạn đường_dẫn lên cầu Yên_Hoà trên tỉnh_lộ 513 bị sụt lún nghiêm_trọng - Ảnh : HÀ_ĐỒNG .,Yên_Hoà|LOCATION
+"Ra các Quyết_định khởi_tố bị_can , lệnh khám_xét , áp_dụng lệnh cấm đi khỏi nơi cư_trú đối_với các bị_can về hành_vi “ Vi_phạm các quy_định về quản_lý đất_đai ” , quy_định tại Điều 229 Bộ luật_Hình_sự năm 2015 , đối_với các bị_can : Nguyễn_Hữu_Tín , sinh năm 1957 , nguyên Phó Chủ_tịch Uỷ_ban_nhân_dân TP. Hồ_Chí_Minh , trú tại phường Bến_Nghé , quận 1 , TP. Hồ_Chí_Minh .",Nguyễn_Hữu_Tín|PERSON; TP. Hồ_Chí_Minh|LOCATION; phường Bến_Nghé|LOCATION; quận 1|LOCATION; TP. Hồ_Chí_Minh|LOCATION
+P,NONE
+"Ngay sau khi trở_về từ hội_nghị này , Việt_Nam sẽ bắt_tay ngay vào việc thành_lập Ban Chỉ_đạo quốc_gia , Ban tổ_chức các sự_kiện AIPA 41 , tổ_chức cuộc họp đầu_tiên nghị_sĩ trẻ AIPA , kết_nối AIPA với ASEAN .",NONE
+"Ngày 30/6, Công an TP Đà Nẵng đã tạm giữ hình sự 3 đối tượng tổ chức cá độ bóng đá, gồm Nguyễn Văn Thương (45 tuổi), Nguyễn Tấn Cường và Trần Công Cảnh (cùng 27 tuổi, cùng trú phường Hòa An, Cẩm Lệ).",Công an TP Đà Nẵng|ORGANIZATION; Nguyễn Văn Thương|PERSON; Nguyễn Tấn Cường|PERSON; Trần Công Cảnh|PERSON; phường Hòa An|LOCATION; Cẩm Lệ|LOCATION
+"Vụ_việc xảy ra vào_khoảng 11h30 tại một căn nhà ở khu dân_cư đường số 22 , khu_phố 7 , phường Linh_Đông , quận Thủ_Đức .",số 22|LOCATION; khu_phố 7|LOCATION; phường Linh_Đông|LOCATION; quận Thủ_Đức|LOCATION
+"Đại_diện Phòng Cảnh_sát hình_sự , Công_an tỉnh An_Giang cho_biết vụ hỗn_chiến xảy ra vào_khoảng 21 giờ ngày 16-2 tại khu_vực cầu Cái_Sắn , P. Mỹ_Thạnh .",Phòng Cảnh_sát hình_sự|ORGANIZATION; Công_an tỉnh|ORGANIZATION; An_Giang|LOCATION; Cái_Sắn|LOCATION; P. Mỹ_Thạnh|LOCATION
+Nghi_can này được cho đã tự_sát sau khi gây án và hiện đang được cấp_cứu tại bệnh_viện .,NONE
+"Chị Nguyễn Thị Lệ được đưa đi cấp cứu khoảng gần 4h chiều, còn anh Thủy hơn 4h chiều mới được đưa đi cấp cứu.",Nguyễn Thị Lệ|PERSON
+"Trên đường bỏ chạy, anh Trọng nhìn gương hậu, thấy có bảo vệ theo sau nên đánh lái sang trái để ép không cho xe của bảo vệ vượt lên trước.",NONE
+"HCM xử phúc thẩm đã bác đơn kháng cáo, y án sơ thẩm tuyên phạt Đặng Thanh (18 tuổi) 14 năm tù, Nguyễn Đình Thuận (18 tuổi, cùng ngụ Đồng Nai) 13 năm tù cùng về tội ""hiếp dâm trẻ em"".",Đặng Thanh|PERSON; Nguyễn Đình Thuận|PERSON
+Tôi làm nghề 60 năm thì có tới phân_nửa thời_gian đi hát với mẹ .,NONE
+"Sau khi xem xét các chứng cứ mới, HĐXX thấy cần triệu tập ông Thái Khắc Toàn đến để làm rõ nên quyết định hoãn tòa đến ngày 16/3 sẽ tiếp tục xét xử.",Thái Khắc Toàn|PERSON
+"H.M ( tổng_hợp ) Sau một thời_gian điều_trị tại TTYT huyện Quế_Sơn , nhưng do sức_khoẻ cháu Linh diễn_biến phức_tạp nên các bác_sĩ đã được chuyển tuyến .",huyện|ORGANIZATION; Quế_Sơn|LOCATION
+"Trước đó , theo đơn trình_báo của chị H.T .",NONE
+"“Sau sự cố xảy ra, BV có họp hội đồng chuyên môn, trong đó có ý kiến nói đã bàn giao, có người nói chưa bàn giao trong khi tôi chưa nhìn thấy biên bản bàn giao hay hợp đồng nào nên muốn hỏi xem hợp đồng đã thanh lý chưa, nếu thanh lý là đã bàn giao xong”, ông Khiếu nói.",NONE
+"Theo Công an, tổng số tiền lãi vay của 40 ngày mà bị can Hiếu thu của bà D. là 528 triệu đồng, gấp 5,4 lần mức lãi suất cho phép (20%/năm) theo quy định tại Điều 468 Bộ luật dân sự năm 2015.",NONE
+"Ngày 22/9, Viện KSND tỉnh Đắk Nông cho biết, đơn vị đã phê chuẩn quyết định khởi tố bị can và lệnh tạm giam đối Trần Văn Hiệp (46 tuổi, trú tại xã Đắk N’Drung, huyện Đắk Song, tỉnh Đắk Nông) để điều tra về hành vi giết người.",Viện KSND tỉnh Đắk Nông|ORGANIZATION; Trần Văn Hiệp|PERSON; xã Đắk N’Drung|LOCATION; huyện Đắk Song|LOCATION
+"Theo điều tra ban đầu, chiều 24/4, cháu Nguyễn Hữu T. (sinh năm 2011, trú tại xã Thủy Xuân Tiên, huyện Chương Mỹ) đi học nhưng sau đó không về nhà nên gia đình đã báo cơ quan chức năng để tìm kiếm.",Nguyễn Hữu T|PERSON; xã Thủy Xuân Tiên|LOCATION; huyện Chương Mỹ|LOCATION
+"13h35 , trạm này tiếp_tục thu phí trở_lại .",NONE
+"Đối với 56 công dân còn lại, Phòng Quản lý xuất nhập cảnh đã xác minh lý lịch cá nhân, khai thác thông tin và hướng dẫn quay trở về địa phương theo đúng quy định",Phòng Quản lý xuất nhập cảnh|ORGANIZATION
+"“ Tài_xế Hoàng đã bị tạm giam 22 tháng rồi và giờ lại bị tạm giam thêm 4 tháng , trong khi đó , hiện_tại vẫn chưa có kết_luận cuối_cùng Hoàng có tội hay không có tội .",NONE
+Đến nay còn phải thi hành án gần 11.000 tỷ đồng.,NONE
+Số sổ đỏ mang tên chị Hạnh nhưng sau khi 2 vợ chồng chị mất tích thì không tìm thấy.,NONE
+Tổng trữ_lượng cát thu_hồi được ước khoảng 700.000 m3 .,NONE
+"Anh Nguyễn_Chí_Đại , một trong số các nạn_nhân đang được điều_trị , kể vào thời_điểm xảy ra vụ nổ , tàu trên đường vào bờ sau 30 ngày đánh_bắt trên biển .",Nguyễn_Chí_Đại|PERSON
+Mong HĐXX giảm nhẹ hình_phạt cho bị_cáo .,NONE
+"Tôi nhìn vào bộ "" Hồn_Việt "" thấy rất đặc_biệt , tà áo_dài được sáng_tạo trên những chi_tiết đặc_trưng của văn_hoá Việt_Nam như : Nón lá , trống_đồng ... màu_sắc của trang_phục tươi_trẻ , mang đến không_khí vui_tươi cho người mặc .",NONE
+"Bị chủ nợ đòi tiền, Liên nảy sinh ý định giết chồng để toàn quyền thế chấp căn nhà, lấy tiền trả nợ.",NONE
+Hiện công an đang truy bắt các đối tượng khác có liên quan.,NONE
+"Lòng ta vẫn vững như kiềng ba chân "" của Việt_Nam .",NONE
+"Vụ việc hiện đang tiếp tục được điều tra, làm rõ",NONE
+"Thủ_tướng yêu_cầu tới đây tại cuộc họp của Thường_trực Chính_phủ thì Bộ GD-ĐT phải báo_cáo cụ_thể vấn_đề này "" .",ĐT|ORGANIZATION
+"Nhiều bé sốt muộn sau 2 tiếng Theo ông Hùng , so với loại văcxin trước đó thì tiêm văcxin ComBE_Five số trẻ bị sốt cao nhiều hơn .",NONE
+"Tương_tự , lượng xe lưu_thông sẽ tăng cao hướng từ Dầu_Giây về TP. HCM trong các ngày 19 và 20-2 ( mùng 4 và 5 Tết ) .",Dầu_Giây|LOCATION; TP. HCM|ORGANIZATION
+"2 đối_tượng khai nhận , tháng 3/2019 , do thường_xuyên chơi điện_tử nên Sùng_A_Hạng và Giàng_A_Nô đã rủ nhau đi trộm_cắp tài_sản tại gia_đình người_dân trú tại cụm 6 , tổ 4 , xã Đắk_Som , huyện Đắk_GLong ( Đắk_Nông ) .",Sùng_A_Hạng|PERSON; Giàng_A_Nô|PERSON; tổ 4|LOCATION; xã Đắk_Som|LOCATION; huyện Đắk_GLong|LOCATION; Đắk_Nông|LOCATION
+"Nhưng sau khi trị_liệu , bệnh_nhân không phải uống thuốc giảm đau , có_thể trông cháu khoảng 5 giờ mỗi ngày và đã tham_dự được một chuyến đi miền Nam thăm họ_hàng theo tâm_nguyện , điều mà trước điều_trị bệnh_nhân không_thể nghĩ mình sẽ làm được "" - PGS Thịnh cho biết .",NONE
+"Lê Thanh Tùng (tức Tùng “nháy”, SN 1986, ở Hà Nội) bị đưa ra xét xử tội “Đưa hối lộ”.",NONE
+Máy_bay cất_cánh lên cao_độ 600m rồi giảm xuống cao_độ 450m trước khi tăng cao_độ đến 1.500 m và giao_động khoảng 100m quanh cao_độ này trong vòng 7 phút trước khi giảm đột_ngột xuống 1.100 m rồi mất hẳn liên_lạc .,NONE
+Sa lưới Thay đổi địa điểm liên tục nhưng hoạt động sản xuất ma túy của Hiền và đồng bọn đã không qua mắt được cơ quan công an.,NONE
+"Lãi suất mà những người này cho vay từ 243% đến 365%/năm, phí dịch vụ từ 3% đến 5% số tiền vay.",NONE
+"Trong đó có vụ bắn chết người ở đường Tỉnh lộ 15, ấp Phú Thuận, xã Phú Hoà Đông, huyện Củ Chi.",Tỉnh lộ 15|LOCATION; ấp Phú Thuận|LOCATION; xã Phú Hoà Đông|LOCATION; huyện Củ Chi|LOCATION
+( con dâu ông H. ) và cháu M. ( con chị Nh .,NONE
+"Đây là những đối tượng chuyên nghiệp, đều có nhiều tiền án về tội trộm cắp tài sản.",NONE
+"Đến khoảng 14h cùng ngày , ngọn lửa cơ_bản được khống_chế .",NONE
+"12h trưa nay, Cơ quan CSĐT Công an tỉnh Bình Định và Công an TP Quy Nhơn đã hoàn thành khám nghiệm hiện trường, khám nghiệm tử thi một nam thanh niên bị chém chết.",CSĐT Công an tỉnh|ORGANIZATION; Bình Định|LOCATION; TP Quy Nhơn|LOCATION
+"Ca_sĩ Nhật_Thuỷ bức_xúc cho_biết thêm : "" Tư_cách đấy để làm người công_chúng thì tôi thực_sự thất_vọng về các bạn !",NONE
+(mẹ N.) phát hiện vụ việc nên trình báo công an.,NONE
+"Ông Trần_Vĩnh_Tuyến cũng giao Sở Xây_dựng chủ_trì , phối_hợp với các cơ_quan đơn_vị có liên_quan rà_soát toàn_bộ pháp_lý dự_án , đề_xuất các nội_dung , thủ_tục để dự_án tiếp_tục triển_khai thực_hiện , với điều_kiện không được làm ảnh_hưởng đén công_tác điều_tra .",NONE
+"Vậy_mà , sao Líu có_thể ra_tay tàn độc vưới 1 đứa trẻ như_vậy "" anh Trường nghẹn_ngào chia_sẻ .",NONE
+Bạn_đọc cũng là người gửi đến tờ_báo những thông_tin nóng_hổi và những sản_phẩm báo_chí chất_lượng .,NONE
+"Tại cơ quan điều tra, Hợp thú nhận, hắn và chị B. lấy nhau từ năm 2003 và đã có 2 con.",NONE
+"Chia_sẻ với Tuổi_Trẻ Online , ông Nguyễn_Văn_Lan ( 62 tuổi , ông ngoại bé ) cho_biết khoảng 1h sáng 3-7 khi đang ngủ , bé T. đột_nhiên tỉnh_giấc ôm bụng kêu đau , đòi đi vệ_sinh và ói .",Nguyễn_Văn_Lan|PERSON
+"Theo thông tin ban đầu, 14h ngày 12/12, anh H đang ngồi trong quán cà phê trước nơi ở trọ tại đường số 5, phường Linh Xuân, TP Thủ Đức thì có một thanh niên đi xe gắn máy tìm đến.",số 5|LOCATION; phường Linh Xuân|LOCATION; TP Thủ Đức|LOCATION
+"Vì_vậy , Tổng_cục Đường_bộ đề_nghị Bộ GTVT yêu_cầu Công_ty_cổ_phần BOT Pháp_Vân - Cầu_Giẽ thực_hiện việc thu phí trên tuyến Pháp_Vân - Cầu_Giẽ liên_tục 24/24 giờ vào tất_cả các ngày trong năm , kể_cả ngày nghỉ và ngày lễ theo đúng quy_định .",Tổng_cục Đường_bộ đề_nghị|ORGANIZATION; GTVT|ORGANIZATION; Pháp_Vân|LOCATION; Cầu_Giẽ thực_hiện|LOCATION; Pháp_Vân|LOCATION; Cầu_Giẽ|LOCATION
+"Ngay sau khi xảy ra sự việc, lực lượng chức năng đã có mặt tiến hành bảo vệ hiện trường, điều tra làm rõ nguyên nhân vụ việc, truy bắt hung thủ.",NONE
+"Thỉnh thoảng vị này rướn người ngồi thẳng dậy, được một lúc lại ngoẹo cổ sang một bên và nhắm nghiền mắt...",NONE
+"Chị cho hay: “Anh ấy hiền lành, không hay nói, nhưng 2 tháng sau khi cưới, Thức bắt đầu có biểu hiện bất thường.",NONE
+"Thời gian gần đây, tình trạng vận chuyển, khai thác cát lậu ở Hải Dương có nhiều diễn biến phức tạp.",NONE
+Nam thanh_niên lái xe_máy cũng bị xây_xát nhẹ và bị cơ_quan_chức_năng tạm giữ ngay sau đó .,NONE
+"Lực lượng Công an đã thực hiện lệnh giữ người trong trường hợp khẩn cấp, khám xét khẩn cấp đối với 8 đối tượng để điều tra hành vi tổ chức đánh bạc; đồng thời tiến hành triệu tập làm việc đối với nhiều đối tượng liên quan đến hành vi đánh bạc",NONE
+"Biết mình bị lừa, những người này tố cáo hành vi gian dối của Thi đến cơ quan công an.",NONE
+"Nhiều người đi đường bị chúng cướp giật tài sản trong lúc đang điều khiển xe máy nên bất ngờ bị té xe, chấn thương nặng phải nhập viện cấp cứu.",NONE
+CQĐT đã tách hồ sơ liên quan đến bị cáo và phục hồi điều tra sau đó.,NONE
+Số tiền công_nhận được nếu trót_lọt là 5.000-10.000 USD .,NONE
+"Những hình_ảnh , công_cụ thúc_đẩy kích_động bạo_lực , dâm_ô , đồi_truỵ có_thể tạo ra sự tò_mò để hút du_khách thế_nhưng nó có_thể mang lại tác_động tiêu_cực đối_với tâm_lý , nhân_cách con_người và không phù_hợp với truyền_thống , định_hướng văn_hoá của con_người Việt_Nam "" .",NONE
+Ngọn lửa nhanh_chóng bao_trùm toàn_bộ khu nhà_xưởng rộng khoảng hơn 1000 m2 .,NONE
+"Trong những lá thư này, Dung còn nhắc Nghĩa phải gửi tiền cảm ơn quản giáo.",NONE
+"Tương_tự , sự gia_tăng giá điện ở bậc 4 ( 201-300 kWh ) là 12,7 % và ở bậc 5 ( 301-400 kWh ) là 14,2 % .",NONE
+Trong dự_án này còn thực_hiện hạng_mục nạo_vét luồng sông Sài_Gòn đoạn từ cầu Bình_Lợi đến cảng Bến_Súc_Bình_Dương .,Sài_Gòn|ORGANIZATION; Bình_Lợi|LOCATION; Bến_Súc_Bình_Dương|LOCATION
+"Đúng 20h30, tại số 105B phố Yên Phụ, lực lượng chức năng gồm Bộ Công an, đại diện VKS... tổ chức khám nhà cựu Phó tổng cục trưởng Bộ Công an Phan Hữu Tuấn.",Yên Phụ|LOCATION; Công an|ORGANIZATION; Công an|ORGANIZATION
+"Bên cạnh đó , tôi cho bé uống nước giá đỗ ngâm .",NONE
+"Được biết, Lương là chủ doanh nghiệp chuyên về lĩnh vực xây dựng và có nhiều dự án về cơ sở hạ tầng tại TP Biên Hòa.",TP Biên Hòa|LOCATION
+"Chờ đến tận sáng hôm sau , Quang mới mua được ma_tuý của một người dân_tộc Mông rồi gọi điện thông_báo cho Cảnh .",NONE
+Linh Chi sinh năm 1990 và hoạt_động trong lĩnh_vực người_mẫu .,NONE
+"Lợi dụng nhiệm vụ, quyền hạn được giao, các bị can đã có hành vi nhận hối lộ.",NONE
+"Xuyên cho biết, đời sống vợ chồng nhiều tháng nay liên tục lục đục, nhiều lần cãi nhau vì chuyện tiền bạc.",NONE
+Lễ cưới sẽ được tổ_chức vào ngày_mai tại Hoà_Bình .,Hoà_Bình|LOCATION
+"Công an đã làm rõ tình tiết trong ngày 22/12, khi Trang hành hạ bé gái 8 tuổi nhiều giờ liền và việc phục hồi camera an ninh hé lộ nhiều điều quan trọng",NONE
+"Trong mâm có 4 đĩa gà , nhà_hàng thanh_toán với mức giá 1 triệu / 4 đĩa ; các món lòng non , dạ_dày có mức giá 250.000 đồng / đĩa ; trâu xào măng 220.000 đồng / đĩa và hành muối , dưa muối 7 đĩa với giá 30.000 đồng / đĩa … Tổng_số tiền khách phải trả là 3,5 triệu đồng .",NONE
+"Bị_cáo cũng chỉ nói sơ qua với vợ là xin kháng_cáo , sau khi vợ bị_cáo viết xong , bị_cáo có đọc qua nội_dung .",NONE
+Kinh_phí để làm_quà tặng chủ_yếu là từ nguồn xã_hội_hoá .,NONE
+"Sau đó, gã lấy băng keo dán biển số xe, áp sát giật túi xách của các bé rồi tẩu thoát.",NONE
+"Ngày 30/12, Cơ quan Cảnh sát điều tra (CSĐT) Công an tỉnh Quảng Bình đã dẫn giải đối tượng truy nã đặc biệt nguy hiểm Hoàng Minh Toàn (SN 1977, đăng ký thường trú tại số 57/44 Quang Trung, phường 12, quận Gò Vấp, TP.HCM) từ TP.HCM về địa phương.",Cơ quan Cảnh sát điều tra|ORGANIZATION; CSĐT|ORGANIZATION; Công an tỉnh Quảng Bình|ORGANIZATION; Hoàng Minh Toàn|PERSON; phường 12|LOCATION; quận Gò Vấp|LOCATION; TP|LOCATION; .HCM|ORGANIZATION; TP|LOCATION; .HCM|ORGANIZATION
+"Cả nước không xảy ra đua xe trái_phép , các vụ án nghiêm_trọng đều nhanh_chóng phát_hiện ra thủ_phạm .",NONE
+Anh Tuấn đã đưa 100.000 đồng nhưng bị Linh chê ít.,NONE
+"Ông Mai_Tiến_Dũng - bộ_trưởng , chủ_nhiệm Văn_phòng Chính_phủ , tổ_trưởng Tổ công_tác của Thủ_tướng Chính_phủ - đã nói như_vậy tại buổi làm_việc của tổ công_tác với UBND tỉnh Thanh_Hoá sáng 28-11 .",Thanh_Hoá|ORGANIZATION
+An_ninh được thắt chặt ngay tại tầng 1 của toà nhà .,NONE
+"Ngày 4/8, Tòa gia đình và người chưa thành niên (TAND TP.HCM), mở phiên xét xử phúc thẩm vụ ly hôn giữa diễn viên, ca sỹ Diệp Lâm Anh và chồng cũ là doanh nhân Nghiêm Đức.",Tòa gia đình|ORGANIZATION; TAND TP.HCM|ORGANIZATION
+Siêu_mẫu châu_Á khá tự_hào và hài_lòng về biểu_hiện của 3 cô_gái đội mình .,NONE
+"Đồng thời, Công ty Minh Hoa (do vợ ông Chung làm Giám đốc) ký kết hợp đồng kinh tế với Công ty Nhật Cường để liên danh Nhật Cường- Đông Kinh hợp thức hóa hồ sơ năng lực để dự thầu và trúng thầu.",Minh Hoa|ORGANIZATION
+"Khi đi đến chốt kiểm soát y tế của xã Thắng Hải (huyện Hàm Tân), Bảo bị tổ công tác của chốt ra hiệu lệnh dừng xe, kiểm tra.",xã Thắng Hải|LOCATION; huyện Hàm Tân|LOCATION
+Sắt về nhà thủ dao bầu trong người rồi sang nhà bố vợ tiếp tục cự cãi.,NONE
+"“ Do Quyên vừa vào ở , chưa kịp làm hợp_đồng thuê nhà nên ban Quản_lý chợ chưa nắm được họ tên , nơi cư_trú cụ_thể ” , ông Nam cho_biết thêm .",NONE
+"Dù đang bị truy nã nhưng đến ngày 11/1/2024, Thiện từ Campuchia quay về rồi xông vào nhà chị H. dùng súng bắn 2 phát về phía nạn nhân.",NONE
+H .,NONE
+"Ba ngư_dân đã được ủ ấm , chăm_sóc sức_khoẻ ban_đầu sau đó đưa vào bờ an_toàn .",NONE
+"Riêng Triệu_Thị_Chính ( cựu Phó Giám_đốc Sở GD & ĐT tỉnh Hà_Giang ) bị truy_tố về tội "" Lợi_dụng chức_vụ quyền_hạn gây ảnh_hưởng đối_với người khác để trục_lợi "" .",Triệu_Thị_Chính|PERSON; Sở GD|ORGANIZATION; ĐT tỉnh Hà_Giang|ORGANIZATION
+""" Anh ký hợp_đồng với tôi ngày hôm_nay , giá vật_tư , thiết_bị , nhân_công … là của ngày hôm_nay .",NONE
+"Theo Bộ Công an, bề ngoài, Hội thánh Tin lành đấng Christ Tây Nguyên tổ chức sinh hoạt tôn giáo bình thường nhưng lại có nhiều hoạt động xâm phạm an ninh quốc gia.",NONE
+"Sáng 12-5 , lãnh_đạo Phòng Cảnh_sát quản_lý hành_chính về trật_tự xã hộ ( PC 64 ) Công_an TP. HCM , cho_biết đã phối_hợp nhiều lực_lượng bất_ngờ kiểm_tra một nhà_hàng trên đường Tôn_Thất_Tùng ( quận 1 ) và phát_hiện nhiều vi_phạm .",Phòng Cảnh_sát quản_lý hành_chính|ORGANIZATION; trật_tự xã|ORGANIZATION; PC 64|ORGANIZATION; Công_an TP. HCM|ORGANIZATION; Tôn_Thất_Tùng|LOCATION; quận 1|LOCATION
+Hiện cơ_quan công_an đang truy_nã quốc_tế các nghi_phạm .,NONE
+"Tại đây, Minh tiếp tục cầm dao đâm người phụ nữ.",NONE
+""" Tuy_nhiên , quy_hoạch phát_triển giao_thông vận_tải TP. HCM đến năm 2020 và tầm nhìn đến sau năm 2020 được Thủ_tướng phê_duyệt vào ngày 8-4-2013 vẫn giữ ga Sài_Gòn ở vị_trí hiện_nay .",vận_tải TP. HCM|ORGANIZATION; Sài_Gòn|ORGANIZATION
+"Theo cơ quan điều tra, chưa có tài liệu thể hiện những người này biết công ty Vĩnh Xuân không có tài sản thế chấp, biết các hồ sơ vay vốn là lập khống.",Vĩnh Xuân|LOCATION
+"Các đối tượng bị bắt gồm: Nguyễn Văn Sơn (SN 1969) trú số nhà 8/202 phố Dương Đình Nghệ, phường Tân Sơn; Nguyễn Đức Anh (SN 1982) và Nguyễn Khắc Đạo (SN 1984) đều ở xã Quảng Tâm, TP Thanh Hóa.",Dương Đình Nghệ|LOCATION; phường Tân Sơn|LOCATION; Nguyễn Đức Anh|PERSON; Nguyễn Khắc Đạo|PERSON; xã Quảng Tâm|LOCATION; TP Thanh Hóa|LOCATION
+"Theo hồ sơ, ngày 23/9, Công an TP Tân An tiếp nhận tin báo của Ban Quản lý dự án nâng cấp đô thị TP Tân An về việc 9 cây cau trồng trên dải phân cách giữa đường Hùng Vương (phường 2) bị các đối tượng cưa ngang.",Công an|ORGANIZATION; TP Tân An|LOCATION; nâng cấp đô thị|ORGANIZATION; TP Tân An|LOCATION; Hùng Vương|LOCATION; phường 2|LOCATION
+"Cô ta biết Phi không còn yêu mình và đã có “ crush ” mới , điều này khiến cô nàng ghen ra_mặt , muốn “ làm ra_ngô_ra_khoai ” ngay trong xóm trọ của Phi .",NONE
+""" Trước_đây , các bộ_ngành không đồng_ý với kiến_nghị của TP Đà_Nẵng về chủ_trương thu tiền nợ sử_dụng đất .",Đà_Nẵng|ORGANIZATION
+T,NONE
+"Chỉ khi các lực_lượng chức_năng , khi xử_lý các phương_tiện vi_phạm đến mức_độ phải tạm giữ mới phát_hiện nhiều xe_máy đã có thời_gian sử_dụng mấy chục năm .",NONE
+"Tại quyết định số 513, Thủ tướng Chính phủ quyết định thi hành kỷ luật bằng hình thức xóa tư cách nguyên Phó Chủ tịch UBND tỉnh Bắc Ninh nhiệm kỳ 2011-2016 đối với ông Nguyễn Lương Thành, do đã có những vi phạm, khuyết điểm trong công tác và Ban Bí thư đã thi hành kỷ luật về Đảng.",UBND tỉnh|ORGANIZATION; Bắc Ninh nhiệm kỳ|LOCATION; Nguyễn Lương Thành|PERSON
+"Một góc diện_tích gần 10ha đất rừng được "" hợp_thức_hoá "" thành đất trồng cây_lâu_năm - Ảnh : MINH_TRÂN .",NONE
+Tuy nhiên sau đó nhân viên ngân hàng trên vẫn không trả đủ số tiền còn lại nên ông M. làm đơn trình báo Công an quận Thanh Khê.,quận|ORGANIZATION; Thanh Khê|LOCATION
+"Theo điều tra sơ bộ, bà Hoa không chồng không con, nên ở nhờ nhà em ruột là ông Tùng (bố Phong) tại ngôi nhà ở hẻm số 146 đường Nguyễn Chế Nghĩa, P.12, Q.8.",Nguyễn Chế Nghĩa|LOCATION; P|LOCATION; 12|LOCATION; Q|LOCATION; 8|LOCATION
+"Thông tin thêm từ phía Thượng sĩ Thành, hai tên cướp khoảng 20 tuổi, bịt kín mặt và đi xe biển số Nghệ An.",NONE
+"Theo thông_báo của Văn_phòng Trung_ương Đảng , ngày 27-11 tại trụ_sở Trung_ương Đảng , Ban_Bí_thư đã họp dưới sự chủ_trì của Tổng_bí_thư , Chủ_tịch nước Nguyễn_Phú_Trọng .",NONE
+"Theo cáo trạng, chiều 19/6/2018, sau thời gian đi làm tại TP Đà Nẵng, Dũng trở về quê nhà và gặp vợ cũ (đã ly hôn 1 tháng) là chị Nguyễn Thị Bích H. (SN 1985, trú xã Tam Anh Nam).",TP Đà Nẵng|LOCATION; Nguyễn Thị Bích H|PERSON; xã Tam Anh Nam|LOCATION
+"Đây là lần đầu_tiên các mỹ_nhân như Tường_Linh , Linh_Chi , Thiếu_Lan , Quỳnh_Như cùng nữ huấn_luyện_viên 9X xuất_hiện tại một sự_kiện .",NONE
+Văn_bản này giả chữ k‎ý của trưởng_phòng tài_chính - kế_toán và con_dấu của Trường ĐH Kinh_tế TP. HCM .,kế_toán|ORGANIZATION; Trường ĐH Kinh_tế TP. HCM|ORGANIZATION
+"Khán_giả Khả_Ngân bình_luận : “ Vì dư_luận mà phải dừng lại , cảm_thấy tiếc cho một cặp đôi .",NONE
+Nam ca_sĩ mong mình sẽ gặp trưởng_phòng dễ_tính để “ em có làm gì họ cũng cười ” .,NONE
+Nhóm 3 tên thừa nhận hành vi chém chị H để cướp chiếc xe SH nói trên.,NONE
+"Bộ Công an bước đầu xác định, đường dây này mua bán phần mềm gián điện dùng để nghe lén trên điện thoại thông qua các trang web như: xxxdong.",NONE
+"Theo thông_tin ban_đầu , các đối_tượng trong đường_dây đánh_bạc qua mạng internet nghìn tỷ này đã xây_dựng trang_web manvip.",NONE
+"Đại_diện BTC cho_hay , phía đơn_vị này nhận thấy hành_vi của Nguyễn_Thị_Dung không phù_hợp với danh_hiệu Á quân 1 của cuộc thi Người_mẫu thời_trang Việt_Nam 2018 , gây ảnh_hưởng đến uy_tín của cuộc_thi .",NONE
+Hiện vụ việc đang tiếp tục được cơ quan chức năng mở rộng điều tra,NONE
+"Hà bế đứa con nhỏ trèo theo các bậc thang đi qua lỗ thông gió lên mái tầng 3 khu nhà trọ rồi la hét, gây náo loạn.",NONE
+Vụ nổ súng kinh hoàng này khiến nhiều người dân ở huyện Tịnh Biên khiếp sợ.,huyện Tịnh Biên|LOCATION
+"Tờ El_Mostrador viết rằng nhìn vết cắt thấy được đây là những vây cá rất tươi , vừa được cắt ra khỏi thân cá_mập .",NONE
+Agirbank ký xác nhận cho thuê 3 tài sản kia còn tài sản 185 Hai Bà Trưng là được lồng vào.,NONE
+"Nguyên Giám đốc VNCB CN Sài Gòn Mai Hữu Khương chỉ ra, tại thời điểm Phạm Công Danh nhận chuyển nhượng từ bà Hứa Thị Phấn, khoản nợ lớn nhất Danh nhận là 22.000 tỷ.",Sài Gòn|ORGANIZATION; Mai Hữu Khương|PERSON
+"Chủ_tịch Quốc_hội lưu_ý : "" Các phạm_nhân tự_nguyện , được tạo điều_kiện lao_động thì họ phải được hưởng thành_quả lao_động của mình , như nâng_cao đời_sống , đặc_biệt cần đảm_bảo các quy_định về an_toàn_lao_động , thời_giờ lao_động , nghỉ_ngơi "" .",NONE
+"Sáng 13/10/2014, Trúc đến phòng trọ của Trực chơi và 2 người đã làm chuyện ""vợ chồng"".",NONE
+"Các bị cáo khác không có vai trò gì, cũng không được hưởng lợi gì.",NONE
+"Những ngày dài sau đó, cứ cách từ 15 đến 30 ngày, Chung lại sang nhà T. để ""gần gũi"" mỗi khi gia đình đi vắng.",NONE
+"Trước đó , sáng 22-8 , trung_tá Nguyễn_Hữu_Cường - phó Trưởng Công_an TP Vinh - cho_biết ngày 25-8 , công_an TP Vinh sẽ có kết_luận về vụ_việc gia_đình tố bé gái 6 tuổi bị xâm_hại gây xôn_xao dư_luận những ngày qua .",TP|ORGANIZATION; Vinh|LOCATION; TP|ORGANIZATION; Vinh|LOCATION
+Người Việt mình có câu tốt khoe xấu che .,NONE
+"Liên_quan đến vụ án nữ_sinh giao gà bị sát_hại gây xôn_xao dư_luận dịp tết_nguyên_đán , Công_an tỉnh Điện_Biên đã khởi_tố 9 bị_can được xác_định liên_quan trực_tiếp đến vụ án .",tỉnh Điện_Biên|ORGANIZATION
+"Theo đó , đoàn công_tác của tỉnh Đồng_Nai đã làm_việc với ban giám_đốc Công_ty Pouchen đi đến thống_nhất và ra thông_báo đến toàn_thể công_nhân .",tỉnh Đồng_Nai|ORGANIZATION
+"Khải được bà Huế cho ở tạm trước khi bố trí nơi ở khác, tuy nhiên đến rạng sáng 10/6 thì xảy ra vụ việc trên",NONE
+"Tại hiện_trường , cháu trai tử_vong tại_chỗ , còn ông Nay Yuen đang thoi_thóp .",Nay|PERSON
+"Dự_kiến , hơn 600 chuyên_gia kinh_tế , các nhà_khoa_học , nhà_quản_lý , doanh_nghiệp ... trong và ngoài nước cùng thảo_luận , chia_sẻ các kinh_nghiệm , bài_học từ các nước cũng như những giải_pháp để xây_dựng đô_thị sáng_tạo thông_qua các phiên toạ_đàm chuyên_sâu về các chủ_đề : Cuộc cách_mạng_công_nghiệp 4.0 và xu_hướng phát_triển đô_thị sáng_tạo ; Xu_hướng , các mô_hình , vai_trò , tác_động của các đô_thị sáng_tạo đối_với việc tăng_tốc phát_triển kinh_tế xã_hội của các quốc_gia , địa_phương theo hướng phát_triển nhanh và bền_vững ; Vai_trò của doanh_nghiệp trong quá_trình kiến_tạo đô_thị sáng_tạo và giới_thiệu chủ_trương xây_dựng khu_vực phía Đông TP theo hướng đô_thị sáng_tạo để thu_hút đầu_tư .",NONE
+"Khi thấy vợ chồng anh Thương đang mải ăn cơm không để ý chiếc xe để phía ngoài, Nam cùng Hoàng Anh thản nhiên đi vào dắt chiếc xe đạp điện ra ngoài đường định tẩu thoát.",NONE
+"Theo thông tin ban đầu, khoảng 7h sáng nay, người con rể tên Hiếu không thấy mẹ vợ mình là bà Lưu Thị Thu (SN 1966) dậy đi làm như thường ngày nên đến phòng trọ kiểm tra.",Lưu Thị Thu|PERSON
+"Theo nghiên_cứu của tôi , các nhà_đầu_tư tư_nhân sẽ được khuyến_khích đầu_tư vào các dự_án cơ_sở_hạ_tầng nếu họ có_thể hưởng lợi từ "" doanh_thu thuế lan_toả "" thay_vì chỉ dựa vào phí người dùng .",NONE
+"Theo ông Đỗ_Chí_Chung - chánh_văn_phòng Tổng_công_ty Đầu_tư phát_triển đường_cao_tốc Việt_Nam ( VEC ) - trong chín tháng đầu năm trên 4 tuyến cao_tốc gồm Cầu_Giẽ - Ninh_Bình , Nội_Bài - Lào_Cai , Đà_Nẵng - Quảng_Ngãi ( Km 0+000 - Km 65+000 ) và cao_tốc TP. HCM - Long_Thành - Dầu_Giây đã từ_chối phục_vụ 35.000 xe_tải vi chở hàng quá_tải .",Đỗ_Chí_Chung|PERSON; Tổng_công_ty Đầu_tư|ORGANIZATION; đường_cao_tốc Việt_Nam|ORGANIZATION; VEC|ORGANIZATION; Cầu_Giẽ|LOCATION; Ninh_Bình|LOCATION; Nội_Bài|LOCATION; Lào_Cai|LOCATION; Đà_Nẵng|LOCATION; Quảng_Ngãi|LOCATION; TP. HCM|ORGANIZATION; Long_Thành|LOCATION; Dầu_Giây|LOCATION
+"Quay về tới nhà, thấy vợ đang ngồi ru cháu ngoại ngủ, Nghiệm lạnh lùng dội cả can xăng lên người.",NONE
+"Sau khi phá két sắt, nhìn thấy số tài sản lớn, tên trộm đột nhiên thấy lương tâm cắn rứt nên quyết định mang gửi công an, trả lại cho nạn nhân",NONE
+"Ông Lê_Văn_Đồng - trưởng_thôn Cốc_Mốc - cho_biết cuộc_sống của đồng_bào dân_tộc Mường ở địa_phương từ trước đến nay yên_bình , tình_cảm , nhà nào có công to , việc lớn bà_con đều xúm lại giúp_đỡ nhau .",Lê_Văn_Đồng|PERSON; Cốc_Mốc|LOCATION
+"Thông tin từ cơ quan chức năng cho biết, chiều 16/9, nhân viên khách sạn Hoàng Anh 1 (TP. Vinh) phát hiện cháu T. nằm một mình trong phòng 206.",Hoàng Anh|LOCATION; 1|ORGANIZATION; TP. Vinh|LOCATION
+"Tuy_nhiên , trao_đổi với Tuổi_Trẻ ngày 1-9 , ông Nguyễn_Văn_Toàn - tổng_biên_tập tạp_chí điện_tử Môi_trường và Cuộc_sống , cho_biết ông Chiến không phải là trưởng đại_diện mà chỉ là phóng_viên_thường_trú khu_vực miền Trung - Tây_Nguyên .",NONE
+"Dù không phải xe được đi vào luồng xanh (luồng ưu tiên), nhưng khi chạy đến chốt kiểm soát dịch bệnh Covid 19 ở đầu cầu Hạc Trì, xã Bồ Sao, bị cáo vì không muốn phải làm thủ tục khai báo y tế, đã điều khiển cho xe đi vào luồng ưu tiên.",Hạc Trì|LOCATION; xã Bồ Sao|LOCATION
+"Trong ngày_mai , các địa_phương sẽ huy_động lực_lượng thu_hoạch hơn 10.000 ha lúa hè thu còn lại "" , ông Hồng nói .",NONE
+"Theo bà Trâm , ngay giữa trung_tâm TP. HCM mà hai mẹ_con phải đi suốt đêm để được bảo_vệ quyền_lợi của mình là việc rất cần suy_nghĩ .",TP. HCM|ORGANIZATION
+"Sau khi nghiệm_thu đóng búa kiểm_lâm cho công_ty Thảo_Trúc và cá_nhân Phượng "" râu "" , ông Khang được Nguyễn_Hoàng_Trang bồi_dưỡng số tiền hàng trăm triệu đồng .",NONE
+"Cơ quan điều tra xác định các bị can đã trốn thuế với tổng số tiền hơn 15,2 tỷ đồng",NONE
+Hàng trăm cây gỗ dầu trong rừng phòng hộ ở Đồng Nại bị kẻ xấu khoan 3 lỗ ở thân rồi đổ thuốc diệt cỏ vào khiến 242 cây bị chết.,Đồng Nại|LOCATION
+"Xuất_hiện tại sân_bay Thanh_Hoá , với hình_ảnh giản_dị , gần_gũi , nghệ_sĩ Chí_Trung đã nhận được sự quan_tâm đặc_biệt của những người có_mặt .",Thanh_Hoá|ORGANIZATION
+Rồi Tuân nhân đêm_tối bỏ chạy về Thượng_Khuê với Quách_Hoài .,Thượng_Khuê|LOCATION
+"Giữa năm 2014, Cục thuế TP Hà Nội ra quyết định xử phạt truy thu thuế hơn 1,6 tỷ đồng.",thuế TP Hà Nội|ORGANIZATION
+"Hiện , Cơ_quan Cảnh_sát điều_tra bộ Công_an đang tập_trung điều_tra mở_rộng vụ án , áp_dụng các biện_pháp theo luật_định để làm rõ tính_chất , vai_trò , hành_vi phạm_tội của các bị_can và những người có liên_quan ; xác_minh để thu_hồi , kê_biên triệt_để tài_sản cho Nhà_nước .",điều_tra bộ Công_an|ORGANIZATION
+"Qua thăm khám, bác sĩ xác định em N. bị lòi mạch nối của ruột và tràn khí màng phổi.",NONE
+"Theo thông tin ban đầu, vào chiều cùng ngày, chị M.T.",NONE
+Cơ_quan công_an xác_định ông My đã thực_hiện hành_vi dâm_ô với tất_cả 7 cháu .,NONE
+"Tại phiên tòa hôm nay, Miên tiếp tục không thừa nhận tội danh như cáo trạng đã truy tố mà chỉ nhận bản thân đòi nợ dùm bà Thảo vì số tiền 800 triệu đồng lấy của nạn nhân cũng đã chuyển cho bà này.",NONE
+"Mọi thứ diễn ra quá nhanh , không ai kịp phản_ứng gì .",NONE
+"Bất ngờ 'đột kích' vào bar ăn chơi ‘tai tiếng’ ở Cần Thơ, Công an phát hiện nhiều thanh niên dương tính với ma tuý.",Cần Thơ|LOCATION
+(chú ruột của nạn nhân) về việc nạn nhân nhập viện trong tình trạng hôn mê sau khi qua đêm tại nhà của Tùng hôm 15/3.,NONE
+""" - Ảnh : TỰ_TRUNG .",NONE
+"Ví dụ như xã Quảng Nham gần 200 người, Quảng Chính 150 người, Quảng Thạch 95 người… Trước thực trạng trên, Công an huyện Quảng Xương đã vào cuộc và đã khởi tố vụ án, khởi tố bị can, bắt tạm giam đối với Đỗ Văn Sáu (SN 1969), trú tại xã Quảng Chính, huyện Quảng Xương, Thanh Hóa về hành vi tổ chức đưa người sang nước ngoài trái phép.",xã Quảng Nham|LOCATION; Quảng Chính|LOCATION; Quảng Thạch|LOCATION; Công an huyện Quảng Xương|ORGANIZATION; Đỗ Văn Sáu|PERSON; xã Quảng Chính|LOCATION; Thanh Hóa|LOCATION
+"Vạch kế hoạch hoàn hảo cướp 1 ngân hàng khác nhưng vì nơi này đóng cửa nên dọc đường về, chúng cướp phòng giao dịch của ABBank.",NONE
+"Người này là 1 người đàn ông Hàn Quốc, lưu trú tại Q.7.",7|LOCATION
+Vụ án đang được Công an tỉnh Hải Dương tiếp tục điều tra mở rộng,Công an tỉnh|ORGANIZATION; Hải Dương|LOCATION
+"Sau khi đăng_quang hoa_hậu , người đẹp quyết_định ra nước_ngoài theo học ngành Quản_trị kinh_doanh .",NONE
+"Tuy_nhiên , các đối_tượng vẫn khai rằng , việc sát_hại nạn_nhân là vào tối 30 Tết .",NONE
+"Chiều 19.11, ông Lại Xuân Thanh - Cục trưởng Cục Hàng không Việt Nam - xác nhận với PV về sự việc chiếc máy bay bị phát hiện chở 229kg heroin đến Đài Loan (Trung Quốc) đã quá cảnh tại sân bay Tân Sơn Nhất (TP.HCM).",Lại Xuân Thanh|ORGANIZATION; Cục Hàng không Việt Nam|ORGANIZATION; Tân Sơn Nhất|LOCATION; HCM|ORGANIZATION
+"Nhóm Ý, Vy - Trinh rủ thêm 3 đối tượng khác đến cùng thực hiện kế hoạch.",NONE
+"Vì thế, sau khi xem xét các tình tiết, tòa tuyên mức án nêu trên",NONE
+"Nhận thấy không ai để ý, Linh mở cửa xe, lên ghế lái, bấm chốt cửa xe lại và đề máy nổ.",NONE

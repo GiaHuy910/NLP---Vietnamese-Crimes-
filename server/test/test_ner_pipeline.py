@@ -193,3 +193,61 @@ class MetricTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+import json
+
+from server.src.ner_pipeline.argument_schema import (
+    ARGUMENT_TYPES,
+    arguments_for_ner_label,
+    load_argument_schema,
+    normalize_ner_label,
+)
+from server.src.ner_pipeline.errors import NERPipelineError
+
+
+def test_argument_schema_contains_expected_labels():
+    schema = load_argument_schema()
+
+    assert len(schema["ner_labels"]) == 8
+    assert set(schema["argument_mapping"]) == set(ARGUMENT_TYPES)
+
+
+def test_legacy_labels_are_normalized():
+    assert normalize_ner_label("ORGANIZATION") == "ORG"
+    assert normalize_ner_label("LOCATION") == "LOC"
+    assert normalize_ner_label("PERSON") == "PERSON"
+
+
+def test_organization_argument_mapping():
+    assert set(arguments_for_ner_label("ORG")) == {
+        "DOI_TUONG",
+        "NAN_NHAN",
+        "CO_QUAN",
+    }
+
+
+def test_unknown_ner_label_is_rejected():
+    try:
+        normalize_ner_label("UNKNOWN_LABEL")
+    except NERPipelineError:
+        pass
+    else:
+        raise AssertionError("Expected NERPipelineError")
+
+
+def test_schema_rejects_unknown_mapping_label(tmp_path):
+    source = load_argument_schema()
+    source["argument_mapping"]["CO_QUAN"] = ["UNKNOWN_LABEL"]
+
+    path = tmp_path / "invalid_schema.json"
+    path.write_text(
+        json.dumps(source, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    try:
+        load_argument_schema(path)
+    except NERPipelineError:
+        pass
+    else:
+        raise AssertionError("Expected NERPipelineError")

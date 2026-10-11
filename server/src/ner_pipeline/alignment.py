@@ -22,19 +22,45 @@ def _normalized_token(value: str) -> str:
     return unicodedata.normalize("NFC", value.replace("_", " ")).casefold()
 
 
+
 def _fold_with_offsets(value: str) -> tuple[str, list[int], list[int]]:
     folded: list[str] = []
     starts: list[int] = []
     ends: list[int] = []
+
     for index, character in enumerate(value):
         normalized = unicodedata.normalize("NFD", character.casefold())
+
+        for result in normalized:
+            if unicodedata.category(result) == "Mn":
+                continue
+
+            folded.append(result)
+            starts.append(index)
+            ends.append(index + 1)
+
+    return "".join(folded), starts, ends
+
+
+def _fold_with_offsets_normalized(value: str):
+    folded = []
+    starts = []
+    ends = []
+
+    for index, character in enumerate(value):
+        # NFC first makes Vietnamese combining-mark order consistent.
+        normalized = unicodedata.normalize("NFC", character).casefold()
+        normalized = unicodedata.normalize("NFD", normalized)
+
         for result in normalized:
             if unicodedata.category(result) == "Mn":
                 continue
             folded.append(result)
             starts.append(index)
             ends.append(index + 1)
+
     return "".join(folded), starts, ends
+
 
 
 def _find_mentions(
@@ -78,58 +104,105 @@ def _underthesea_segments(sentence: str) -> list[str]:
     return [match.group() for match in _SEGMENT_TOKEN.finditer(segmented)]
 
 
+
+
+
 def _segment_offsets(
     sentence: str,
     segments: list[str],
 ) -> list[tuple[str, int, int]]:
     tokens: list[tuple[str, int, int]] = []
     cursor = 0
+
     folded_sentence, folded_starts, folded_ends = _fold_with_offsets(sentence)
+
     for segment in segments:
+        folded_segment, _, _ = _fold_with_offsets(segment)
+
+        # Tokenizer có thể gộp từ bằng dấu "_".
         flexible = re.escape(segment).replace("_", r"[\s_]+")
-        match = re.search(flexible, sentence[cursor:], flags=re.IGNORECASE)
-        if match is not None:
-            start, end = cursor + match.start(), cursor + match.end()
-        else:
-            folded_segment, _, _ = _fold_with_offsets(segment)
-            folded_pattern = re.escape(folded_segment).replace(
-                "_", r"[\s_]+"
+        folded_pattern = re.escape(folded_segment).replace("_", r"[\s_]+")
+
+        candidates: list[tuple[int, int]] = []
+
+        # 1. Tìm khớp trực tiếp trong phần câu chưa xử lý.
+        for match in re.finditer(
+            flexible, sentence[cursor:], flags=re.IGNORECASE
+        ):
+            candidates.append(
+                (cursor + match.start(), cursor + match.end())
             )
-            fallback = next(
-                (
-                    candidate
-                    for candidate in re.finditer(
-                        folded_pattern, folded_sentence, flags=re.IGNORECASE
-                    )
-                    if folded_starts[candidate.start()] >= cursor
-                ),
-                None,
-            )
-            if fallback is None:
-                raise NERPipelineError(
-                    "Không thể căn chỉnh token tiếng Việt với câu gốc. "
-                    "Kiểm tra encoding và nội dung annotation."
+            break
+
+        # 2. Tìm khớp sau khi bỏ dấu và chuẩn hóa chữ hoa/thường.
+        for match in re.finditer(
+            folded_pattern, folded_sentence, flags=re.IGNORECASE
+        ):
+            if match.start() >= len(folded_starts):
+                continue
+            if match.end() == 0 or match.end() > len(folded_ends):
+                continue
+
+            start = folded_starts[match.start()]
+            end = folded_ends[match.end() - 1]
+
+            if start >= cursor:
+                candidates.append((start, end))
+                break
+
+        # 3. Nếu không có khớp nào, xử lý trường hợp "40_g" và "40g".
+        if not candidates:
+            compact_segment = segment.replace("_", "")
+            compact_match = (
+                re.match(
+                    re.escape(compact_segment),
+                    sentence[cursor:],
+                    flags=re.IGNORECASE,
                 )
-            start = folded_starts[fallback.start()]
-            end = folded_ends[fallback.end() - 1]
-        skipped = sentence[cursor:start]
-        if any(not character.isspace() and character != "_" for character in skipped):
-            raise NERPipelineError(
-                "Bộ tách từ bỏ sót ký tự trong sentence khi căn chỉnh token."
+                if compact_segment
+                else None
             )
+
+            if compact_match is not None:
+                candidates.append(
+                    (cursor, cursor + compact_match.end())
+                )
+
+        # Chọn vị trí hợp lệ sớm nhất; không nhảy qua chữ trong câu.
+        selected = None
+
+        for start, end in sorted(candidates):
+            skipped = sentence[cursor:start]
+
+            if any(not ch.isspace() and ch != "_" for ch in skipped):
+                continue
+
+            selected = (start, end)
+            break
+
+        if selected is None:
+            raise NERPipelineError(
+                f"Không thể căn chỉnh token {segment!r} "
+                f"tại vị trí {cursor} trong sentence: {sentence!r}"
+            )
+
+        start, end = selected
         tokens.append((segment, start, end))
         cursor = end
-    if any(
-        not character.isspace() and character != "_"
-        for character in sentence[cursor:]
-    ):
-        raise NERPipelineError(
-            "Bộ tách từ bỏ sót phần cuối sentence khi căn chỉnh token."
-        )
-    if not tokens and sentence.strip():
-        raise NERPipelineError("Bộ tách từ không tạo token cho sentence.")
-    return tokens
 
+    tail = sentence[cursor:]
+
+    if any(not ch.isspace() and ch != "_" for ch in tail):
+        raise NERPipelineError(
+            f"Bộ tách từ bỏ sót phần cuối sentence: {tail!r}"
+        )
+
+    if not tokens and sentence.strip():
+        raise NERPipelineError(
+            "Bộ tách từ không tạo token cho sentence."
+        )
+
+    return tokens
 
 def _split_tokens_at_entity_boundaries(
     sentence: str,
