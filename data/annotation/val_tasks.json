@@ -1,0 +1,1502 @@
+[
+ {
+  "data": {
+   "ann_id": "val_a0000",
+   "doc_id": "val_01145",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Thiếu úy Công an bị tước quân tịch vì bị phát hiện sử dụng trái phép chất ma túy",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0001",
+   "doc_id": "val_01834",
+   "sent_id": 10,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Công an tỉnh Bà Rịa – Vũng Tàu đã chuyển vụ án sang Công an tỉnh Quảng Nam để tiếp tục điều tra, mở rộng xử lý theo quy định.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0002",
+   "doc_id": "val_00203",
+   "sent_id": 2,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Từ cuộc gọi bằng sim rác yêu cầu 100.000 USD Trước đó, ngày 12/10, tổng GĐ một khách sạn trên địa bàn TP Vinh liên tục nhận được cuộc gọi từ số sim rác với nội dung yêu cầu phải chuyển cho đối tượng số tiền 100.000 USD, nếu không hắn sẽ gây ra các vụ nổ để phá huỷ khách sạn.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0003",
+   "doc_id": "val_03137",
+   "sent_id": 8,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Trong thời gian chữa bệnh, Dũng \"ốt” vẫn thường xuyên ra ngoài, chỉ đạo đàn em thực hiện hành vi phạm tội tại khu vực 5 bãi trông xe, vật liệu xây dựng do đối tượng này cùng đàn em lấn chiếm ở quận Bắc Từ Liêm và quận Tây Hồ, TP Hà Nội.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0004",
+   "doc_id": "val_03981",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Chị Tuyết chửi Thắng “hạng người rẻ tiền, nghèo kiết xác”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0005",
+   "doc_id": "val_03361",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Do cần vốn làm ăn nên vợ chồng Tiệp thế chấp xe tại ngân hàng VPBank để vay gần 400 triệu đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0006",
+   "doc_id": "val_04367",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Đinh Lan Hương (SN 1983), HKTT ở phố Tống Duy Tân, quận Hoàn Kiếm, Hà Nội, được xác định là mẹ cháu bé T.T.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0007",
+   "doc_id": "val_03516",
+   "sent_id": 2,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Tất cả khối lượng bùn thải khi được bơm hút lên sẽ dẫn trong đường ống khép kín, đem đổ sang bến cảng tổng hợp Vĩnh Tân cách đó khoảng 500m.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0008",
+   "doc_id": "val_01155",
+   "sent_id": 24,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Trẻ sinh trong trại giam - lý lịch sạch sẽ Công việc chăm sóc các cháu được giao cho 2 phạm nhân nữ lớn tuổi.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0009",
+   "doc_id": "val_02973",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Theo thông tin ban đầu, tối qua, nhóm của Phan Minh Tân (22 tuổi) và Nguyễn Hồ Nhật Khánh (21 tuổi, cùng ngụ thị trấn Chợ Gạo, huyện Chợ Gạo) xảy ra mâu thuẫn chuyện tiền bạc với một nhóm thanh niên cùng huyện.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0010",
+   "doc_id": "val_01589",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Hai bị cáo là Nguyễn Thanh Lâm (SN 1970) và Phạm Minh Trí (SN 1991) cùng trú tại xã Phú Hữu, huyện Long Phú, Sóc Trăng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0011",
+   "doc_id": "val_01001",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Khi thu thập đầy đủ bằng chứng, mới đây Cơ quan CSĐT đã khởi tố, bắt tạm giam 13 đối tượng như nói trên.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0012",
+   "doc_id": "val_00012",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Một buổi tối, M. xin phép bà đi sinh nhật rồi cả đêm không thấy về.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0013",
+   "doc_id": "val_01094",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Sau đó, bị can Phùng Mạnh Duẩn đã cấp giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới cải tạo cho 18 ô tô trái quy định và hưởng lợi số tiền hơn 150 triệu đồng",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0014",
+   "doc_id": "val_04062",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Còn đối với số tiền Vũ “nhôm” thu lợi bất chính cần tịch thu sung quỹ Nhà nước.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0015",
+   "doc_id": "val_01980",
+   "sent_id": 16,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Cuối cùng, vợ chồng Nam sa lưới pháp luật như đã nói ở trên.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0016",
+   "doc_id": "val_03313",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Lái xe sau đó đã bị tạm giữ hình sự để điều tra.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0017",
+   "doc_id": "val_00801",
+   "sent_id": 1,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Trước đó, Công an TP. Lạng Sơn nhận được đơn trình báo của gia đình về trường hợp con gái (SN 2002 trú tại phường Chi Lăng, TP. Lạng Sơn) bị đối tượng Ngô Duy Khánh rủ đến nhà nghỉ trên đường Trần Đăng Ninh, phường Hoàng Văn Thụ để cùng nhau sử dụng ma tuý, sau đó Khánh có hành vi xâm hại trái ý muốn với nạn nhân.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0018",
+   "doc_id": "val_03357",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Trong vụ án này, Đinh Thanh Trung giữ vai trò chủ mưu, là người khởi xướng, cung cấp địa điểm, trực tiếp đi lấy ma túy cho người khác sử dụng trái phép.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0019",
+   "doc_id": "val_02727",
+   "sent_id": 10,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Ông nghỉ hưu năm 2015.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0020",
+   "doc_id": "val_04217",
+   "sent_id": 5,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Do tin tưởng Hợi, nhiều người đã trực tiếp nhận tiền hoặc giới thiệu người quen đến đưa tiền cho Hợi để nhờ chị ta xin cho họ được đi xuất khẩu lao động.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0021",
+   "doc_id": "val_04129",
+   "sent_id": 8,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Theo nam ca sĩ này, việc chương trình không được diễn ra nằm ngoài kiểm soát của anh.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0022",
+   "doc_id": "val_02351",
+   "sent_id": 23,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Dự kiến phiên tòa sẽ diễn ra trong 9 ngày.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0023",
+   "doc_id": "val_02103",
+   "sent_id": 6,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Thanh tra tỉnh cũng yêu cầu thu hồi, nộp lại ngân sách nhà nước số tiền sai phạm hơn 3,5 tỉ đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0024",
+   "doc_id": "val_02794",
+   "sent_id": 6,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Cho rằng xe mình không vi phạm, những người có mặt trên xe đã dùng điện thoại quay lại cảnh làm việc nhưng bị một cán bộ CSGT rọi thẳng đèn pin vào camera, xấn người tới ngăn cản, đưa bàn tay hướng vào vùng mặt người quay phim.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0025",
+   "doc_id": "val_01677",
+   "sent_id": 9,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Theo như tôi biết, tính đến tại thời điểm này (sáng 28/8) chưa có Quyết định Khởi tố bị can gửi đến ông Phiến.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0026",
+   "doc_id": "val_04125",
+   "sent_id": 1,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Khoảng 11h ngày 5/12, khi anh đang cắt cọc bê tông tại Nhà máy cán thép nóng Khu Kinh tế Vũng Áng thì một thanh niên đến gây gổ, dùng mũ cứng đánh anh Nghĩa nhưng được anh Nam bạn anh Nghĩa can ngăn.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0027",
+   "doc_id": "val_01862",
+   "sent_id": 8,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Từ quan điểm trên, đại diện VKS đề nghị HĐXX tuyên phạt bị cáo Hoa Công Hậu, Hoàng Thị Thúy Nga từ 5-6 năm tù; Lê Thành Lữ 3-4 năm tù cùng về tội “Vi phạm quy định về đấu thầu gây hậu quả nghiêm trọng”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0028",
+   "doc_id": "val_03291",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Thu bị tuyên án 11 năm tù về tội mua bán trái phép chất ma túy.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0029",
+   "doc_id": "val_02578",
+   "sent_id": 12,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Đối với hành vi \"Thiếu trách nhiệm gây hậu quả nghiêm trọng\" của nguyên 7 cán bộ hải quan Cửa khẩu cảng Sài Gòn khu vực I. Theo đó, 7 bị cáo này được phân công kiểm tra thực tế hàng hóa tại hải quan Cửa khẩu cảng Sài Gòn khu vực I. Tuy nhiên, các bị cáo đã không thực hiện đúng nhiệm vụ được giao dẫn đến việc không phát hiện được 4 lô hàng bị phân luồng \"đỏ\" khai báo hải quan không trùng khớp so với hàng hóa thực tế.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0030",
+   "doc_id": "val_01399",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Thông qua tài khoản của các công ty TNHH thương mại dịch vụ C.H và H. D, những người này đã dùng thẻ ngân hàng giả thanh toán khống qua máy thanh toán thẻ (POS), rút tiền tại hai chi nhánh Ngân hàng Vietcombank Hải Phòng và Viettinbank Lê Chân.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0031",
+   "doc_id": "val_01370",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Đến tháng 5/2022, Mai giả giọng miền Nam gọi điện cho anh T., tự xưng là nhân viên Lãnh sự quán Úc hỗ trợ anh T. làm thủ tục nhận lại khoản tiền nợ đọng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0032",
+   "doc_id": "val_00825",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Trước đó, vào ngày 29/11, Công an Quảng Bình đã bắt quả tang 1 giám đốc doanh nghiệp tàng trữ trái phép 50 hộp pháo với tổng trọng lượng gần 70kg.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0033",
+   "doc_id": "val_03464",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Theo cáo buộc, vợ chồng ông Lương Thế Hiển đã lợi dụng sự tín nhiệm của anh Nguyễn Thanh Thủy để chiếm đoạt 676m2 đất ở phố Bà Triệu, Hà Nội rồi sau đó đem bán để thu 320 tỷ đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0034",
+   "doc_id": "val_04236",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Rạng sáng 20/3, nhóm này lái xe ô tô về TP. HCM giao ma tuý cho Huang Zai Wen (SN 1969, quốc tịch Trung Quốc) xếp vào container hạt nhựa để nguỵ trang, xuất sang Đài Loan (Trung Quốc).",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0035",
+   "doc_id": "val_03160",
+   "sent_id": 18,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Như vậy, bị cáo Trần Tân Sơn đã có hành vi bán thép và lập khống hồ sơ thanh toán khối lượng vật tư, vật liệu để chiếm đoạt tổng số hơn 1,7 tỷ đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0036",
+   "doc_id": "val_01382",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Được biết, Kha Văn Công là chủ mưu trong lần chuyển ma túy này.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0037",
+   "doc_id": "val_02780",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Các cặp vợ chồng này đã bị bắt giữ sau đó.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0038",
+   "doc_id": "val_00161",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Ngoài ra, bà Nhân còn có thiếu sót về trách nhiệm lãnh đạo, chỉ đạo Đảng đoàn LĐLĐ tỉnh Kiên Giang, như không bổ sung quy chế làm việc nhiệm kỳ 2013-2018, thiếu kiểm tra, đôn đốc thực hiện các giải pháp phòng ngừa tham nhũng, một số cán bộ của LĐLĐ tỉnh Kiên Giang thực hiện việc kê khai tài sản, thu nhập cá nhân chưa đúng quy định...",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0039",
+   "doc_id": "val_00763",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Công an quận Nam Từ Liêm (Hà Nội) vừa triệt phá một đường dây lừa đảo chiếm đoạt tài sản quy mô lớn, bắt giữ 4 đối tượng gồm: Tạ Anh Trường, Nguyễn Xuân Hải, Lê Quang Khải (cùng sinh năm 2005) và Nguyễn Tuấn Cảnh (sinh năm 1996), đều trú tại Hải Phòng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0040",
+   "doc_id": "val_02940",
+   "sent_id": 10,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Cáo trạng xác định, ông Lê Thanh Thản đã bán 488 căn hộ cho 488 khách hàng không được Nhà nước công nhận quyền sử dụng đất, quyền sở hữu nhà và tài sản khác gắn liền với đất (sổ đỏ), thu lợi bất chính tổng số tiền hơn 481 tỷ đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0041",
+   "doc_id": "val_01936",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Theo nhận định của Cục cảnh sát hình sự, vụ cướp ngân hàng mang tính chất đặc biệt nghiêm trọng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0042",
+   "doc_id": "val_02773",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Theo đuổi võ thuật cổ truyền từ nhỏ, đoạt nhiều huy chương, Ngọc Tình vô cùng háo hức khi nghe tin về một dự án phim hành động được đầu tư công phu bài bản với sự góp mặt của đạo diễn võ thuật Hollywood.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0043",
+   "doc_id": "val_03395",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Phát hiện bị lừa, bà H. đến Công an xã trình báo sự việc.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0044",
+   "doc_id": "val_00868",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Bị cáo dùng sổ tiết kiệm và giả chữ ký của vợ chồng ông T. trong các hồ sơ để vay NCB 47,5 tỷ đồng rồi chiếm đoạt.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0045",
+   "doc_id": "val_02522",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Chiều 23-5, nguồn tin của Tuổi Trẻ Online cho biết Cơ quan cảnh sát điều tra Công an tỉnh Bình Dương đã ra quyết định khởi tố bị can đối với 4 phụ nữ để điều tra hành vi giết người trong vụ án \" thi thể trong bêtông \" xảy ra tại ấp 5, xã Hưng Hoà, huyện Bàu Bàng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0046",
+   "doc_id": "val_02020",
+   "sent_id": 4,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Đến sáng 17/7, gia đình nhận được thông báo của Công an xã Diễn Kỷ, Công an huyện Diễn Châu về việc phát hiện được 3 em trên nên đã lập tức bắt xe xuống.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0047",
+   "doc_id": "val_03091",
+   "sent_id": 13,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Những ai là nạn nhân của Đoàn Thái An cũng sớm trình báo, tố giác hành vi vi phạm",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0048",
+   "doc_id": "val_04258",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Sáng 19/5, trao đổi với PV VietNamNet, một lãnh đạo Công an tỉnh Lai Châu cho biết, đã khởi tố vụ án, khởi tố bị can và ra lệnh tạm giam 4 tháng đối với Lường Văn Quân (SN 1989, quê Yên Bái, trú ở huyện Mường Tè, Lai Châu) về hành vi giết người.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0049",
+   "doc_id": "val_03770",
+   "sent_id": 18,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Dùng chứng minh nhân dân giả, khoác vai đại gia Tại Đà Nẵng cho đến khi bị bắt vào ngày 13/5 vừa qua, thì xem ra kiểu trốn nã của Tuấn \"tôm\" là độc nhất.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0050",
+   "doc_id": "val_02328",
+   "sent_id": 15,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Duy còn vào mạng internet học cách mở khóa các loại xe ô tô KIA CD5 và mua một bộ mở khóa xe ô tô để gây án.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0051",
+   "doc_id": "val_00492",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Theo cơ quan công an ngày 28/1/2016, Lộc cùng Nguyễn Văn Hoàng (27 tuổi, ngụ Cà Mau), Nguyễn Thanh Hà (30 tuổi, ngụ Bình Dương), Nguyễn Văn Vũ Thêm (27 tuổi, ngụ Tiền Giang) cướp tiệm vàng Huỳnh Hoa.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0052",
+   "doc_id": "val_03989",
+   "sent_id": 10,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Sau đó, giao lại cho Tới, Huy và Khoa bán cho các đối tượng “côn đồ” làm công cụ gây án",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0053",
+   "doc_id": "val_02876",
+   "sent_id": 12,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Điều đáng nói là trong số những người đi học tập đó, có nhiều cán bộ thuộc diện đang \" chờ hưu \".",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0054",
+   "doc_id": "val_02645",
+   "sent_id": 6,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Lý do, sau 3 năm bán lại cổ phần, ông Báu, ông Lộc kê khai... thấp hơn giá mua hơn 600 tỉ đồng nên không phát sinh thuế thu nhập cá nhân.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0055",
+   "doc_id": "val_00264",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Khám xét tại chỗ, lực lượng công an thu được 2 bánh heroin trọng lượng 0,702 kg, 1.000 viên hồng phiến (ma túy tổng hợp dạng viên nén) trọng lượng 92,83 gam được Phô giấu trong bao tải đựng hoa quả.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0056",
+   "doc_id": "val_02092",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Do đó, các nạn nhân đã làm đơn tố cáo hành vi lừa đảo của Tuất đến cơ quan công an.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0057",
+   "doc_id": "val_00094",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Theo điều tra, ngày 19/5, Xìa được một người tên Hoàng (trú tại Đà Nẵng) gọi điện đặt mua 4 kg ma túy đá, 200 túi hồng phiến và 2 bánh heroin.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0058",
+   "doc_id": "val_03446",
+   "sent_id": 8,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "\" Tôi rất mong các cơ quan chức năng cần nhanh chóng vào cuộc, có biện pháp xử lý dứt điểm tình trạng trên để người dân ở đây được an tâm làm việc chứ tình trạng này kéo dài thì rất nguy hiểm \", bà M. chia sẻ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0059",
+   "doc_id": "val_00463",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Ngày 26/4, Cơ quan CSĐT Công an quận Ninh Kiều (TP Cần Thơ) vừa khởi tố, lệnh bắt tạm giam 5 đối tượng về hành vi “Mua bán trái phép chất ma túy và mua bán dụng cụ dùng vào việc sử dụng trái phép chất ma túy”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0060",
+   "doc_id": "val_00419",
+   "sent_id": 8,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Sau đó, bà liên hệ trưởng công an xã qua điện thoại.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0061",
+   "doc_id": "val_02268",
+   "sent_id": 1,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Người này thông báo ông L. có một giấy mời được gửi từ ông Trần Anh T, Phó Chánh án TAND tỉnh để giải quyết vụ việc liên quan đến việc có đơn khiếu nại và khởi kiện ông về việc ông đứng ra mở thẻ tín dụng tại một ngân hàng với số nợ quá hạn chưa thanh toán là 45.986.000 đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0062",
+   "doc_id": "val_03889",
+   "sent_id": 12,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Khi Cường và đồng phạm thế chấp dự án để vay tiền, mặc dù dự án chưa được cấp thẩm quyền phê duyệt, số tiền vay vượt quyền phán quyết cho vay nhưng Hồ Văn Long vẫn đề xuất, Hồ Đăng Trung phê duyệt cho công ty Tấn Phát vay 170 tỷ đồng, công ty Thanh Phát vay 628 tỷ đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0063",
+   "doc_id": "val_00409",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Trong khi đó, NH chịu trách nhiệm thẩm định thông tin, hồ sơ khách hàng, tính số lãi vay và số tiền khách hàng thực nhận.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0064",
+   "doc_id": "val_00751",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Công an huyện Trảng Bàng, tỉnh Tây Ninh chiều nay cho biết đang tạm giữ hình sự đối tượng Lưu Đức Hiệp (41 tuổi, ngụ TP.HCM, tạm trú huyện Trảng Bàng, tỉnh Tây Ninh) để điều tra về hành vi cố ý gây thương tích.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0065",
+   "doc_id": "val_02493",
+   "sent_id": 15,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "HĐXX quyết định giảm mức án từ chung thân xuống 20 năm cho bị cáo Bền.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0066",
+   "doc_id": "val_04134",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Khi thấy 3 nạn nhân tử vong, bà Nhi lôi thi thể ra sau vườn đào hố chôn rồi đón xe ôm ra huyện Đức Trọng (cách nhà khoảng 50 km).",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0067",
+   "doc_id": "val_01139",
+   "sent_id": 0,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Ngày 8/12, Cơ quan CSĐT, Công an tỉnh Quảng Bình đã ra quyết định khởi tố bị can và áp dụng biện pháp ngăn chặn cấm đi khỏi nơi cư trú đối với Nguyễn Thị Thanh Thảo, Giám đốc Công ty TNHH Thương mại và Xây dựng Khánh Hòa, về hành vi \"Trốn thuế\".",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0068",
+   "doc_id": "val_03123",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Thông mang 98 triệu đồng tiền giả thành phẩm đi lưu hành.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0069",
+   "doc_id": "val_01119",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Cuối năm 2013, Phong đưa bạn gái là Lê Thị Xuân Quí về sống chung như vợ chồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0070",
+   "doc_id": "val_02590",
+   "sent_id": 0,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Trước đó, tối 31/12/2020, Long điều khiển ô tô đến ngã tư Khuất Duy Tiến - Nguyễn Trãi thì xe gặp sự cố.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0071",
+   "doc_id": "val_02838",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "HĐXX cũng tuyên phạt 4 án chung thân với 4 bị cáo, gồm 3 cựu lãnh đạo cấp cao tại SCB: bị cáo Đinh Văn Thành, Chủ tịch HĐQT (trốn truy nã, xét xử vắng mặt); bị cáo Bùi Anh Dũng, Chủ tịch HĐQT; bị cáo Võ Tấn Hoàng Văn, Tổng giám đốc; bị cáo Đỗ Thị Nhàn, cựu Cục trưởng Cục Thanh tra, giám sát Ngân hàng II (Ngân hàng Nhà nước) tội nhận hối lộ 5,2 triệu USD.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0072",
+   "doc_id": "val_01674",
+   "sent_id": 1,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Theo đó, các lãnh đạo của hai đồn 747 và 749 đã bị đình chỉ công tác, điều về làm trợ lý tại Bộ chỉ huy bộ đội biên phòng vì \" thiếu trách nhiệm trong công tác, chỉ huy tại đơn vị \".",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0073",
+   "doc_id": "val_02099",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Tuy nhiên, nghi phạm này thường xuyên tụ tập ăn nhậu và không có việc làm ổn định.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0074",
+   "doc_id": "val_04118",
+   "sent_id": 14,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Cho rằng mức án quá nhẹ, gia đình bà Sỏi đã làm đơn kháng cáo.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0075",
+   "doc_id": "val_02958",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Vụ việc đang được cơ quan chức năng huyện Kon Rẫy điều tra, làm rõ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0076",
+   "doc_id": "val_02341",
+   "sent_id": 24,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Người thanh niên trong phòng quần dài tụt xuống ngang đầu gối, cô gái hoảng hốt chạy ra.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0077",
+   "doc_id": "val_01449",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Số ma túy còn lại, Thế gói cất vào trong ví cầm tay.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0078",
+   "doc_id": "val_00592",
+   "sent_id": 12,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Số còn lại Nam dùng để trả nợ và chi tiêu cá nhân hết, hiện không còn khả năng chi trả",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0079",
+   "doc_id": "val_03546",
+   "sent_id": 5,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Ngay khi tiếp nhận tin báo, lực lượng chức năng khẩn trương đến hiện trường để phân luồng, hỗ trợ đưa những người gặp nạn đi cấp cứu.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0080",
+   "doc_id": "val_01774",
+   "sent_id": 1,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Trong quá trình công tác, ông Tài để xảy ra vi phạm nghiêm trọng trong lĩnh vực tài chính và chưa làm tốt vai trò, trách nhiệm của Chánh Thanh tra sở.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0081",
+   "doc_id": "val_02575",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Tại hiện trường, lực lượng chức năng thu giữ 18.000 viên nén hình trụ tròn màu hồng (hiệu WY), 1 xe mô tô Suzuki, mang BKS 74H1- 156.62 và nhiều tang vật liên quan.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0082",
+   "doc_id": "val_01890",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Đến tháng 8/2014, lợi dụng lúc con gái và cháu ngoại vắng nhà, bà Hoa mang chiếc xe gắn máy của cháu ngoại đi cầm đồ lấy 10 triệu đồng để tiêu xài và bài bạc.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0083",
+   "doc_id": "val_04287",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Như đã đưa tin, ngày 12/6, Cơ quan Cảnh sát điều tra Công an tỉnh đã ra quyết định khởi tố vụ án, khởi tố bị can, ra lệnh bắt bị can để tạm giam đối với ông Nguyễn Sơn La về tội “Lợi dụng chức vụ, quyền hạn trong khi thi hành công vụ”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0084",
+   "doc_id": "val_03976",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Ngày 20/8, TAND TP.HCM đã xét xử và tuyên phạt Nguyễn Văn Tuấn (18 tuổi, TP.HCM) mức án 18 năm tù về tội “giết người”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0085",
+   "doc_id": "val_03079",
+   "sent_id": 39,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Trong tổng tài sản gần 100 tỷ đồng của Bầu Kiên cần phải thi hành án, đến nay đã thu hồi được 3/4, còn lại đang tiếp tục thực hiện.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0086",
+   "doc_id": "val_02968",
+   "sent_id": 6,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Công an xác định, Khanh đã thu lợi khoảng 90 triệu đồng từ hoạt động sòng bạc.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0087",
+   "doc_id": "val_03314",
+   "sent_id": 0,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Ngày 17/7, phiên tòa xét xử vụ \"chuyến bay giải cứu\" chuyển sang phần tranh luận.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0088",
+   "doc_id": "val_02935",
+   "sent_id": 12,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Hiện công an Nghệ An đang truy bắt những đối tượng còn lại trong đường dây ma túy này",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0089",
+   "doc_id": "val_01298",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Phó thủ tướng đề nghị Bộ Giao thông vận tải xem xét lại việc quản lý thời gian làm việc của lái xe, xây dựng trạm dừng nghỉ trên đường để lái xe nghỉ ngơi.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0090",
+   "doc_id": "val_03816",
+   "sent_id": 8,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Chỉ trong chưa đầy 2 phút, Giám đốc quỹ tín dụng đã khống chế được tên cướp có súng đã lên nòng xông vào trụ sở đe dọa cướp tiền.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0091",
+   "doc_id": "val_03860",
+   "sent_id": 0,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Theo đó, khoảng 11 giờ cùng ngày, tại khu vực gần cầu Sông Hiếu (P. 3, TP Đông Hà), xe do ông P. T. (trú huyện Cam Lộ) điều khiển theo hướng TP Đông Hà - Cam Lộ, khi đến địa điểm trên thì bỗng nhiên bốc khói, cháy ngùn ngụt.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0092",
+   "doc_id": "val_00464",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Ý định mượn búa của Phóc là đi tìm mồi nhậu.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0093",
+   "doc_id": "val_02977",
+   "sent_id": 0,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Tối 11/7, Bộ Công an cho biết, Cơ quan Cảnh sát điều tra (C03) khởi tố bị can, áp dụng các biện pháp ngăn chặn đối với 5 người về tội Vận chuyển trái phép tiền tệ qua biên giới, trong vụ án xảy ra tại TP Hà Nội, TP.HCM và một số địa phương khác.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0094",
+   "doc_id": "val_03766",
+   "sent_id": 24,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Một mình vợ nó quần quật ở vuông tôm”...",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0095",
+   "doc_id": "val_02320",
+   "sent_id": 8,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Lập tức, lực lượng làm nhiệm vụ bao vây, áp sát phương tiện, khống chế, bắt giữ đưa về trụ sở làm việc.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0096",
+   "doc_id": "val_01626",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Trung đã làm giả thẻ tiết kiệm của anh L. rồi đến ngân hàng rút số tiền 13 tỷ đồng mà không hề bị nghi ngờ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0097",
+   "doc_id": "val_00919",
+   "sent_id": 32,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Rồi tôi ngẫm lại mình, kẻ gieo tội ác nhưng vẫn được chăn ấm, chiếc nón đội đầu, đôi dép để đi.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0098",
+   "doc_id": "val_02471",
+   "sent_id": 25,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "10h45 phút, phiên tòa kết thúc phần xét hỏi, chuyển sang phần tranh luận.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0099",
+   "doc_id": "val_00659",
+   "sent_id": 1,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Kết quả lực lượng chức năng phát hiện có có 485 cây thuốc phiện được ông T. trồng trái phép trong vườn nhà.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0100",
+   "doc_id": "val_03709",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Tại các sự kiện, xuất hiện hình ảnh hàng loạt nghệ sĩ nổi tiếng như: ca sĩ Đàm Vĩnh Hưng, ca sĩ Lam Trường, MC Nguyễn Ngọc Ngạn, MC Nguyễn Cao Kỳ Duyên, ca sĩ Lệ Quyên…Sức hút của các ngôi sao nói trên đã thu hút hàng ngàn người tham dự.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0101",
+   "doc_id": "val_01093",
+   "sent_id": 8,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Kết quả điều tra xác định, 9 gói trái phiếu phát hành có kỳ hạn từ 2-5 năm, nhưng các bị can thuộc Tân Hoàng Minh đã chia nhỏ kỳ hạn đến tuần, tháng để bán trái phiếu và sử dụng khoản tiền từ chính nguồn thu trái phiếu để chi trả (5.165 tỷ đồng là tiền của người/hợp đồng mua trái phiếu sau để trả cho những người/hợp đồng mua trái phiếu đến hạn trước).",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0102",
+   "doc_id": "val_02661",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Từ những chứng cứ công an thu thập được từ trước, Hoàng đã khai nhận vợ mình là Hồng Thị Chanh Tha (34 tuổi, quê ở huyện Mỹ Xuyên, tỉnh Sóc Trăng) cũng tham gia đường dây mua bán ma tuý này và đang ở khu vực phường Phước Hải, TP Nha Trang để chờ giao hàng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0103",
+   "doc_id": "val_02147",
+   "sent_id": 35,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Đại tá Lê Ngọc Phương, Phó cục trưởng Cục Cảnh sát hình sự (Bộ Công an), cho biết phương thức gây án và thủ đoạn che dấu hành vi phạm tội của nghi phạm Cường rất tinh vi, phức tạp.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0104",
+   "doc_id": "val_03304",
+   "sent_id": 0,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Ngày 5/12, Công an huyện Lệ Thủy, Quảng Bình cho biết, vừa huy động hơn 150 cán bộ, chiến sĩ chia thành 13 mũi tấn công, đồng loạt phá các ổ cá độ bóng đá, ghi số lô, số đề với tổng số tiền giao dịch hơn 4,5 tỷ đồng cùng nhiều tang vật.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0105",
+   "doc_id": "val_00747",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Đồng thời, lập hồ sơ cho quân xanh, quân đỏ, chỉ đạo Ban hàng hóa thuộc Công ty NSJ liên hệ với các hãng sản xuất và công ty trung gian để nâng giá các thiết bị giáo dục từ nước ngoài trước khi nhập khẩu về Việt Nam.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0106",
+   "doc_id": "val_03278",
+   "sent_id": 2,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Nghi phạm thời điểm ấy bị cơ quan công an triệu tập là Nguyễn Tuấn Anh (33 tuổi), chồng cũ, sống cùng với chị S. Một chi tiết mới, Cơ quan CSĐT Công an huyện Vĩnh Linh đã ra quyết định khởi tố bị can, tạm giam đối với đối tượng Nguyễn Tuấn Anh về hành vi “Dâm ô với người dưới 16 tuổi”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0107",
+   "doc_id": "val_02364",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Nhiều người dân chứng kiến, quay lại clip diễn biến vụ việc và phát tán trên mạng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0108",
+   "doc_id": "val_01370",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Khi bị anh T. đòi tiền, Mai giải thích tiền đã đem đi đầu tư vào việc đưa người đi xuất khẩu lao động tại Úc; số tiền đang bị nợ đọng nên Mai đã đăng ký tên, thông tin của anh T. là người hưởng thụ khoản tiền khi giải quyết xong các thủ tục.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0109",
+   "doc_id": "val_02923",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Hường móc nối với nhiều đối tượng trên địa bàn để hoạt động mua bán trái phép chất ma tuý và tạo “chân rết” để bán lẻ trên địa bàn.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0110",
+   "doc_id": "val_00434",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Theo vị Chủ tịch UBND xã Huồi Tụ, việc trưởng bản Lầu Giống Lồng bị công an bắt về hành vi mua bán ma tuý khiến cho tất cả mọi người vô cùng bất ngờ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0111",
+   "doc_id": "val_03685",
+   "sent_id": 3,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Trong khi đó, Phó chủ biên tạp chí Tài chính và kinh tế Trung Quốc, ông La Xương Bình cho biết, đây có thể là thông tin chưa chính xác.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0112",
+   "doc_id": "val_00050",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Thực hiện kế hoạch đấu tranh vụ án, qua các biện pháp nghiệp vụ xác định băng nhóm ma túy này hoạt động với nhiều phương thức thủ đoạn rất tinh vi.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0113",
+   "doc_id": "val_01400",
+   "sent_id": 5,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Hiện, cơ quan CSĐT Công an huyện Tĩnh Gia đã khởi tố vụ án, khởi tố bị can và bắt tạm giam Lê Tiến Mạnh để phục vụ công tác điều tra.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0114",
+   "doc_id": "val_02844",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Vụ án đang được cơ quan Công an TP.Cần Thơ tiếp tục điều tra, làm rõ",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0115",
+   "doc_id": "val_02662",
+   "sent_id": 1,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Thời điểm này, cảnh sát phát hiện 10 người quốc tịch Trung Quốc gồm: Kang Tie Hui (31 tuổi), Wu Wen Wei, Wu Wen Be (cùng 30 tuổi), Wu Jian Xiong, Su Wei Long, Wang Liang Gui (cùng 28 tuổi), Wo Weizdong, Wu Liang Cai, Wu Shi Ren (cùng 27 tuổi) và Wu Liang Hui (24 tuổi).",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0116",
+   "doc_id": "val_03030",
+   "sent_id": 10,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Tại phiên tòa, HĐXX xác định, hành vi của bị cáo Nguyễn Thanh Hùng là đặc biệt nguy hiểm, xâm phạm đến sức khỏe, tính mạng, tài sản của người khác được pháp luật bảo vệ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0117",
+   "doc_id": "val_03888",
+   "sent_id": 5,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Sridevi sinh năm 1963 trong một gia đình trung lưu ở Sivakasi (Ấn Độ) với người cha làm luật sư.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0118",
+   "doc_id": "val_00456",
+   "sent_id": 5,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Đã lâu rồi tôi không được nghe chồng chia sẻ, tâm sự về những tháng ngày trong trại giam, cũng như tâm tư, nguyện vọng của anh ấy.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0119",
+   "doc_id": "val_03903",
+   "sent_id": 12,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Tiến rút một con dao trong người ta tấn công, đâm liên tiếp vào ngực, bụng, đầu, vai... khiến anh P. gục xuống, tử vong tại chỗ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0120",
+   "doc_id": "val_03093",
+   "sent_id": 1,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Khó chịu vì tiếng ồn từ karaoke, khoảng 22h, Trần Đình Trung (39 tuổi, hàng xóm) đã qua nhắc nhở và có lời qua với P. B. H (24 tuổi, trú thôn 2, xã Tân Phúc).",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0121",
+   "doc_id": "val_00558",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Hiện vụ việc đang được tiếp tục điều tra, làm rõ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0122",
+   "doc_id": "val_01561",
+   "sent_id": 1,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Dù được đưa đi cấp cứu tại Bệnh viện tỉnh Hải Dương nhưng các nạn nhân đều đã tử vong.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0123",
+   "doc_id": "val_01337",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Sau khi phá cửa phòng ngủ của ông C, nhóm người này khiêng két sắt ra khu đất trống bên cạnh khu biệt thự và đục phá rồi lấy đi toàn bộ số tiền bên trong két sắt.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0124",
+   "doc_id": "val_01512",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Công an tỉnh Quảng Bình đã huy động toàn bộ lực lượng vào cuộc truy tìm và bắt được nghi phạm Xẹng Vàng vào trưa ngày 13/10/2018, còn Hạng A Chinh hiện đang lẩn trốn.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0125",
+   "doc_id": "val_03234",
+   "sent_id": 2,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Lời khai ban đầu của các nghi can thể hiện khoảng đầu tháng 8-2019, Tài rủ Thành đi cướp giật tài sản nhưng Thành chưa đồng ý.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0126",
+   "doc_id": "val_04267",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Trong lúc đó, giữa anh Cường và nhóm bạn nhậu xảy ra mâu thuẫn dẫn đến ẩu đả.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0127",
+   "doc_id": "val_04172",
+   "sent_id": 16,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Tuy nhiên, đại diện Trường Hải không đồng tình với điều này.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0128",
+   "doc_id": "val_03624",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Sky Mining được giới thiệu là công ty chuyên về đầu tư mua máy tính để khai thác các phần mềm giải mã thuật toán.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0129",
+   "doc_id": "val_01912",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Công an đã làm việc với nạn nhân, xác định tài sản bị cướp giật là 1 điện thoại, vì không mấy giá trị nên không trình báo.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0130",
+   "doc_id": "val_00757",
+   "sent_id": 4,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Tương tự, tại cây xăng của Công ty TNHH một thành viên Thế Anh Bến Tre vẫn bán xăng cho khách.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0131",
+   "doc_id": "val_03238",
+   "sent_id": 11,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "CQĐT còn thu giữ được 14 quyển khi khám xét tại nơi ở của ông Thành.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0132",
+   "doc_id": "val_03248",
+   "sent_id": 5,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Theo lời khai của nạn Y Nhiêu, chị bị chủ dùng thanh sắt đánh, bàn là, cây sắt hơ nóng gí vào người; dùng búa, kìm đánh, bẻ răng, cắt tai…vì nghi ngờ trộm tiền, vàng và có quan hệ chồng bà ta.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0133",
+   "doc_id": "val_02612",
+   "sent_id": 14,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Ngoại hình diễn viên chính và bối cảnh là các điểm cộng của phim.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0134",
+   "doc_id": "val_00151",
+   "sent_id": 29,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Chị Hương nói: “Chúng tôi thực hiện việc nghiên cứu hồ sơ, xét xử như những vụ án bình thường khác vì bất kể là ai thì địa vị pháp lý đều như nhau khi tham gia tố tụng”.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0135",
+   "doc_id": "val_04365",
+   "sent_id": 3,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Cú tông mạnh đã khiến xe máy điện bị cuốn vào gầm, 3 cháu Nguyễn Thị D. (12 tuổi), Nguyễn Thị H. (12 tuổi) và Trần Hữu Đ. (4 tuổi, là chị em họ, đều trú tại thôn Tây Nguyên, xã Cẩm Nam, huyện Cẩm Xuyên tử vong tại chỗ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0136",
+   "doc_id": "val_03901",
+   "sent_id": 7,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Duyên trực tiếp chuyển gà tới khu vực đã hẹn, khi đi cô mặc chiếc áo khoác, đội mũ bảo hiểm, đi xe hiệu Wave biển số 27H-7407.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0137",
+   "doc_id": "val_03377",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Đến gần cửa hàng bán giỏ xách, ba lô trên, Quyên vào hỏi mua 1 túi đeo bụng, giá 350 ngàn và đưa cho nhân viên là chị Ngân Thị Hoài Nhi (SN 1999, quê Đắk Lắk) tờ 500 ngàn đồng.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0138",
+   "doc_id": "val_00352",
+   "sent_id": 9,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Sơn dùng tay đánh liên tiếp vào đầu, đạp vào bụng anh D khiến nạn nhân bất tỉnh tại chỗ.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0139",
+   "doc_id": "val_03909",
+   "sent_id": 3,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Như Tuổi Trẻ Online đã đưa tin, chiều 10-9, anh Đỗ Ngọc Phương (29 tuổi, quê Gia Lai) điều khiển xe khách biển số 60B -031.38 của nhà xe Tân Niên (trụ sở tại xã Phú Vinh, Định Quán, Đồng Nai) lưu thông trên đường Nguyễn Ái Quốc, hướng từ thành phố Biên Hoà đi huyện Trảng Bom.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0140",
+   "doc_id": "val_04262",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Lúc thuê xe, ông Nhiên nói dùng để chở Việt kiều.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0141",
+   "doc_id": "val_01888",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Trong quá trình xô xát, Ly đã dùng dao gọt hoa quả đâm vào ngực Hà khiến cậu sinh viên bị thương, hiện đang cấp cứu tại Bệnh viện Hà Đông.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0142",
+   "doc_id": "val_04127",
+   "sent_id": 31,
+   "SubLabel": "Vi phạm pháp luật khác",
+   "sentence": "Tối 7/9, gần 30 cảnh sát thuộc nhiều lực lượng đồng loạt kiểm tra hành chính du thuyền.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0143",
+   "doc_id": "val_01429",
+   "sent_id": 5,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Quá trình tiếp xúc, Luyến biết ông Thăng vừa bán cà phê có tiền, đã nảy sinh ý định sát hại, cướp tiền nhằm mua xe máy.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0144",
+   "doc_id": "val_03586",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Trước đó vào các ngày 10 và 11/4, hai bị cáo Đương và Hoài khi được HDXX xét hỏi đều thừa nhận hành vi phạm tội và đồng ý với các tình tiết trong bản cáo trạng điều tra trước đó của cơ quan công an.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0145",
+   "doc_id": "val_02567",
+   "sent_id": 11,
+   "SubLabel": "Tội phạm Ma túy",
+   "sentence": "Quá trình điều tra lâu dài, đến ngày 3/11 lực lượng Bộ Công an phối hợp cùng Công an TP.HCM tiến hành bao vây, ập vào nhà kho ở đường Láng Le Bàu Cò, ấp 1, xã Tân Nhựt, huyện Bình Chánh, là cơ sở sản xuất băng keo, hạt nhựa.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0146",
+   "doc_id": "val_02830",
+   "sent_id": 7,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Riêng Nghĩa đã bỏ trốn.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0147",
+   "doc_id": "val_00879",
+   "sent_id": 41,
+   "SubLabel": "Tội phạm Kinh tế / Tham nhũng",
+   "sentence": "Cơ quan ANĐT Bộ Công an hoàn tất bản kết luận điều tra vụ án “lừa đảo chiếm đoạt tài sản” xảy ra ở Hà Nội và một số địa phương khác.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0148",
+   "doc_id": "val_02849",
+   "sent_id": 4,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Với tính chất vụ án, Bộ Công an đã trực tiếp thụ lý điều tra.",
+   "double_annotate": false
+  }
+ },
+ {
+  "data": {
+   "ann_id": "val_a0149",
+   "doc_id": "val_00287",
+   "sent_id": 6,
+   "SubLabel": "Tội phạm Trật tự xã hội / Hình sự",
+   "sentence": "Sau đó Nga chở con bỏ đi, để ca nước trên bàn, mục đích là “găng bẫy” cho bà Lào uống vào khi làm đồng về.",
+   "double_annotate": false
+  }
+ }
+]

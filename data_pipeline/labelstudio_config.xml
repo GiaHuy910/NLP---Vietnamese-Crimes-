@@ -1,0 +1,42 @@
+<View>
+  <Header value="$ann_id | $SubLabel"/>
+
+  <Labels name="entity" toName="text">
+    <Label value="PERSON"/>
+    <Label value="ORGANIZATION"/>
+    <Label value="LOCATION"/>
+    <Label value="TIME"/>
+    <Label value="MONEY"/>
+    <Label value="DRUG"/>
+    <Label value="PRODUCT"/>
+    <Label value="CRIME"/>
+  </Labels>
+
+  <Labels name="trigger" toName="text">
+    <Label value="LUA_DAO"/>
+    <Label value="MA_TUY"/>
+    <Label value="BAO_LUC"/>
+    <Label value="CUOP_TROM"/>
+    <Label value="BAT_GIU"/>
+    <Label value="THU_GIU"/>
+    <Label value="KHOI_TO"/>
+    <Label value="XET_XU"/>
+  </Labels>
+
+  <Text name="text" value="$sentence"/>
+
+  <Relations>
+    <Relation value="DOI_TUONG"/>
+    <Relation value="NAN_NHAN"/>
+    <Relation value="CO_QUAN"/>
+    <Relation value="TAI_SAN"/>
+    <Relation value="TANG_VAT"/>
+    <Relation value="HUNG_KHI"/>
+    <Relation value="TOI_DANH"/>
+    <Relation value="MUC_AN"/>
+    <Relation value="THOI_GIAN"/>
+    <Relation value="DIA_DIEM"/>
+  </Relations>
+
+  <TextArea name="note" toName="text" placeholder="Ghi chú khi phân vân" maxSubmissions="1"/>
+</View>

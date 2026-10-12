@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv*/
+data/corpus news/
+data/analysis/
+data/annotation/*.xlsx
+~$*
