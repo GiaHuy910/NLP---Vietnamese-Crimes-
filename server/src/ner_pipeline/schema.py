@@ -1,31 +1,29 @@
-import csv
+﻿import csv
 from dataclasses import dataclass
 from pathlib import Path
 
 from .errors import NERPipelineError
 
 
+
 ENTITY_TYPES = (
     "PERSON",
-    "ORG",
-    "LOC",
+    "ORGANIZATION",
+    "LOCATION",
     "DATE/TIME",
     "MONEY",
     "PRODUCT",
     "DRUG",
-    "LAW",
+    "CRIME",
 )
+
+NER_LABELS = ENTITY_TYPES
+
 LABELS = (
     "O",
-    "B-PERSON",
-    "I-PERSON",
-    "B-ORGANIZATION",
-    "I-ORGANIZATION",
-    "B-LOCATION",
-    "I-LOCATION",
+    *(f"{prefix}-{entity}" for entity in ENTITY_TYPES
+      for prefix in ("B", "I")),
 )
-
-
 @dataclass(frozen=True)
 class Mention:
     text: str
@@ -57,7 +55,14 @@ def parse_entities(value: str, *, row_number: int) -> tuple[tuple[str, str], ...
                 f"Dòng {row_number}: entity phải có định dạng TEXT|LABEL."
             )
         text, label = item.rsplit("|", maxsplit=1)
-        text, label = text.strip(), label.strip().upper()
+        text = text.strip()
+        label = label.strip().upper()
+        label_aliases = {
+    "ORG": "ORGANIZATION",
+    "LOC": "LOCATION",
+    "TIME": "DATE/TIME",
+}   
+        label = label_aliases.get(label, label)
         if not text:
             raise NERPipelineError(f"Dòng {row_number}: entity không được để trống.")
         if label not in ENTITY_TYPES:

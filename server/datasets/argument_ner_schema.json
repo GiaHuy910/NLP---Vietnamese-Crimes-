@@ -1,4 +1,4 @@
-﻿{
+{
   "schema_version": "1.0",
   "ner_labels": [
     "PERSON",
@@ -7,24 +7,46 @@
     "DATE/TIME",
     "MONEY",
     "PRODUCT",
-    "DRUG",
-    "LAW"
+    "CRIME"
   ],
   "label_aliases": {
-    "ORGANIZATION": "ORG",
-    "LOCATION": "LOC"
+    "ORG": "ORG",
+    "LOC": "LOC"
   },
   "argument_mapping": {
-    "DOI_TUONG": ["PERSON", "ORG"],
-    "NAN_NHAN": ["PERSON", "ORG"],
-    "CO_QUAN": ["ORG"],
-    "TAI_SAN": ["MONEY", "PRODUCT"],
-    "TANG_VAT": ["DRUG", "PRODUCT"],
-    "HUNG_KHI": ["PRODUCT"],
-    "TOI_DANH": ["LAW"],
-    "MUC_AN": ["DATE/TIME", "MONEY"],
-    "THOI_GIAN": ["DATE/TIME"],
-    "DIA_DIEM": ["LOC"]
+    "DOI_TUONG": [
+      "PERSON",
+      "ORG"
+    ],
+    "NAN_NHAN": [
+      "PERSON",
+      "ORG"
+    ],
+    "CO_QUAN": [
+      "ORG"
+    ],
+    "TAI_SAN": [
+      "MONEY",
+      "PRODUCT"
+    ],
+    "TANG_VAT": [
+      "DRUG",
+      "PRODUCT"
+    ],
+    "HUNG_KHI": [
+      "PRODUCT"
+    ],
+    "TOI_DANH": [],
+    "MUC_AN": [
+      "DATE/TIME",
+      "MONEY"
+    ],
+    "THOI_GIAN": [
+      "DATE/TIME"
+    ],
+    "DIA_DIEM": [
+      "LOC"
+    ]
   },
   "entity_fields": [
     "text",

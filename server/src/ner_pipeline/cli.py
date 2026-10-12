@@ -1,4 +1,4 @@
-import argparse
+﻿import argparse
 import json
 import sys
 from typing import Any
@@ -15,9 +15,13 @@ from .phobert import predict_records, predict_sentence, train
 
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Pipeline NER tieng Viet: PERSON, ORGANIZATION, LOCATION."
+        description="Vietnamese crime NER pipeline"
     )
-    commands = parser.add_subparsers(dest="command", required=True)
+
+    commands = parser.add_subparsers(
+        dest="command",
+        required=True
+    )
 
     prepare = commands.add_parser(
         "prepare",
@@ -73,6 +77,11 @@ def _parser() -> argparse.ArgumentParser:
         help="Evaluate baseline and PhoBERT on the same test split.",
     )
     evaluation.add_argument("--max-length", type=int, default=256)
+    evaluation.add_argument(
+    "--model-dir",
+    default=str(MODEL_DIR),
+    help="Thu muc checkpoint PhoBERT dung de danh gia.",
+)
 
     prediction = commands.add_parser(
         "predict",
@@ -89,6 +98,11 @@ def _parser() -> argparse.ArgumentParser:
         help="Analyze PhoBERT errors on the held-out test split.",
     )
     analysis.add_argument("--max-length", type=int, default=256)
+    analysis.add_argument(
+    "--model-dir",
+    default=str(MODEL_DIR),
+    help="Thu muc checkpoint PhoBERT dung de phan tich loi.",
+)
 
     return parser
 
@@ -179,9 +193,10 @@ def _run(args: argparse.Namespace) -> None:
         records = load_jsonl(PROCESSED_DIR / "test.jsonl")
         baseline_spans = _spans_for_baseline(records, RuleBasedNER())
         phobert_spans = predict_records(
-            records,
-            max_length=args.max_length,
-        )
+    records,
+    model_dir=Path(args.model_dir),
+    max_length=args.max_length,
+)
 
         print(
             json.dumps(
@@ -222,6 +237,7 @@ def _run(args: argparse.Namespace) -> None:
         records = load_jsonl(PROCESSED_DIR / "test.jsonl")
         predicted = predict_records(
             records,
+            model_dir=Path(args.model_dir),
             max_length=args.max_length,
         )
 

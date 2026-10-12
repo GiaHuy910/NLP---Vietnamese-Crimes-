@@ -210,16 +210,26 @@ def test_argument_schema_contains_expected_labels():
 
     assert len(schema["ner_labels"]) == 8
     assert set(schema["argument_mapping"]) == set(ARGUMENT_TYPES)
+    assert set(schema["ner_labels"]) == {
+    "PERSON",
+    "ORGANIZATION",
+    "LOCATION",
+    "DATE/TIME",
+    "MONEY",
+    "PRODUCT",
+    "DRUG",
+    "CRIME",
+}
 
 
 def test_legacy_labels_are_normalized():
-    assert normalize_ner_label("ORGANIZATION") == "ORG"
-    assert normalize_ner_label("LOCATION") == "LOC"
+    assert normalize_ner_label("ORGANIZATION") == "ORGANIZATION"
+    assert normalize_ner_label("LOCATION") == "LOCATION"
     assert normalize_ner_label("PERSON") == "PERSON"
 
 
 def test_organization_argument_mapping():
-    assert set(arguments_for_ner_label("ORG")) == {
+    assert set(arguments_for_ner_label("ORGANIZATION")) == {
         "DOI_TUONG",
         "NAN_NHAN",
         "CO_QUAN",

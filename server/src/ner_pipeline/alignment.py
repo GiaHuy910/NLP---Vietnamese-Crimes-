@@ -19,9 +19,8 @@ def surface_tokens(text: str) -> list[tuple[str, int, int]]:
 
 
 def _normalized_token(value: str) -> str:
+    value = value.replace("Ð", "Đ").replace("ð", "đ")
     return unicodedata.normalize("NFC", value.replace("_", " ")).casefold()
-
-
 
 def _fold_with_offsets(value: str) -> tuple[str, list[int], list[int]]:
     folded: list[str] = []
@@ -29,6 +28,7 @@ def _fold_with_offsets(value: str) -> tuple[str, list[int], list[int]]:
     ends: list[int] = []
 
     for index, character in enumerate(value):
+        character = character.replace("Ð", "Đ").replace("ð", "đ")
         normalized = unicodedata.normalize("NFD", character.casefold())
 
         for result in normalized:
@@ -49,6 +49,7 @@ def _fold_with_offsets_normalized(value: str):
 
     for index, character in enumerate(value):
         # NFC first makes Vietnamese combining-mark order consistent.
+        character = character.replace("Ð", "Đ").replace("ð", "đ")
         normalized = unicodedata.normalize("NFC", character).casefold()
         normalized = unicodedata.normalize("NFD", normalized)
 
@@ -64,30 +65,70 @@ def _fold_with_offsets_normalized(value: str):
 
 
 def _find_mentions(
-    sentence: str, mention_texts: tuple[tuple[str, str], ...], *, row_number: int
+    sentence: str,
+    mention_texts: tuple[tuple[str, str], ...],
+    *,
+    row_number: int,
 ) -> list[Mention]:
     sentence_tokens = surface_tokens(sentence)
-    normalized_sentence = [_normalized_token(token) for token, _, _ in sentence_tokens]
+    normalized_sentence = [
+        _normalized_token(token)
+        for token, _, _ in sentence_tokens
+    ]
+
     found: list[Mention] = []
+    raw_candidates: list[Mention] = []
 
     for text, label in mention_texts:
         entity_tokens = surface_tokens(text)
-        needle = [_normalized_token(token) for token, _, _ in entity_tokens]
-        if not needle:
-            raise NERPipelineError(f"Dòng {row_number}: entity không có token hợp lệ.")
+        needle = [
+            _normalized_token(token)
+            for token, _, _ in entity_tokens
+        ]
 
-        matches = 0
+        if not needle:
+            raise NERPipelineError(
+                f"Dòng {row_number}: entity không có token hợp lệ."
+            )
+
+        matches: list[tuple[int, int, bool]] = []
+
         for index in range(len(normalized_sentence) - len(needle) + 1):
-            if normalized_sentence[index : index + len(needle)] != needle:
+            if normalized_sentence[index:index + len(needle)] != needle:
                 continue
+
             start = sentence_tokens[index][1]
             end = sentence_tokens[index + len(needle) - 1][2]
-            found.append(Mention(sentence[start:end], label, start, end))
-            matches += 1
+
+            # Ưu tiên cách viết hoa/thường khớp chính xác.
+            exact_case = sentence[start:end] == text
+            matches.append((start, end, exact_case))
+
         if not matches:
             raise NERPipelineError(
-                f"Dòng {row_number}: không tìm thấy entity {text!r} trong sentence."
+                f"Dòng {row_number}: không tìm thấy entity "
+                f"{text!r} trong sentence."
             )
+
+        chosen = matches
+
+        for start, end, _ in chosen:
+            raw_candidates.append(
+                Mention(sentence[start:end], label, start, end)
+            )
+
+    # Loại các span trùng hoàn toàn cùng nhãn.
+    # Không tự động xóa span lồng nhau khác nhãn ở đây.
+    seen: set[tuple[int, int, str]] = set()
+
+    for mention in raw_candidates:
+        key = (mention.start, mention.end, mention.label)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        found.append(mention)
+
     return found
 
 
@@ -119,13 +160,21 @@ def _segment_offsets(
     for segment in segments:
         folded_segment, _, _ = _fold_with_offsets(segment)
 
-        # Tokenizer có thể gộp từ bằng dấu "_".
-        flexible = re.escape(segment).replace("_", r"[\s_]+")
-        folded_pattern = re.escape(folded_segment).replace("_", r"[\s_]+")
+        # Cho phép khớp token có dấu "_" với cụm chữ-số
+        # hoặc khoảng trắng trong câu gốc.
+        parts = segment.split("_")
+        flexible = r"[\s_]*".join(
+            re.escape(part) for part in parts
+        )
+
+        folded_parts = folded_segment.split("_")
+        folded_pattern = r"[\s_]*".join(
+            re.escape(part) for part in folded_parts
+        )
 
         candidates: list[tuple[int, int]] = []
 
-        # 1. Tìm khớp trực tiếp trong phần câu chưa xử lý.
+        # 1. Tim khop truc tiep trong cau goc.
         for match in re.finditer(
             flexible, sentence[cursor:], flags=re.IGNORECASE
         ):
@@ -134,41 +183,21 @@ def _segment_offsets(
             )
             break
 
-        # 2. Tìm khớp sau khi bỏ dấu và chuẩn hóa chữ hoa/thường.
-        for match in re.finditer(
-            folded_pattern, folded_sentence, flags=re.IGNORECASE
-        ):
-            if match.start() >= len(folded_starts):
-                continue
-            if match.end() == 0 or match.end() > len(folded_ends):
-                continue
+        # 2. Tim khop sau khi chuan hoa Unicode va bo dau.
+        if not candidates and folded_pattern:
+            for match in re.finditer(
+                folded_pattern,
+                folded_sentence,
+                flags=re.IGNORECASE,
+            ):
+                if match.start() >= 0 and match.end() > match.start():
+                    start = folded_starts[match.start()]
+                    end = folded_ends[match.end() - 1]
 
-            start = folded_starts[match.start()]
-            end = folded_ends[match.end() - 1]
+                    if start >= cursor:
+                        candidates.append((start, end))
+                        break
 
-            if start >= cursor:
-                candidates.append((start, end))
-                break
-
-        # 3. Nếu không có khớp nào, xử lý trường hợp "40_g" và "40g".
-        if not candidates:
-            compact_segment = segment.replace("_", "")
-            compact_match = (
-                re.match(
-                    re.escape(compact_segment),
-                    sentence[cursor:],
-                    flags=re.IGNORECASE,
-                )
-                if compact_segment
-                else None
-            )
-
-            if compact_match is not None:
-                candidates.append(
-                    (cursor, cursor + compact_match.end())
-                )
-
-        # Chọn vị trí hợp lệ sớm nhất; không nhảy qua chữ trong câu.
         selected = None
 
         for start, end in sorted(candidates):
@@ -182,8 +211,8 @@ def _segment_offsets(
 
         if selected is None:
             raise NERPipelineError(
-                f"Không thể căn chỉnh token {segment!r} "
-                f"tại vị trí {cursor} trong sentence: {sentence!r}"
+                f"Khong the can chinh token {segment!r} "
+                f"tai vi tri {cursor} trong sentence: {sentence!r}"
             )
 
         start, end = selected
@@ -194,12 +223,12 @@ def _segment_offsets(
 
     if any(not ch.isspace() and ch != "_" for ch in tail):
         raise NERPipelineError(
-            f"Bộ tách từ bỏ sót phần cuối sentence: {tail!r}"
+            f"Bo tach tu bo sot phan cuoi sentence: {tail!r}"
         )
 
     if not tokens and sentence.strip():
         raise NERPipelineError(
-            "Bộ tách từ không tạo token cho sentence."
+            "Bo tach tu khong tao token cho sentence."
         )
 
     return tokens
@@ -250,26 +279,75 @@ def _split_tokens_at_entity_boundaries(
 
 
 def _resolve_overlapping_mentions(
-    mentions: list[Mention], *, row_number: int
+    mentions: list[Mention],
+    *,
+    row_number: int,
+    sentence: str,
 ) -> tuple[list[Mention], int]:
-    candidates = sorted(mentions, key=lambda item: (-(item.end - item.start), item.start))
+    candidates = sorted(
+        mentions,
+        key=lambda item: (
+            -(item.end - item.start),
+            item.start,
+        ),
+    )
+
     selected: list[Mention] = []
     removed = 0
+
     for mention in candidates:
         overlaps = [
             current
             for current in selected
-            if mention.start < current.end and mention.end > current.start
+            if mention.start < current.end
+            and mention.end > current.start
         ]
+
         if not overlaps:
             selected.append(mention)
             continue
-        if any(current.label != mention.label for current in overlaps):
-            raise NERPipelineError(
-                f"Dòng {row_number}: entity chồng lấn có nhãn khác nhau; "
-                "hãy rà soát annotation."
-            )
-        removed += 1
+
+        # Nếu cùng span và cùng nhãn thì chỉ giữ một bản.
+        if all(
+            current.start == mention.start
+            and current.end == mention.end
+            and current.label == mention.label
+            for current in overlaps
+        ):
+            removed += 1
+            continue
+
+        # Candidates được sắp xếp từ span dài đến span ngắn.
+        # Ưu tiên span dài hơn để tránh entity con chồng lấn.
+        current_longer = all(
+            (current.end - current.start)
+            >= (mention.end - mention.start)
+            for current in overlaps
+        )
+
+        if current_longer:
+            removed += 1
+            continue
+
+        details = [
+            {
+                "text": sentence[current.start:current.end],
+                "label": current.label,
+                "span": (current.start, current.end),
+            }
+            for current in overlaps
+        ]
+
+        raise NERPipelineError(
+            f"Dòng {row_number}: entity chồng lấn không thể "
+            f"tự động giải quyết. "
+            f"Entity hiện tại: "
+            f"{sentence[mention.start:mention.end]!r} "
+            f"[{mention.label}] "
+            f"span=({mention.start}, {mention.end}); "
+            f"Entity chồng lấn: {details}"
+        )
+
     return sorted(selected, key=lambda item: item.start), removed
 
 
@@ -286,7 +364,7 @@ def align_example(
     )
     mentions = _find_mentions(sentence, raw_mentions, row_number=row_number)
     mentions, overlap_count = _resolve_overlapping_mentions(
-        mentions, row_number=row_number
+      mentions, row_number=row_number, sentence=sentence
     )
     segments = (segmenter or _underthesea_segments)(sentence)
     tokens = _segment_offsets(sentence, segments)

@@ -1,4 +1,4 @@
-
+﻿
 import json
 import re
 import unicodedata
@@ -13,15 +13,17 @@ _TOKEN = re.compile(r"[^\W_]+|[^\w\s]", flags=re.UNICODE)
 
 _LABEL_ALIASES = {
     "PERSON": "PERSON",
-    "ORG": "ORG",
-    "ORGANIZATION": "ORG",
-    "LOC": "LOC",
-    "LOCATION": "LOC",
+    "ORGANIZATION": "ORGANIZATION",
+    "ORGANIZATION": "ORGANIZATION",
+    "LOCATION": "LOCATION",
+    "LOCATION": "LOCATION",
     "DATE/TIME": "DATE/TIME",
+    "TIME": "DATE/TIME",
+    "DATETIME": "DATE/TIME",
     "MONEY": "MONEY",
     "PRODUCT": "PRODUCT",
-    "DRUG": "DRUG",
-    "LAW": "LAW",
+    "DRUG": "PRODUCT",
+    "CRIME": "CRIME",
 }
 
 _CAPITALIZED = re.compile(
@@ -66,14 +68,14 @@ _LAW_TERMS = (
     "tàng trữ trái phép chất ma túy",
 )
 
-_ORGANIZATION_CUES = (
+_ORG_CUES = (
     "công an", "ủy ban", "ubnd", "tòa án",
     "viện kiểm sát", "công ty", "ngân hàng",
     "chi nhánh", "bộ", "sở", "cục",
     "trường", "đội", "tổng cục", "bệnh viện",
 )
 
-_LOCATION_DESIGNATORS = (
+_LOC_DESIGNATORS = (
     ("thành", "phố"),
     ("thị", "xã"),
     ("thị", "trấn"),
@@ -84,7 +86,7 @@ _LOCATION_DESIGNATORS = (
     ("xã",),
 )
 
-_LOCATION_PREPOSITIONS = ("ở", "tại", "thuộc")
+_LOC_PREPOSITIONS = ("ở", "tại", "thuộc")
 
 _PERSON_TITLES = (
     "ông", "bà", "anh", "chị", "cô", "chú",
@@ -179,7 +181,7 @@ class RuleBasedNER:
 
         try:
             payload = json.loads(
-                rules_path.read_text(encoding="utf-8")
+                rules_path.read_text(encoding="utf-8-sig")
             )
         except (OSError, json.JSONDecodeError) as exc:
             raise NERPipelineError(
@@ -257,7 +259,7 @@ class RuleBasedNER:
                     add(start_i, end_i, label, 120)
 
         # 2. Organization cues and following names.
-        for cue in _ORGANIZATION_CUES:
+        for cue in _ORG_CUES:
             for start_i, end_i in _phrase_matches(
                 normalized, cue
             ):
@@ -281,10 +283,10 @@ class RuleBasedNER:
                 else:
                     stop = _consume_name(tokens, end_i)
 
-                add(start_i, max(end_i, stop), "ORG", 110)
+                add(start_i, max(end_i, stop), "ORGANIZATION", 110)
 
         # 3. Locations after prepositions and designators.
-        for cue in _LOCATION_PREPOSITIONS:
+        for cue in _LOC_PREPOSITIONS:
             for cue_start, cue_end in _phrase_matches(
                 normalized, cue
             ):
@@ -295,9 +297,9 @@ class RuleBasedNER:
                 name_end = _consume_name(tokens, name_start)
 
                 if name_end > name_start:
-                    add(name_start, name_end, "LOC", 65)
+                    add(name_start, name_end, "LOCATION", 65)
 
-        for designator in _LOCATION_DESIGNATORS:
+        for designator in _LOC_DESIGNATORS:
             size = len(designator)
 
             for start_i in range(len(tokens) - size + 1):
@@ -310,7 +312,7 @@ class RuleBasedNER:
                 name_end = _consume_name(tokens, name_start)
 
                 if name_end > name_start:
-                    add(start_i, name_end, "LOC", 70)
+                    add(start_i, name_end, "LOCATION", 70)
 
         # 4. Person names after titles.
         for index, word in enumerate(normalized):

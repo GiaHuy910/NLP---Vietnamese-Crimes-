@@ -19,43 +19,39 @@ ARGUMENT_TYPES = (
 
 _LABEL_ALIASES = {
     "PERSON": "PERSON",
-    "ORG": "ORG",
-    "ORGANIZATION": "ORG",
-    "LOC": "LOC",
-    "LOCATION": "LOC",
+    "ORGANIZATION": "ORGANIZATION",
+    "LOCATION": "LOCATION",
     "DATE/TIME": "DATE/TIME",
     "MONEY": "MONEY",
     "PRODUCT": "PRODUCT",
-    "DRUG": "DRUG",
-    "LAW": "LAW",
 }
 
 _DEFAULT_MAPPING = {
-    "DOI_TUONG": ["PERSON", "ORG"],
-    "NAN_NHAN": ["PERSON", "ORG"],
-    "CO_QUAN": ["ORG"],
-    "TAI_SAN": ["MONEY", "PRODUCT"],
-    "TANG_VAT": ["PRODUCT", "DRUG"],
+    "DOI_TUONG": ["PERSON", "ORGANIZATION"],
+    "NAN_NHAN": ["PERSON", "ORGANIZATION"],
+    "CO_QUAN": ["ORGANIZATION"],
+    "TAI_SAN": ["MONEY"],
+    "TANG_VAT": ["PRODUCT"],
     "HUNG_KHI": ["PRODUCT"],
-    "TOI_DANH": ["LAW"],
-    "MUC_AN": ["DATE/TIME", "MONEY"],
+    "TOI_DANH": ["CRIME"],
+    "MUC_AN": ["DATE/TIME"],
     "THOI_GIAN": ["DATE/TIME"],
-    "DIA_DIEM": ["LOC"],
+    "DIA_DIEM": ["LOCATION"],
 }
 
 _SCHEMA_PATH = Path(__file__).with_name("argument_schema.json")
-
 
 def normalize_ner_label(label):
     if not isinstance(label, str):
         raise NERPipelineError(f"Invalid NER label: {label!r}")
 
-    normalized = _LABEL_ALIASES.get(label.strip().upper())
-    if normalized is None or normalized not in ENTITY_TYPES:
+    raw_label = label.strip().upper()
+    normalized = _LABEL_ALIASES.get(raw_label, raw_label)
+
+    if normalized not in ENTITY_TYPES:
         raise NERPipelineError(f"Unknown NER label: {label}")
 
     return normalized
-
 
 def load_argument_schema(path=None):
     schema_path = Path(path) if path is not None else _SCHEMA_PATH
@@ -80,15 +76,15 @@ def load_argument_schema(path=None):
     ner_labels = schema.get("ner_labels")
     mapping = schema.get("argument_mapping")
 
-    if not isinstance(ner_labels, list) or len(ner_labels) != 8:
-        raise NERPipelineError("Schema must contain exactly 8 NER labels")
+    if not isinstance(ner_labels, list) or len(ner_labels) != len(ENTITY_TYPES):
+        raise NERPipelineError("Schema must contain exactly 7 NER labels")
 
     try:
         normalized_labels = [normalize_ner_label(label) for label in ner_labels]
     except NERPipelineError:
         raise
 
-    if len(set(normalized_labels)) != 8 or set(normalized_labels) != set(ENTITY_TYPES):
+    if len(set(normalized_labels)) != len(ENTITY_TYPES) or set(normalized_labels) != set(ENTITY_TYPES):
         raise NERPipelineError("Schema NER labels do not match ENTITY_TYPES")
 
     if not isinstance(mapping, dict) or set(mapping) != set(ARGUMENT_TYPES):
@@ -125,3 +121,4 @@ def arguments_for_ner_label(label):
         for argument_type, ner_labels in schema["argument_mapping"].items()
         if normalized_label in ner_labels
     ]
+
