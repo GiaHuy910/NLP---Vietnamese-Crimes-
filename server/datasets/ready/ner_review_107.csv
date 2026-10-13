@@ -1,0 +1,108 @@
+﻿split,sentence,entities,review_status
+train,"Bản thân tôi không phải là người quá khắt khe, bởi đã là tuổi trẻ các bạn có quyền trải nghiệm và làm những điều mình mong muốn.",,NEEDS_REVIEW
+train,"Tuy nhiên, lực lượng chức năng đã khống chế bắt giữ được hai đối tượng liên quan.",,NEEDS_REVIEW
+train,"Ví thử như một bạn đi thi hát, bạn ấy không hát đúng nốt nhạc hoặc chưa ra “mầu, ra e” nhưng giám khảo cứ khen và động viên, điều đó không sai nhưng nó không tốt, bởi vì dễ gây cho người được khen bị ảo, không biết được thực tế mình hát được hay không!",,NEEDS_REVIEW
+train,Nạn nhân khai nhớ số đầu của biển số xe là 86B 069… và nhận diện được đối tượng.,,NEEDS_REVIEW
+train,""" Tôi và các anh em đang thi công điện ở tầng 12 thì thấy khói bốc lên, lúc đầu cũng không nghĩ là cháy.",,NEEDS_REVIEW
+train,"Sau 5 năm, trên mảnh đất rộng 210.000 m2 chỉ có duy nhất tòa nhà 3 tầng thi công dở và căn nhà nhỏ làm văn phòng công ty.",,NEEDS_REVIEW
+train,"Người dân hoang mang, chấn động khi vụ việc được phát hiện.",,NEEDS_REVIEW
+train,"Được biết, toàn bộ hình ảnh của tên trộm đã được camera an ninh ghi lại.",,NEEDS_REVIEW
+train,"Thấy vậy, ông này trấn an bệnh nhân và tiếp tục hành vi của mình.",,NEEDS_REVIEW
+train,"Trước khi bị sát hại, anh trai chạy chiếc xe Win 100 màu đỏ, tay đeo đồng hồ Senko 5 mặt trắng, có ví tiền, nhưng giờ đã mất.",xe Win 100|PRODUCT; Senko|PRODUCT,NEEDS_REVIEW
+train,"“Chính phủ sẵn sàng khôi phục quyền sở hữu tài sản của Việt kiều, điều này thể hiện Nhà nước ta là một Nhà nước pháp quyền.",,NEEDS_REVIEW
+train,Một trong 3 thi thể nạn nhân được tìm thấy và đưa vào bờ.,,NEEDS_REVIEW
+train,"Sau khi gọi mãi không có ai trả lời, người con trai đã nhảy xuống hồ nước và tìm thấy thi thể bố mình.",,NEEDS_REVIEW
+train,"Bốn tính chất này xuyên suốt, khống chế toàn bộ hệ thống giáo dục của chúng ta "".",,NEEDS_REVIEW
+train,Mẹ có đòi được nhà?,,NEEDS_REVIEW
+train,"Theo bạn học của nạn nhân, nhiều lần nữ sinh lớp 11 muốn chia tay nhưng nghi can không đồng ý, dọa giết.",,NEEDS_REVIEW
+train,Tiếp đó sẽ bắt tay vào chuẩn bị cho các dự án nghệ thuật mà cô hứa hẹn với fan.,,NEEDS_REVIEW
+train,"Cơ quan chức năng cũng tạm giữ 8 điện thoại di động, 1 ipad, 6 thanh kim loại, 8 ghế inox là tang vật vụ án.",ipad|PRODUCT; inox|PRODUCT,NEEDS_REVIEW
+train,"Cũng trong tập 8, đội NH1 nhận được tin báo có người bị tai nạn ở dốc núi đã lập tức di chuyển đến hiện trường.",,NEEDS_REVIEW
+train,Theo tôi cần phải xây dựng trở lại những “người hùng” từ lực lượng công an chứ không phải là những “hiệp sĩ đường phố” săn bắt cướp bằng niềm đam mê”.,,NEEDS_REVIEW
+train,"Bố đi làm ăn xa, chỉ có 2 mẹ con ở nhà.",,NEEDS_REVIEW
+train,Cơ quan công an đã bắt khẩn cấp 6 nghi can có liên quan đến vụ giám đốc bị chặn xe đốt ôtô khiến tử vong.,,NEEDS_REVIEW
+train,Hung khí gây án Luận vứt bỏ cách hiện trường khoảng 150m đã bị công an thu giữ.,,NEEDS_REVIEW
+train,"Hai bị cáo bị truy tố vì tội 'Vi phạm quy định về khám bệnh, chữa bệnh, sản xuất, pha chế thuốc, cấp phát thuốc, bán thuốc hoặc dịch vụ y tế khác' và 'Xâm phạm thi thể, mồ mả, hài cốt'.",,NEEDS_REVIEW
+train,"Tuy nhiên, xét thấy hành vi của bị cáo là vô cùng nguy hiểm, trái luân thường đạo lý, cần phải xử lý nghiêm để răn đe phòng ngừa chung nên đã tuyên phạt mức án trên.",,NEEDS_REVIEW
+train,"Không chấp nhận kháng nghị của VKS có lợi cho bản thân, bị cáo này xin được sung quỹ số tiền hưởng lợi từ việc đánh bạc dù gia cảnh khó khăn. T",,NEEDS_REVIEW
+train,"Ngay tại tầng trệt, trinh sát đã vô hiệu hóa các đối tượng định báo động cho những người ở trên lầu.",,NEEDS_REVIEW
+train,"Theo quy định, thuế bảo vệ môi trường là loại thuế gián thu, thu vào sản phẩm, hàng hóa khi sử dụng, gây tác động xấu đến môi trường, trong đó có hàng hóa là xăng, dầu.",xăng|PRODUCT; dầu|PRODUCT,NEEDS_REVIEW
+train,Hiện vụ án đang được điều tra mở rộng,,NEEDS_REVIEW
+train,"Tuy nhiên, theo một số chuyên gia, việc khởi tố lúc nào thì tuỳ thuộc vào tính chất vụ án cũng như thời hạn điều tra.",,NEEDS_REVIEW
+train,Nhưng sau khi xác minh thì không có việc 2 cháu bé bị bắt cóc như mạng xã hội đã đăng tải.,,NEEDS_REVIEW
+train,"Thấy cục đá có màu sắc đẹp, bà đã thuê xe kéo lên rồi mang về đánh bóng, chơi đá cảnh trong nhà.",cục đá|PRODUCT; xe kéo|PRODUCT,NEEDS_REVIEW
+train,"Công an đã bắt giữ đối tượng trên để điều tra, làm rõ sự việc.",,NEEDS_REVIEW
+train,Các đối tượng bị lực lượng chức năng bắt giữ.,,NEEDS_REVIEW
+train,"Sau đó, anh có thông báo tin lên trang cá nhân và được biết mình cũng chỉ là một trong số những người đã bị cô gái này lừa.",,NEEDS_REVIEW
+train,“Nhận tiền 4 lần sao mà nói thụ động?,,NEEDS_REVIEW
+train,"Sau khi Thanh tra tỉnh kết luận sai phạm về tài chính, nguyên Giám đốc bệnh viện Đắk Nông đã xin đi chữa bệnh tâm thần.",,NEEDS_REVIEW
+train,"Tại toà, các bị cáo thành khẩn khai nhận hành vi phạm tội và mong muốn HĐXX giảm nhẹ hình phạt khi nói lời sau cùng.",,NEEDS_REVIEW
+train,"Vụ việc đang được tiếp tục điều tra, làm rõ",,NEEDS_REVIEW
+train,"Lực lượng chức năng thu giữ gần 1.500 m3 cát cùng nhiều tài liệu, hóa đơn, chứng từ liên quan.",cát|PRODUCT; tài liệu|PRODUCT; hóa đơn|PRODUCT; chứng từ|PRODUCT,NEEDS_REVIEW
+train,Lý do mà đơn vị này đưa ra là vì hành vi rải đinh chưa có quy định truy cứu trách nhiệm hình sự.,,NEEDS_REVIEW
+train,"- Từ những vụ trộm xe máy hàng loạt, công an lập chuyên án điều tra.",,NEEDS_REVIEW
+train,"Tại bản này, có 17 người dân mất tích trong mưa lũ và hiện đã tìm thấy 6 người.",,NEEDS_REVIEW
+train,"Sau đó, 2 đối tượng này dùng xe ô tô vừa cướp bỏ trốn.",ô tô|PRODUCT,NEEDS_REVIEW
+train,"Ai vi phạm hôn nhân gia đình thì phải bắt quả tang, thưa kiện ra cho pháp luật xử lý"".",,NEEDS_REVIEW
+train,"Làm việc tại quán vài hôm, chủ quán bắt các chị ngồi chung phục vụ, kích dục khi khách có yêu cầu.",,NEEDS_REVIEW
+train,"Theo HĐXX, quá trình điều tra và tại phiên tòa, các bị cáo đã thừa nhận hành vi phạm tội như cáo trạng đã truy tố.",,NEEDS_REVIEW
+train,"Khi vụ án bị khởi tố, những người này tới ngân hàng lấy sổ tiết kiệm mà ngân hàng không cho nhận lại?",,NEEDS_REVIEW
+train,"Sau đó, cơ quan công an điều tra vào cuộc, bắt khẩn cấp nhiều cán bộ từ huyện đến xã để điều tra việc gây thất thoát tiền tỉ của nhà nước trên.",,NEEDS_REVIEW
+train,Vụ án đang được mở rộng điều tra.,,NEEDS_REVIEW
+train,"Hiện nay các lực lượng chức năng vẫn đang tiến hành đồng bộ các biện pháp, kiên quyết bắt giữ các đối tượng vi phạm.",,NEEDS_REVIEW
+train,Hiện vụ án này đang được công an mở rộng điều tra.,,NEEDS_REVIEW
+train,"Theo hồ sơ điều tra, do cần tiền để trả nợ cờ bạc và tiêu xài, Bùi Thị Hồng Ngọc nảy sinh ý định vào các trang mạng xã hội lập tài khoản ảo, sử dụng tên và ảnh của người khác để làm quen với những người đàn ông hám tình, tạo dựng mối quan hệ yêu đương qua mạng rồi lợi dụng sự tin tưởng của họ để chiếm đoạt tiền thông qua hình thức chuyển khoản ngân hàng.",,NEEDS_REVIEW
+train,"Hụi viên được quyền đề nghị xử lý hình sự Liên quan đến các tranh chấp về hụi, quy định hiện hành chỉ đưa ra một cách thức giải quyết là khởi kiện án dân sự.",,NEEDS_REVIEW
+train,"Tang vật thu giữ gồm nhiều hàng hóa và tài liệu, vật chứng liên quan hoạt động của các đối tượng.",,NEEDS_REVIEW
+train,"Đối với quyền lợi của khách hàng đã mua vé máy bay của các doanh nghiệp thực hiện các chuyến bay combo, chuyến bay giải cứu, HĐXX cho rằng, hồ sơ vụ án không có thông tin về những người mua vé.",,NEEDS_REVIEW
+train,"Tuy nhiên, viện kiểm sát đã phản bác các ý kiến trên, cho rằng bị cáo xâm phạm quyền tài sản của khách hàng thông qua hứa hẹn trả lãi cao.",,NEEDS_REVIEW
+train,Cả hai có 1 chung là bé gái 4 tuổi.,,NEEDS_REVIEW
+train,"Sau khi cầm hung khí rượt đuổi các tài xế GrabCar, người thanh niên rời khỏi hiện trường.",,NEEDS_REVIEW
+train,"Sự kiện thu hút đông đảo du khách, việc chưa tìm ra thủ phạm khiến dư luận bất an.",,NEEDS_REVIEW
+train,"Hình thức lừa đảo, băng nhóm trên giả danh công ty thủy sản yêu cầu đối tác thanh toán tiền hàng hóa thông qua tài khoản ngân hàng.",,NEEDS_REVIEW
+train,Động thái này được đưa ra sau khoảng một tuần cơ quan điều tra khởi tố vụ án khi người tố giác hành vi phá rừng bị tấn công.,,NEEDS_REVIEW
+train,"Vẫn là chiêu trò không mới, gọi điện thoại xưng là cán bộ công an đề lừa tiền của người dân Chỉ sau cú điện thoại, các bị hại đã bị lừa lấy đi hơn nửa tỷ đồng.",điện thoại|PRODUCT,NEEDS_REVIEW
+train,"Đối tượng Đồng cực kỳ manh động, liều lĩnh, bất chấp mọi thủ đoạn.",,NEEDS_REVIEW
+train,"Khi đến chỗ hẹn, chưa kịp giao hàng thì 3 đối tượng nói trên đã bị lực lượng công an phát hiện, bắt giữ.",,NEEDS_REVIEW
+train,"Chưa hết, gã còn khống chế bắt nạn nhân tự cởi hết quần áo để hắn quan hệ tình dục.",,NEEDS_REVIEW
+train,Hành động của y khiến nạn nhân đập mặt xuống đường,,NEEDS_REVIEW
+train,"Khi bị HĐXX hỏi: "" Vậy lỗi chính thuộc về ai?",,NEEDS_REVIEW
+train,"""Sau khi ghi âm xong tại sao bị cáo không nộp cho các cơ quan có thẩm quyền để tố cáo?",,NEEDS_REVIEW
+train,"Tuy nhiên do lệnh cách ly xã hội, phiên tòa xét xử em trai cắt chân chị đã phải tạm hoãn.",,NEEDS_REVIEW
+train,"Theo các nhân chứng, vụ cháy được phát hiện vào khoảng 19h ngày 6-5.",,NEEDS_REVIEW
+train,"Trong cuộc ẩu đả, nam thanh niên 20 tuổi rút dao đâm chết người yêu của bạn gái cũ.",,NEEDS_REVIEW
+train,"Như vậy, theo nguồn tin của PV báo Người Đưa Tin, tính đến thời điểm này, cơ quan điều tra đã bắt giữ 5 nghi phạm trong vụ nữ sinh đi giao gà chiều 30 Tết bị giết hại.",,NEEDS_REVIEW
+train,Nam thanh niên cầm dao khống chế 2 nữ công nhân cùng dãy trọ nhằm cướp tài sản.,dao|PRODUCT,NEEDS_REVIEW
+train,"Nhưng bây giờ, không ít vụ giết người dã man có nguyên nhân "" do hung thủ ngáo đá "" khiến đời sống thêm bất an.",,NEEDS_REVIEW
+train,""" Cảnh "" gà trống nuôi con "" cũng vất vả lắm.",,NEEDS_REVIEW
+train,"Một người bình thường sẽ nhận thức được rằng xăng là chất cháy nguy hiểm, khi đã bắt lửa thì rất khó dập tắt và khi một người bị đổ xăng vào người, bị châm lửa thì rất khó bảo toàn tính mạng.",xăng|PRODUCT,NEEDS_REVIEW
+train,"“Vụ án xảy ra khiến bà con nhân dân và chính quyền địa phương vô cùng bất ngờ, xót xa.",,NEEDS_REVIEW
+train,Hệ thống camera đã ghi lại hình ảnh người phụ nữ này và công an đang sử dụng để phục vụ điều tra.,,NEEDS_REVIEW
+train,"Trong lúc hai cha con giằng co chiếc áo khoác ngoài của cô gái bị tuột n,ên chỉ còn chiếc áo mỏng.",áo khoác ngoài|PRODUCT; áo mỏng|PRODUCT,NEEDS_REVIEW
+train,"Những người đời sau nghe chuyện, cũng nửa tin nửa ngờ nhưng cuối cùng lại chấp nhận tin đó là chuyện có thực, lại đẩy những câu chuyện đó lên như một giai thoại.",,NEEDS_REVIEW
+train,"Liên quan đến vụ giang hồ vây xe công an, đến thời điểm này, cơ quan công an đã bắt giữ 4 đối tượng.",,NEEDS_REVIEW
+train,"Nhưng chung quy đánh bạc trên mạng và mục đích cuối cùng của các đối tượng cầm đầu là khi người tham gia đông đảo, lượng tiền lớn, chúng sẽ tự đánh sập hệ thống, chiếm đoạt tiền của người chơi.",,NEEDS_REVIEW
+train,"Việc tạm giữ nhằm phục vụ công tác điều tra, làm rõ nguyên nhân, trách nhiệm của đối tượng trong vụ việc trên, đồng thời kiểm soát đối tượng tránh có những hành vi tiêu cực đến bản thân.",,NEEDS_REVIEW
+train,"Theo kế hoạch, phiên tòa sẽ xét xử trong 2 ngày.",,NEEDS_REVIEW
+train,"Trưa hôm đó, ăn uống xong, Tư đi về nhà và bắt đầu ngẫm nghĩ về những điều mọi người khuyên nhủ.",,NEEDS_REVIEW
+train,"N (24 tuổi), nhân viên tiếp tân của quán karaoke.",,NEEDS_REVIEW
+train,""" Có lần qua thăm con, ảnh có khoe thành tích bắt cướp của mình.",,NEEDS_REVIEW
+train,"Các bị cáo khác đều có thái độ ăn năn, thành khẩn, được hưởng tình tiết giảm nhẹ.",,NEEDS_REVIEW
+train,"Để tránh bị lộ, hắn liên tục thay đổi địa điểm chế tạo vũ khí.",vũ khí|PRODUCT,NEEDS_REVIEW
+train,"Khi xác định được có hành vi tội phạm xảy ra, cơ quan có thẩm quyền dựa trên các yếu tố cấu thành tội phạm bao gồm: khách thể của tội phạm, hành vi phạm tội, động cơ mục đích phạm tội và chủ thể thực hiện hành vi phạm tội để xem xét, đánh giá hành vi đó thỏa mãn tội gì và khung hình phạt nào.",,NEEDS_REVIEW
+train,VKS phát biểu quan điểm luận tội.,,NEEDS_REVIEW
+train,"Một người bạn của Vũ nói, thời điểm nam sinh này bị bắt không ai biết chuyện gì đã xảy ra.",,NEEDS_REVIEW
+train,Công an đã lập biên bản đưa nhóm “dân chơi” về trụ sở làm việc.,,NEEDS_REVIEW
+train,Cả hai đã bị khởi tố cùng 2 hành vi là Giết người và Cướp tài sản.,,NEEDS_REVIEW
+train,"Xin hỏi, chiếc xe của tôi có bị tịch thu không, tôi có phải bồi thường cho nạn nhân hoặc liên đới chịu trách nhiệm hình sự không?",,NEEDS_REVIEW
+train,"Căn cứ vào hồ sơ vụ án, vào diễn biến phiên tòa, xét thấy lời khai của các bị cáo phù hợp với nhau, phù hợp với kết quả điều tra và lời khai của những người liên quan trong vụ án, có đủ cơ sở kết luận các bị cáo đã phạm vào các tội như bản cáo trạng truy tố.",,NEEDS_REVIEW
+validation,"Khi người dân bị các đối tượng đe doạ, khủng bố, huỷ hoại tài sản, gây thương tích, bắt cóc… để đòi nợ thì ngay lập tức trình báo cho cơ quan công an nơi gần nhất để giải quyết",,NEEDS_REVIEW
+validation,Đáng nói dù khác về thời điểm (cách nhau 20 ngày) nhưng nội dung lại giống nhau đáng ngạc nhiên.,,NEEDS_REVIEW
+validation,Người này đẩy cửa vào kiểm tra thì phát hiện thi thể nạn nhân nên báo công an vào cuộc điều tra.,,NEEDS_REVIEW
+validation,"Mặc dù cơ quan công an đã mời Duyên làm việc, nhắc nhở, cảm hóa, giáo dục cũng như tạo cơ hội để đối tượng từ bỏ hoạt động, nhưng người phụ nữ này vẫn ngoan cố và tiếp tục những hành vi sai trái.",,NEEDS_REVIEW
+validation,"Trong khi đó, nạn nhân lại ái ngại, không dám “tố giác” chuyện bị làm nhục với bố mẹ đối tượng.",,NEEDS_REVIEW
+validation,Cảnh sát chữa cháy phải huy động hơn 10 xe chữa cháy cùng hàng chục chiến sĩ khống chế ngọn lửa.,xe chữa cháy|PRODUCT,NEEDS_REVIEW
+validation,Đến khi tìm không được thì đuổi con ra khỏi nhà.,,NEEDS_REVIEW
+validation,"Hiện vụ việc đang tiếp tục mở rộng điều tra, củng cố hồ sơ, xử lý theo quy định",,NEEDS_REVIEW
+validation,"Gia đình người ta có vợ có chồng, khi sóng gió ập xuống còn có bờ vai để dựa, nhưng với bà-một người mẹ đơn thân cứ lầm lũi đi tìm bằng chứng để gỡ tội cho con và phải lo kiếm tiền để tồn tại.",,NEEDS_REVIEW
+validation,"Khi đang giao pháo thì bị lực lực lượng Công an phát hiện, bắt giữ.",,NEEDS_REVIEW

@@ -1,127 +1,71 @@
 ﻿sentence,entities
-"Để đạt được mục đích trong việc làm ăn, Nguyễn Trọng Phương đã nhắn tin khủng bố, đe dọa Chủ tịch và Giám đốc Công an tỉnh Bắc Ninh.",Nguyễn Trọng Phương|PERSON; Công an tỉnh Bắc Ninh|ORGANIZATION
-"Khi đi đến khu đô thị Nam An Khánh, xã An Khánh, thấy vắng người, Linh nảy sinh ý định xấu với chị Thu.",khu đô thị Nam An Khánh|LOCATION; xã An Khánh|LOCATION; Linh|PERSON; Thu|PERSON
-"Trong đó 40 % vốn ưu_đãi do Nhà_nước hỗ_trợ là do ngân_sách trung_ương ( trên 120 tỉ đồng ) , ngân_sách tỉnh Cà_Mau hỗ_trợ 10 % , 50 % vốn còn lại là của nhà_đầu_tư ( chủ_yếu là vay vốn ưu_đãi của ngân_hàng ) .",tỉnh Cà_Mau|LOCATION
-"Bực_tức , Bình thuê một nhóm thợ khác đến thi_công ngôi nhà này thì giữa Bình và S.",Bình|PERSON; Bình|PERSON; S|PERSON
-"Truy tìm hung thủ sát hại tài xế GrabBike Ngày 25/6, Công an Q.12 phối hợp cùng các phòng nghiệp vụ của Công an TP.HCM để điều tra việc tài xế GrabBike bị phát hiện nằm chết dọc bờ kênh ở vùng ven, nghi vấn là bị giết, cướp tài sản.",Công an Q.12|ORGANIZATION; Công an TP.HCM|ORGANIZATION
-TP cũng đang thí_điểm lắp_đặt wifi trên 3 tuyến xe_buýt cho người_dân sử_dụng .,NONE
-"bị phát_hiện , mặc_dù ông B.",B|PERSON
-Tâm đã đá cháu Thắng một cái vào ngực làm cháu té đập đầu vào tường.,Tâm|PERSON; Thắng|PERSON
-Vì vậy Phong đã nhiều lần đến nhà bà Vân để đòi lại khoản tiền đã đưa cho bà Vân nhưng không được nên nung nấu ý định trả thù người tình.,Phong|PERSON; Vân|PERSON; Vân|PERSON
-"Theo nguồn_tin của BBC , một người phụ_nữ 24 tuổi tại Paris đã tố_cáo Chris_Brown cưỡng_hiếp mình vào ngày 15/1 vừa_qua .",BBC|ORGANIZATION; Paris|LOCATION; Chris_Brown|PERSON
-"Bực tức, Thắng bắt cháu H.",Thắng|PERSON
-", 27 tuổi , ngụ huyện Bình_Chánh , TP.",huyện Bình_Chánh|LOCATION; TP|LOCATION
-"Theo đó , vào đêm ngày 17/7 , UBND phường phối_hợp cùng công_an ra_quân kiểm_tra tại nhiều quán bia , cà_phê ở phố đi bộ Bùi_Viện thì phát_hiện hiện nhiều cơ_sở kinh_doanh tàng_trữ nhiều bình khí N20 được giấu kỹ bên trong để bơm vào vỏ quả bóng_bay .",phố đi bộ Bùi_Viện|LOCATION
-đồng_ý .,NONE
-"Cũng trên báo Người lao_động , ông Nguyễn_Văn_Y , Phó chủ_nhiệm UBKT Tỉnh_uỷ Hậu_Giang cho biết , tại buổi triển_khai quyết_định , ông L.",báo Người lao_động|ORGANIZATION; Nguyễn_Văn_Y|PERSON; UBKT Tỉnh_uỷ Hậu_Giang|ORGANIZATION
-"Không riêng gì tôi và Hoàng_Thuỳ mà tất_cả các thí_sinh đều có sự cố_gắng bền_bỉ , chính vì_vậy , ai giành được vương_miện Hoa_hậu tôi cũng đều thấy vui cả .",Hoàng_Thuỳ|PERSON
-"Tuy nhiên, anh S chỉ mới trả được tổng cộng gần 60 triệu đồng thì mất khả năng chi trả nên lánh mặt Quân.",S|PERSON; Quân|PERSON
-sớm vập vào chuyện yêu đương khi cậu ta mới 14 tuổi còn L.,L|PERSON
-Bị cáo Tuyền đồng ý và đã bồi thường được 20 triệu.,Tuyền|PERSON
-"Sau khi bàn_bạc xong , Bình hẹn anh S.",Bình|PERSON; S|PERSON
-"Sau đó Phan Sào Nam kết nối với Nguyễn Văn Dương (cựu Chủ tịch HĐTV công ty CNC - là công ty bình phong của Cục Cảnh sát phòng chống tội phạm công nghệ cao), thống nhất việc công ty CNC làm nhiệm vụ phát hành game lên mạng và ký hợp đồng hợp tác.",Phan Sào Nam|PERSON; Nguyễn Văn Dương|PERSON; công ty CNC|ORGANIZATION; Cục Cảnh sát phòng chống|ORGANIZATION; phạm công|ORGANIZATION; cao|ORGANIZATION; công ty CNC|ORGANIZATION
-"tử_vong tại_chỗ , còn Trinh_Văn_Đông bị_thương nặng may nắm chạy thoát và được người_dân đưa đi cấp_cứu .",Trinh_Văn_Đông|PERSON
-"(22 tuổi, cùng trú huyện Châu Đức) mượn chiếc xe máy hiệu Honda Vision.",huyện Châu Đức|LOCATION
-"2 bên thương lượng hình thức vay mượn là trả góp, cả vốn lẫn lại trong vòng 40 ngày.",NONE
-"Trường hợp đã chấp hành hình phạt hoặc được miễn chấp hành hình phạt thì đương nhiên được xóa án tích… Dùng lợi ích phi vật chất hối lộ cũng bị tội Tại hội nghị, TS Trần Văn Dũng, Phó Vụ trưởng Vụ Pháp luật hình sự, hành chính Bộ Tư pháp, lưu ý: BLHS 2015 bổ sung vào cấu thành của một số tội phạm về chức vụ liên quan đến hành vi tham nhũng trong khu vực tư (ngoài Nhà nước).","Trần Văn Dũng|PERSON; Vụ Pháp luật hình sự, hành chính Bộ Tư pháp|ORGANIZATION"
-"Còn về chức_danh giáo_sư âm_nhạc , đó là do người được cấp bằng tự khai hồ_sơ .",NONE
-Ví dụ giả lập validation 001: Nguyễn Bảo An cùng Trung tâm giả lập 001 kiểm tra hồ sơ tại Khu vực mô phỏng 001.,Nguyễn Bảo An|PERSON; Trung tâm giả lập 001|ORGANIZATION; Khu vực mô phỏng 001|LOCATION
-"Theo kịch bản mẫu validation 002, Trung tâm giả lập 002 xác nhận đã gặp Trần Bảo An ở Khu vực mô phỏng 002.",Trung tâm giả lập 002|ORGANIZATION; Trần Bảo An|PERSON; Khu vực mô phỏng 002|LOCATION
-Lê Bảo An đến Khu vực mô phỏng 003 làm việc với Trung tâm giả lập 003 trong buổi mô phỏng validation 003.,Lê Bảo An|PERSON; Khu vực mô phỏng 003|LOCATION; Trung tâm giả lập 003|ORGANIZATION
-Bản ghi minh họa validation 004 tại Khu vực mô phỏng 004 nêu tên Phạm Bảo An và Trung tâm giả lập 004.,Khu vực mô phỏng 004|LOCATION; Phạm Bảo An|PERSON; Trung tâm giả lập 004|ORGANIZATION
-Tài liệu thử nghiệm validation 005 do Hoàng Bảo An gửi cho Trung tâm giả lập 005 ở Khu vực mô phỏng 005.,Hoàng Bảo An|PERSON; Trung tâm giả lập 005|ORGANIZATION; Khu vực mô phỏng 005|LOCATION
-Ví dụ giả lập validation 006: Phan Bảo An cùng Trung tâm giả lập 006 kiểm tra hồ sơ tại Khu vực mô phỏng 006.,Phan Bảo An|PERSON; Trung tâm giả lập 006|ORGANIZATION; Khu vực mô phỏng 006|LOCATION
-"Theo kịch bản mẫu validation 007, Trung tâm giả lập 007 xác nhận đã gặp Vũ Bảo An ở Khu vực mô phỏng 007.",Trung tâm giả lập 007|ORGANIZATION; Vũ Bảo An|PERSON; Khu vực mô phỏng 007|LOCATION
-Đặng Bảo An đến Khu vực mô phỏng 008 làm việc với Trung tâm giả lập 008 trong buổi mô phỏng validation 008.,Đặng Bảo An|PERSON; Khu vực mô phỏng 008|LOCATION; Trung tâm giả lập 008|ORGANIZATION
-Bản ghi minh họa validation 009 tại Khu vực mô phỏng 009 nêu tên Bùi Bảo An và Trung tâm giả lập 009.,Khu vực mô phỏng 009|LOCATION; Bùi Bảo An|PERSON; Trung tâm giả lập 009|ORGANIZATION
-Tài liệu thử nghiệm validation 010 do Đỗ Bảo An gửi cho Trung tâm giả lập 010 ở Khu vực mô phỏng 010.,Đỗ Bảo An|PERSON; Trung tâm giả lập 010|ORGANIZATION; Khu vực mô phỏng 010|LOCATION
-Ví dụ giả lập validation 011: Nguyễn Bảo Bình cùng Trung tâm giả lập 011 kiểm tra hồ sơ tại Khu vực mô phỏng 011.,Nguyễn Bảo Bình|PERSON; Trung tâm giả lập 011|ORGANIZATION; Khu vực mô phỏng 011|LOCATION
-"Theo kịch bản mẫu validation 012, Trung tâm giả lập 012 xác nhận đã gặp Trần Bảo Bình ở Khu vực mô phỏng 012.",Trung tâm giả lập 012|ORGANIZATION; Trần Bảo Bình|PERSON; Khu vực mô phỏng 012|LOCATION
-Lê Bảo Bình đến Khu vực mô phỏng 013 làm việc với Trung tâm giả lập 013 trong buổi mô phỏng validation 013.,Lê Bảo Bình|PERSON; Khu vực mô phỏng 013|LOCATION; Trung tâm giả lập 013|ORGANIZATION
-Bản ghi minh họa validation 014 tại Khu vực mô phỏng 014 nêu tên Phạm Bảo Bình và Trung tâm giả lập 014.,Khu vực mô phỏng 014|LOCATION; Phạm Bảo Bình|PERSON; Trung tâm giả lập 014|ORGANIZATION
-Tài liệu thử nghiệm validation 015 do Hoàng Bảo Bình gửi cho Trung tâm giả lập 015 ở Khu vực mô phỏng 015.,Hoàng Bảo Bình|PERSON; Trung tâm giả lập 015|ORGANIZATION; Khu vực mô phỏng 015|LOCATION
-Ví dụ giả lập validation 016: Phan Bảo Bình cùng Trung tâm giả lập 016 kiểm tra hồ sơ tại Khu vực mô phỏng 016.,Phan Bảo Bình|PERSON; Trung tâm giả lập 016|ORGANIZATION; Khu vực mô phỏng 016|LOCATION
-"Theo kịch bản mẫu validation 017, Trung tâm giả lập 017 xác nhận đã gặp Vũ Bảo Bình ở Khu vực mô phỏng 017.",Trung tâm giả lập 017|ORGANIZATION; Vũ Bảo Bình|PERSON; Khu vực mô phỏng 017|LOCATION
-Đặng Bảo Bình đến Khu vực mô phỏng 018 làm việc với Trung tâm giả lập 018 trong buổi mô phỏng validation 018.,Đặng Bảo Bình|PERSON; Khu vực mô phỏng 018|LOCATION; Trung tâm giả lập 018|ORGANIZATION
-Bản ghi minh họa validation 019 tại Khu vực mô phỏng 019 nêu tên Bùi Bảo Bình và Trung tâm giả lập 019.,Khu vực mô phỏng 019|LOCATION; Bùi Bảo Bình|PERSON; Trung tâm giả lập 019|ORGANIZATION
-Tài liệu thử nghiệm validation 020 do Đỗ Bảo Bình gửi cho Trung tâm giả lập 020 ở Khu vực mô phỏng 020.,Đỗ Bảo Bình|PERSON; Trung tâm giả lập 020|ORGANIZATION; Khu vực mô phỏng 020|LOCATION
-Ví dụ giả lập validation 021: Nguyễn Bảo Chi cùng Trung tâm giả lập 021 kiểm tra hồ sơ tại Khu vực mô phỏng 021.,Nguyễn Bảo Chi|PERSON; Trung tâm giả lập 021|ORGANIZATION; Khu vực mô phỏng 021|LOCATION
-"Theo kịch bản mẫu validation 022, Trung tâm giả lập 022 xác nhận đã gặp Trần Bảo Chi ở Khu vực mô phỏng 022.",Trung tâm giả lập 022|ORGANIZATION; Trần Bảo Chi|PERSON; Khu vực mô phỏng 022|LOCATION
-Lê Bảo Chi đến Khu vực mô phỏng 023 làm việc với Trung tâm giả lập 023 trong buổi mô phỏng validation 023.,Lê Bảo Chi|PERSON; Khu vực mô phỏng 023|LOCATION; Trung tâm giả lập 023|ORGANIZATION
-Bản ghi minh họa validation 024 tại Khu vực mô phỏng 024 nêu tên Phạm Bảo Chi và Trung tâm giả lập 024.,Khu vực mô phỏng 024|LOCATION; Phạm Bảo Chi|PERSON; Trung tâm giả lập 024|ORGANIZATION
-Tài liệu thử nghiệm validation 025 do Hoàng Bảo Chi gửi cho Trung tâm giả lập 025 ở Khu vực mô phỏng 025.,Hoàng Bảo Chi|PERSON; Trung tâm giả lập 025|ORGANIZATION; Khu vực mô phỏng 025|LOCATION
-Ví dụ giả lập validation 026: Phan Bảo Chi cùng Trung tâm giả lập 026 kiểm tra hồ sơ tại Khu vực mô phỏng 026.,Phan Bảo Chi|PERSON; Trung tâm giả lập 026|ORGANIZATION; Khu vực mô phỏng 026|LOCATION
-"Theo kịch bản mẫu validation 027, Trung tâm giả lập 027 xác nhận đã gặp Vũ Bảo Chi ở Khu vực mô phỏng 027.",Trung tâm giả lập 027|ORGANIZATION; Vũ Bảo Chi|PERSON; Khu vực mô phỏng 027|LOCATION
-Đặng Bảo Chi đến Khu vực mô phỏng 028 làm việc với Trung tâm giả lập 028 trong buổi mô phỏng validation 028.,Đặng Bảo Chi|PERSON; Khu vực mô phỏng 028|LOCATION; Trung tâm giả lập 028|ORGANIZATION
-Bản ghi minh họa validation 029 tại Khu vực mô phỏng 029 nêu tên Bùi Bảo Chi và Trung tâm giả lập 029.,Khu vực mô phỏng 029|LOCATION; Bùi Bảo Chi|PERSON; Trung tâm giả lập 029|ORGANIZATION
-Tài liệu thử nghiệm validation 030 do Đỗ Bảo Chi gửi cho Trung tâm giả lập 030 ở Khu vực mô phỏng 030.,Đỗ Bảo Chi|PERSON; Trung tâm giả lập 030|ORGANIZATION; Khu vực mô phỏng 030|LOCATION
-Ví dụ giả lập validation 031: Nguyễn Bảo Dũng cùng Trung tâm giả lập 031 kiểm tra hồ sơ tại Khu vực mô phỏng 031.,Nguyễn Bảo Dũng|PERSON; Trung tâm giả lập 031|ORGANIZATION; Khu vực mô phỏng 031|LOCATION
-"Theo kịch bản mẫu validation 032, Trung tâm giả lập 032 xác nhận đã gặp Trần Bảo Dũng ở Khu vực mô phỏng 032.",Trung tâm giả lập 032|ORGANIZATION; Trần Bảo Dũng|PERSON; Khu vực mô phỏng 032|LOCATION
-Lê Bảo Dũng đến Khu vực mô phỏng 033 làm việc với Trung tâm giả lập 033 trong buổi mô phỏng validation 033.,Lê Bảo Dũng|PERSON; Khu vực mô phỏng 033|LOCATION; Trung tâm giả lập 033|ORGANIZATION
-Bản ghi minh họa validation 034 tại Khu vực mô phỏng 034 nêu tên Phạm Bảo Dũng và Trung tâm giả lập 034.,Khu vực mô phỏng 034|LOCATION; Phạm Bảo Dũng|PERSON; Trung tâm giả lập 034|ORGANIZATION
-Tài liệu thử nghiệm validation 035 do Hoàng Bảo Dũng gửi cho Trung tâm giả lập 035 ở Khu vực mô phỏng 035.,Hoàng Bảo Dũng|PERSON; Trung tâm giả lập 035|ORGANIZATION; Khu vực mô phỏng 035|LOCATION
-Ví dụ giả lập validation 036: Phan Bảo Dũng cùng Trung tâm giả lập 036 kiểm tra hồ sơ tại Khu vực mô phỏng 036.,Phan Bảo Dũng|PERSON; Trung tâm giả lập 036|ORGANIZATION; Khu vực mô phỏng 036|LOCATION
-"Theo kịch bản mẫu validation 037, Trung tâm giả lập 037 xác nhận đã gặp Vũ Bảo Dũng ở Khu vực mô phỏng 037.",Trung tâm giả lập 037|ORGANIZATION; Vũ Bảo Dũng|PERSON; Khu vực mô phỏng 037|LOCATION
-Đặng Bảo Dũng đến Khu vực mô phỏng 038 làm việc với Trung tâm giả lập 038 trong buổi mô phỏng validation 038.,Đặng Bảo Dũng|PERSON; Khu vực mô phỏng 038|LOCATION; Trung tâm giả lập 038|ORGANIZATION
-Bản ghi minh họa validation 039 tại Khu vực mô phỏng 039 nêu tên Bùi Bảo Dũng và Trung tâm giả lập 039.,Khu vực mô phỏng 039|LOCATION; Bùi Bảo Dũng|PERSON; Trung tâm giả lập 039|ORGANIZATION
-Tài liệu thử nghiệm validation 040 do Đỗ Bảo Dũng gửi cho Trung tâm giả lập 040 ở Khu vực mô phỏng 040.,Đỗ Bảo Dũng|PERSON; Trung tâm giả lập 040|ORGANIZATION; Khu vực mô phỏng 040|LOCATION
-Ví dụ giả lập validation 041: Nguyễn Bảo Giang cùng Trung tâm giả lập 041 kiểm tra hồ sơ tại Khu vực mô phỏng 041.,Nguyễn Bảo Giang|PERSON; Trung tâm giả lập 041|ORGANIZATION; Khu vực mô phỏng 041|LOCATION
-"Theo kịch bản mẫu validation 042, Trung tâm giả lập 042 xác nhận đã gặp Trần Bảo Giang ở Khu vực mô phỏng 042.",Trung tâm giả lập 042|ORGANIZATION; Trần Bảo Giang|PERSON; Khu vực mô phỏng 042|LOCATION
-Lê Bảo Giang đến Khu vực mô phỏng 043 làm việc với Trung tâm giả lập 043 trong buổi mô phỏng validation 043.,Lê Bảo Giang|PERSON; Khu vực mô phỏng 043|LOCATION; Trung tâm giả lập 043|ORGANIZATION
-Bản ghi minh họa validation 044 tại Khu vực mô phỏng 044 nêu tên Phạm Bảo Giang và Trung tâm giả lập 044.,Khu vực mô phỏng 044|LOCATION; Phạm Bảo Giang|PERSON; Trung tâm giả lập 044|ORGANIZATION
-Tài liệu thử nghiệm validation 045 do Hoàng Bảo Giang gửi cho Trung tâm giả lập 045 ở Khu vực mô phỏng 045.,Hoàng Bảo Giang|PERSON; Trung tâm giả lập 045|ORGANIZATION; Khu vực mô phỏng 045|LOCATION
-Ví dụ giả lập validation 046: Phan Bảo Giang cùng Trung tâm giả lập 046 kiểm tra hồ sơ tại Khu vực mô phỏng 046.,Phan Bảo Giang|PERSON; Trung tâm giả lập 046|ORGANIZATION; Khu vực mô phỏng 046|LOCATION
-"Theo kịch bản mẫu validation 047, Trung tâm giả lập 047 xác nhận đã gặp Vũ Bảo Giang ở Khu vực mô phỏng 047.",Trung tâm giả lập 047|ORGANIZATION; Vũ Bảo Giang|PERSON; Khu vực mô phỏng 047|LOCATION
-Đặng Bảo Giang đến Khu vực mô phỏng 048 làm việc với Trung tâm giả lập 048 trong buổi mô phỏng validation 048.,Đặng Bảo Giang|PERSON; Khu vực mô phỏng 048|LOCATION; Trung tâm giả lập 048|ORGANIZATION
-Bản ghi minh họa validation 049 tại Khu vực mô phỏng 049 nêu tên Bùi Bảo Giang và Trung tâm giả lập 049.,Khu vực mô phỏng 049|LOCATION; Bùi Bảo Giang|PERSON; Trung tâm giả lập 049|ORGANIZATION
-Tài liệu thử nghiệm validation 050 do Đỗ Bảo Giang gửi cho Trung tâm giả lập 050 ở Khu vực mô phỏng 050.,Đỗ Bảo Giang|PERSON; Trung tâm giả lập 050|ORGANIZATION; Khu vực mô phỏng 050|LOCATION
-Ví dụ giả lập validation 051: Nguyễn Bảo Hà cùng Trung tâm giả lập 051 kiểm tra hồ sơ tại Khu vực mô phỏng 051.,Nguyễn Bảo Hà|PERSON; Trung tâm giả lập 051|ORGANIZATION; Khu vực mô phỏng 051|LOCATION
-"Theo kịch bản mẫu validation 052, Trung tâm giả lập 052 xác nhận đã gặp Trần Bảo Hà ở Khu vực mô phỏng 052.",Trung tâm giả lập 052|ORGANIZATION; Trần Bảo Hà|PERSON; Khu vực mô phỏng 052|LOCATION
-Lê Bảo Hà đến Khu vực mô phỏng 053 làm việc với Trung tâm giả lập 053 trong buổi mô phỏng validation 053.,Lê Bảo Hà|PERSON; Khu vực mô phỏng 053|LOCATION; Trung tâm giả lập 053|ORGANIZATION
-Bản ghi minh họa validation 054 tại Khu vực mô phỏng 054 nêu tên Phạm Bảo Hà và Trung tâm giả lập 054.,Khu vực mô phỏng 054|LOCATION; Phạm Bảo Hà|PERSON; Trung tâm giả lập 054|ORGANIZATION
-Tài liệu thử nghiệm validation 055 do Hoàng Bảo Hà gửi cho Trung tâm giả lập 055 ở Khu vực mô phỏng 055.,Hoàng Bảo Hà|PERSON; Trung tâm giả lập 055|ORGANIZATION; Khu vực mô phỏng 055|LOCATION
-Ví dụ giả lập validation 056: Phan Bảo Hà cùng Trung tâm giả lập 056 kiểm tra hồ sơ tại Khu vực mô phỏng 056.,Phan Bảo Hà|PERSON; Trung tâm giả lập 056|ORGANIZATION; Khu vực mô phỏng 056|LOCATION
-"Theo kịch bản mẫu validation 057, Trung tâm giả lập 057 xác nhận đã gặp Vũ Bảo Hà ở Khu vực mô phỏng 057.",Trung tâm giả lập 057|ORGANIZATION; Vũ Bảo Hà|PERSON; Khu vực mô phỏng 057|LOCATION
-Đặng Bảo Hà đến Khu vực mô phỏng 058 làm việc với Trung tâm giả lập 058 trong buổi mô phỏng validation 058.,Đặng Bảo Hà|PERSON; Khu vực mô phỏng 058|LOCATION; Trung tâm giả lập 058|ORGANIZATION
-Bản ghi minh họa validation 059 tại Khu vực mô phỏng 059 nêu tên Bùi Bảo Hà và Trung tâm giả lập 059.,Khu vực mô phỏng 059|LOCATION; Bùi Bảo Hà|PERSON; Trung tâm giả lập 059|ORGANIZATION
-Tài liệu thử nghiệm validation 060 do Đỗ Bảo Hà gửi cho Trung tâm giả lập 060 ở Khu vực mô phỏng 060.,Đỗ Bảo Hà|PERSON; Trung tâm giả lập 060|ORGANIZATION; Khu vực mô phỏng 060|LOCATION
-Ví dụ giả lập validation 061: Nguyễn Bảo Khanh cùng Trung tâm giả lập 061 kiểm tra hồ sơ tại Khu vực mô phỏng 061.,Nguyễn Bảo Khanh|PERSON; Trung tâm giả lập 061|ORGANIZATION; Khu vực mô phỏng 061|LOCATION
-"Theo kịch bản mẫu validation 062, Trung tâm giả lập 062 xác nhận đã gặp Trần Bảo Khanh ở Khu vực mô phỏng 062.",Trung tâm giả lập 062|ORGANIZATION; Trần Bảo Khanh|PERSON; Khu vực mô phỏng 062|LOCATION
-Lê Bảo Khanh đến Khu vực mô phỏng 063 làm việc với Trung tâm giả lập 063 trong buổi mô phỏng validation 063.,Lê Bảo Khanh|PERSON; Khu vực mô phỏng 063|LOCATION; Trung tâm giả lập 063|ORGANIZATION
-Bản ghi minh họa validation 064 tại Khu vực mô phỏng 064 nêu tên Phạm Bảo Khanh và Trung tâm giả lập 064.,Khu vực mô phỏng 064|LOCATION; Phạm Bảo Khanh|PERSON; Trung tâm giả lập 064|ORGANIZATION
-Tài liệu thử nghiệm validation 065 do Hoàng Bảo Khanh gửi cho Trung tâm giả lập 065 ở Khu vực mô phỏng 065.,Hoàng Bảo Khanh|PERSON; Trung tâm giả lập 065|ORGANIZATION; Khu vực mô phỏng 065|LOCATION
-Ví dụ giả lập validation 066: Phan Bảo Khanh cùng Trung tâm giả lập 066 kiểm tra hồ sơ tại Khu vực mô phỏng 066.,Phan Bảo Khanh|PERSON; Trung tâm giả lập 066|ORGANIZATION; Khu vực mô phỏng 066|LOCATION
-"Theo kịch bản mẫu validation 067, Trung tâm giả lập 067 xác nhận đã gặp Vũ Bảo Khanh ở Khu vực mô phỏng 067.",Trung tâm giả lập 067|ORGANIZATION; Vũ Bảo Khanh|PERSON; Khu vực mô phỏng 067|LOCATION
-Đặng Bảo Khanh đến Khu vực mô phỏng 068 làm việc với Trung tâm giả lập 068 trong buổi mô phỏng validation 068.,Đặng Bảo Khanh|PERSON; Khu vực mô phỏng 068|LOCATION; Trung tâm giả lập 068|ORGANIZATION
-Bản ghi minh họa validation 069 tại Khu vực mô phỏng 069 nêu tên Bùi Bảo Khanh và Trung tâm giả lập 069.,Khu vực mô phỏng 069|LOCATION; Bùi Bảo Khanh|PERSON; Trung tâm giả lập 069|ORGANIZATION
-Tài liệu thử nghiệm validation 070 do Đỗ Bảo Khanh gửi cho Trung tâm giả lập 070 ở Khu vực mô phỏng 070.,Đỗ Bảo Khanh|PERSON; Trung tâm giả lập 070|ORGANIZATION; Khu vực mô phỏng 070|LOCATION
-Ví dụ giả lập validation 071: Nguyễn Bảo Lan cùng Trung tâm giả lập 071 kiểm tra hồ sơ tại Khu vực mô phỏng 071.,Nguyễn Bảo Lan|PERSON; Trung tâm giả lập 071|ORGANIZATION; Khu vực mô phỏng 071|LOCATION
-"Theo kịch bản mẫu validation 072, Trung tâm giả lập 072 xác nhận đã gặp Trần Bảo Lan ở Khu vực mô phỏng 072.",Trung tâm giả lập 072|ORGANIZATION; Trần Bảo Lan|PERSON; Khu vực mô phỏng 072|LOCATION
-Lê Bảo Lan đến Khu vực mô phỏng 073 làm việc với Trung tâm giả lập 073 trong buổi mô phỏng validation 073.,Lê Bảo Lan|PERSON; Khu vực mô phỏng 073|LOCATION; Trung tâm giả lập 073|ORGANIZATION
-Bản ghi minh họa validation 074 tại Khu vực mô phỏng 074 nêu tên Phạm Bảo Lan và Trung tâm giả lập 074.,Khu vực mô phỏng 074|LOCATION; Phạm Bảo Lan|PERSON; Trung tâm giả lập 074|ORGANIZATION
-Tài liệu thử nghiệm validation 075 do Hoàng Bảo Lan gửi cho Trung tâm giả lập 075 ở Khu vực mô phỏng 075.,Hoàng Bảo Lan|PERSON; Trung tâm giả lập 075|ORGANIZATION; Khu vực mô phỏng 075|LOCATION
-Ví dụ giả lập validation 076: Phan Bảo Lan cùng Trung tâm giả lập 076 kiểm tra hồ sơ tại Khu vực mô phỏng 076.,Phan Bảo Lan|PERSON; Trung tâm giả lập 076|ORGANIZATION; Khu vực mô phỏng 076|LOCATION
-"Theo kịch bản mẫu validation 077, Trung tâm giả lập 077 xác nhận đã gặp Vũ Bảo Lan ở Khu vực mô phỏng 077.",Trung tâm giả lập 077|ORGANIZATION; Vũ Bảo Lan|PERSON; Khu vực mô phỏng 077|LOCATION
-Đặng Bảo Lan đến Khu vực mô phỏng 078 làm việc với Trung tâm giả lập 078 trong buổi mô phỏng validation 078.,Đặng Bảo Lan|PERSON; Khu vực mô phỏng 078|LOCATION; Trung tâm giả lập 078|ORGANIZATION
-Bản ghi minh họa validation 079 tại Khu vực mô phỏng 079 nêu tên Bùi Bảo Lan và Trung tâm giả lập 079.,Khu vực mô phỏng 079|LOCATION; Bùi Bảo Lan|PERSON; Trung tâm giả lập 079|ORGANIZATION
-Tài liệu thử nghiệm validation 080 do Đỗ Bảo Lan gửi cho Trung tâm giả lập 080 ở Khu vực mô phỏng 080.,Đỗ Bảo Lan|PERSON; Trung tâm giả lập 080|ORGANIZATION; Khu vực mô phỏng 080|LOCATION
-Ví dụ giả lập validation 081: Nguyễn Bảo Minh cùng Trung tâm giả lập 081 kiểm tra hồ sơ tại Khu vực mô phỏng 081.,Nguyễn Bảo Minh|PERSON; Trung tâm giả lập 081|ORGANIZATION; Khu vực mô phỏng 081|LOCATION
-"Theo kịch bản mẫu validation 082, Trung tâm giả lập 082 xác nhận đã gặp Trần Bảo Minh ở Khu vực mô phỏng 082.",Trung tâm giả lập 082|ORGANIZATION; Trần Bảo Minh|PERSON; Khu vực mô phỏng 082|LOCATION
-Lê Bảo Minh đến Khu vực mô phỏng 083 làm việc với Trung tâm giả lập 083 trong buổi mô phỏng validation 083.,Lê Bảo Minh|PERSON; Khu vực mô phỏng 083|LOCATION; Trung tâm giả lập 083|ORGANIZATION
-Bản ghi minh họa validation 084 tại Khu vực mô phỏng 084 nêu tên Phạm Bảo Minh và Trung tâm giả lập 084.,Khu vực mô phỏng 084|LOCATION; Phạm Bảo Minh|PERSON; Trung tâm giả lập 084|ORGANIZATION
-Tài liệu thử nghiệm validation 085 do Hoàng Bảo Minh gửi cho Trung tâm giả lập 085 ở Khu vực mô phỏng 085.,Hoàng Bảo Minh|PERSON; Trung tâm giả lập 085|ORGANIZATION; Khu vực mô phỏng 085|LOCATION
-Ví dụ giả lập validation 086: Phan Bảo Minh cùng Trung tâm giả lập 086 kiểm tra hồ sơ tại Khu vực mô phỏng 086.,Phan Bảo Minh|PERSON; Trung tâm giả lập 086|ORGANIZATION; Khu vực mô phỏng 086|LOCATION
-"Theo kịch bản mẫu validation 087, Trung tâm giả lập 087 xác nhận đã gặp Vũ Bảo Minh ở Khu vực mô phỏng 087.",Trung tâm giả lập 087|ORGANIZATION; Vũ Bảo Minh|PERSON; Khu vực mô phỏng 087|LOCATION
-Đặng Bảo Minh đến Khu vực mô phỏng 088 làm việc với Trung tâm giả lập 088 trong buổi mô phỏng validation 088.,Đặng Bảo Minh|PERSON; Khu vực mô phỏng 088|LOCATION; Trung tâm giả lập 088|ORGANIZATION
-Bản ghi minh họa validation 089 tại Khu vực mô phỏng 089 nêu tên Bùi Bảo Minh và Trung tâm giả lập 089.,Khu vực mô phỏng 089|LOCATION; Bùi Bảo Minh|PERSON; Trung tâm giả lập 089|ORGANIZATION
-Tài liệu thử nghiệm validation 090 do Đỗ Bảo Minh gửi cho Trung tâm giả lập 090 ở Khu vực mô phỏng 090.,Đỗ Bảo Minh|PERSON; Trung tâm giả lập 090|ORGANIZATION; Khu vực mô phỏng 090|LOCATION
-Ví dụ giả lập validation 091: Nguyễn Bảo Ngọc cùng Trung tâm giả lập 091 kiểm tra hồ sơ tại Khu vực mô phỏng 091.,Nguyễn Bảo Ngọc|PERSON; Trung tâm giả lập 091|ORGANIZATION; Khu vực mô phỏng 091|LOCATION
-"Theo kịch bản mẫu validation 092, Trung tâm giả lập 092 xác nhận đã gặp Trần Bảo Ngọc ở Khu vực mô phỏng 092.",Trung tâm giả lập 092|ORGANIZATION; Trần Bảo Ngọc|PERSON; Khu vực mô phỏng 092|LOCATION
-Lê Bảo Ngọc đến Khu vực mô phỏng 093 làm việc với Trung tâm giả lập 093 trong buổi mô phỏng validation 093.,Lê Bảo Ngọc|PERSON; Khu vực mô phỏng 093|LOCATION; Trung tâm giả lập 093|ORGANIZATION
-Bản ghi minh họa validation 094 tại Khu vực mô phỏng 094 nêu tên Phạm Bảo Ngọc và Trung tâm giả lập 094.,Khu vực mô phỏng 094|LOCATION; Phạm Bảo Ngọc|PERSON; Trung tâm giả lập 094|ORGANIZATION
-Tài liệu thử nghiệm validation 095 do Hoàng Bảo Ngọc gửi cho Trung tâm giả lập 095 ở Khu vực mô phỏng 095.,Hoàng Bảo Ngọc|PERSON; Trung tâm giả lập 095|ORGANIZATION; Khu vực mô phỏng 095|LOCATION
-Ví dụ giả lập validation 096: Phan Bảo Ngọc cùng Trung tâm giả lập 096 kiểm tra hồ sơ tại Khu vực mô phỏng 096.,Phan Bảo Ngọc|PERSON; Trung tâm giả lập 096|ORGANIZATION; Khu vực mô phỏng 096|LOCATION
-"Theo kịch bản mẫu validation 097, Trung tâm giả lập 097 xác nhận đã gặp Vũ Bảo Ngọc ở Khu vực mô phỏng 097.",Trung tâm giả lập 097|ORGANIZATION; Vũ Bảo Ngọc|PERSON; Khu vực mô phỏng 097|LOCATION
-Đặng Bảo Ngọc đến Khu vực mô phỏng 098 làm việc với Trung tâm giả lập 098 trong buổi mô phỏng validation 098.,Đặng Bảo Ngọc|PERSON; Khu vực mô phỏng 098|LOCATION; Trung tâm giả lập 098|ORGANIZATION
-Bản ghi minh họa validation 099 tại Khu vực mô phỏng 099 nêu tên Bùi Bảo Ngọc và Trung tâm giả lập 099.,Khu vực mô phỏng 099|LOCATION; Bùi Bảo Ngọc|PERSON; Trung tâm giả lập 099|ORGANIZATION
-Tài liệu thử nghiệm validation 100 do Đỗ Bảo Ngọc gửi cho Trung tâm giả lập 100 ở Khu vực mô phỏng 100.,Đỗ Bảo Ngọc|PERSON; Trung tâm giả lập 100|ORGANIZATION; Khu vực mô phỏng 100|LOCATION
+"Bà Th tìm con trong vô vọng, đành bắt xe về lại TP.HCM và cầu cứu cơ quan công an.",Th|PERSON; TP.HCM|LOCATION
+"Khi về nhà, Thái đã lấy dao rồi quay trở lại đâm lén vào lưng trung uý Nguyễn Hoàng (29 tuổi) khi anh Hoàng đang ngồi lập biên bản các trường hợp vi phạm.",Thái|PERSON; Hoàng|PERSON; Hoàng|PERSON
+"Ngoài ra, cơ quan công an còn thu giữ tại nhà Ngọc 9,983gram ma túy đá Methamphetamin, 12 viên hồng phiến (ma túy tổng hợp nhóm ATS) có trọng lượng 1,155 gam, cùng 1 cân điện tử, 1 máy tính xách tay và một số lượng lớn tiền mặt.","9,983gram ma túy đá|DRUG; Methamphetamin|DRUG; ma túy tổng hợp|DRUG"
+"Khoảng 2 năm nay, anh Nam bắt con trai của mình phải ở nhà, không cho đi học.",Nam|PERSON
+"Đến ngày 2/6/2020, Hoành bị bắt giữ tại quận Hai Bà Trưng, TP Hà Nội.",ngày 2/6/2020|DATE/TIME; Hoành|PERSON; quận Hai Bà Trưng|LOCATION; Hà Nội|LOCATION
+"Trước đó, ngày 28/7, Công an Hà Tĩnh đã khởi tố vụ án hình sự, khởi tố bị can và lệnh bắt tạm giam bị can Hoàng Thị Bình về tội lừa đảo chiếm đoạt tài sản.",ngày 28/7|DATE/TIME; Công an Hà Tĩnh|ORGANIZATION; Hoàng Thị Bình|PERSON
+"Alibaba còn hứa hẹn hấp dẫn với khách hàng như: thanh toán linh hoạt, mua lại thửa đất với giá cao, trả lãi cao dựa trên số tiền khách hàng đóng vào hoặc thuê lại...",Alibaba|ORGANIZATION
+"Hôm nay (15/9), TAND TP Hà Nội tuyên phạt bị cáo Nguyễn Văn Chung (SN 1995, quê Tuyên Quang) và Lê Văn Khánh (SN 1986, quê Hải Dương) lần lượt mức án 12 và 5 năm tù vì tội Mua bán người.",15/9|DATE/TIME; TAND TP Hà Nội|ORGANIZATION; Nguyễn Văn Chung|PERSON; Tuyên Quang|LOCATION; Lê Văn Khánh|PERSON; Hải Dương|LOCATION; 5 năm tù|DATE/TIME; Mua bán người|CRIME
+"Kết hợp nhiều biện pháp nghiệp vụ khác nhau, đến 19h ngày 13/1, lực lượng công an đã xác định được nghi phạm thực hiện vụ cướp và tổ chức truy bắt.",ngày 13/1|DATE/TIME
+Và đây là vụ thứ hai ông Tất Thành Cang bị khởi tố,Tất Thành Cang|PERSON
+"Trước đó, một nick tên M.T. đăng trên mạng xã hội Facebook nội dung: “Công an quận Cái Răng, TP. Cần Thơ tạm giam em trai tôi tên Võ Minh Thuận tội tàng trữ trái phép chất ma tuý từ tháng 12 cho đến nay vẫn chưa kết án.",M.T|PERSON; Công an quận Cái Răng|ORGANIZATION; TP. Cần Thơ|LOCATION; ma tuý|DRUG
+"Theo đại tá Khương, qua 2 năm thực hiện mô hình công tác dân vận "" Cảnh sát biển đồng hành với ngư dân "", đơn vị đã phối hợp với các cấp chính quyền địa phương tuyên truyền về biển đảo cho hơn 4.500 cán bộ và ngư dân, gần 900 giáo viên và học sinh, phát 6.000 tờ rơi cho các ngư dân đánh bắt hải sản trên vùng biển do đơn vị quản lý.",Khương|PERSON
+"Cơ quan Công an thu giữ tang vật hơn 60 triệu đồng, 1 máy tính xách tay, 1 máy làm thẻ, 2 bộ đọc trộm mã thẻ ATM, 1 camera và 173 phôi thẻ.",60 triệu đồng|MONEY
+Do cả hai còn nhỏ nên nhiều người dân không cảnh giác; từ trước đến nay cả hai đã thực hiện trót lọt khoảng 30 vụ trộm cắp tài sản tại TP Trà Vinh và huyện Châu Thành.,TP Trà Vinh|LOCATION; Châu Thành|LOCATION
+"Trước đó, bằng các biện pháp nghiệp vụ, 21h50 đêm 10/7 các trinh sát phòng PC45 phối hợp cùng công an P.4, Q.10 phục kích, bắt quả tang sòng bạc hoạt động ngay trước số nhà 111, đường Nhật Tảo, P.4, Q.10.",đêm 10/7|DATE/TIME; PC45|ORGANIZATION; công an P.4|ORGANIZATION; đường Nhật Tảo|LOCATION
+Cô ta bỏ trốn vào Đà Lạt và đến ngày 30/6/2014 thì bị bắt.,Đà Lạt|LOCATION; ngày 30/6/2014|DATE/TIME
+"Điều lạ lùng hơn, mặc cho ông bố "" Quách Tĩnh "" Lý Á Bằng đối mặt với khoản nợ 134 tỷ, con gái Lý Yên vẫn thoả sức "" đốt "" 350 triệu VNĐ cho một lần mua sắm.",Quách Tĩnh|LOCATION; Lý Á Bằng|PERSON; 134 tỷ|MONEY; Lý Yên|PERSON; 350 triệu VNĐ|MONEY
+"Thông tin trên Zing ngày 14/8, đại tá Nguyễn Đức Dũng, Phó giám đốc Công an tỉnh Quảng Nam cho biết, cơ quan CSĐT đã ra quyết định khởi tố bị can đối với Trần Anh Quốc (20 tuổi, trú huyện Thăng Bình, Quảng Nam) để điều tra về hành vi giết người.",Zing|ORGANIZATION; ngày 14/8|DATE/TIME; Nguyễn Đức Dũng|PERSON; Công an tỉnh Quảng Nam|ORGANIZATION; CSĐT|ORGANIZATION; Trần Anh Quốc|PERSON; huyện Thăng Bình|LOCATION
+"Công an quận Phú Nhuận nhanh chóng có mặt tại hiện trường, ngăn chặn và khống chế bắt giữ các đối tượng cùng tang vật.",Công an quận Phú Nhuận|ORGANIZATION
+"Sau khi nhận được tiền, Bách sẽ cung cấp cho người mua số lô đề bất kỳ, nếu không trúng thưởng, đối tượng sẽ chặn liên lạc để chiếm đoạt số tiền của bị hại.",Bách|PERSON
+"Xử sơ thẩm, TAND TP.HCM tuyên phạt Phùng Anh Thái mức án 18 năm tù về tội “giết người”.",TAND TP.HCM|ORGANIZATION; Phùng Anh|PERSON; Thái|PERSON; 18 năm tù|DATE/TIME; giết người|CRIME
+"Sau khi nhận tiền, Thủy gọi điện cho Phạm Hoài Nam hẹn gặp và đưa 30.000 USD.",Thủy|PERSON; Phạm Hoài Nam|PERSON; 30.000 USD|MONEY
+"Trước đó, khoảng 21h30 ngày 21/12, lực lượng chức năng Hà Tĩnh đã bất ngờ ập vào phòng VIP8 Karaoke Dubai bắt quả tang 13 người, trong đó có 7 nữ và 6 nam đang có hành vi sử dụng trái phép chất ma tuý.",ngày 21/12|DATE/TIME; Hà Tĩnh|LOCATION; Karaoke Dubai|LOCATION; ma tuý|DRUG
+"Hôm nay (20/1), Phòng Cảnh sát điều tra tội phạm về ma túy Công an tỉnh Quảng Ninh cho biết vừa phá chuyên án, khởi tố 4 đối tượng trong ổ nhóm chuyên mua bán trái phép chất ma túy trên địa bàn TP Uông Bí.",20/1|DATE/TIME; Phòng Cảnh sát|ORGANIZATION; ma túy|DRUG; Công an tỉnh Quảng Ninh|ORGANIZATION; ma túy|DRUG; TP Uông Bí|LOCATION
+Lực lượng công an đạp cửa xông vào khống chế Minh… Do được cấp cứu kịp thời sau đó chuyển lên Bệnh viện Chợ Rẫy (TP.HCM) điều trị nên ông Chảnh và vợ thoát chết với ỷ lệ thương tật lần lượt là 28% và 8% vĩnh viễn.,Bệnh viện Chợ Rẫy|LOCATION; TP.HCM|LOCATION; Chảnh|PERSON
+"Tuy nhiên, lực lượng công an đã khống chế, bắt giữ Lường Văn Hinh và Sùng Nhìa Thào cùng toàn bộ tang vật khi cả 2 đang thực hiện hành vi mua bán trái phép chất ma túy",Lường Văn Hinh|PERSON; Sùng Nhìa|PERSON; ma túy|DRUG
+"Tuy nhiên, không lâu sau, Quang dần lộ bản tính lười lao động, thích tiêu xài, moi tiền vợ.",Quang|PERSON
+"Để có tiền trả nợ, Bảy đã lên kế hoạch lừa đảo, chiếm đoạt tài sản của người khác.",Bảy|PERSON
+"Trước đó, vào đầu tháng 6/2023, Công an tỉnh Đắk Nông đã ra quyết định khởi tố vụ án, khởi tố bị can và bắt tạm giam đối với Nguyễn Thị Hồng Đào để điều tra về hành vi ""lừa đảo chiếm đoạt tài sản"".",6/2023|DATE/TIME; Công an tỉnh Đắk Nông|ORGANIZATION; Nguyễn Thị Hồng Đào|PERSON; lừa đảo chiếm đoạt tài sản|CRIME
+"Đến 20h30 cùng ngày, Công an huyện Yên Thuỷ đã bắt được đối tượng Bùi Văn Huỳnh đang lẩn trốn về nhà mẹ đẻ tại xóm Đôi, xã Hữu Lợi (Yên Thuỷ).",Công an huyện Yên Thuỷ|ORGANIZATION; Bùi Văn Huỳnh|PERSON; Đôi|LOCATION; xã Hữu Lợi|LOCATION
+"Khi Nam ném chiếc máy tính xuống đường thì có người phát hiện, chạy vào nhà nghỉ báo cho Quỳnh biết.",Nam|PERSON
+"Sau một đêm truy lùng, đến 8 giờ 30 sáng 15/5, tổ công tác đặc biệt công an phường Thuận Phước đã bắt giữ được Tú.",sáng 15/5|DATE/TIME; công an phường Thuận Phước|ORGANIZATION; Tú|PERSON
+"Theo UBND tỉnh Khánh Hoà, từ tháng 5-2015 Công ty Bạch Việt đã bán các căn hộ du lịch tại dự án khách sạn Bavico xây dựng trên đất an ninh, quốc phòng "" không đúng với mục tiêu đầu tư dự án đã được cấp phép "".",UBND tỉnh Khánh Hoà|ORGANIZATION; Công ty Bạch Việt|ORGANIZATION; Bavico|LOCATION
+"Ngày 30/8, TAND TP.HCM mở phiên sơ thẩm đối Vũ Bảo Trinh (49 tuổi, Việt kiều Mỹ), Tô Văn Chí Tâm (39 tuổi, ngụ quận Tân Bình, TP.HCM) và Hoàng Thái Anh (48 tuổi, cùng ngụ quận 10, TP.HCM) về tội “Lừa đảo chiếm đoạt tài sản”.",Ngày 30/8|DATE/TIME; TAND TP.HCM|ORGANIZATION; Việt kiều Mỹ|PERSON; Tô Văn Chí Tâm|PERSON; quận Tân Bình|LOCATION; Hoàng Thái Anh|PERSON; Lừa đảo chiếm đoạt tài sản|CRIME
+"Ông Trương Quốc Cường cùng với Nguyễn Việt Hùng, cựu Phó cục trưởng Cục Quản lý dược Bộ Y tế và Lê Đình Thanh, công chức Cục Hải quan TP.HCM cùng bị đề nghị truy tố tội thiếu trách nhiệm gây hậu quả nghiêm trọng.",Trương Quốc Cường|PERSON; Nguyễn Việt Hùng|PERSON; Cục Quản lý dược Bộ Y tế|ORGANIZATION; Lê Đình Thanh|PERSON; Cục Hải quan TP.HCM|ORGANIZATION
+"Ngoài ra, hai bị cáo cầm đầu vụ án là Thới và Vân còn khai trực tiếp đưa hối lộ hoặc thông qua cấp dưới, xe ôm để đưa hối lộ cho 79 CSGT, TTGT nhưng tất cả đều không thừa nhận nên cơ quan điều tra không điều tra, xử lý số cấn bộ này.",Thới|PERSON; Vân|PERSON; TTGT|ORGANIZATION
+"Nhóm người này liên tục điện thoại đe dọa, ép buộc trung tá T. đưa tiền.",T|PERSON
+"Nhóm này đều nghiện ma túy, có dấu hiệu lên kế hoạch dụ nạn nhân Cao Mỹ Duyên mang gà đến một địa điểm vắng người để gây án.",ma túy|DRUG; Cao Mỹ Duyên|PERSON
+"Rồi niềm vui đến khi vào năm 2013 và 2015, chị Hiền lần lượt sinh được một trai, một gái.",năm 2013|DATE/TIME; Hiền|PERSON
+Anh Khơi được đưa đi cấp cứu nhưng đã tử vong sau đó.,Khơi|PERSON
+"Những người bị tạm giữ gồm: Ông Vũ Mạnh Cường (SN 1974, Giám đốc Trung tâm), Phạm Trung Hiếu (SN 1978, Phó giám đốc Trung tâm) cùng các đăng kiểm viên: Nguyễn Mạnh Hà (SN 1983), Nguyễn Khoa Minh (SN 1983), Nguyễn Hùng Ngọc (SN 1996), Nguyễn Văn Trình (SN 1984), Nguyễn Tài Thanh Phong (SN 1996), Đặng Lê Quân (SN 1986) và Dương Tuấn Dũng (SN 1987).",Vũ Mạnh Cường|PERSON; Phạm Trung Hiếu|PERSON; Nguyễn Mạnh Hà|PERSON; Nguyễn Khoa Minh|PERSON; Nguyễn Hùng Ngọc|PERSON; Nguyễn Văn Trình|PERSON; Nguyễn Tài Thanh Phong|PERSON; Đặng Lê Quân|PERSON; Dương Tuấn Dũng|PERSON
+"Bắt 'siêu trộm' đục két sắt, trộm tiền ở 20 cửa hàng tiện lợi Công an tỉnh Quảng Ninh chiều nay cho biết, vừa bắt giữ 3 đối tượng Nguyễn Quang Nguyên (SN 1995), Phạm Văn Cửu (SN 1986) và Nguyễn Công Hoan (cùng trú tại huyện Đông Hưng, Thái Bình).",Công an tỉnh Quảng Ninh|ORGANIZATION; Nguyễn Quang Nguyên|PERSON; Phạm Văn Cửu|PERSON; Nguyễn Công Hoan|PERSON; huyện Đông Hưng|LOCATION; Thái Bình|LOCATION
+"Việc khởi tố vụ án, khởi tố bị can được thực hiện sau 5 tháng Bộ Công an điều tra, xác minh vụ việc 149 công dân Việt Nam trốn sang Đài Loan lao động từ ngày 21-12 đến ngày 23-12-2018 thông qua đường du lịch.",Bộ Công an|ORGANIZATION; Việt Nam|LOCATION; Đài Loan|LOCATION
+"Vụ cháy xảy ra lúc 21h30 đêm 25-9 tại cảng neo đậu tàu thuyền Tịnh Hoà, xã Tịnh Hoà, TP Quảng Ngãi.",Quảng Ngãi|LOCATION
+"Chiều nay (15/9), TAND quận Thanh Xuân, Hà Nội đưa bị cáo Đặng Thanh Vân (SN 1996, ở quận Nam Từ Liêm) và Cao Thị Hồng Bích (SN 1991, ở quận Hoàng Mai) ra xét xử về tội “Buôn bán hàng giả”.",15/9|DATE/TIME; TAND quận Thanh Xuân|ORGANIZATION; Hà Nội|LOCATION; Đặng Thanh Vân|PERSON; quận Nam Từ Liêm|LOCATION; Cao Thị Hồng Bích|PERSON; quận Hoàng Mai|LOCATION; Buôn bán hàng giả|CRIME
+"Tuy nhiên, căn cứ vào lời khai của bị hại và kết quả điều tra, HĐXX nhận thấy hành vi của bị cáo đã phạm vào tội “Cướp tài sản” và tuyên mức án như trên.",Cướp tài sản|CRIME
+"Ngày 20/2, bà Thuận gọi điện kêu em gái về quê để chăm con trai bị bệnh nặng.",Ngày 20/2|DATE/TIME; Thuận|PERSON
+"Ngày 3/8, TAND huyện Hóc Môn, TP.HCM đã tuyên phạt Đặng Thanh Thiện (31 tuổi, ngụ huyện Củ Chi) 1 năm tù về tội “Lừa đảo chiếm đoạt tài sản”.",Ngày 3/8|DATE/TIME; TAND huyện Hóc Môn|ORGANIZATION; TP.HCM|LOCATION; Đặng Thanh Thiện|PERSON; Củ Chi|LOCATION; 1 năm tù|DATE/TIME; Lừa đảo chiếm đoạt tài sản|CRIME
+"Trước mắt, chúng tôi chỉ xin phép khẳng định một điều, là sự phũ phàng của thời gian, sự tàn bạo của ngọn lửa hủy diệt vô tình hay cố ý qua các thời kỳ, không bao giờ thể đốt cháy được văn hóa nghìn năm. ” – ông Hiếu chia sẻ",Hiếu|PERSON
+"Báo cáo về công tác kiểm soát tải trọng phương tiện giao thông, UBND TP. HCM cho biết kể từ khi triển khai thực hiện chỉ thị 32/2016 của Thủ tướng đến nay, Thanh tra Sở Giao thông vận tải đã phát hiện xử lý 3.355 vụ vi phạm về quá tải, quá khổ, với tổng số tiền xử phạt gần 65,7 tỉ đồng, tước quyền sử dụng giấy phép lái xe có thời hạn đối với 1.485 trường hợp.","UBND TP. HCM|ORGANIZATION; 65,7 tỉ đồng|MONEY"
+"Hải Sâm Nữ sinh ở miền Tây gửi clip, ảnh thỏa thân của mình cho bạn trai nhưng không ngờ lại bị tống tiền bằng chính những hình ảnh này",miền Tây|LOCATION
+Chị Trang sau đó được người dân nhanh chóng đưa đi cấp cứu tại BVĐK tỉnh Bình Dương.,Trang|PERSON; BVĐK|ORGANIZATION; tỉnh Bình Dương|LOCATION
+"Bực tức vì Alex thô bạo khi quan hệ tình dục, Tây bật dậy đánh tới tấp rồi bóp cổ người tình đến chết.",Alex|PERSON
+"Theo quyết định giám đốc thẩm, vụ án sẽ được các cơ quan tố tụng tỉnh Thái Nguyên điều tra, truy tố, xét xử lại từ đầu.",tỉnh Thái Nguyên|LOCATION
+"Ngay lập tức, Thức xông vào bóp cổ rồi sát hại ông Lang rồi cướp chiếc ví.",Thức|PERSON; Lang|PERSON
+"Được biết, theo nhiều báo đài đưa tin, tại hiện trường, lực lượng chức năng thu giữ 1 gói ma túy cỏ Mỹ, 1 gói ma túy đá, ketamin và thuốc lắc (ma túy dạng kẹo) và một số dụng cụ phục vụ cho việc sử dụng ma túy.",1 gói ma túy|DRUG; Mỹ|LOCATION; 1 gói ma túy đá|DRUG; ketamin|DRUG; thuốc lắc|DRUG
+"Tranh thủ sửa ngư cụ khi đưa tàu vào tránh bão, ngư dân Bùi Văn Phước (quê huyện Mộ Đức, tỉnh Quảng Ngãi) cho biết: "" Từ đêm qua khi nghe tin áp thấp nhiệt đới mạnh lên thành bão số 2 đang tiến vào vùng biển vịnh Bắc Bộ, tàu cá của tôi gồm 13 thuyền viên đã khẩn trương nhổ neo vào bờ trú bão để đảm bảo an toàn dù mới chỉ đánh bắt được 5 ngày, chưa đủ tiền dầu máy "".",Bùi Văn Phước|PERSON; huyện Mộ Đức|LOCATION; Quảng Ngãi|LOCATION; Bắc Bộ|LOCATION
+"Khoảng 19h ngày 13/4, Ban chuyên án đã mật phục và bắt quả tang Hoàng Quốc Việt (SN 1969), trú tại xã Phong Thịnh, huyện Thanh Chương mang số ma tuý trên.",ngày 13/4|DATE/TIME; Hoàng Quốc Việt|PERSON; xã Phong Thịnh|LOCATION; huyện Thanh Chương|LOCATION; ma tuý|DRUG
+"Vợ ông Trọng đã gọi cho anh chồng, là ông Tài đến đưa ông Trọng về vì xác định tình hình khá căng thẳng.",Trọng|PERSON; Tài|PERSON; Trọng|PERSON
+"Sau đó, Tâm dùng dao đâm trúng người Thọ gây thương tích ở vùng ngực và bên hông.",Tâm|PERSON; Thọ|PERSON
+"Cơ quan CSĐT công an TP.HCM ngày 27/8 cho biết, đang tạm giữ hình sự đối với tú bà Đào Kim Hương (SN 1972, ngụ Q.Tân Phú, TP.HCM) để điều tra, xử lý về hành vi “môi giới mại dâm”.",Cơ quan CSĐT|ORGANIZATION; công an TP.HCM|ORGANIZATION; ngày 27/8|DATE/TIME; Đào Kim Hương|PERSON; Q.Tân Phú|LOCATION; môi giới mại dâm|CRIME
+"Long khai, vào khoảng 6h ngày 6/4 đưa con đến trường học tại địa phương để dự Hội khỏe do Phòng giáo dục và Phòng văn hóa huyện tổ chức tại sân vận động huyện.",Long|PERSON; ngày 6/4|DATE/TIME
+"Cơ quan tố tụng xác định, những lời khai của Tình phù hợp với công tác điều tra, khám nghiệm hiện trường, mẫu AND thu giữ tại hiện trường và khai báo của các nhân chứng khác.",Tình|PERSON
+"Về dân sự, do vợ con ông Chiến không có yêu cầu gì nên cơ quan tố tụng không đề cập giải quyết.",Chiến|PERSON
+Bà Tân cho hay đó là quãng thời gian khó khăn và đau khổ nhất trong cuộc đời mà bà từng trải qua.,Tân|PERSON
+Tổng hợp mức hình phạt trước đó là 30 năm tù giam.,30 năm tù|DATE/TIME
+"2 người là Huỳnh Văn Riết (34 tuổi, chồng chị Thúy – nghi can gây án) và Bùi Tấn Phát (23 tuổi, em chị Thúy) bị thương nặng.",Huỳnh Văn Riết|PERSON; Thúy|PERSON; Bùi Tấn Phát|PERSON; Thúy|PERSON
+"Ngày 18/12/2017, mặc dù không nộp hồ sơ cho các công ty du lịch tại Hàn Quốc, nhưng Loan lừa chị V. đã có visa của một số người, rồi yêu cầu nộp hơn 1,1 tỷ đồng.","Ngày 18/12/2017|DATE/TIME; Hàn Quốc|LOCATION; Loan|PERSON; V|PERSON; 1,1 tỷ đồng|MONEY"
+"Ngày 16/11, Phòng Cảnh sát điều tra tội phạm về ma túy Công an TP Đà Nẵng cho biết, đang tạm giữ hình sự Nguyễn Văn Cường (34 tuổi, trú xã Tiên Cảnh, huyện Tiên Phước, tỉnh Quảng Nam) và tiến hành làm việc với 3 đối tượng khác liên quan đến vụ vận chuyển ma túy số lượng lớn từ Lào về thành phố tiêu thụ.",Ngày 16/11|DATE/TIME; Phòng Cảnh sát|ORGANIZATION; ma túy|DRUG; Công an TP Đà Nẵng|ORGANIZATION; Nguyễn Văn Cường|PERSON; xã Tiên Cảnh|LOCATION; huyện Tiên Phước|LOCATION; Quảng Nam|LOCATION; ma túy|DRUG; Lào|LOCATION
+"Sau đó, Công an TP. HCM phối hợp cơ quan chức năng liên quan, truy tìm Tình để làm rõ nội dung vụ án.",Công an TP. HCM|ORGANIZATION; Tình|PERSON
