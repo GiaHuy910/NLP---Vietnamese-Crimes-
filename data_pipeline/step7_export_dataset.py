@@ -74,11 +74,14 @@ if __name__ == "__main__":
     ap.add_argument("file")
     ap.add_argument("name", help="train / test / ...")
     ap.add_argument("--val", type=int, default=0, help="số câu tách ra làm val (chia đều theo SubLabel)")
+    ap.add_argument("--gold-only", action="store_true", help="chỉ lấy câu đã gán tay")
     args = ap.parse_args()
 
     OUT_DIR.mkdir(exist_ok=True)
     tasks = json.loads(open(args.file, encoding="utf-8").read())
     rows = [convert(t) for t in tasks]
+    if args.gold_only:
+        rows = [r for r in rows if r["source"] == "gold"]
     if args.val:
         by_group = {}
         for r in rows:
