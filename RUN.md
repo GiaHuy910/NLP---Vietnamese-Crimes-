@@ -55,6 +55,37 @@ Các bước 4, 6 và 7 (baseline, kiểm tra bộ chấm) không cần model, c
 
 ## 4. Luồng 1: NER
 
+### Chạy API nhận diện thực thể
+
+Đảm bảo model NER đã được đặt trong `server/models/`, sau đó chạy từ thư mục `server/`:
+
+```powershell
+python -m src.main
+```
+
+Gửi câu cần nhận diện tới `POST /api/process`:
+
+```powershell
+$body = @{ text = "Ngày 15/8, Công an quận Đống Đa đã khởi tố Nguyễn Văn A." } | ConvertTo-Json
+Invoke-RestMethod -Uri http://127.0.0.1:3001/api/process -Method Post `
+  -ContentType "application/json" -Body $body
+```
+
+API trả về `input_text` và danh sách `entities`, mỗi thực thể có `text`, `label`, `start`, `end`.
+Nếu model chưa được cài hoặc chưa tồn tại, API trả HTTP 503 cùng thông báo lỗi.
+
+Endpoint chỉ nhận diện trigger, không cần model:
+
+```powershell
+$body = @{ text = "Công an đã khởi tố Nguyễn Văn A." } | ConvertTo-Json
+Invoke-RestMethod -Uri http://127.0.0.1:3001/api/process/event-trigger -Method Post `
+  -ContentType "application/json" -Body $body
+```
+
+Endpoint trả về `input_text` và danh sách `triggers` từ hàm `detect_triggers`.
+
+### Đánh giá NER từ dòng lệnh
+
 ```powershell
 # Tạo split từ dữ liệu gán tay
 python -m src.ner_pipeline.cli prepare-splits --train train_ner.csv --validation val_ner.csv --test test_ner.csv
