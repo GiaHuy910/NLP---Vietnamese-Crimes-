@@ -1,0 +1,109 @@
+{
+  "num_sentences": 150,
+  "num_gold_triggers": 54,
+  "num_predicted_triggers": 55,
+  "overall": {
+    "tp": 53,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.9636363636363636,
+    "recall": 0.9814814814814815,
+    "f1": 0.9724770642201834
+  },
+  "by_type": {
+    "BAO_LUC": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BAT_GIU": {
+      "tp": 10,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1": 0.9523809523809523
+    },
+    "CUOP_TROM": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "KHOI_TO": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8000000000000002
+    },
+    "LUA_DAO": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "MA_TUY": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "THU_GIU": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "XET_XU": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "errors": [
+    {
+      "sentence": "Tối 17/1, lãnh đạo Công an huyện Thanh Miện (Hải Dương) cho biết, đơn vị đã đấu tranh làm rõ và tiến hành khởi tố vụ án, khởi tố 6 bị can để điều tra về tội \"Cướp tài sản\".",
+      "gold": [
+        {
+          "start": 121,
+          "end": 128,
+          "event_type": "KHOI_TO"
+        }
+      ],
+      "predicted": [
+        {
+          "start": 106,
+          "end": 113,
+          "event_type": "KHOI_TO"
+        }
+      ]
+    },
+    {
+      "sentence": "Bằng các biện pháp nghiệp vụ, lực lượng chức năng đã phát hiện và bắt giữ các đối tượng này để điều tra",
+      "gold": [],
+      "predicted": [
+        {
+          "start": 66,
+          "end": 73,
+          "event_type": "BAT_GIU"
+        }
+      ]
+    }
+  ]
+}
