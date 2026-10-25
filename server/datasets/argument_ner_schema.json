@@ -1,29 +1,36 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "ner_labels": [
     "PERSON",
-    "ORG",
-    "LOC",
+    "ORGANIZATION",
+    "LOCATION",
     "TIME",
     "MONEY",
+    "DRUG",
     "PRODUCT",
     "CRIME"
   ],
-  "entity_types": {
-    "ORG": "ORG",
-    "LOC": "LOC"
-  },
+  "event_types": [
+    "LUA_DAO",
+    "MA_TUY",
+    "BAO_LUC",
+    "CUOP_TROM",
+    "BAT_GIU",
+    "THU_GIU",
+    "KHOI_TO",
+    "XET_XU"
+  ],
   "argument_mapping": {
     "DOI_TUONG": [
       "PERSON",
-      "ORG"
+      "ORGANIZATION"
     ],
     "NAN_NHAN": [
       "PERSON",
-      "ORG"
+      "ORGANIZATION"
     ],
     "CO_QUAN": [
-      "ORG"
+      "ORGANIZATION"
     ],
     "TAI_SAN": [
       "MONEY",
@@ -36,7 +43,9 @@
     "HUNG_KHI": [
       "PRODUCT"
     ],
-    "TOI_DANH": [],
+    "TOI_DANH": [
+      "CRIME"
+    ],
     "MUC_AN": [
       "TIME",
       "MONEY"
@@ -45,7 +54,7 @@
       "TIME"
     ],
     "DIA_DIEM": [
-      "LOC"
+      "LOCATION"
     ]
   },
   "entity_fields": [

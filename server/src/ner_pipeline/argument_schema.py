@@ -17,15 +17,15 @@ ARGUMENT_TYPES = (
 )
 
 
-_DEFAULT_MAPPING = {
+_DEFAULT_MAPPING = {   # khớp schema luồng 2 (src/event_pipeline/schema.py, ROLE_TYPES)
     "DOI_TUONG": ["PERSON", "ORGANIZATION"],
     "NAN_NHAN": ["PERSON", "ORGANIZATION"],
     "CO_QUAN": ["ORGANIZATION"],
-    "TAI_SAN": ["MONEY"],
-    "TANG_VAT": ["PRODUCT"],
+    "TAI_SAN": ["MONEY", "PRODUCT"],
+    "TANG_VAT": ["DRUG", "PRODUCT"],
     "HUNG_KHI": ["PRODUCT"],
     "TOI_DANH": ["CRIME"],
-    "MUC_AN": ["TIME"],
+    "MUC_AN": ["TIME", "MONEY"],
     "THOI_GIAN": ["TIME"],
     "DIA_DIEM": ["LOCATION"],
 }
