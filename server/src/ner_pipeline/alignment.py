@@ -401,14 +401,23 @@ def align_example(
 
         # Offset âm nghĩa là dữ liệu chưa cung cấp vị trí thực thể.
         if m.start < 0 or m.end < 0:
-            pattern = r"\s+".join(
-                re.escape(part)
-                for part in normalized_mention_text.split()
+            # Khớp nguyên từ (không khớp chữ nằm giữa từ khác) và ưu tiên đúng hoa/thường.
+            # Trước đây khớp không phân biệt hoa/thường và không xét ranh giới từ, nên tên
+            # viết tắt "T." bị gán PERSON cho mọi chữ "t" trong câu.
+            pattern = (
+                r"(?<!\w)"
+                + r"\s+".join(
+                    re.escape(part)
+                    for part in normalized_mention_text.split()
+                )
+                + r"(?!\w)"
             )
 
-            matches = list(
-                re.finditer(pattern, sentence, flags=re.IGNORECASE)
-            )
+            matches = list(re.finditer(pattern, sentence))
+            if not matches:
+                matches = list(
+                    re.finditer(pattern, sentence, flags=re.IGNORECASE)
+                )
 
             if not matches:
                 raise NERPipelineError(
