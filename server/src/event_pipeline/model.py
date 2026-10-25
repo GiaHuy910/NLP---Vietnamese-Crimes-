@@ -343,18 +343,28 @@ def _fit(model, tok, data, loss_fn, args, device, out_dir, score_fn, token_level
 
 
 # ---------------------------------------------------------------- dự đoán đầy đủ
-def predict(rows, entity_rows=None, max_length=256, trigger_dir=TRIGGER_DIR, argument_dir=ARGUMENT_DIR):
-    """Câu -> trigger (mô hình 1) -> vai trò (mô hình 2). Trả về các dòng cùng định dạng jsonl."""
+def predict(rows, entity_rows=None, max_length=256, trigger_dir=TRIGGER_DIR, argument_dir=ARGUMENT_DIR,
+            trigger_source="model"):
+    """Câu -> trigger -> vai trò (mô hình 2). Trả về các dòng cùng định dạng jsonl.
+
+    trigger_source: "model" (mô hình PhoBERT trigger), "rules" (baseline luật, cách kết hợp luật + mô hình)
+    hoặc "gold" (trigger gold, để đo riêng khả năng nối vai trò)."""
     torch = _deps()
     from transformers import AutoModelForSequenceClassification, AutoModelForTokenClassification, AutoTokenizer
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    ttok = AutoTokenizer.from_pretrained(trigger_dir)
-    tmodel = AutoModelForTokenClassification.from_pretrained(trigger_dir).to(device)
     atok = AutoTokenizer.from_pretrained(argument_dir)
     amodel = AutoModelForSequenceClassification.from_pretrained(argument_dir).to(device)
     ents_by_id = {r["ann_id"]: r.get("entities", []) for r in (entity_rows or rows)}
 
-    trig_preds = predict_triggers(tmodel, ttok, rows, device, max_length)
+    if trigger_source == "model":
+        ttok = AutoTokenizer.from_pretrained(trigger_dir)
+        tmodel = AutoModelForTokenClassification.from_pretrained(trigger_dir).to(device)
+        trig_preds = predict_triggers(tmodel, ttok, rows, device, max_length)
+    elif trigger_source == "rules":
+        from .baseline import find_triggers
+        trig_preds = [find_triggers(r["sentence"], ents_by_id.get(r["ann_id"], [])) for r in rows]
+    else:
+        trig_preds = [[dict(t) for t in r.get("triggers", [])] for r in rows]
     out = [{"ann_id": r["ann_id"], "sentence": r["sentence"], "entities": ents_by_id.get(r["ann_id"], []),
             "triggers": t, "relations": []} for r, t in zip(rows, trig_preds)]
     pairs = argument_pairs(out, use_gold_relations=False)
@@ -372,7 +382,7 @@ def main(argv=None):
     t.add_argument("--model-name", default="vinai/phobert-base-v2")
     t.add_argument("--epochs", type=int, default=15)
     t.add_argument("--batch-size", type=int, default=16)
-    t.add_argument("--lr", type=float, default=3e-5)
+    t.add_argument("--lr", type=float, default=5e-5)
     t.add_argument("--max-length", type=int, default=256)
     t.add_argument("--o-weight", type=float, default=0.3, help="trọng số nhãn O khi train trigger")
     t.add_argument("--none-weight", type=float, default=0.5, help="trọng số nhãn NONE khi train argument")
@@ -382,6 +392,8 @@ def main(argv=None):
     p.add_argument("--entities", help="file jsonl thực thể dự đoán của luồng 1 (mặc định: thực thể gold)")
     p.add_argument("--out", help="mặc định datasets/processed/{split}_event_pred.jsonl")
     p.add_argument("--max-length", type=int, default=256)
+    p.add_argument("--trigger-source", choices=["model", "rules", "gold"], default="model",
+                   help="nguồn trigger: mô hình PhoBERT, baseline luật, hoặc gold")
     args = ap.parse_args(argv)
 
     if args.cmd == "train":
@@ -395,8 +407,9 @@ def main(argv=None):
 
     rows = load_jsonl(DATASET_DIR / f"{args.split}.jsonl")
     ent_rows = load_jsonl(args.entities) if args.entities else None
-    pred = predict(rows, ent_rows, args.max_length)
-    out = Path(args.out) if args.out else DATASET_DIR / "processed" / f"{args.split}_event_pred.jsonl"
+    pred = predict(rows, ent_rows, args.max_length, trigger_source=args.trigger_source)
+    suffix = "" if args.trigger_source == "model" else f"_{args.trigger_source}"
+    out = Path(args.out) if args.out else DATASET_DIR / "processed" / f"{args.split}_event_pred{suffix}.jsonl"
     save_jsonl(pred, out)
     print(f"Đã lưu {len(pred)} câu dự đoán -> {out}")
 
