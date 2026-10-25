@@ -4,3 +4,22 @@ __pycache__/
 *.py[cod]
 models/
 datasets/processed/
+# File kiểm kê và tạm thời
+file_list.txt
+project_inventory.csv
+baseline_errors.json
+
+# Dataset backup
+server/datasets/*.before-*.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv311/
+.venv312/
+
+# Model weights
+server/models/*/model.safetensors

@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv*/
+
+# Data (raw corpus, analysis, annotation working files)
+data/corpus news/
+data/analysis/
+data/annotation/*.xlsx
+data/annotation/*_issues.csv
+~$*
+
+# Local inventory and temporary files
+file_list.txt
+project_inventory.csv
+baseline_errors.json
+/a
+/shh
+
+# Dataset backup files
+server/datasets/*.before-*.csv
+server/datasets/*.before-*.jsonl
+
+# Model weights
+server/models/

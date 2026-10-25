@@ -1,15 +1,43 @@
-import json
+﻿import json
 import random
 import unicodedata
 import csv
+import difflib
 from pathlib import Path
+
+from sympy import sequence
 
 from .alignment import align_example
 from .errors import NERPipelineError
-from .paths import DATASET_DIR, PROCESSED_DIR, SERVER_DIR
+from .paths import DATASET_DIR, PROCESSED_DIR, RAW_DIR, SERVER_DIR
 from .schema import read_annotated_csv
 
+# Thư mục gốc server/src/ner_pipeline
+PACKAGE_DIR = Path(__file__).resolve().parent
 
+# Thư mục server
+SERVER_DIR = PACKAGE_DIR.parents[1]
+
+# File quy tắc baseline
+RULES_PATH = SERVER_DIR / "datasets" / "rules.json"
+
+def safe_save_dataset(dataframe, filename, output_dir=PROCESSED_DIR):
+    """
+    LÆ°u dataset an toÃ n, tuyá»‡t Ä‘á»‘i khÃ´ng ghi Ä‘Ã¨ vÃ o thÆ° má»¥c raw.
+    """
+    out_path = Path(output_dir)
+    
+    # Kiá»ƒm tra rá»§i ro ghi Ä‘Ã¨ dá»¯ liá»‡u gá»‘c
+    if RAW_DIR in out_path.parents or out_path == RAW_DIR:
+        raise PermissionError(f"CRITICAL: KhÃ´ng Ä‘Æ°á»£c phÃ©p ghi Ä‘Ã¨ file vÃ o thÆ° má»¥c raw gá»‘c ({RAW_DIR}).")
+        
+    out_path.mkdir(parents=True, exist_ok=True)
+    file_path = out_path / filename
+    
+    # Thá»±c hiá»‡n lÆ°u file (giáº£ Ä‘á»‹nh dÃ¹ng pandas)
+    dataframe.to_csv(file_path, index=False, encoding="utf-8")
+    print(f"ÄÃ£ lÆ°u an toÃ n: {file_path}")
+    
 def resolve_input_csv(path: str | None) -> Path:
     if path:
         candidate = Path(path)
@@ -23,11 +51,11 @@ def resolve_input_csv(path: str | None) -> Path:
             candidate.relative_to(DATASET_DIR.resolve())
         except ValueError as exc:
             raise NERPipelineError(
-                "Dataset đầu vào phải nằm trong server/datasets/."
+                "Dataset Ä‘áº§u vÃ o pháº£i náº±m trong server/datasets/."
             ) from exc
         if not candidate.is_file() or candidate.suffix.lower() != ".csv":
             raise NERPipelineError(
-                f"Không tìm thấy CSV đầu vào trong server/datasets/: {candidate.name}"
+                f"KhÃ´ng tÃ¬m tháº¥y CSV Ä‘áº§u vÃ o trong server/datasets/: {candidate.name}"
             )
         return candidate
 
@@ -35,14 +63,14 @@ def resolve_input_csv(path: str | None) -> Path:
     candidates = sorted(DATASET_DIR.glob("*.csv"))
     if not candidates:
         raise NERPipelineError(
-            "Dataset chưa được cung cấp, vui lòng đặt dataset annotation dạng CSV "
-            "vào server/datasets/ trước khi chạy bước này."
+            "Dataset chÆ°a Ä‘Æ°á»£c cung cáº¥p, vui lÃ²ng Ä‘áº·t dataset annotation dáº¡ng CSV "
+            "vÃ o server/datasets/ trÆ°á»›c khi cháº¡y bÆ°á»›c nÃ y."
         )
     if len(candidates) > 1:
         names = ", ".join(path.name for path in candidates)
         raise NERPipelineError(
-            f"Có nhiều file CSV trong server/datasets/ ({names}); "
-            "hãy chỉ rõ bằng --input."
+            f"CÃ³ nhiá»u file CSV trong server/datasets/ ({names}); "
+            "hÃ£y chá»‰ rÃµ báº±ng --input."
         )
     return candidates[0]
 
@@ -59,11 +87,11 @@ def resolve_split_csv(path: str) -> Path:
         candidate.relative_to(DATASET_DIR.resolve())
     except ValueError as exc:
         raise NERPipelineError(
-            "Dataset đầu vào phải nằm trong server/datasets/."
+            "Dataset Ä‘áº§u vÃ o pháº£i náº±m trong server/datasets/."
         ) from exc
     if not candidate.is_file() or candidate.suffix.lower() != ".csv":
         raise NERPipelineError(
-            f"Không tìm thấy CSV split trong server/datasets/: {candidate.name}"
+            f"KhÃ´ng tÃ¬m tháº¥y CSV split trong server/datasets/: {candidate.name}"
         )
     return candidate
 
@@ -75,9 +103,9 @@ def create_records(input_csv: Path) -> list[dict[str, object]]:
         for index, example in enumerate(examples, start=2)
     ]
 
-
 def sentence_key(sentence: str) -> str:
-    return " ".join(unicodedata.normalize("NFC", sentence).split()).casefold()
+    normalized = unicodedata.normalize("NFC", sentence)
+    return " ".join(normalized.split()).casefold()
 
 
 def _annotation_key(record: dict[str, object]) -> list[tuple[str, str]]:
@@ -90,43 +118,71 @@ def _annotation_key(record: dict[str, object]) -> list[tuple[str, str]]:
     )
 
 
+# --- Sá»¬A Lá»–I P0: HÃ m kiá»ƒm tra Ä‘á»™ tÆ°Æ¡ng Ä‘á»“ng má» (Fuzzy String Matching) ---
+def _is_similar(str1: str, str2: str, threshold: float = 0.85) -> bool:
+    """
+    So sÃ¡nh hai cÃ¢u, tráº£ vá» True náº¿u Ä‘á»™ tÆ°Æ¡ng Ä‘á»“ng lá»›n hÆ¡n threshold.
+    Threshold 0.85 giÃºp báº¯t cÃ¡c cÃ¢u chá»‰ khÃ¡c biá»‡t nhá» do viáº¿t táº¯t hoáº·c gÃµ sai.
+    """
+    # Náº¿u má»™t trong hai chuá»—i quÃ¡ ngáº¯n (dÆ°á»›i 10 kÃ½ tá»±), báº¯t buá»™c pháº£i khá»›p 100%
+    if len(str1) < 10 or len(str2) < 10:
+        return str1 == str2
+    return difflib.SequenceMatcher(None, str1, str2).ratio() > threshold
+
+
 def deduplicate_records(
     records: list[dict[str, object]],
 ) -> list[dict[str, object]]:
-    unique: dict[str, dict[str, object]] = {}
+    unique_records = []
+    
     for record in records:
         sentence = str(record["sentence"])
-        key = sentence_key(sentence)
-        previous = unique.get(key)
-        if previous is not None:
-            if _annotation_key(previous) != _annotation_key(record):
-                raise NERPipelineError(
-                    "Có câu trùng lặp nhưng annotation khác nhau; hãy xử lý "
-                    "mâu thuẫn trước khi chia dataset."
-                )
-            continue
-        unique[key] = record
-    return list(unique.values())
+        normalized_sentence = sentence_key(sentence)
+        is_duplicate = False
+        
+        for unique in unique_records:
+            unique_normalized = sentence_key(str(unique["sentence"]))
+            
+            # Kiá»ƒm tra trÃ¹ng láº·p chÃ­nh xÃ¡c HOáº¶C gáº§n giá»‘ng nhau (Fuzzy Matching)
+            if normalized_sentence == unique_normalized or _is_similar(normalized_sentence, unique_normalized):
+                is_duplicate = True
+                
+                # Náº¿u 2 cÃ¢u giá»‘ng há»‡t nhau nhÆ°ng gÃ¡n nhÃ£n khÃ¡c nhau thÃ¬ bÃ¡o lá»—i
+                if normalized_sentence == unique_normalized and _annotation_key(unique) != _annotation_key(record):
+                    raise NERPipelineError(
+                        f"CÃ³ cÃ¢u trÃ¹ng láº·p nhÆ°ng annotation khÃ¡c nhau; hÃ£y xá»­ lÃ½ "
+                        f"mÃ¢u thuáº«n trÆ°á»›c khi chia dataset: {sentence!r}"
+                    )
+                break
+                
+        if not is_duplicate:
+            unique_records.append(record)
+            
+    return unique_records
 
 
 def ensure_splits_disjoint(
     splits: dict[str, list[dict[str, object]]],
 ) -> None:
-    seen: dict[str, str] = {}
+    seen = [] # Danh sÃ¡ch lÆ°u cÃ¡c tuple (normalized_sentence, split_name)
+    
     for split_name, records in splits.items():
         for record in records:
-            key = sentence_key(str(record["sentence"]))
-            previous_split = seen.get(key)
-            if previous_split is not None:
-                if previous_split == split_name:
+            normalized_sentence = sentence_key(str(record["sentence"]))
+            
+            for seen_sentence, previous_split in seen:
+                
+                if normalized_sentence == seen_sentence or _is_similar(normalized_sentence, seen_sentence):
+                    if previous_split == split_name:
+                        raise NERPipelineError(
+                            f"Duplicate sentence appears more than once in {split_name}."
+                        )
+                    
                     raise NERPipelineError(
-                        f"Duplicate sentence appears more than once in {split_name}."
-                    )
-                raise NERPipelineError(
-                    f"Duplicate sentence appears in both {previous_split} and "
-                    f"{split_name}; remove cross-split leakage before training."
-                )
-            seen[key] = split_name
+              f"Sentence appears in both train and test: {sequence!r}"
+)
+            
+            seen.append((normalized_sentence, split_name))
 
 
 def save_jsonl(records: list[dict[str, object]], path: Path) -> None:
@@ -136,7 +192,7 @@ def save_jsonl(records: list[dict[str, object]], path: Path) -> None:
             for record in records:
                 file.write(json.dumps(record, ensure_ascii=False) + "\n")
     except OSError as exc:
-        raise NERPipelineError(f"Không thể ghi split dataset {path}: {exc}") from exc
+        raise NERPipelineError(f"KhÃ´ng thá»ƒ ghi split dataset {path}: {exc}") from exc
 
 
 def save_annotation_csv(records: list[dict[str, object]], path: Path) -> None:
@@ -156,7 +212,7 @@ def save_annotation_csv(records: list[dict[str, object]], path: Path) -> None:
                 )
     except OSError as exc:
         raise NERPipelineError(
-            f"Không thể ghi annotation CSV {path}: {exc}"
+            f"KhÃ´ng thá»ƒ ghi annotation CSV {path}: {exc}"
         ) from exc
 
 
@@ -195,7 +251,7 @@ def save_bio_csv(records: list[dict[str, object]], path: Path) -> None:
                         }
                     )
     except OSError as exc:
-        raise NERPipelineError(f"Không thể ghi BIO CSV {path}: {exc}") from exc
+        raise NERPipelineError(f"KhÃ´ng thá»ƒ ghi BIO CSV {path}: {exc}") from exc
 
 
 def save_dataset_splits(
@@ -213,6 +269,7 @@ def save_dataset_splits(
         save_bio_csv(records, DATASET_DIR / bio_name)
 
 
+
 def load_jsonl(path: Path) -> list[dict[str, object]]:
     if not path.is_file():
         raise NERPipelineError(
@@ -220,24 +277,68 @@ def load_jsonl(path: Path) -> list[dict[str, object]]:
             "chưa preprocessing; đặt CSV annotation vào server/datasets/ rồi chạy "
             "lệnh prepare."
         )
+
     try:
         with path.open("r", encoding="utf-8") as file:
             records = []
+
             for line_number, line in enumerate(file, start=1):
                 if not line.strip():
                     continue
+
                 try:
-                    records.append(json.loads(line))
+                    record = json.loads(line)
+
+                    # Chuẩn hóa nhãn entity trong dữ liệu cũ.
+                    for entity in record.get("entities", []):
+                        if not isinstance(entity, dict):
+                            continue
+
+                        old_label = str(entity.get("label", "")).strip().upper()
+
+                        if old_label in {"TIME", "TIME"}:
+                            entity["label"] = "TIME"
+
+                    # Chuẩn hóa nhãn BIO cũ.
+                    if isinstance(record.get("labels"), list):
+                        normalized_labels = []
+
+                        for tag in record["labels"]:
+                            if not isinstance(tag, str):
+                                normalized_labels.append(tag)
+                                continue
+
+                            tag = tag.replace(
+                                "B-DATE/TIME", "B-TIME"
+                            ).replace(
+                                "I-DATE/TIME", "I-TIME"
+                            ).replace(
+                                "B-DATE_TIME", "B-TIME"
+                            ).replace(
+                                "I-DATE_TIME", "I-TIME"
+                            )
+
+                            normalized_labels.append(tag)
+
+                        record["labels"] = normalized_labels
+
+                    records.append(record)
+
                 except json.JSONDecodeError as exc:
                     raise NERPipelineError(
-                        f"JSONL không hợp lệ tại {path.name}, dòng {line_number}: {exc}"
+                        f"JSONL không hợp lệ tại {path.name}, "
+                        f"dòng {line_number}: {exc}"
                     ) from exc
+
     except OSError as exc:
-        raise NERPipelineError(f"Không thể đọc split dataset {path}: {exc}") from exc
+        raise NERPipelineError(
+            f"Không thể đọc split dataset {path}: {exc}"
+        ) from exc
+
     if not records:
         raise NERPipelineError(f"Split dataset rỗng: {path}")
-    return records
 
+    return records
 
 def prepare_dataset(
     input_path: str | None,
@@ -249,13 +350,14 @@ def prepare_dataset(
 ) -> dict[str, int]:
     if test_ratio <= 0 or validation_ratio <= 0 or test_ratio + validation_ratio >= 1:
         raise NERPipelineError(
-            "Tỷ lệ test và validation phải > 0, đồng thời tổng nhỏ hơn 1."
+            "Tá»· lá»‡ test vÃ  validation pháº£i > 0, Ä‘á»“ng thá»i tá»•ng nhá» hÆ¡n 1."
         )
     source = resolve_input_csv(input_path)
     aligned_records = create_records(source)
-    records = deduplicate_records(aligned_records)
+    records = deduplicate_records(aligned_records) # Lá»c Fuzzy trÃ¹ng láº·p
     unique_count = len(records)
     train_only_records: list[dict[str, object]] = []
+    
     if train_only_path:
         train_only_source = resolve_split_csv(train_only_path)
         known_records = deduplicate_records(create_records(train_only_source))
@@ -265,10 +367,11 @@ def prepare_dataset(
             current = records_by_key.get(key)
             if current is None or _annotation_key(current) != _annotation_key(known):
                 raise NERPipelineError(
-                    f"Training-only sentence {known['sentence']!r} không khớp "
-                    "corpus nguồn."
+                    f"Training-only sentence {known['sentence']!r} khÃ´ng khá»›p "
+                    "corpus nguá»“n."
                 )
             train_only_records.append(current)
+            
         train_only_keys = {
             sentence_key(str(record["sentence"])) for record in train_only_records
         }
@@ -281,8 +384,8 @@ def prepare_dataset(
     count = len(records)
     if count < 3:
         raise NERPipelineError(
-            f"Chỉ còn {count} câu ngoài training-only; cần ít nhất 3 câu để tạo "
-            "train/validation/test riêng biệt."
+            f"Chá»‰ cÃ²n {count} cÃ¢u ngoÃ i training-only; cáº§n Ã­t nháº¥t 3 cÃ¢u Ä‘á»ƒ táº¡o "
+            "train/validation/test riÃªng biá»‡t."
         )
 
     shuffled = records.copy()
@@ -296,7 +399,7 @@ def prepare_dataset(
             test_count -= 1
         else:
             raise NERPipelineError(
-                "Dataset quá nhỏ để giữ riêng train, validation và test."
+                "Dataset quÃ¡ nhá» Ä‘á»ƒ giá»¯ riÃªng train, validation vÃ  test."
             )
 
     test_records = shuffled[:test_count]
@@ -307,6 +410,10 @@ def prepare_dataset(
         "validation": validation_records,
         "test": test_records,
     }
+    
+    # Kiá»ƒm tra rÃ² rá»‰ má» (Fuzzy leakage) giá»¯a cÃ¡c táº­p trÆ°á»›c khi lÆ°u
+    ensure_splits_disjoint(splits)
+    
     save_dataset_splits(splits)
 
     return {
@@ -333,12 +440,14 @@ def prepare_predefined_splits(
     examples = {
         split: read_annotated_csv(path) for split, path in input_paths.items()
     }
+    
     ensure_splits_disjoint(
         {
             split: [{"sentence": example.sentence} for example in split_examples]
             for split, split_examples in examples.items()
         }
     )
+    
     aligned = {
         split: [
             align_example(example, row_number=index)
@@ -349,11 +458,15 @@ def prepare_predefined_splits(
     splits = {
         split: deduplicate_records(records) for split, records in aligned.items()
     }
+    
     ensure_splits_disjoint(splits)
+    
     for split_name, records in splits.items():
         if not records:
-            raise NERPipelineError(f"Split {split_name} không có câu hợp lệ.")
+            raise NERPipelineError(f"Split {split_name} khÃ´ng cÃ³ cÃ¢u há»£p lá»‡.")
+            
     save_dataset_splits(splits)
+    
     return {
         split: len(records)
         for split, records in splits.items()

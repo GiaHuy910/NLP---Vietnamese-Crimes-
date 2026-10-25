@@ -1,127 +1,151 @@
 ﻿sentence,entities
-"Khoảng 13 giờ ngày 8/1, Tổ công tác thuộc Phòng PC 65, Công an tỉnh Thanh Hóa đang làm nhiệm vụ tuần tra kiểm soát trên đường Lê Hồng Phong thì nghe tiếng người dân truy hô “cướp, cướp”.",PC 65|ORGANIZATION; Công an tỉnh Thanh Hóa|ORGANIZATION; đường Lê Hồng Phong|LOCATION
-"(vợ của Tâm) đang làm việc, đến nhà Tâm thăm hỏi với lý do có con trai là cháu Thắng vừa mất.",Tâm|PERSON; Tâm|PERSON; Thắng|PERSON
-""" Gia_đình tôi giờ tan_nát hết , danh_dự và mặt_mũi của tôi cũng mất hết , không dám nhìn mặt ai .",NONE
-"Tổng_cục Cảnh_sát khẩn_trương khảo_sát , hướng_dẫn Công_an các địa_phương đấu_tranh , xử_lý triệt_để việc mua_bán trái_phép quân_trang , quân_dụng và các loại công_cụ hỗ_trợ .",Tổng_cục Cảnh_sát|ORGANIZATION
-"Vào lúc 0h ngày 8/12/2023, khi anh Toàn đang đi xe máy SH về nhà, nhóm của An đã chặn đầu xe anh.",Toàn|PERSON; An|PERSON
-"Ngoài_ra , vé đêm nhạc ở Hà_Nội , Đà_Nẵng lẫn TP.",Hà_Nội|LOCATION; Đà_Nẵng|LOCATION
-chấp_nhận bỏ_qua tất_cả nhưng bà O.,O|PERSON
-tỉnh dậy thì Danh nói đã quay clip nên phải tiếp tục quan hệ tình dục.,Danh|PERSON
-chưa ngủ còn chị N.,N|PERSON
-Công_ty TNHH giấy Lee & Man Việt_Nam có công_nghệ sản_xuất giấy tốt nhất ngành giấy Việt_Nam .,Công_ty TNHH giấy Lee & Man|ORGANIZATION; Việt_Nam|LOCATION; Việt_Nam|LOCATION
-mất dây chuyền nên gia đình phát hiện vụ việc và làm đơn tố cáo gửi công an,NONE
-Cựu thư ký ông Xuân Anh cho hay do có mối quan hệ thân quen với Vũ ‘nhôm’ nên đã mượn tạm căn nhà tại đường Nguyễn Thái Học để ở nhờ.,Xuân Anh|PERSON; Vũ ‘nhôm|PERSON; đường Nguyễn Thái Học|LOCATION
-"Trao_đổi với Tuổi_Trẻ , ông Lâm_Phước_Thọ , giám_đốc Chi_nhánh cấp_nước Phú_Quốc , cho_biết hiện_tại nguồn nước ở hồ Dương_Đông vẫn còn , nhưng do nhà_máy nước đã hết công_suất nên phải cấp_nước luân_phiên theo khu_vực cho dân sử_dụng .",Tuổi_Trẻ|ORGANIZATION; Lâm_Phước_Thọ|PERSON; Phú_Quốc|LOCATION; hồ Dương_Đông|LOCATION
-"Tuy nhiên, cơ quan công an đã làm rõ hơn về lời khai của các nhân chứng, người có liên quan khác, cho thấy sự phù hợp với lời khai của nạn nhân Phạm Thảo Tr (26 tuổi, là du học sinh Mỹ) từ đó có thêm chứng cứ cáo buộc hành vi của bị can Lê Phú Cự.",Phạm Thảo Tr|PERSON; Mỹ|LOCATION; Lê Phú Cự|PERSON
-"Nhưng đến tháng 4-2017 , thành_phố ban_hành quyết_định 22 ( thay_thế quyết_định 150 ) quy_định cho_phép được xây_dựng một_số công_trình tạm và chủ_đầu_tư phải tự tháo_dỡ mà không được bồi_thường .",NONE
-chính là nạn_nhân trong vụ án giết người đưa đi phi_tang xác ở Tây_Ninh .,Tây_Ninh|LOCATION
-"Đến 18 giờ cùng ngày, Tuấn đến cơ quan công an đầu thú.",Tuấn|PERSON
-"Ngày 20/4, Toại gặp Hữu, bảo đưa 2 triệu đồng để nhờ người đi phá hoại ô tô.",Toại|PERSON; Hữu|PERSON
-"Chiều 16/3, UBND tỉnh Bắc Ninh đã tổ chức họp báo thông tin vụ việc nhiều lãnh đạo tỉnh Bắc Ninh bị đe dọa.",UBND tỉnh Bắc Ninh|ORGANIZATION
-"Không_những vậy , ông B.",B|PERSON
-"Những túi này được chuẩn bị đem bán cho những người nhẹ dạ, tin vào những lời quảng cáo mê tín dị đoan.",NONE
-"Bi đe dọa, chị S.A.",Bi|PERSON; S.A|PERSON
-Lúc này chị Tr bất ngờ tỉnh dậy khi có ai chạm vào người.,Tr|PERSON
-"Thời_gian gần đây , ông B.",B|PERSON
-Minh_Anh ( tổng_hợp ) Catriona_Gray và Clint_Bondad .,Minh_Anh|PERSON; Catriona_Gray|PERSON; Clint_Bondad|PERSON
-Bằng khen của ca_sĩ Ngọc_Sơn .,Ngọc_Sơn|PERSON
-Hồ sơ mô phỏng test 001 tại Quận mô phỏng 001 thể hiện Nguyễn Gia An đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 001.,Quận mô phỏng 001|LOCATION; Nguyễn Gia An|PERSON; Tổ chức thử nghiệm Mẫu 001|ORGANIZATION
-"Ở Quận mô phỏng 002, đại diện Tổ chức thử nghiệm Mẫu 002 nhận văn bản từ Trần Gia An trong tình huống giả định test 002.",Quận mô phỏng 002|LOCATION; Tổ chức thử nghiệm Mẫu 002|ORGANIZATION; Trần Gia An|PERSON
-Bản tin giả lập test 003 ghi Lê Gia An gặp Tổ chức thử nghiệm Mẫu 003 tại Quận mô phỏng 003 để rà soát thủ tục.,Lê Gia An|PERSON; Tổ chức thử nghiệm Mẫu 003|ORGANIZATION; Quận mô phỏng 003|LOCATION
-"Tại Quận mô phỏng 004, Phạm Gia An và Tổ chức thử nghiệm Mẫu 004 đối chiếu thông tin theo kịch bản mẫu test 004.",Quận mô phỏng 004|LOCATION; Phạm Gia An|PERSON; Tổ chức thử nghiệm Mẫu 004|ORGANIZATION
-Phiếu minh họa test 005 cho biết Tổ chức thử nghiệm Mẫu 005 đã trao đổi với Hoàng Gia An ở Quận mô phỏng 005.,Tổ chức thử nghiệm Mẫu 005|ORGANIZATION; Hoàng Gia An|PERSON; Quận mô phỏng 005|LOCATION
-Hồ sơ mô phỏng test 006 tại Quận mô phỏng 006 thể hiện Phan Gia An đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 006.,Quận mô phỏng 006|LOCATION; Phan Gia An|PERSON; Tổ chức thử nghiệm Mẫu 006|ORGANIZATION
-"Ở Quận mô phỏng 007, đại diện Tổ chức thử nghiệm Mẫu 007 nhận văn bản từ Vũ Gia An trong tình huống giả định test 007.",Quận mô phỏng 007|LOCATION; Tổ chức thử nghiệm Mẫu 007|ORGANIZATION; Vũ Gia An|PERSON
-Bản tin giả lập test 008 ghi Đặng Gia An gặp Tổ chức thử nghiệm Mẫu 008 tại Quận mô phỏng 008 để rà soát thủ tục.,Đặng Gia An|PERSON; Tổ chức thử nghiệm Mẫu 008|ORGANIZATION; Quận mô phỏng 008|LOCATION
-"Tại Quận mô phỏng 009, Bùi Gia An và Tổ chức thử nghiệm Mẫu 009 đối chiếu thông tin theo kịch bản mẫu test 009.",Quận mô phỏng 009|LOCATION; Bùi Gia An|PERSON; Tổ chức thử nghiệm Mẫu 009|ORGANIZATION
-Phiếu minh họa test 010 cho biết Tổ chức thử nghiệm Mẫu 010 đã trao đổi với Đỗ Gia An ở Quận mô phỏng 010.,Tổ chức thử nghiệm Mẫu 010|ORGANIZATION; Đỗ Gia An|PERSON; Quận mô phỏng 010|LOCATION
-Hồ sơ mô phỏng test 011 tại Quận mô phỏng 011 thể hiện Nguyễn Gia Bình đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 011.,Quận mô phỏng 011|LOCATION; Nguyễn Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 011|ORGANIZATION
-"Ở Quận mô phỏng 012, đại diện Tổ chức thử nghiệm Mẫu 012 nhận văn bản từ Trần Gia Bình trong tình huống giả định test 012.",Quận mô phỏng 012|LOCATION; Tổ chức thử nghiệm Mẫu 012|ORGANIZATION; Trần Gia Bình|PERSON
-Bản tin giả lập test 013 ghi Lê Gia Bình gặp Tổ chức thử nghiệm Mẫu 013 tại Quận mô phỏng 013 để rà soát thủ tục.,Lê Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 013|ORGANIZATION; Quận mô phỏng 013|LOCATION
-"Tại Quận mô phỏng 014, Phạm Gia Bình và Tổ chức thử nghiệm Mẫu 014 đối chiếu thông tin theo kịch bản mẫu test 014.",Quận mô phỏng 014|LOCATION; Phạm Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 014|ORGANIZATION
-Phiếu minh họa test 015 cho biết Tổ chức thử nghiệm Mẫu 015 đã trao đổi với Hoàng Gia Bình ở Quận mô phỏng 015.,Tổ chức thử nghiệm Mẫu 015|ORGANIZATION; Hoàng Gia Bình|PERSON; Quận mô phỏng 015|LOCATION
-Hồ sơ mô phỏng test 016 tại Quận mô phỏng 016 thể hiện Phan Gia Bình đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 016.,Quận mô phỏng 016|LOCATION; Phan Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 016|ORGANIZATION
-"Ở Quận mô phỏng 017, đại diện Tổ chức thử nghiệm Mẫu 017 nhận văn bản từ Vũ Gia Bình trong tình huống giả định test 017.",Quận mô phỏng 017|LOCATION; Tổ chức thử nghiệm Mẫu 017|ORGANIZATION; Vũ Gia Bình|PERSON
-Bản tin giả lập test 018 ghi Đặng Gia Bình gặp Tổ chức thử nghiệm Mẫu 018 tại Quận mô phỏng 018 để rà soát thủ tục.,Đặng Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 018|ORGANIZATION; Quận mô phỏng 018|LOCATION
-"Tại Quận mô phỏng 019, Bùi Gia Bình và Tổ chức thử nghiệm Mẫu 019 đối chiếu thông tin theo kịch bản mẫu test 019.",Quận mô phỏng 019|LOCATION; Bùi Gia Bình|PERSON; Tổ chức thử nghiệm Mẫu 019|ORGANIZATION
-Phiếu minh họa test 020 cho biết Tổ chức thử nghiệm Mẫu 020 đã trao đổi với Đỗ Gia Bình ở Quận mô phỏng 020.,Tổ chức thử nghiệm Mẫu 020|ORGANIZATION; Đỗ Gia Bình|PERSON; Quận mô phỏng 020|LOCATION
-Hồ sơ mô phỏng test 021 tại Quận mô phỏng 021 thể hiện Nguyễn Gia Chi đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 021.,Quận mô phỏng 021|LOCATION; Nguyễn Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 021|ORGANIZATION
-"Ở Quận mô phỏng 022, đại diện Tổ chức thử nghiệm Mẫu 022 nhận văn bản từ Trần Gia Chi trong tình huống giả định test 022.",Quận mô phỏng 022|LOCATION; Tổ chức thử nghiệm Mẫu 022|ORGANIZATION; Trần Gia Chi|PERSON
-Bản tin giả lập test 023 ghi Lê Gia Chi gặp Tổ chức thử nghiệm Mẫu 023 tại Quận mô phỏng 023 để rà soát thủ tục.,Lê Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 023|ORGANIZATION; Quận mô phỏng 023|LOCATION
-"Tại Quận mô phỏng 024, Phạm Gia Chi và Tổ chức thử nghiệm Mẫu 024 đối chiếu thông tin theo kịch bản mẫu test 024.",Quận mô phỏng 024|LOCATION; Phạm Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 024|ORGANIZATION
-Phiếu minh họa test 025 cho biết Tổ chức thử nghiệm Mẫu 025 đã trao đổi với Hoàng Gia Chi ở Quận mô phỏng 025.,Tổ chức thử nghiệm Mẫu 025|ORGANIZATION; Hoàng Gia Chi|PERSON; Quận mô phỏng 025|LOCATION
-Hồ sơ mô phỏng test 026 tại Quận mô phỏng 026 thể hiện Phan Gia Chi đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 026.,Quận mô phỏng 026|LOCATION; Phan Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 026|ORGANIZATION
-"Ở Quận mô phỏng 027, đại diện Tổ chức thử nghiệm Mẫu 027 nhận văn bản từ Vũ Gia Chi trong tình huống giả định test 027.",Quận mô phỏng 027|LOCATION; Tổ chức thử nghiệm Mẫu 027|ORGANIZATION; Vũ Gia Chi|PERSON
-Bản tin giả lập test 028 ghi Đặng Gia Chi gặp Tổ chức thử nghiệm Mẫu 028 tại Quận mô phỏng 028 để rà soát thủ tục.,Đặng Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 028|ORGANIZATION; Quận mô phỏng 028|LOCATION
-"Tại Quận mô phỏng 029, Bùi Gia Chi và Tổ chức thử nghiệm Mẫu 029 đối chiếu thông tin theo kịch bản mẫu test 029.",Quận mô phỏng 029|LOCATION; Bùi Gia Chi|PERSON; Tổ chức thử nghiệm Mẫu 029|ORGANIZATION
-Phiếu minh họa test 030 cho biết Tổ chức thử nghiệm Mẫu 030 đã trao đổi với Đỗ Gia Chi ở Quận mô phỏng 030.,Tổ chức thử nghiệm Mẫu 030|ORGANIZATION; Đỗ Gia Chi|PERSON; Quận mô phỏng 030|LOCATION
-Hồ sơ mô phỏng test 031 tại Quận mô phỏng 031 thể hiện Nguyễn Gia Dũng đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 031.,Quận mô phỏng 031|LOCATION; Nguyễn Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 031|ORGANIZATION
-"Ở Quận mô phỏng 032, đại diện Tổ chức thử nghiệm Mẫu 032 nhận văn bản từ Trần Gia Dũng trong tình huống giả định test 032.",Quận mô phỏng 032|LOCATION; Tổ chức thử nghiệm Mẫu 032|ORGANIZATION; Trần Gia Dũng|PERSON
-Bản tin giả lập test 033 ghi Lê Gia Dũng gặp Tổ chức thử nghiệm Mẫu 033 tại Quận mô phỏng 033 để rà soát thủ tục.,Lê Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 033|ORGANIZATION; Quận mô phỏng 033|LOCATION
-"Tại Quận mô phỏng 034, Phạm Gia Dũng và Tổ chức thử nghiệm Mẫu 034 đối chiếu thông tin theo kịch bản mẫu test 034.",Quận mô phỏng 034|LOCATION; Phạm Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 034|ORGANIZATION
-Phiếu minh họa test 035 cho biết Tổ chức thử nghiệm Mẫu 035 đã trao đổi với Hoàng Gia Dũng ở Quận mô phỏng 035.,Tổ chức thử nghiệm Mẫu 035|ORGANIZATION; Hoàng Gia Dũng|PERSON; Quận mô phỏng 035|LOCATION
-Hồ sơ mô phỏng test 036 tại Quận mô phỏng 036 thể hiện Phan Gia Dũng đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 036.,Quận mô phỏng 036|LOCATION; Phan Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 036|ORGANIZATION
-"Ở Quận mô phỏng 037, đại diện Tổ chức thử nghiệm Mẫu 037 nhận văn bản từ Vũ Gia Dũng trong tình huống giả định test 037.",Quận mô phỏng 037|LOCATION; Tổ chức thử nghiệm Mẫu 037|ORGANIZATION; Vũ Gia Dũng|PERSON
-Bản tin giả lập test 038 ghi Đặng Gia Dũng gặp Tổ chức thử nghiệm Mẫu 038 tại Quận mô phỏng 038 để rà soát thủ tục.,Đặng Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 038|ORGANIZATION; Quận mô phỏng 038|LOCATION
-"Tại Quận mô phỏng 039, Bùi Gia Dũng và Tổ chức thử nghiệm Mẫu 039 đối chiếu thông tin theo kịch bản mẫu test 039.",Quận mô phỏng 039|LOCATION; Bùi Gia Dũng|PERSON; Tổ chức thử nghiệm Mẫu 039|ORGANIZATION
-Phiếu minh họa test 040 cho biết Tổ chức thử nghiệm Mẫu 040 đã trao đổi với Đỗ Gia Dũng ở Quận mô phỏng 040.,Tổ chức thử nghiệm Mẫu 040|ORGANIZATION; Đỗ Gia Dũng|PERSON; Quận mô phỏng 040|LOCATION
-Hồ sơ mô phỏng test 041 tại Quận mô phỏng 041 thể hiện Nguyễn Gia Giang đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 041.,Quận mô phỏng 041|LOCATION; Nguyễn Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 041|ORGANIZATION
-"Ở Quận mô phỏng 042, đại diện Tổ chức thử nghiệm Mẫu 042 nhận văn bản từ Trần Gia Giang trong tình huống giả định test 042.",Quận mô phỏng 042|LOCATION; Tổ chức thử nghiệm Mẫu 042|ORGANIZATION; Trần Gia Giang|PERSON
-Bản tin giả lập test 043 ghi Lê Gia Giang gặp Tổ chức thử nghiệm Mẫu 043 tại Quận mô phỏng 043 để rà soát thủ tục.,Lê Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 043|ORGANIZATION; Quận mô phỏng 043|LOCATION
-"Tại Quận mô phỏng 044, Phạm Gia Giang và Tổ chức thử nghiệm Mẫu 044 đối chiếu thông tin theo kịch bản mẫu test 044.",Quận mô phỏng 044|LOCATION; Phạm Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 044|ORGANIZATION
-Phiếu minh họa test 045 cho biết Tổ chức thử nghiệm Mẫu 045 đã trao đổi với Hoàng Gia Giang ở Quận mô phỏng 045.,Tổ chức thử nghiệm Mẫu 045|ORGANIZATION; Hoàng Gia Giang|PERSON; Quận mô phỏng 045|LOCATION
-Hồ sơ mô phỏng test 046 tại Quận mô phỏng 046 thể hiện Phan Gia Giang đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 046.,Quận mô phỏng 046|LOCATION; Phan Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 046|ORGANIZATION
-"Ở Quận mô phỏng 047, đại diện Tổ chức thử nghiệm Mẫu 047 nhận văn bản từ Vũ Gia Giang trong tình huống giả định test 047.",Quận mô phỏng 047|LOCATION; Tổ chức thử nghiệm Mẫu 047|ORGANIZATION; Vũ Gia Giang|PERSON
-Bản tin giả lập test 048 ghi Đặng Gia Giang gặp Tổ chức thử nghiệm Mẫu 048 tại Quận mô phỏng 048 để rà soát thủ tục.,Đặng Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 048|ORGANIZATION; Quận mô phỏng 048|LOCATION
-"Tại Quận mô phỏng 049, Bùi Gia Giang và Tổ chức thử nghiệm Mẫu 049 đối chiếu thông tin theo kịch bản mẫu test 049.",Quận mô phỏng 049|LOCATION; Bùi Gia Giang|PERSON; Tổ chức thử nghiệm Mẫu 049|ORGANIZATION
-Phiếu minh họa test 050 cho biết Tổ chức thử nghiệm Mẫu 050 đã trao đổi với Đỗ Gia Giang ở Quận mô phỏng 050.,Tổ chức thử nghiệm Mẫu 050|ORGANIZATION; Đỗ Gia Giang|PERSON; Quận mô phỏng 050|LOCATION
-Hồ sơ mô phỏng test 051 tại Quận mô phỏng 051 thể hiện Nguyễn Gia Hà đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 051.,Quận mô phỏng 051|LOCATION; Nguyễn Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 051|ORGANIZATION
-"Ở Quận mô phỏng 052, đại diện Tổ chức thử nghiệm Mẫu 052 nhận văn bản từ Trần Gia Hà trong tình huống giả định test 052.",Quận mô phỏng 052|LOCATION; Tổ chức thử nghiệm Mẫu 052|ORGANIZATION; Trần Gia Hà|PERSON
-Bản tin giả lập test 053 ghi Lê Gia Hà gặp Tổ chức thử nghiệm Mẫu 053 tại Quận mô phỏng 053 để rà soát thủ tục.,Lê Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 053|ORGANIZATION; Quận mô phỏng 053|LOCATION
-"Tại Quận mô phỏng 054, Phạm Gia Hà và Tổ chức thử nghiệm Mẫu 054 đối chiếu thông tin theo kịch bản mẫu test 054.",Quận mô phỏng 054|LOCATION; Phạm Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 054|ORGANIZATION
-Phiếu minh họa test 055 cho biết Tổ chức thử nghiệm Mẫu 055 đã trao đổi với Hoàng Gia Hà ở Quận mô phỏng 055.,Tổ chức thử nghiệm Mẫu 055|ORGANIZATION; Hoàng Gia Hà|PERSON; Quận mô phỏng 055|LOCATION
-Hồ sơ mô phỏng test 056 tại Quận mô phỏng 056 thể hiện Phan Gia Hà đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 056.,Quận mô phỏng 056|LOCATION; Phan Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 056|ORGANIZATION
-"Ở Quận mô phỏng 057, đại diện Tổ chức thử nghiệm Mẫu 057 nhận văn bản từ Vũ Gia Hà trong tình huống giả định test 057.",Quận mô phỏng 057|LOCATION; Tổ chức thử nghiệm Mẫu 057|ORGANIZATION; Vũ Gia Hà|PERSON
-Bản tin giả lập test 058 ghi Đặng Gia Hà gặp Tổ chức thử nghiệm Mẫu 058 tại Quận mô phỏng 058 để rà soát thủ tục.,Đặng Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 058|ORGANIZATION; Quận mô phỏng 058|LOCATION
-"Tại Quận mô phỏng 059, Bùi Gia Hà và Tổ chức thử nghiệm Mẫu 059 đối chiếu thông tin theo kịch bản mẫu test 059.",Quận mô phỏng 059|LOCATION; Bùi Gia Hà|PERSON; Tổ chức thử nghiệm Mẫu 059|ORGANIZATION
-Phiếu minh họa test 060 cho biết Tổ chức thử nghiệm Mẫu 060 đã trao đổi với Đỗ Gia Hà ở Quận mô phỏng 060.,Tổ chức thử nghiệm Mẫu 060|ORGANIZATION; Đỗ Gia Hà|PERSON; Quận mô phỏng 060|LOCATION
-Hồ sơ mô phỏng test 061 tại Quận mô phỏng 061 thể hiện Nguyễn Gia Khanh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 061.,Quận mô phỏng 061|LOCATION; Nguyễn Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 061|ORGANIZATION
-"Ở Quận mô phỏng 062, đại diện Tổ chức thử nghiệm Mẫu 062 nhận văn bản từ Trần Gia Khanh trong tình huống giả định test 062.",Quận mô phỏng 062|LOCATION; Tổ chức thử nghiệm Mẫu 062|ORGANIZATION; Trần Gia Khanh|PERSON
-Bản tin giả lập test 063 ghi Lê Gia Khanh gặp Tổ chức thử nghiệm Mẫu 063 tại Quận mô phỏng 063 để rà soát thủ tục.,Lê Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 063|ORGANIZATION; Quận mô phỏng 063|LOCATION
-"Tại Quận mô phỏng 064, Phạm Gia Khanh và Tổ chức thử nghiệm Mẫu 064 đối chiếu thông tin theo kịch bản mẫu test 064.",Quận mô phỏng 064|LOCATION; Phạm Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 064|ORGANIZATION
-Phiếu minh họa test 065 cho biết Tổ chức thử nghiệm Mẫu 065 đã trao đổi với Hoàng Gia Khanh ở Quận mô phỏng 065.,Tổ chức thử nghiệm Mẫu 065|ORGANIZATION; Hoàng Gia Khanh|PERSON; Quận mô phỏng 065|LOCATION
-Hồ sơ mô phỏng test 066 tại Quận mô phỏng 066 thể hiện Phan Gia Khanh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 066.,Quận mô phỏng 066|LOCATION; Phan Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 066|ORGANIZATION
-"Ở Quận mô phỏng 067, đại diện Tổ chức thử nghiệm Mẫu 067 nhận văn bản từ Vũ Gia Khanh trong tình huống giả định test 067.",Quận mô phỏng 067|LOCATION; Tổ chức thử nghiệm Mẫu 067|ORGANIZATION; Vũ Gia Khanh|PERSON
-Bản tin giả lập test 068 ghi Đặng Gia Khanh gặp Tổ chức thử nghiệm Mẫu 068 tại Quận mô phỏng 068 để rà soát thủ tục.,Đặng Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 068|ORGANIZATION; Quận mô phỏng 068|LOCATION
-"Tại Quận mô phỏng 069, Bùi Gia Khanh và Tổ chức thử nghiệm Mẫu 069 đối chiếu thông tin theo kịch bản mẫu test 069.",Quận mô phỏng 069|LOCATION; Bùi Gia Khanh|PERSON; Tổ chức thử nghiệm Mẫu 069|ORGANIZATION
-Phiếu minh họa test 070 cho biết Tổ chức thử nghiệm Mẫu 070 đã trao đổi với Đỗ Gia Khanh ở Quận mô phỏng 070.,Tổ chức thử nghiệm Mẫu 070|ORGANIZATION; Đỗ Gia Khanh|PERSON; Quận mô phỏng 070|LOCATION
-Hồ sơ mô phỏng test 071 tại Quận mô phỏng 071 thể hiện Nguyễn Gia Lan đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 071.,Quận mô phỏng 071|LOCATION; Nguyễn Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 071|ORGANIZATION
-"Ở Quận mô phỏng 072, đại diện Tổ chức thử nghiệm Mẫu 072 nhận văn bản từ Trần Gia Lan trong tình huống giả định test 072.",Quận mô phỏng 072|LOCATION; Tổ chức thử nghiệm Mẫu 072|ORGANIZATION; Trần Gia Lan|PERSON
-Bản tin giả lập test 073 ghi Lê Gia Lan gặp Tổ chức thử nghiệm Mẫu 073 tại Quận mô phỏng 073 để rà soát thủ tục.,Lê Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 073|ORGANIZATION; Quận mô phỏng 073|LOCATION
-"Tại Quận mô phỏng 074, Phạm Gia Lan và Tổ chức thử nghiệm Mẫu 074 đối chiếu thông tin theo kịch bản mẫu test 074.",Quận mô phỏng 074|LOCATION; Phạm Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 074|ORGANIZATION
-Phiếu minh họa test 075 cho biết Tổ chức thử nghiệm Mẫu 075 đã trao đổi với Hoàng Gia Lan ở Quận mô phỏng 075.,Tổ chức thử nghiệm Mẫu 075|ORGANIZATION; Hoàng Gia Lan|PERSON; Quận mô phỏng 075|LOCATION
-Hồ sơ mô phỏng test 076 tại Quận mô phỏng 076 thể hiện Phan Gia Lan đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 076.,Quận mô phỏng 076|LOCATION; Phan Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 076|ORGANIZATION
-"Ở Quận mô phỏng 077, đại diện Tổ chức thử nghiệm Mẫu 077 nhận văn bản từ Vũ Gia Lan trong tình huống giả định test 077.",Quận mô phỏng 077|LOCATION; Tổ chức thử nghiệm Mẫu 077|ORGANIZATION; Vũ Gia Lan|PERSON
-Bản tin giả lập test 078 ghi Đặng Gia Lan gặp Tổ chức thử nghiệm Mẫu 078 tại Quận mô phỏng 078 để rà soát thủ tục.,Đặng Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 078|ORGANIZATION; Quận mô phỏng 078|LOCATION
-"Tại Quận mô phỏng 079, Bùi Gia Lan và Tổ chức thử nghiệm Mẫu 079 đối chiếu thông tin theo kịch bản mẫu test 079.",Quận mô phỏng 079|LOCATION; Bùi Gia Lan|PERSON; Tổ chức thử nghiệm Mẫu 079|ORGANIZATION
-Phiếu minh họa test 080 cho biết Tổ chức thử nghiệm Mẫu 080 đã trao đổi với Đỗ Gia Lan ở Quận mô phỏng 080.,Tổ chức thử nghiệm Mẫu 080|ORGANIZATION; Đỗ Gia Lan|PERSON; Quận mô phỏng 080|LOCATION
-Hồ sơ mô phỏng test 081 tại Quận mô phỏng 081 thể hiện Nguyễn Gia Minh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 081.,Quận mô phỏng 081|LOCATION; Nguyễn Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 081|ORGANIZATION
-"Ở Quận mô phỏng 082, đại diện Tổ chức thử nghiệm Mẫu 082 nhận văn bản từ Trần Gia Minh trong tình huống giả định test 082.",Quận mô phỏng 082|LOCATION; Tổ chức thử nghiệm Mẫu 082|ORGANIZATION; Trần Gia Minh|PERSON
-Bản tin giả lập test 083 ghi Lê Gia Minh gặp Tổ chức thử nghiệm Mẫu 083 tại Quận mô phỏng 083 để rà soát thủ tục.,Lê Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 083|ORGANIZATION; Quận mô phỏng 083|LOCATION
-"Tại Quận mô phỏng 084, Phạm Gia Minh và Tổ chức thử nghiệm Mẫu 084 đối chiếu thông tin theo kịch bản mẫu test 084.",Quận mô phỏng 084|LOCATION; Phạm Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 084|ORGANIZATION
-Phiếu minh họa test 085 cho biết Tổ chức thử nghiệm Mẫu 085 đã trao đổi với Hoàng Gia Minh ở Quận mô phỏng 085.,Tổ chức thử nghiệm Mẫu 085|ORGANIZATION; Hoàng Gia Minh|PERSON; Quận mô phỏng 085|LOCATION
-Hồ sơ mô phỏng test 086 tại Quận mô phỏng 086 thể hiện Phan Gia Minh đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 086.,Quận mô phỏng 086|LOCATION; Phan Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 086|ORGANIZATION
-"Ở Quận mô phỏng 087, đại diện Tổ chức thử nghiệm Mẫu 087 nhận văn bản từ Vũ Gia Minh trong tình huống giả định test 087.",Quận mô phỏng 087|LOCATION; Tổ chức thử nghiệm Mẫu 087|ORGANIZATION; Vũ Gia Minh|PERSON
-Bản tin giả lập test 088 ghi Đặng Gia Minh gặp Tổ chức thử nghiệm Mẫu 088 tại Quận mô phỏng 088 để rà soát thủ tục.,Đặng Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 088|ORGANIZATION; Quận mô phỏng 088|LOCATION
-"Tại Quận mô phỏng 089, Bùi Gia Minh và Tổ chức thử nghiệm Mẫu 089 đối chiếu thông tin theo kịch bản mẫu test 089.",Quận mô phỏng 089|LOCATION; Bùi Gia Minh|PERSON; Tổ chức thử nghiệm Mẫu 089|ORGANIZATION
-Phiếu minh họa test 090 cho biết Tổ chức thử nghiệm Mẫu 090 đã trao đổi với Đỗ Gia Minh ở Quận mô phỏng 090.,Tổ chức thử nghiệm Mẫu 090|ORGANIZATION; Đỗ Gia Minh|PERSON; Quận mô phỏng 090|LOCATION
-Hồ sơ mô phỏng test 091 tại Quận mô phỏng 091 thể hiện Nguyễn Gia Ngọc đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 091.,Quận mô phỏng 091|LOCATION; Nguyễn Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 091|ORGANIZATION
-"Ở Quận mô phỏng 092, đại diện Tổ chức thử nghiệm Mẫu 092 nhận văn bản từ Trần Gia Ngọc trong tình huống giả định test 092.",Quận mô phỏng 092|LOCATION; Tổ chức thử nghiệm Mẫu 092|ORGANIZATION; Trần Gia Ngọc|PERSON
-Bản tin giả lập test 093 ghi Lê Gia Ngọc gặp Tổ chức thử nghiệm Mẫu 093 tại Quận mô phỏng 093 để rà soát thủ tục.,Lê Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 093|ORGANIZATION; Quận mô phỏng 093|LOCATION
-"Tại Quận mô phỏng 094, Phạm Gia Ngọc và Tổ chức thử nghiệm Mẫu 094 đối chiếu thông tin theo kịch bản mẫu test 094.",Quận mô phỏng 094|LOCATION; Phạm Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 094|ORGANIZATION
-Phiếu minh họa test 095 cho biết Tổ chức thử nghiệm Mẫu 095 đã trao đổi với Hoàng Gia Ngọc ở Quận mô phỏng 095.,Tổ chức thử nghiệm Mẫu 095|ORGANIZATION; Hoàng Gia Ngọc|PERSON; Quận mô phỏng 095|LOCATION
-Hồ sơ mô phỏng test 096 tại Quận mô phỏng 096 thể hiện Phan Gia Ngọc đã bàn giao giấy tờ cho Tổ chức thử nghiệm Mẫu 096.,Quận mô phỏng 096|LOCATION; Phan Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 096|ORGANIZATION
-"Ở Quận mô phỏng 097, đại diện Tổ chức thử nghiệm Mẫu 097 nhận văn bản từ Vũ Gia Ngọc trong tình huống giả định test 097.",Quận mô phỏng 097|LOCATION; Tổ chức thử nghiệm Mẫu 097|ORGANIZATION; Vũ Gia Ngọc|PERSON
-Bản tin giả lập test 098 ghi Đặng Gia Ngọc gặp Tổ chức thử nghiệm Mẫu 098 tại Quận mô phỏng 098 để rà soát thủ tục.,Đặng Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 098|ORGANIZATION; Quận mô phỏng 098|LOCATION
-"Tại Quận mô phỏng 099, Bùi Gia Ngọc và Tổ chức thử nghiệm Mẫu 099 đối chiếu thông tin theo kịch bản mẫu test 099.",Quận mô phỏng 099|LOCATION; Bùi Gia Ngọc|PERSON; Tổ chức thử nghiệm Mẫu 099|ORGANIZATION
-Phiếu minh họa test 100 cho biết Tổ chức thử nghiệm Mẫu 100 đã trao đổi với Đỗ Gia Ngọc ở Quận mô phỏng 100.,Tổ chức thử nghiệm Mẫu 100|ORGANIZATION; Đỗ Gia Ngọc|PERSON; Quận mô phỏng 100|LOCATION
+"Chỉ sau phiên sơ thẩm chưa đầy 2 tháng, ngày 16/10 tới, ""bộ sậu"" lãnh đạo Công ty VN Pharma tiếp tục phải ra hầu tòa.",ngày 16/10|TIME; Công ty VN Pharma|ORGANIZATION
+"Ngày 9-2, lãnh đạo Thanh tra tỉnh Gia Lai cho biết đã có kết luật thanh tra việc thực hiện các quy định của pháp luật về phòng chống tham nhũng và quản lý, sử dụng các nguồn kinh phí tại phòng GD-ĐT huyện Chư Pưh. Theo đó, phát hiện có dấu hiệu sai phạm và dấu hiệu tham nhũng với số tiền gần 6 tỉ đồng ngân sách từ năm 2013-2017.",Ngày 9-2|TIME; Thanh tra tỉnh Gia Lai|ORGANIZATION; phòng GD-ĐT huyện Chư Pưh|ORGANIZATION; gần 6 tỉ đồng|MONEY; năm 2013-2017|TIME
+"Lý do là các tài liệu, chứng cứ có trong hồ sơ vụ án chưa thể chứng minh hành vi phạm tội của Nguyễn Hữu Linh.",Nguyễn Hữu Linh|PERSON
+"Sau một lúc nói chuyện, cả hai người xảy ra cãi cọ, Hùng dùng dao đâm liên tiếp nhiều nhát, trong đó có một nhát thấu tim khiến anh Thuần gục xuống, tử vong tại chỗ.",Hùng|PERSON; dao|PRODUCT; Thuần|PERSON
+"Quá trình khám nghiệm, trên cơ thể nạn nhân có nhiều vết thương, cơ quan điều tra nhận định đây là một vụ án mạng nên tiến hành điều tra, truy xét.",NONE
+"Cuối năm 2018, Quốc hội sẽ tiến hành lấy phiếu tín nhiệm đối với các chức danh Quốc hội bầu và phê chuẩn.",Cuối năm 2018|TIME; Quốc hội|ORGANIZATION; Quốc hội|ORGANIZATION
+"Được biết, số ma túy này có nguồn gốc từ Lào, được vận chuyển qua biên giới theo đường tiểu ngạch để tiêu thụ tại Việt Nam.",ma túy|DRUG; Lào|LOCATION; Việt Nam|LOCATION
+"Để phục vụ công tác điều tra, Công an thông báo nếu người dân biết tung tích về nạn nhân có đặc điểm nhận dạng như trên thì liên hệ với cơ quan CSĐT Công an thị xã Dĩ An để phối hợp điều tra.",cơ quan CSĐT Công an thị xã Dĩ An|ORGANIZATION
+"Nhưng nếu bắn chết đối tượng thì vụ án coi như sẽ dừng lại ở đây, việc điều tra mở rộng vụ án, bóc gỡ cả đường dây đối tượng sẽ rất khó khăn...” – Trung tá Đinh Hồng Dương kể lại.",Đinh Hồng Dương|PERSON
+Liêm nhặt điện thoại của mình gọi người nhà đến và cùng đưa Tuấn đi cấp cứu tại Bệnh viện đa khoa Hà Đông.,Liêm|PERSON; Tuấn|PERSON; Bệnh viện đa khoa Hà Đông|ORGANIZATION
+Cơ quan chức năng đang tiếp tục làm rõ vụ việc.,NONE
+"Công an TP Huế đã cử thiếu tá Vương Thành cùng một tổ công tác ra Nghệ An để gặp Đồng Văn Đạt nhằm điều tra, xác minh tang vật vụ án.",Công an TP Huế|ORGANIZATION; Vương Thành|PERSON; Nghệ An|LOCATION; Đồng Văn Đạt|PERSON
+"Theo chỉ đạo, điều hành của Dũng, các công ty trong nước mua bán hàng hóa với nhau để hợp thức việc nâng khống giá trị hàng hóa bán hàng nhằm chuyển tiền trái phép từ nước ngoài về Việt Nam, hoặc lập hồ sơ mua hàng có giá trị cao ở nước ngoài để hợp thức việc chuyển tiền từ Việt Nam ra nước ngoài.",Dũng|PERSON; Việt Nam|LOCATION; Việt Nam|LOCATION
+"Nghệ An là tỉnh nhiều nạn nhân nhất với 21 người, Hà Tĩnh 10 người, Hải Phòng 3 người, Quảng Bình 3 người, Thừa Thiên Huế và Hải Dương mỗi tỉnh một người.",Nghệ An|LOCATION; Hà Tĩnh|LOCATION; Hải Phòng|LOCATION; Quảng Bình|LOCATION; Thừa Thiên Huế|LOCATION; Hải Dương|LOCATION
+"Ngày 9/8, "" hiệp sĩ "" Nguyễn Thanh Hải, Đội trưởng CLB Phòng chống tội phạm phường Phú Hoà (TP. Thủ Dầu Một, tỉnh Bình Dương) cho biết, anh và đồng đội vừa truy bắt thành công đối tượng chiếm đoạt tài sản của người khác.",Nguyễn Thanh Hải|PERSON; TP. Thủ Dầu Một|LOCATION; tỉnh Bình Dương|LOCATION
+"Dàn kiều nữ và hai ""ông trùm"" đường dây buôn ma túy từ Bắc vào Nam với số lượng đặc biệt lớn đã phải nhận án tử hình",ma túy|DRUG; Bắc|LOCATION; Nam|LOCATION
+"Tuấn Anh hoảng loạn chạy ra hướng cổng của khu nhà trọ nhưng cổng đóng khóa nên anh ta chạy ngược lại về phía trong dãy phòng trọ, vừa chạy vừa đạp chân để cởi chiếc quần đang bốc cháy.",Tuấn Anh|PERSON
+"Lúc này, trinh sát Đặc nhiệm Hướng Nam nhập cuộc truy đuổi.",Đặc nhiệm Hướng Nam|ORGANIZATION
+"Sau khi ra tù về địa phương, đối tượng Tính quen biết và sống với con nghiện Bùi Văn Thắng như vợ chồng.",Tính|PERSON; Bùi Văn Thắng|PERSON
+"Tại phiên tòa phúc thẩm, bị cáo Phùng Đình Thực (nguyên Tổng giám đốc PVN) cho là không chỉ đạo, không biết hợp đồng 33 không đúng quy định; không nhận được các văn bản như quy kết.",Phùng Đình Thực|PERSON; PVN|ORGANIZATION
+"Mới đây, bộ Công an cũng đã gửi văn bản đề nghị sở Xây dựng tỉnh Đồng Nai cung cấp toàn bộ tài liệu liên quan 29 dự án của công ty Địa ốc Alibaba trên địa bàn để tiến hành điều tra, xử lý.",bộ Công an|ORGANIZATION; sở Xây dựng tỉnh Đồng Nai|ORGANIZATION; công ty Địa ốc Alibaba|ORGANIZATION
+Người phụ nữ xuất hiện tại hiện trường vụ nã súng bắn chết người ở Sài Gòn.,súng|PRODUCT; Sài Gòn|LOCATION
+"Trước đó, Thanh tra tỉnh Cà Mau cho biết đã ban hành kết luật thanh tra về việc thực hiện các giải pháp phòng ngừa và chống tham nhũng đối với chức năng, nhiệm vụ được giao tại Sở GIao thông vận tải (kết luận số 10/2017).",Thanh tra tỉnh Cà Mau|ORGANIZATION; Sở GIao thông vận tải|ORGANIZATION
+"Đến 22h cùng ngày, Ng. tiếp tục gọi lại cho Hoà hẹn ngặp nhau tại một địa điểm ở gần nhà Ng.",22h|TIME; Ng|PERSON; Hoà|PERSON; Ng|PERSON
+Minh Tú xuất hiện vô cùng gợi cảm và quyến rũ trong hình hiệu này.,Minh Tú|PERSON
+"Cấm mua bán, sử dụng Ngày 9-12, UBND TP Hà Nội đã chỉ đạo giải quyết vụ ngộ độc do sản phẩm rượu của Công ty CP Xuất nhập khẩu 29 Hà Nội.",Ngày 9-12|TIME; UBND TP Hà Nội|ORGANIZATION; Công ty CP Xuất nhập khẩu 29 Hà Nội|ORGANIZATION
+"Để bảo vệ quyền hành nghề hợp pháp của hội viên, Ban Kiểm tra hội Nhà báo Việt Nam đề nghị cục An ninh Chính trị nội bộ, bộ Công an khẩn trương điều tra, làm rõ vụ việc, có hình thức xử lý thích đáng đối tượng đã có hành vi vi phạm pháp luật, đe doạ tính mạng nhà báo Xuân Huy và sớm thông báo kết quả xác minh vụ việc qua ban Kiểm tra hội Nhà báo Việt Nam.",hội Nhà báo Việt Nam|ORGANIZATION; cục An ninh Chính trị nội bộ|ORGANIZATION; bộ Công an|ORGANIZATION; Xuân Huy|PERSON; hội Nhà báo Việt Nam|ORGANIZATION
+"Hai đối tượng bị khởi tố, bắt tạm giam gồm ông Hồ Đăng Chiến (SN 1965), là Phó giám đốc Trung tâm Dịch vụ nông nghiệp huyện Bố Trạch, nguyên Chủ tịch UBND xã Đức Trạch; ông Hồ Hoàng Quân (SN 1975), là công chức địa chính xã Trung Trạch, nguyên công chức địa chính xã Đức Trạch.",Hồ Đăng Chiến|PERSON; Trung tâm Dịch vụ nông nghiệp huyện Bố Trạch|ORGANIZATION; UBND xã Đức Trạch|ORGANIZATION; Hồ Hoàng Quân|PERSON; xã Trung Trạch|LOCATION; xã Đức Trạch|LOCATION
+"Trưa 25/7, lãnh đạo Công an T X.Bến Cát (Bình Dương) cho biết, đơn vị đang tạm giữ nhóm đối tượng cùng tang vật gồm ma tuý, súng, đạn để điều tra về hành vi tang trữ chất ma tuý và vũ khí quân dụng.",Trưa 25/7|TIME; Công an T X.Bến Cát|ORGANIZATION; Bình Dương|LOCATION; ma tuý|DRUG; súng|PRODUCT; đạn|PRODUCT; ma tuý|DRUG
+Phạm Thị Lư đầy day dứt khi nhớ lại quãng đời lầm lỡ của mình.,Phạm Thị Lư|PERSON
+Các hợp đồng này sau đó được Long đem thế chấp vay tiền ngân hàng.,Long|PERSON
+"Khi có khách gọi đến, nhóm này giả giọng nghệ nhân để tư vấn và ra giá từ 1 - 20 triệu đồng/ lá 'bùa yêu'.",1 - 20 triệu đồng|MONEY
+"Bước đầu cơ quan công an xác định, Lê Ngọc Trường là đối tượng dùng súng hơi loại bắn đạn chì để chống trả lực lượng chức năng.",Lê Ngọc Trường|PERSON; súng hơi|PRODUCT
+"Khoảng một tuần sau, nhiều lần qua hỏi ông Ca về việc lo chạy án nhưng nhận được trả lời chưa thấy thông tin gì từ phía Công an tỉnh Quảng Ninh nên Trương Xuân Đước lo lắng, về nhà lấy tiếp 5 tỷ đồng rồi đến nhà ông Ca.",Ca|PERSON; Công an tỉnh Quảng Ninh|ORGANIZATION; Trương Xuân Đước|PERSON; 5 tỷ đồng|MONEY; Ca|PERSON
+"Sau một thời gian lui vào hậu trường để ổn định cuộc sống gia đình, tháng 6/2017 Hiền Anh đánh dấu sự trở lại với ca khúc và cũng là sáng tác đầu tay Khúc hát ân tình.",tháng 6/2017|TIME; Hiền Anh|PERSON
+"Ông Tâm bị cáo buộc đã lập, ký khống 57 hợp đồng mua bán gạo và phụ phẩm các loại với hơn 20 doanh nghiệp, chỉ đạo giám đốc các xí nghiệp ký khống 46 biên bản thoả thuận, gây thiệt cho công ty số tiền trên.",Tâm|PERSON; gạo|PRODUCT; phụ phẩm|PRODUCT
+"Cùng ngày, kiểm tra khu nhà trọ của ông Dương Xuân Hường cũng ở thị trấn Như Quỳnh, tổ công tác phát hiện bắt quả tang Lường Văn Khoa (SN 1999, ở huyện Mường La, tỉnh Sơn La) đang tàng trữ trái phép 4 gói heroin, trọng lượng 0,165 gam và 200.000 đ tiền mặt.",Dương Xuân Hường|PERSON; thị trấn Như Quỳnh|LOCATION; Lường Văn Khoa|PERSON; huyện Mường La|LOCATION; tỉnh Sơn La|LOCATION; 4 gói heroin|DRUG; 200.000 đ|MONEY
+"Nạn nhân trong vụ án là ông Trần Bình Trọng (53 tuổi, ngụ tỉnh Kiên Giang), cha vợ của Đạt.",Trần Bình Trọng|PERSON; tỉnh Kiên Giang|LOCATION; Đạt|PERSON
+"Cơ quan điều tra cũng ra quyết định bổ sung quyết định khởi tố bị can đối với Bùi Quang Huy -TGĐ công ty TNHH Thương mại và dịch vụ Nhật Cường, GĐ Nhật Cường Software, hiện đang bị truy nã.",Bùi Quang Huy|PERSON; công ty TNHH Thương mại và dịch vụ Nhật Cường|ORGANIZATION; Nhật Cường Software|ORGANIZATION
+"Tiếp đó, Trực dùng tài khoản này nhắn tin vào 2 tài khoản facebook trong nhóm bạn bè là của bà Mai và bà Oanh với nội dung “nhờ gửi tiền để mua hàng cho con” vào tài khoản ngân hàng mang tên Bùi Công Anh nêu trên.",Trực|PERSON; Mai|PERSON; Oanh|PERSON; Bùi Công Anh|PERSON
+"Bà H. - một người dân sống gần khu đất - cho biết trước đây khu đất này được sử dụng làm kho xưởng do xưởng chế tạo máy Sinco thuộc Tổng công ty Công nghiệp Sài Gòn quản lý, sử dụng.",H|PERSON; xưởng chế tạo máy Sinco|ORGANIZATION; Tổng công ty Công nghiệp Sài Gòn|ORGANIZATION
+"Được biết hằng ngày, Hổ làm nghề sửa máy.",Hổ|PERSON
+Bà Nga sống bằng nghề đưa đò và nuôi heo.,Bà Nga|PERSON
+Không thể một hành vi phạm tội gắn liền với nhau lại được đưa ra xét xử tại 2 vụ án khác nhau.,NONE
+"Tuy nhiên, Viện Kiểm sát nhân dân Tối cao vẫn chưa có thông báo đến đơn vị” - lãnh đạo Tòa án nhân dân huyện Giồng Riềng thông tin.",Viện Kiểm sát nhân dân Tối cao|ORGANIZATION; Tòa án nhân dân huyện Giồng Riềng|ORGANIZATION
+"Khoảng 19h cùng ngày, nhóm này thuê xe taxi của ông Nguyễn Hùng M. đi Hà Nội với số tiền 1,5 triệu đồng.","Khoảng 19h|TIME; Nguyễn Hùng M|PERSON; Hà Nội|LOCATION; 1,5 triệu đồng|MONEY"
+"Hiện, công an đang hoàn tất hồ sơ để tiến hành khởi tố vụ án, khởi tố bị can.",NONE
+Sự việc sau đó được trình báo cho cơ quan chức năng để điều tra.,NONE
+Hiện vụ việc đang được cơ quan chức năng tiếp tục điều tra làm rõ.,NONE
+Đồng thời vụ tai nạn cũng khiến 2 xe máy và 2 xe đạp điện bị hư hỏng nặng.,NONE
+"Theo báo cáo, lượng thịt heo tiêu thụ tại TP bình quân 10.000 con / ngày, trong đó giết mổ tại TP là 8.500 con / ngày.",NONE
+"Ban quản lý dự án Công ty Điện lực tỉnh Nghệ An là đơn vị chủ đầu tư hệ thống cáp ngầm dẫn điện vào Trạm biến áp 110 Hưng Nguyên, trị giá hơn 2,2 tỷ đồng.","Công ty Điện lực tỉnh Nghệ An|ORGANIZATION; Trạm biến áp 110 Hưng Nguyên|LOCATION; 2,2 tỷ đồng|MONEY"
+"Theo điều tra, Triệu là đối tượng nghiện ma túy nặng, lại thất nghiệp nên luôn trong tình trạng không có tiền.",Triệu|PERSON; ma túy|DRUG
+"Đồng thời, tòa cũng thông báo sẽ xét xử vắng mặt bị hại, đương sự theo đúng quy định của pháp luật.",NONE
+"Được biết, đây là ổ nhóm người nước ngoài thứ 4 đã bị Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao Bộ Công an phối hợp với Công an tỉnh Bà Rịa - Vũng Tàu phát hiện, triệt phá thành công tại thành phố Vũng Tàu.","Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao|ORGANIZATION; Bộ Công an|ORGANIZATION; Công an tỉnh Bà Rịa - Vũng Tàu|ORGANIZATION; thành phố Vũng Tàu|LOCATION"
+"Chắc chắn nó chỉ thoát khỏi tầm kiểm soát của tôi vào hôm mùng 2 Tết”, ông Du như tự trách mình.",mùng 2 Tết|TIME; Du|PERSON
+"Có cả giám đốc chi nhánh của công ty do Thế Anh làm tổng giám đốc cũng móc tiền túi để ""cúng"" cho công ty.",Thế Anh|PERSON
+"“Tôi ở ngay gần khu vực đèn chiếu sáng, chủ yếu là ruộng ngô, cách các tên tội phạm chỉ khoảng 20m, bị đạn bắn xuyên đùi.",NONE
+"Không đuổi kịp anh T., Nghĩa quay lại đâm chết cháu Thế A. Tại phiên tòa, bị cáo Nghĩa khai nhận hành vi phạm tội.",T|PERSON; Nghĩa|PERSON; Thế A|PERSON; Nghĩa|PERSON
+"Thượng tá Phạm Duy Diên cho biết, việc kiểm tra, triệt phá, bắt giữ những đối tượng có biểu hiện sử dụng ma túy tại Mos Club, Karaoke Ánh Hồng nằm trong kế hoạch đấu tranh triệt phá các tụ điểm phức tạp về an ninh trật tự trên địa bàn Hải Phòng",Phạm Duy Diên|PERSON; ma túy|DRUG; Mos Club|ORGANIZATION; Karaoke Ánh Hồng|ORGANIZATION; Hải Phòng|LOCATION
+Người đàn ông này đã vẫy cháu bé ra ngoài sân ngõ để dỗ và bế sang một quán nước cách nhà cháu khoảng 350m.,NONE
+"Ngày 16-11, tin từ Cơ quan CSĐT Công an Bình Thuận cho biết vừa tống đạt quyết định khởi tố bị can, thực hiện lệnh bắt tạm giam Phạm Thanh Liêm (36 tuổi, ngụ huyện Bắc Bình, Bình Thuận) để điều tra về hành vi lừa đảo chiếm đoạt tài sản.",Ngày 16-11|TIME; Cơ quan CSĐT Công an Bình Thuận|ORGANIZATION; Phạm Thanh Liêm|PERSON; huyện Bắc Bình|LOCATION; Bình Thuận|LOCATION
+"Khi đã có trong tay sổ đỏ trên, hai bị cáo bàn bạc thống nhất tạo dựng hồ sơ giả về việc phân chia thừa kế, hợp đồng chuyển nhượng nhà đất trên cho bị cáo Hương.",Hương|PERSON
+"Một chuyên viên khác của Phòng Kinh tế Sở KH&ĐT là Phan Trung Hiếu bị VKSND Tối cao cho rằng đã không theo dõi, giám sát dự án đầy đủ nên không biết Trung tâm CNSH tự ý phê duyệt tăng dự toán, đề xuất bố trí vốn cho Dự án thêm 75 tỷ đồng (cho cả giai đoạn 2, trong khi giai đoạn 2 chưa được phân bổ vốn do phải phê duyệt điều chỉnh lại Dự án).",Phòng Kinh tế Sở KH&ĐT|ORGANIZATION; Phan Trung Hiếu|PERSON; VKSND Tối cao|ORGANIZATION; Trung tâm CNSH|ORGANIZATION; 75 tỷ đồng|MONEY
+Ít xuất đầu lộ diện nhưng trước đây hễ Long “vàng” lên tiếng là có…máu đổ.,Long|PERSON
+"Tại hiện trường, lực lượng chức năng thu giữ trên giường ngủ của Đào Viết Sơn 8 túi ni lông, chứa tổng cộng 1.405 viên hồng phiến và 1 túi màu trắng bên trong chứa ma tuý đá do Sơn mua lại của một người Lào về để sử dụng.",Đào Viết Sơn|PERSON; 1.405 viên hồng phiến|DRUG; ma tuý đá|DRUG; Sơn|PERSON
+"Ngày 2/3, TAND tỉnh Gia Lai mở phiên xét xử sơ thẩm và tuyên phạt bị cáo Hoàng Xuân Khoát (SN 1973, trú thôn Chư Bồ 1, xã Ia Kla, huyện Đức Cơ) 11 năm tù giam về tội giết người.",Ngày 2/3|TIME; TAND tỉnh Gia Lai|ORGANIZATION; Hoàng Xuân Khoát|PERSON; thôn Chư Bồ 1|LOCATION; xã Ia Kla|LOCATION; huyện Đức Cơ|LOCATION; 11 năm tù giam|TIME; giết người|CRIME
+"Anh Hải trả lời "" con N. về rồi "".",Anh Hải|PERSON; N|PERSON
+"Khi phát hiện, lực lượng công an tiến hành test xác định có 7 đối tượng dương tính với chất ma túy.",ma túy|DRUG
+"Tổng đài là đường dây khẩn cấp có trách nhiệm liên hệ với các cá nhân, cơ quan, tổ chức có liên quan hoặc có thẩm quyền để kiểm tra thông tin tố giác ban đầu.",NONE
+"Chia sẻ với Tuổi Trẻ Online, chị Hon cho biết bây giờ điều lo lắng nhất là không biết phải hoà nhập cuộc sống ra sao với gia đình.",Tuổi Trẻ Online|ORGANIZATION; Hon|PERSON
+"Được biết, riêng Phú chiếm đoạt hơn 1,3 tỉ đồng.","Phú|PERSON; 1,3 tỉ đồng|MONEY"
+"T (SN 2003, trú tại xã Đông Ngũ) trình báo việc Thành nhiều hiếp dâm cháu T dẫn đến có thai.",T|PERSON; xã Đông Ngũ|LOCATION; Thành|PERSON; T|PERSON
+Mặc cho loa của Ban tổ chức liên tục đưa thông tin về lễ khai ấn và nhắc nhở việc đi lễ văn minh song mọi thông tin dường như là vô tác dụng.,NONE
+Một người nước ngoài và tài xế Hồng vẫn đang bị tạm giữ để điều tra tài xế này có liên quan đến đường dây vận chuyển ma tuý hay không.,Hồng|PERSON; ma tuý|DRUG
+Tuy nằm trong danh sách những tác phẩm không tham gia tranh cử nhưng The House That Jack Built vẫn rất được trông đợi.,The House That Jack Built|ORGANIZATION
+"Tại hiện trường, thi thể nam giới nằm chết ở tư thế ngửa, miệng sùi bọt mép, nạn nhân khoảng 50 tuổi, cao 1,67 m mặc áo sơ mi sọc ca rô dài tay, mặc quần tây dài vải màu xanh, mang dép nhựa màu trắng.",NONE
+Tàu bị kiểm tra này là tàu vừa cập một cảng thuộc cụm cảng Cái Mép.,cụm cảng Cái Mép|LOCATION
+"TAND tỉnh Đắk Lắk hôm nay (4/5) mở phiên tòa sơ thẩm hình sự xét xử nhóm bị cáo trú tại tỉnh Đồng Nai gây ra hàng loạt vụ trộm cắp liên tỉnh, với tổng giá trị tải sản gần 1,3 tỷ đồng.","TAND tỉnh Đắk Lắk|ORGANIZATION; 4/5|TIME; tỉnh Đồng Nai|LOCATION; 1,3 tỷ đồng|MONEY"
+"Thời điểm trên, ông Th. đang ngồi uống nước tại khu vực đường Trần Hưng Đạo, TP. Hải Dương thì chứng kiến cảnh anh em chủ quán nước khu đối diện xảy ra cãi vã.",Th|PERSON; đường Trần Hưng Đạo|LOCATION; TP. Hải Dương|LOCATION
+"Nguyên nhân anh Th. tử vong được cơ quan chức năng xác định bị nhóm đối tượng (chưa rõ danh tính) dùng dao, gậy đánh liên tiếp vào người.",Th|PERSON; dao|PRODUCT; gậy|PRODUCT
+"Sau đó, Dương cho đàn em thuê biệt thự, mua hóa chất để nghiên cứu, pha trộn các hợp chất hóa học, sản xuất ma túy đá.",Dương|PERSON; ma túy đá|DRUG
+"Phải tuân thủ các nguyên tắc của Đảng; bảo đảm sự lãnh đạo tập trung, thống nhất của cấp uỷ, tổ chức Đảng, tập thể lãnh đạo có thẩm quyền; đề cao vai trò, trách nhiệm nêu gương của tập thể lãnh đạo, nhất là người đứng đầu cấp uỷ, tổ chức Đảng và cán bộ làm công tác tham mưu về tổ chức, cán bộ; bảo đảm dân chủ, công khai, khách quan, minh bạch; đề cao trách nhiệm cá nhân trong thảo luận và quyết định theo đa số.",Đảng|ORGANIZATION; Đảng|ORGANIZATION; Đảng|ORGANIZATION
+"Khi cô ta sinh con xong, chồng chị mua nhà rồi chuyển tới ở cùng.",NONE
+"Theo đó, khoảng 20h ngày 4/8, do mâu thuẫn trong quan hệ tình ái với anh L.T. V. (SN 1990), trú tại phường Ba Đình, TP. Thanh Hoá, Đỗ Thu Hà đã dùng dao nhọn đâm anh này khi 2 người đang ngồi trên xe ô tô.",20h ngày 4/8|TIME; L.T. V|PERSON; phường Ba Đình|LOCATION; TP. Thanh Hoá|LOCATION; Đỗ Thu Hà|PERSON; dao|PRODUCT
+Nguyễn Thị Nga (chuyên viên Công ty CP Thương mại và Dịch vụ số FLC) 20.,Nguyễn Thị Nga|PERSON; Công ty CP Thương mại và Dịch vụ số FLC|ORGANIZATION
+"Thời điểm trên, Tổ công tác Y1/141 do Thiếu tá Trần Quang Vinh, Đội phó Đội CSGT số 1 (tổ trưởng) và Trung tá CSHS Bùi Văn Vượng, phát hiện xe nam thanh niên “đầu trần”, điều khiển xe Honda SH màu đen BKS 29Z1 - 9258, chạy với tốc độ cao, có biểu hiện nghi vấn, nên đã ra hiệu lệnh dừng xe kiểm tra.",Tổ công tác Y1/141|ORGANIZATION; Trần Quang Vinh|PERSON; Đội CSGT số 1|ORGANIZATION; Bùi Văn Vượng|PERSON
+"Trên thực tế, Công ty TNHH Xây dựng Sông Hồng không đủ điều kiện và không được tham gia dự thầu đối với dự án trên, nhưng ông Tam vẫn đưa ra thông tin gian dối và các giấy tờ giả về việc đã được chỉ định thầu dự án.",Công ty TNHH Xây dựng Sông Hồng|ORGANIZATION; Tam|PERSON
+Thượng sỹ Phạm Thanh Sơn kể lại: “Tôi cùng thượng sỹ Đỗ Văn Ninh đang làm nhiệm vụ tại ngã tư Xuân Thủy – Trần Thái Tông thì nghe thấy tiếng hô “cướp” của người dân nên chạy đến.,Phạm Thanh Sơn|PERSON; Đỗ Văn Ninh|PERSON; ngã tư Xuân Thủy – Trần Thái Tông|LOCATION
+"Tại cơ quan điều tra, sư thầy trụ trì đã khai nhận toàn bộ sự việc.",NONE
+"Ông S. bức xúc mắng Minh “Vợ chồng mày mượn tiền con tao không trả, còn chửi con tao” và bước đến dùng tay đánh vào mặt của Minh.",S|PERSON; Minh|PERSON; Minh|PERSON
+"Tuy nhiên, theo ông Lập, ông Hưng không mặc trang phục công an khi thực hiện nhiệm vụ vào đêm 25-6 để giải tán đám đông tại gia đình ông Năm là chưa chuẩn mực, cần phải rút kinh nghiệm.",Lập|PERSON; Hưng|PERSON; đêm 25-6|TIME; Năm|PERSON
+"Mỗi khi mệt quá thiếp đi, Phú lại thấy hiện lên trong đầu hình ảnh cô con gái bé nhỏ, ngoan ngoãn dễ bảo.",Phú|PERSON
+"Người bố ốm dặt dẹo vừa rời giường chạy đến can con, gượng cười ra chiều xin thông cảm: “Nó thấy ai vào nhà cũng rứa”.",NONE
+"Trước mắt, Công an quận 10 đã ra quyết định xử phạt hành chính chủ cơ sở số tiền 25 triệu đồng.",Công an quận 10|ORGANIZATION; 25 triệu đồng|MONEY
+"Chứng kiến sự việc, nhiều người dân đã nhanh chóng đưa chị Duyên đi cấp cứu nhưng do vết thương quá nặng, chị Duyên tử vong.",Duyên|PERSON; Duyên|PERSON
+"Về công khai bản kê khai tài sản, thu nhập, Chính phủ trình Quốc hội 2 phương án: Một, các bản kê khai tài sản, thu nhập được công khai tại cơ quan, tổ chức, đơn vị nơi người kê khai thường xuyên làm việc; Hai, thay hình thức công khai tại nơi thường xuyên làm việc bằng hình thức công khai tại chi bộ nơi người kê khai là đảng viên sinh hoạt.",Chính phủ|ORGANIZATION; Quốc hội|ORGANIZATION
+"Công ty này đăng ký vốn điều lệ 99 tỷ đồng, bổ sung thêm ngành nghề kinh doanh chăn nuôi, khai thác than, buôn bán xe ô tô… Thực chất con số 99 tỷ đồng vốn điều lệ chỉ là “khống”, công ty cũng không hoạt động kinh doanh, đầu tư dự án gì.",99 tỷ đồng|MONEY; 99 tỷ đồng|MONEY
+"Một tháng nay, giới kinh doanh vàng bạc, đá quý ở tỉnh An Giang không ngớt bàn tán về chuyện chủ tiệm nữ trang Đồng Hướng ở TP Long Xuyên là bà Thái Thị Thúy Hồng (53 tuổi) bị vợ chồng ông Phan Thanh Long kiện ra tòa để đòi 5,5 tỷ đồng và một phần lãi suất tiền vay.","tỉnh An Giang|LOCATION; tiệm nữ trang Đồng Hướng|ORGANIZATION; TP Long Xuyên|LOCATION; Thái Thị Thúy Hồng|PERSON; Phan Thanh Long|PERSON; 5,5 tỷ đồng|MONEY"
+"Theo điều tra, vào đầu tháng 9/2022, thông qua mạng xã hội facebook, Yến thuê một đối tượng không rõ lai lịch với số tiền 3,4 triệu đồng nhờ làm giả 1 sổ hộ khẩu, 1 CCCD, 1 giấy phép lái xe mang tên Lê Thị Lan P. (SN 1989, trú phường 5, TP Vũng Tàu) và 1 giấy khai sinh tên Đoàn Thanh L. (SN 2012).","tháng 9/2022|TIME; Yến|PERSON; 3,4 triệu đồng|MONEY; Lê Thị Lan P|PERSON; phường 5|LOCATION; TP Vũng Tàu|LOCATION; Đoàn Thanh L|PERSON"
+"Tuy nhiên sau đó, phòng Cảnh sát hình sự (CA TP.HCM) đã vào cuộc, nhanh chóng truy xét, bắt giữ được nhóm sát thủ và kẻ chủ mưu.",phòng Cảnh sát hình sự|ORGANIZATION; CA TP.HCM|ORGANIZATION
+"Sau khi Bộ Công an ra quyết định số 19/C46-P12 truy nã toàn quốc và truy nã quốc tế đối với Trịnh Xuân Thanh (nguyên Phó Chủ tịch UBND tỉnh Hậu Giang), đến nay cơ quan điều tra vẫn chưa có thông tin gì mới liên quan tới đối tượng truy nã này.",Bộ Công an|ORGANIZATION; Trịnh Xuân Thanh|PERSON; UBND tỉnh Hậu Giang|ORGANIZATION
+"Qua khám khám xét hiện trường, lực lượng chức năng phát hiện một nghi phạm người Lào trúng đạn chết tại chỗ.",NONE
+"Tại Lào, đối tượng cư trú ở bản Noọng Pùng, Lạc Xao (Bô-ly-khăm-xay).",Lào|LOCATION; bản Noọng Pùng|LOCATION; Lạc Xao|LOCATION; Bô-ly-khăm-xay|LOCATION
+Ông Ngô Duy Thiếu - chủ tịch UBND xã Thuỵ Hương - thừa nhận có sự việc này và cho biết việc sử dụng lòng đường như vậy là sai.,Ngô Duy Thiếu|PERSON; UBND xã Thuỵ Hương|ORGANIZATION
+"Theo kết quả điều tra, Chân đã làm trung gian môi giới, đưa hối lộ dùm Thới 1,2 tỷ đồng.","Chân|PERSON; Thới|PERSON; 1,2 tỷ đồng|MONEY"
+Số tiền này được Cục Thuế tính toán sẽ trích nộp vào ngân sách nhà nước ngay trong ngày 28-12.,Cục Thuế|ORGANIZATION; ngày 28-12|TIME
+"Sau khi xem xét, HĐXX nhận định hành vi phạm tội của bị cáo mang tính côn đồ, chỉ vì mâu thuẫn nhỏ bị cáo ra tay tước đoạt mạng sống của nạn nhân, gây hậu quả đặc biệt nghiêm trọng nên cần xử lý nghiêm.",NONE
+Sau khi tiếp nhận hồ sơ công ty MTM từ Hoa; Công và Tiệp thống nhất làm thủ tục đăng ký giao dịch cổ phiếu MTM trên “thị trường giao dịch chứng khoán của Công ty đại chúng chưa niêm yết” (Upcom).,công ty MTM|ORGANIZATION; Hoa|PERSON; Công|PERSON; Tiệp|PERSON; Công|PERSON; Upcom|ORGANIZATION
+Bị cáo chỉ nghĩ Huyền không đem về nhà được thì tìm đâu đó ở ngoài.,Huyền|PERSON
+Hai anh em dùng hung khí lao vào nhau xô xát.,hung khí|PRODUCT
+Đến 23h30 đèn điện trong khu vực hiện trường đã tắt nhưng vẫn còn khá đông người dân tụ tập bàn tán.,Đến 23h30|TIME
+"Các đối tượng trong đường dây đều là những tên cộm cán, liều lĩnh và hoạt động phạm tội về ma túy với phương thức, thủ đoạn tinh vi, ma mãnh.",ma túy|DRUG
+Nhiều người khai chỉ đến khi điều tra viên cho xem cuốn sổ họp giao ban cuối năm mới biết trưởng khoa có phân công nhiệm vụ cho BS Hoàng Công Lương.,Hoàng Công Lương|PERSON
+Công an vào cuộc điều tra và khởi tố vụ án trên.,NONE
+"Ngoài ra, ông Hải cho rằng việc lấy phiếu tín nhiệm vừa là sự ghi nhận, động viên, khích lệ những việc làm tốt, có lợi cho sự nghiệp chung, đồng thời là sự đánh giá, nhắc nhở với những cán bộ có khuyết điểm hoặc còn hạn chế về năng lực để kịp thời sửa chữa, khắc phục.",Hải|PERSON
+"Trộm đột nhập UBND huyện Krông Bông, cạy cửa nhiều phòng làm việc và đục tung một két sắt lấy đi nhiều tài sản",UBND huyện Krông Bông|ORGANIZATION
+Nhắc tới ca khúc “Búp bê không tình yêu” mà Mỹ Tâm thực hiện cách đây 15 năm cũng bị nhạc sĩ Xuân Hùng “tố” vi phạm bản quyền.,Mỹ Tâm|PERSON; Xuân Hùng|PERSON
+"Công an Q.2, TP.HCM chiều nay đã lập biên bản xử lý vi phạm hành chính đối với thiếu niên T.M.H (15 tuổi, ngụ Q.4) về hành vi “trộm cắp tài sản”.",Công an Q.2|ORGANIZATION; TP.HCM|LOCATION; T.M.H|PERSON; Q.4|LOCATION; trộm cắp tài sản|CRIME
+Vụ việc đang được công an huyện Vĩnh Cửu đang tiếp tục điều tra xử lý theo quy định,công an huyện Vĩnh Cửu|ORGANIZATION
+"Hiện công an hai huyện Tĩnh Gia và Như Thanh đang khẩn trương điều tra, xác minh chi tiết vụ việc”, đại tá Bính cho biết",công an hai huyện Tĩnh Gia và Như Thanh|ORGANIZATION; Bính|PERSON
+"Đường dây chuyên bán sỉ ma tuý khối lượng lớn ở Sài Gòn có tàng trữ súng, khi bị truy bắt đã ném lựu đạn về phía cảnh sát để tẩu thoát",ma tuý|DRUG; Sài Gòn|LOCATION; súng|PRODUCT; lựu đạn|PRODUCT
+"Đại diện Sở cảnh sát trả lời báo chí: "" Hai nghi phạm có thể đã cùng nhau sắp xếp các phi vụ mại dâm và chiếm đoạt tài sản bất hợp pháp.",NONE
+"Tối 17/1, lãnh đạo Công an huyện Thanh Miện (Hải Dương) cho biết, đơn vị đã đấu tranh làm rõ và tiến hành khởi tố vụ án, khởi tố 6 bị can để điều tra về tội ""Cướp tài sản"".",Tối 17/1|TIME; Công an huyện Thanh Miện|ORGANIZATION; Hải Dương|LOCATION; Cướp tài sản|CRIME
+"Công an đề nghị ai biết thông tin về đối tượng sử dụng hộp thư điện tử United-Nationorg@tom. com và đối tượng sử dụng tài khoản zalo “Bùi Hùng Dũng” liên hệ tại địa chỉ số 459, đường Trần Hưng Đạo, phường Cầu Kho, quận 1 để cung cấp thông tin.","Bùi Hùng Dũng|PERSON; số 459, đường Trần Hưng Đạo|ORGANIZATION; phường Cầu Kho|ORGANIZATION; quận 1|ORGANIZATION"
+"Nhận được tin báo, Công an xã Túc Trưng và Công an huyện Định Quán đã có mặt kịp thời, bảo vệ khám nghiệm hiện trường và truy bắt đối tượng Danh.",Công an xã Túc Trưng|ORGANIZATION; Công an huyện Định Quán|ORGANIZATION; Danh|PERSON
+"Phim sẽ được phát sóng vào 14h30 thứ Bảy, Chủ nhật hàng tuần trên VTV3 bắt đầu từ 1/4/2017.",14h30 thứ Bảy|TIME; Chủ nhật|TIME; VTV3|ORGANIZATION; 1/4/2017|TIME
+"Bằng các biện pháp nghiệp vụ, lực lượng chức năng đã phát hiện và bắt giữ các đối tượng này để điều tra",NONE
+"Cáo buộc cho rằng, với chiêu thức tương tự, ông Tâm còn lừa tiền của nhiều chủ doanh nghiệp khác, chiếm đoạt hơn 3,8 tỷ đồng.","Tâm|PERSON; 3,8 tỷ đồng|MONEY"
+"Ngay sau đó, Hưng chạy xe máy bám theo, tự xưng là cảnh sát hình sự, nghi ngờ Y. đang tàng trữ ma túy nên yêu cầu đi theo để kiểm tra.",Hưng|PERSON; Y|PERSON; ma túy|DRUG
+"Tuy nhiên, nhóm lãnh đạo Cienco1 và các bị cáo thuộc Công ty A&C đã xác định 4 khu đất trên là ""tài sản cố định vô hình"" với tổng giá trị 12,6 tỷ đồng.","Cienco1|ORGANIZATION; Công ty A&C|ORGANIZATION; 12,6 tỷ đồng|MONEY"
+"Theo cơ quan điều tra, nhiều danh mục hàng hóa, thiết bị y tế liên quan vụ án không đúng với danh mục trong hồ sơ mời thầu, hồ sơ dự thầu và hợp đồng đã ký, gây thiệt hại ngân sách của Nhà nước.",NONE
+"Từ lời khai của Lượng, Tín và tài liệu thu thập được, Cục C04 đã bắt thêm 5 đối tượng khác trong đường dây, thu giữ 1,5kg ma túy và nhiều tài liệu liên quan.","Lượng|PERSON; Tín|PERSON; Cục C04|ORGANIZATION; 1,5kg ma túy|DRUG"
+"Khoảng 1 giờ sau, chị Khải cùng đồng nghiệp là chị Võ Thị Lưu (42 tuổi) quét rác trên đường Phạm Văn Đồng, đoạn khu vực chợ tạm (TP Quảng Ngãi) thì bị Đông và Nga hành hung, bắn trọng thương.",Khải|PERSON; Võ Thị Lưu|PERSON; đường Phạm Văn Đồng|LOCATION; TP Quảng Ngãi|LOCATION; Đông|PERSON; Nga|PERSON
+"Tại tòa, Tú khai, khi bị cáo về trung tâm thì hành vi nhận tiền của các đăng kiểm viên đã diễn ra trước đó.",Tú|PERSON
+"Quá trình điều tra, Công an mời Lê Văn Linh lên làm việc.",Lê Văn Linh|PERSON
+"Chị Phương có đơn xin lại các tài sản trên, nên cần giải tỏa việc phong tỏa các tài sản đó để bảo đảm quyền lợi của chị Phương.",Phương|PERSON; Phương|PERSON
+"Chính thức gia nhập hội những bà mẹ đơn thân! "".",NONE
+"XEM VIDEO: Liên quan đến vụ 2 kẻ bịt mặt nghi dùng súng cướp ngân hàng ở Sài Gòn như VietNamNet đã thông tin, hiện cơ quan Công an đang khẩn trương khoanh vùng, truy xét các đối tượng gây án.",súng|PRODUCT; Sài Gòn|LOCATION; VietNamNet|ORGANIZATION
+"Đông Hùng kể rằng, thành tích đến giờ này sau nhiều năm đi hát mà anh có được chính là khán giả.",Đông Hùng|PERSON
+"Thoả mãn xong, Nhân cướp tay ga hiệu Ari Blade bên trong cốp xe có số tiền 32 triệu đồng rồi bỏ trốn.",Nhân|PERSON; tay ga hiệu Ari Blade|PRODUCT; 32 triệu đồng|MONEY
+"Khuya 31/7, Tài bị công an ập vào bắt giữ khi đối tượng đang ở nhà tại quận Tân Phú, TP. HCM.",Khuya 31/7|TIME; Tài|PERSON; quận Tân Phú|LOCATION; TP. HCM|LOCATION
+"Chị T., đại diện quản lý toà nhà Golden Palm, nơi xảy ra vụ việc, cho biết Ban quản lý không nắm được thông tin cá nhân về người đàn ông lạ trên.",T|PERSON; toà nhà Golden Palm|LOCATION
+"Tỏ ý không muốn bán 18% cổ phần tại Setra cho Vietcombank, bà Lan đề nghị HĐXX giải tỏa kê biên đối với số cổ phần này nhưng yêu cầu được đem ra bán đấu giá, người nào trả giá cao thì bán và người nhà bị cáo được đứng ra bán.",Setra|ORGANIZATION; Vietcombank|ORGANIZATION; Lan|PERSON
+"Các ngân hàng cử cán bộ thẩm định xuống kiểm tra hàng hóa, tài sản theo hợp đồng, lập biên bản bàn giao hàng hóa giữa ba bên là Công ty Mạnh Hùng – Công ty bảo vệ - ngân hàng và sau đó giải ngân vào 2 công ty thụ hưởng là Công ty cơ kim khí và Công ty chế tạo thiết bị môi trường...",Công ty Mạnh Hùng|ORGANIZATION; Công ty cơ kim khí|ORGANIZATION; Công ty chế tạo thiết bị môi trường|ORGANIZATION
+"Nhiều đối tượng giúp sức, bao che cho hai tử tù Tình và Thọ bỏ trốn đã bị cơ quan công an tạm giữ, triệu tập củng cố hồ sơ khởi tố.",Tình|PERSON; Thọ|PERSON
+"Được nói lời sau cùng, đại ca Hà Thành bày tỏ sự ân hận, nhận sai và mong HĐXX cho bị cáo mức án nhẹ nhất để sớm được trở về với gia đình.",Hà Thành|LOCATION
+"Trong thông cáo báo chí, Bộ Xây dựng cho biết, Chánh Thanh tra Bộ Xây dựng đã báo cáo về việc Công an tỉnh Vĩnh Phúc lập biên bản đối với Đoàn thanh tra Bộ Xây dựng vào chiều ngày 12/6.",Bộ Xây dựng|ORGANIZATION; Thanh tra Bộ Xây|ORGANIZATION; Công an tỉnh Vĩnh Phúc|ORGANIZATION; Đoàn thanh tra Bộ Xây dựng|ORGANIZATION; chiều ngày 12/6|TIME
+Lên TP.HCM mới được 3 tháng thì Nguyên vô tình đọc được tin nhắn trong Zalo của chị Duyên với một đồng nghiệp nam trong công ty là anh Huỳnh Loan Em.,TP.HCM|LOCATION; Nguyên|PERSON; Duyên|PERSON; Huỳnh Loan Em|PERSON
+"Xét thấy, hành vi phạm tội của bị cáo là đặc biệt nghiêm trọng, đã tước đi tính mạng của người khác được pháp luật bảo vệ, gây mất trật tự xã hội, cần phải có bản án nghiêm khắc để răn đe, phòng ngừa chung.",NONE

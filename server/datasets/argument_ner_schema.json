@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1",
+  "ner_labels": [
+    "PERSON",
+    "ORGANIZATION",
+    "LOCATION",
+    "TIME",
+    "MONEY",
+    "DRUG",
+    "PRODUCT",
+    "CRIME"
+  ],
+  "event_types": [
+    "LUA_DAO",
+    "MA_TUY",
+    "BAO_LUC",
+    "CUOP_TROM",
+    "BAT_GIU",
+    "THU_GIU",
+    "KHOI_TO",
+    "XET_XU"
+  ],
+  "argument_mapping": {
+    "DOI_TUONG": [
+      "PERSON",
+      "ORGANIZATION"
+    ],
+    "NAN_NHAN": [
+      "PERSON",
+      "ORGANIZATION"
+    ],
+    "CO_QUAN": [
+      "ORGANIZATION"
+    ],
+    "TAI_SAN": [
+      "MONEY",
+      "PRODUCT"
+    ],
+    "TANG_VAT": [
+      "DRUG",
+      "PRODUCT"
+    ],
+    "HUNG_KHI": [
+      "PRODUCT"
+    ],
+    "TOI_DANH": [
+      "CRIME"
+    ],
+    "MUC_AN": [
+      "TIME",
+      "MONEY"
+    ],
+    "THOI_GIAN": [
+      "TIME"
+    ],
+    "DIA_DIEM": [
+      "LOCATION"
+    ]
+  },
+  "entity_fields": [
+    "text",
+    "label",
+    "start",
+    "end"
+  ],
+  "offset_convention": {
+    "unit": "unicode_character",
+    "start_inclusive": true,
+    "end_exclusive": true
+  }
+}
