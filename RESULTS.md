@@ -9,7 +9,7 @@ obtained on the team's manually annotated data.
 ### 1.1 Raw corpus
 
 | Property | Value |
-|---|---|
+| --- | --- |
 | Articles | 44,240 (pre-split into train / validation / test at 70 / 10 / 20) |
 | Label distribution | About 83% are "violations", indicating substantial class imbalance |
 | SubLabel distribution | Imbalanced; Traffic is about 3% |
@@ -29,7 +29,7 @@ then 601 sentences are selected for manual annotation in Label Studio. Steps 1â€
 ### 1.3 Manually annotated gold data
 
 | Split | Sentences | Sampling method |
-|---|---:|---|
+| --- | ---: | --- |
 | Train | 301 | 50% matched trigger-keyword regexes and 50% random; stratified by SubLabel; at most 2 per article |
 | Validation | 150 | Random, stratified by SubLabel |
 | Test | 150 | Random, stratified by SubLabel |
@@ -47,7 +47,7 @@ Schema: 8 entity labels (`PERSON`, `ORGANIZATION`, `LOCATION`, `TIME`, `MONEY`, 
 All metrics use exact character-offset matching and micro-averaged Precision, Recall, and F1.
 
 | Metric | A prediction is correct when |
-|---|---|
+| --- | --- |
 | NER F1 | Both entity offsets and entity label match |
 | Trigger F1 | Both trigger offsets and event type match |
 | Argument F1 | The trigger and linked entity offsets match |
@@ -62,7 +62,7 @@ and validation. Test is reserved for final reporting.
 Test results (150 sentences, 355 entities):
 
 | Label | Support | Rule baseline F1 | PhoBERT F1 |
-|---|---:|---:|---:|
+| --- | ---: | ---: | ---: |
 | **Overall (micro)** | 355 | **0.669** (P 0.734, R 0.614) | **0.799** (P 0.749, R 0.856) |
 | PERSON | 130 | 0.673 | 0.977 |
 | ORGANIZATION | 88 | 0.484 | 0.747 |
@@ -108,7 +108,7 @@ Gold entities are used to evaluate Part 2 independently of NER errors.
 ### 4.2 Configuration selection on validation
 
 | Configuration (trigger + argument) | Trigger F1 | Argument F1 | Relation F1 | Event EM |
-|---|---:|---:|---:|---:|
+| --- | ---: | ---: | ---: | ---: |
 | Rules + rules (baseline) | 0.756 | 0.621 | 0.594 | 0.347 |
 | PhoBERT + PhoBERT | 0.727 | 0.630 | 0.624 | 0.439 |
 | **Rules + PhoBERT** | **0.756** | **0.682** | **0.675** | **0.472** |
@@ -120,7 +120,7 @@ and were selected as the primary system.
 ### 4.3 Test results
 
 | Configuration | Trigger F1 | Argument F1 | Relation F1 | Event EM |
-|---|---:|---:|---:|---:|
+| --- | ---: | ---: | ---: | ---: |
 | Rules + rules (baseline) | 0.697 | 0.629 | 0.589 | 0.275 |
 | PhoBERT + PhoBERT | 0.654 | 0.677 | 0.595 | 0.356 |
 | **Rules + PhoBERT (selected system)** | **0.697** | **0.696** | **0.609** | **0.367** |
@@ -131,7 +131,7 @@ The test ranking matches validation, suggesting that the selected configuration 
 Selected system details on test:
 
 | Event type | Trigger support | Trigger F1 |
-|---|---:|---:|
+| --- | ---: | ---: |
 | BAO_LUC | 14 | 0.720 |
 | BAT_GIU | 10 | 0.857 |
 | CUOP_TROM | 5 | 0.800 |
@@ -142,7 +142,7 @@ Selected system details on test:
 | XET_XU | 4 | 0.667 |
 
 | Role | Relation support | Relation F1 |
-|---|---:|---:|
+| --- | ---: | ---: |
 | CO_QUAN | 10 | 0.783 |
 | DIA_DIEM | 8 | 0.500 |
 | DOI_TUONG | 33 | 0.658 |
