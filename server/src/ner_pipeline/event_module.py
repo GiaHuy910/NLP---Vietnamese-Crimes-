@@ -1,9 +1,9 @@
 import re
 
-# Luật trigger: (từ khóa, loại sự kiện[, từ bắt buộc, phạm vi kiểm tra]).
-# - Từ bắt buộc: phải xuất hiện để luật được áp dụng.
-# - Phạm vi: "clause" (mặc định) = mệnh đề sau trigger; "sentence" = toàn câu.
-# Span trigger theo quy ước gold đã thống nhất (không mở rộng sang tân ngữ).
+# Trigger rule: (keyword, event type[, required terms, context scope]).
+# - Required terms must appear for the rule to apply.
+# - Scope: "clause" (default) checks the clause after the trigger; "sentence" checks the whole sentence.
+# Trigger spans follow the agreed gold convention and do not include the object.
 
 DRUG_OBJECTS = (
     "ma túy", "ma tuý", "heroin", "cocaine", "methamphetamine",
@@ -54,16 +54,16 @@ TRIGGER_RULES = [
     ("nhắn tin", "LUA_DAO", ("tiền",)),
     ("đưa ra", "LUA_DAO", DECEPTION_OBJECTS),
 
-    # MA_TUY: động từ chung chung, chỉ tính khi có chất ma túy trong câu.
+    # MA_TUY: generic verbs count only when a drug is mentioned in the sentence.
     ("mua bán", "MA_TUY", DRUG_OBJECTS, "sentence"),
     ("vận chuyển", "MA_TUY", DRUG_OBJECTS, "sentence"),
     ("sản xuất", "MA_TUY", DRUG_OBJECTS, "sentence"),
     ("buôn", "MA_TUY", DRUG_OBJECTS, "sentence"),
     ("mua", "MA_TUY", DRUG_OBJECTS, "sentence", "clause"),
     ("bán sỉ", "MA_TUY", DRUG_OBJECTS, "sentence"),
-    # Tàng trữ ma túy (gold gán MA_TUY); tàng trữ vũ khí không phải trigger này.
+    # Drug possession is labeled MA_TUY in gold; weapon possession is not this trigger.
     ("tàng trữ", "MA_TUY", DRUG_OBJECTS),
-    ("tang trữ", "MA_TUY", DRUG_OBJECTS),  # lỗi chính tả thường gặp trong gold
+    ("tang trữ", "MA_TUY", DRUG_OBJECTS),  # Common spelling error in gold annotations.
 
     # XET_XU
     ("đưa ra xét xử", "XET_XU"),
@@ -71,32 +71,32 @@ TRIGGER_RULES = [
     ("tuyên phạt", "XET_XU"),
     ("nhận án", "XET_XU"),
 
-    # Thủ tục tố tụng
+    # Legal proceedings.
     ("khởi tố", "KHOI_TO"),
 
-    # Thu giữ tang vật
+    # Seizure of evidence.
     ("thu giữ", "THU_GIU"),
 ]
 
 EXCLUDED_KEYWORDS = {"xử phạt"}
 
-# Cụm không phải trigger: nếu từ khóa nằm trong các cụm này thì bỏ qua.
+# Non-trigger phrases: ignore keywords that occur within these phrases.
 NON_TRIGGER_PATTERNS = [
-    r"đánh\s+(?:bạc|dấu|giá|máy|chữ|số|bài)\b",   # "đánh" không phải bạo lực
-    r"đánh\s+bắt",                                  # đánh bắt cá
-    r"bắt\s+đầu",                                   # bắt đầu
-    r"truy\s+bắt(?!\s+thành\s+công)",               # truy bắt đơn thuần
-    r"giết\s+mổ",                                   # giết mổ gia súc
+    r"đánh\s+(?:bạc|dấu|giá|máy|chữ|số|bài)\b",   # These uses of "đánh" do not indicate violence.
+    r"đánh\s+bắt",                                  # Fishing.
+    r"bắt\s+đầu",                                   # Begin.
+    r"truy\s+bắt(?!\s+thành\s+công)",               # Mere pursuit.
+    r"giết\s+mổ",                                   # Butchering livestock.
     r"tố\s+giác",
-    r"đạn\s+bắn",                                   # "bị đạn bắn": nạn nhân bị thương, không phải hành vi
-    r"loại\s+bắn",                                  # "súng loại bắn đạn chì": mô tả vũ khí
-    r"\btội\s+[\"'“‘]?\s*(?:giết|cướp|trộm|lừa|hiếp)[^,.;!?]*",  # tên tội danh, không phải sự kiện
+    r"đạn\s+bắn",                                   # "Hit by a bullet" describes an injury, not an action.
+    r"loại\s+bắn",                                  # "Bullet-firing type" describes a weapon.
+    r"\btội\s+[\"'“‘]?\s*(?:giết|cướp|trộm|lừa|hiếp)[^,.;!?]*",  # A crime name is not an event.
 ]
 
-# Cụm hành chính: câu mô tả xử phạt hành chính không chứa trigger hình sự (guide B.7).
+# Administrative phrases: administrative penalties do not contain criminal triggers (guideline B.7).
 ADMIN_SENTENCE_CUES = ("vi phạm hành chính", "lập biên bản")
 
-# Dấu hiệu sự kiện chưa xảy ra / không khẳng định (guide B.1), tìm trong cùng mệnh đề trước trigger.
+# Cues for unrealized or unasserted events (guideline B.1), searched before the trigger in the same clause.
 UNREALIZED_CUES = [
     "nảy sinh ý định", "ý định", "quyết tâm",
     "để tiến hành", "để khởi tố", "để truy tố", "để xử lý", "để bắt", "để truy bắt",
@@ -107,17 +107,17 @@ UNREALIZED_CUES = [
     "không ", "chưa ", "phủ nhận",
 ]
 
-# Kế hoạch nằm sau trigger trong cùng câu (guide B.1: "nằm trong kế hoạch... bắt giữ").
+# Plans after the trigger in the same sentence (guideline B.1: "plan ... to arrest").
 AFTER_PLAN_CUES = ("nằm trong kế hoạch", "theo kế hoạch", "trong kế hoạch")
 
-# Dấu hiệu nghi vấn sau trigger trong cùng mệnh đề: "... hay không".
+# Question cues after the trigger in the same clause: "... or not".
 QUESTION_CUE = re.compile(r"\bhay\s+không\b|\?", re.IGNORECASE)
 
 CLAUSE_SPLIT = re.compile(r"[,;:]|\bnhưng\b|\bvà\s+sau\s+đó\b", re.IGNORECASE)
 
 
 def _is_abbreviation_dot(text: str, position: int) -> bool:
-    """Dấu chấm sau chữ cái viết hoa đơn lẻ (Y., T.M.H, Q.2) không kết thúc câu."""
+    """Return whether a period after a standalone uppercase letter is part of an abbreviation."""
     if position < 1 or text[position] != ".":
         return False
     prev = text[position - 1]
@@ -126,7 +126,7 @@ def _is_abbreviation_dot(text: str, position: int) -> bool:
 
 
 def _sentence_bounds(text: str, position: int) -> tuple[int, int]:
-    """Tìm phạm vi câu chứa vị trí position (bỏ qua dấu chấm viết tắt)."""
+    """Find the sentence bounds containing position, ignoring abbreviation periods."""
     left = 0
     for mark in (".", "!", "?", "\n"):
         idx = position
@@ -150,7 +150,7 @@ def _sentence_bounds(text: str, position: int) -> tuple[int, int]:
 
 
 def _clause_bounds(text: str, sentence_start: int, position: int) -> int:
-    """Vị trí bắt đầu mệnh đề chứa position (sau dấu phẩy/chấm phẩy gần nhất)."""
+    """Return the start of the clause containing position (after the nearest comma/semicolon)."""
     clause_start = sentence_start
     for match in CLAUSE_SPLIT.finditer(text, sentence_start, position):
         clause_start = match.end()
@@ -158,7 +158,7 @@ def _clause_bounds(text: str, sentence_start: int, position: int) -> int:
 
 
 def _clause_after(text: str, trigger_end: int) -> str:
-    """Phần văn bản sau trigger, đến hết mệnh đề hiện tại."""
+    """Return the text after the trigger through the end of the current clause."""
     clause_end = len(text)
     for match in CLAUSE_SPLIT.finditer(text, trigger_end):
         clause_end = match.start()
@@ -167,8 +167,9 @@ def _clause_after(text: str, trigger_end: int) -> str:
 
 
 def _is_unrealized(text: str, sentence_start: int, trigger_start: int, trigger_end: int) -> bool:
-    """Trigger không được gán nếu mệnh đề chứa nó có cue ý định/giả định/phủ định,
-    nếu sau trigger trong câu có kế hoạch, hoặc nếu sau trigger là câu hỏi "... hay không"."""
+    """Reject triggers in clauses with intent, hypothetical, or negation cues.
+
+    Also reject a trigger followed by a plan in the same sentence or by a question such as "... hay không"."""
     clause_start = _clause_bounds(text, sentence_start, trigger_start)
     before = text[clause_start:trigger_start].lower()
     if any(cue in before for cue in UNREALIZED_CUES):
@@ -179,7 +180,7 @@ def _is_unrealized(text: str, sentence_start: int, trigger_start: int, trigger_e
     if any(cue in after_sentence for cue in AFTER_PLAN_CUES):
         return True
 
-    # Câu hỏi chỉ áp dụng khi "hay không" nằm ngay sau trigger (không phải mệnh đề hỏi việc khác).
+    # Apply the question cue only when "or not" immediately follows the trigger, not in another clause.
     after = _clause_after(text, trigger_end)
     match = QUESTION_CUE.search(after)
     if match and match.start() <= 30:
@@ -203,10 +204,10 @@ def _find_triggers(text: str) -> list[dict]:
         pattern = r"(?<!\w)" + re.escape(keyword) + r"(?!\w)"
         for match in re.finditer(pattern, text, flags=re.IGNORECASE):
             start, end = match.start(), match.end()
-            # Bỏ qua nếu nằm trong cụm không phải trigger.
+            # Ignore matches inside a non-trigger phrase.
             if any(s <= start and end <= e for s, e in excluded_spans):
                 continue
-            # Luật có ngữ cảnh bắt buộc.
+            # Apply rules with required context.
             if required:
                 if scope == "sentence":
                     s_start, s_end = _sentence_bounds(text, start)
@@ -225,7 +226,7 @@ def _find_triggers(text: str) -> list[dict]:
 
 
 def _select_triggers(text: str, candidates: list[dict]) -> list[dict]:
-    # Câu hành chính (lập biên bản, vi phạm hành chính): không gán trigger hình sự.
+    # Do not assign criminal triggers in administrative sentences (e.g. administrative citations).
     admin_spans = []
     for cue in ADMIN_SENTENCE_CUES:
         for match in re.finditer(re.escape(cue), text, flags=re.IGNORECASE):
@@ -235,7 +236,7 @@ def _select_triggers(text: str, candidates: list[dict]) -> list[dict]:
         if not any(s <= c["start"] < e for s, e in admin_spans)
     ]
 
-    # Ưu tiên cụm dài hơn khi chồng lấn.
+    # Prefer longer phrases when candidates overlap.
     ordered = sorted(candidates, key=lambda t: (-(t["end"] - t["start"]), t["start"]))
     chosen = []
     for trigger in ordered:
@@ -244,8 +245,8 @@ def _select_triggers(text: str, candidates: list[dict]) -> list[dict]:
         chosen.append(trigger)
     chosen.sort(key=lambda t: t["start"])
 
-    # Cùng một hành động nhắc nhiều lần trong câu: chỉ xét lần đầu (guide B.3).
-    # Quyết định khẳng định/chưa xảy ra áp dụng cho lần đầu đó.
+    # Consider only the first mention when an action is repeated in a sentence (guideline B.3).
+    # Apply the assertion/unrealized-event check to that first mention.
     first_mentions = []
     seen = set()
     for trigger in chosen:
@@ -256,7 +257,7 @@ def _select_triggers(text: str, candidates: list[dict]) -> list[dict]:
         seen.add(key)
         first_mentions.append(trigger)
 
-    # Loại trigger chưa xảy ra hoặc không khẳng định.
+    # Remove unrealized or unasserted triggers.
     result = []
     for trigger in first_mentions:
         sentence_start, _ = _sentence_bounds(text, trigger["start"])
@@ -267,23 +268,23 @@ def _select_triggers(text: str, candidates: list[dict]) -> list[dict]:
 
 
 def detect_triggers(text: str) -> list[dict]:
-    """Trả về các trigger đã được lọc theo guide mục B (không cần thực thể)."""
+    """Return triggers filtered according to guideline B, without requiring entities."""
     return _select_triggers(text, _find_triggers(text))
 
 
 def extract_events(text: str, ner_entities: list) -> list:
     events = []
 
-    # 1. Tìm Trigger theo guide
+    # 1. Detect triggers according to the guidelines.
     triggers = detect_triggers(text)
 
-    # 2. Chuẩn hóa thứ tự thực thể
+    # 2. Sort entities.
     entities = sorted(
         ner_entities,
         key=lambda e: (e.get("start", 0), e.get("end", 0)),
     )
 
-    # 3. Gán arguments trong phạm vi câu chứa Trigger
+    # 3. Assign arguments within the sentence containing each trigger.
     for trigger in triggers:
         sentence_start, sentence_end = _sentence_bounds(text, trigger["start"])
 
@@ -295,7 +296,7 @@ def extract_events(text: str, ner_entities: list) -> list:
 
         arguments = []
 
-        # Cơ quan: tổ chức xuất hiện trước Trigger gần nhất.
+        # Agency: nearest organization preceding the trigger.
         organizations = [
             entity for entity in local_entities
             if entity.get("label") == "ORGANIZATION"
@@ -304,7 +305,7 @@ def extract_events(text: str, ner_entities: list) -> list:
         if organizations:
             arguments.append({"role": "CO_QUAN", "entity": organizations[-1]})
 
-        # Đối tượng: PERSON phía sau Trigger trong cùng câu; nếu không có thì PERSON gần nhất phía trước.
+        # Suspect: PERSON after the trigger in the same sentence, or the nearest preceding PERSON.
         persons_after = [
             entity for entity in local_entities
             if entity.get("label") == "PERSON"
@@ -323,7 +324,7 @@ def extract_events(text: str, ner_entities: list) -> list:
         for person in selected_persons:
             arguments.append({"role": "DOI_TUONG", "entity": person})
 
-        # Thời gian / mức án trong cùng câu.
+        # Time or sentence length in the same sentence.
         for entity in local_entities:
             if entity.get("label") != "TIME":
                 continue

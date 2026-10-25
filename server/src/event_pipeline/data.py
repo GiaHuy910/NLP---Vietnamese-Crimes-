@@ -1,12 +1,12 @@
-"""Đọc/ghi file .jsonl của luồng 2.
+"""Read and write Part 2 JSONL files.
 
-Mỗi dòng là một câu:
+Each line represents one sentence:
     {"ann_id", "sentence",
      "entities":  [{"id", "start", "end", "text", "label"}],
      "triggers":  [{"id", "start", "end", "text", "label"}],
      "relations": [{"trigger_id", "arg_id", "role"}]}
-File gold do data_pipeline/step7_export_dataset.py tạo; file dự đoán (của baseline hoặc mô hình)
-dùng đúng định dạng này, chỉ cần có ann_id để ghép với gold.
+Gold files are created by data_pipeline/step7_export_dataset.py. Baseline and model
+prediction files use the same format and need an ann_id to match records to gold.
 """
 import json
 from pathlib import Path
@@ -34,7 +34,7 @@ def save_jsonl(rows, path):
 
 
 def validate(rows, name="data"):
-    """Kiểm tra offset, nhãn và quan hệ; trả về danh sách lỗi (rỗng = hợp lệ)."""
+    """Validate offsets, labels, and relations; return errors (an empty list means valid)."""
     errors = []
     for r in rows:
         s, aid = r["sentence"], r.get("ann_id", "?")
@@ -58,7 +58,7 @@ def validate(rows, name="data"):
 
 
 def events_of(row):
-    """Câu -> danh sách sự kiện dạng span (không phụ thuộc id):
+    """Convert a sentence to ID-independent span-based events:
     [{"trigger": (start, end, type), "args": {(start, end, role), ...}}]"""
     ents = {e["id"]: e for e in row.get("entities", [])}
     events = []

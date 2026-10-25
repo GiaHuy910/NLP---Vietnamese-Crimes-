@@ -1,17 +1,17 @@
-"""Baseline luồng 2 bằng luật / từ khóa (không học máy).
+"""Part 2 rule/keyword baseline (no machine learning).
 
-Trigger : khớp từ khóa theo TRIGGER_LEXICON, bỏ các trường hợp quy ước không gán
-          (ý định, phủ định, đề nghị, tên tội sau "tội"/"hành vi", danh từ chỉ người...).
-Argument: nối trigger tới thực thể trong cùng mệnh đề theo luật vai trò đơn giản.
-Thực thể : lấy từ file đầu vào (gold NER hoặc dự đoán của luồng 1), baseline không tự nhận diện.
+Trigger: match keywords from TRIGGER_LEXICON and exclude conventionally unannotated cases
+         (intent, negation, requests, crime names after "tội"/"hành vi", person nouns, etc.).
+Argument: link triggers to entities in the same clause using simple role rules.
+Entities: read from input (gold NER or Part 1 predictions); the baseline does not recognize entities.
 
-Hàm chính: predict_row(row) -> row dự đoán cùng định dạng jsonl.
+Main function: predict_row(row) -> a prediction record in the same JSONL format.
 """
 import re
 
 from .schema import CRIME_EVENTS, ROLE_TYPES
 
-# Cụm dài đặt trước cụm ngắn để khớp cụm dài nhất
+# Longer phrases come before shorter ones so the longest match is selected.
 TRIGGER_LEXICON = {
     "BAT_GIU": ["khống chế bắt giữ", "bắt quả tang", "bắt khẩn cấp", "bắt tạm giam", "bắt giữ",
                 "tạm giữ", "tạm giam", "khống chế", "bắt"],
@@ -23,15 +23,15 @@ TRIGGER_LEXICON = {
     "CUOP_TROM": ["cướp giật", "trộm cắp", "cướp", "trộm", "đột nhập"],
     "BAO_LUC": ["giết hại", "sát hại", "đánh đập", "hành hung", "tấn công", "hiếp dâm", "xâm hại",
                 "ẩu đả", "giết", "đâm", "chém", "bắn", "đánh", "gí"],
-    # Động từ ma túy "mạnh": chỉ cần câu có nhắc ma túy
+    # "Strong" drug verbs require only a drug mention somewhere in the sentence.
     "MA_TUY": ["mua bán", "buôn bán", "tàng trữ", "vận chuyển", "sản xuất", "sử dụng", "đặt mua"],
 }
-# Động từ ma túy "yếu" (giao, giấu, cất...): chỉ tính khi chất ma túy nằm ngay sau động từ
+# "Weak" drug verbs (deliver, hide, store, etc.) count only when a drug is mentioned immediately afterward.
 WEAK_DRUG_VERBS = ["giao", "giấu", "cất", "chuyển", "trồng", "bán", "mua", "lấy"]
 DRUG_RE = re.compile(r"ma t[uú]y|ma tuý|heroin|ketamin|thuốc lắc|cần sa|methamphetamin|mdma|hồng phiến|"
                      r"thuốc phiện|cây thuốc phiện", re.IGNORECASE)
 
-# Cụm chứa từ khóa nhưng không phải trigger
+# Phrases that contain trigger keywords but are not triggers.
 STOP_PHRASES = ["bắt đầu", "bắt buộc", "bắt tay", "bắt gặp", "bắt kịp", "bắt nguồn", "bắt chước", "bắt cóc",
                 "bắt xe", "bắt nạt", "bắt con", "đánh bắt", "truy bắt", "đâm sầm", "đâm xe", "đâm vào xe",
                 "đâm vào cột", "đâm vào tường", "trại tạm giam", "nhà tạm giữ", "kẻ trộm", "tên trộm",
@@ -40,7 +40,7 @@ STOP_PHRASES = ["bắt đầu", "bắt buộc", "bắt tay", "bắt gặp", "b�
                 "đánh số", "đánh bóng", "mũi tấn công", "săn bắt", "nắm bắt", "cướp cò", "đọc trộm",
                 "theo truy tố", "nhóm đối tượng lừa đảo", "phương thức lừa đảo", "thủ đoạn lừa đảo", "xét xử vắng mặt", "tấn công mạng", "bắn chỉ thiên",
                 "đạn bắn", "khống chế ngọn lửa", "khống chế toàn bộ"]
-# Dấu hiệu sự kiện chưa/không xảy ra, tìm trong cùng mệnh đề, đứng trước trigger (quy ước mục B.1)
+# Cues that an event has not happened or is not asserted; search before the trigger within the same clause (guideline B.1).
 NOT_HAPPENED_RE = re.compile(
     r"(?:ý định|kế hoạch|dự kiến|\bsẽ\b|\bđể\b|\bnhằm\b|\bnếu\b|\bkhông\b|\bchưa\b|đề nghị|"
     r"kiến nghị|\bmong\b|\bmuốn\b|có thể|\bnghi\b|quyết tâm|kiên quyết|dọa|tìm cách|âm mưu|"
@@ -86,7 +86,7 @@ def find_triggers(sentence, entities=()):
             continue
         for m in rx.finditer(sentence):
             add(m.start(), m.end(), etype)
-    # động từ ma túy mạnh: phải có chất ma túy trong cùng mệnh đề (không chỉ trong tên đơn vị)
+    # Strong drug verbs require a drug mention in the same clause, not only in an organization name.
     cands[:] = [c for c in cands if c["label"] != "MA_TUY"
                 or DRUG_RE.search(sentence[max(0, c["start"] - 40):c["end"] + 60])]
     if has_drug:
@@ -94,18 +94,18 @@ def find_triggers(sentence, entities=()):
             for m in rx.finditer(sentence):
                 if DRUG_RE.search(sentence[m.end():m.end() + 25]):
                     add(m.start(), m.end(), "MA_TUY")
-    # bỏ span chồng lấn, ưu tiên span dài
+    # Remove overlapping spans, preferring the longer span.
     kept = []
     for c in sorted(cands, key=lambda x: (-(x["end"] - x["start"]), x["start"])):
         if all(c["end"] <= k["start"] or c["start"] >= k["end"] for k in kept):
             kept.append(c)
     kept.sort(key=lambda x: x["start"])
-    # "khống chế, bắt giữ" là một hành động -> giữ "bắt giữ"
+    # Treat "restrain, arrest" as one action and keep "arrest".
     kept = [c for i, c in enumerate(kept)
             if not (c["text"].lower() == "khống chế" and i + 1 < len(kept)
                     and kept[i + 1]["label"] == "BAT_GIU" and kept[i + 1]["start"] - c["end"] <= 3)]
-    # một sự kiện nhắc lại nhiều lần ("khởi tố vụ án, khởi tố bị can") -> giữ lần đầu;
-    # chuỗi thủ đoạn lừa ("giả giọng ..., tự xưng ...") là một vụ -> giữ trigger LUA_DAO đầu tiên
+    # Keep the first mention when the same event is repeated ("charge the case, charge the suspect").
+    # Treat a sequence of fraud tactics ("impersonated ..., claimed to be ...") as one event.
     out, seen = [], set()
     for c in kept:
         key = (c["label"], c["text"].lower())
@@ -118,7 +118,7 @@ def find_triggers(sentence, entities=()):
 
 
 def _clause_bounds(sentence, pos):
-    """Mệnh đề quanh vị trí pos: cắt theo ; và các dấu chấm câu."""
+    """Return the clause around pos, split on semicolons and sentence punctuation."""
     left = max(sentence.rfind(ch, 0, pos) for ch in ";.!?") + 1
     rights = [i for i in (sentence.find(ch, pos) for ch in ";.!?") if i != -1]
     return left, (min(rights) if rights else len(sentence))
@@ -129,25 +129,28 @@ REPORT_RE = re.compile(r"cho biết|thông tin|tin từ|xác nhận|thông báo"
 
 
 def _is_home(sentence, start):
-    """Địa danh là quê / nơi ở: có từ quê, ngụ, trú, SN... đứng trước, trong cùng cụm ngoặc
-    hoặc cùng chuỗi địa chỉ (chỉ cách nhau bởi dấu phẩy)."""
+    """Return whether a place describes a hometown or residence.
+
+    Cues such as quê, ngụ, trú, and SN must precede it in the same parenthetical
+    expression or address sequence (separated only by commas).
+    """
     window = sentence[max(0, start - 80):start]
     cut = max(window.rfind(")"), window.rfind(";"), window.rfind("."))
     window = window[cut + 1:]
-    if "(" in window:                              # đang ở trong ngoặc: xét từ dấu "(" gần nhất
+    if "(" in window:                                  # If inside parentheses, search from the nearest opening parenthesis.
         window = window[window.rfind("("):]
     m = None
     for m in HOME_CUE_RE.finditer(window):
         pass
     if m is None:
         return False
-    if m.group(0).lower() == "ở":                  # "ở" chỉ tính khi đứng ngay trước địa danh
+    if m.group(0).lower() == "ở":                      # Count "in/at" only when it immediately precedes a location.
         return len(window[m.end():].split()) <= 1
     return True
 
 
 def _is_report_date(sentence, ent, trigger):
-    """'Ngày 16-11, Công an ... cho biết đã khởi tố': mốc thời gian là ngày đưa tin."""
+    """Return whether a time span is the reporting date, not the event date."""
     if ent["end"] > trigger["start"]:
         return False
     return bool(REPORT_RE.search(sentence[ent["end"]:trigger["start"]]))
@@ -191,7 +194,7 @@ def link_arguments(sentence, triggers, entities):
     for t in triggers:
         cs, ce = _clause_bounds(sentence, t["start"])
         local = [e for e in entities if e["start"] >= cs and e["end"] <= ce]
-        # CO_QUAN: chỉ lấy tổ chức gần trigger nhất phía trước
+        # AGENCY: use only the nearest preceding organization.
         orgs = [e for e in local if e["label"] == "ORGANIZATION" and e["end"] <= t["start"]]
         for e in local:
             role = _role_for(t, e, sentence)

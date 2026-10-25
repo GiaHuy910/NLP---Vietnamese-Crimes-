@@ -1,14 +1,14 @@
-"""Đánh giá luồng 2: Trigger F1, Argument F1, Relation F1, Event Exact Match.
+"""Evaluate Part 2: Trigger F1, Argument F1, Relation F1, and Event Exact Match.
 
-Chạy từ thư mục server/:
+Run from the server/ directory:
 
-    # Chấm baseline luật trên tập test (thực thể lấy từ gold)
+    # Evaluate the rule baseline on test (entities are taken from gold).
     python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --baseline
 
-    # Chấm file dự đoán của mô hình (cùng định dạng jsonl, có ann_id)
+    # Evaluate a model prediction file (same JSONL format, including ann_id).
     python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --pred datasets/processed/test_pred.jsonl
 
-Thêm --errors 30 để in 30 lỗi trigger đầu tiên, --save-json để lưu kết quả.
+Use --errors 30 to print the first 30 trigger errors and --save-json to save results.
 """
 import argparse
 import json

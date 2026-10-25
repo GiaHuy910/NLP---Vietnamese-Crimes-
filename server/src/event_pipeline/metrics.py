@@ -1,14 +1,13 @@
-"""Chỉ số đánh giá luồng 2 (so khớp chính xác theo vị trí ký tự, micro-average).
+"""Part 2 evaluation metrics (exact character-offset matching, micro-average).
 
-1. Trigger Identification (Trigger-I): đúng vị trí trigger (start, end), không xét loại.
-2. Trigger Classification (Trigger-C): đúng vị trí VÀ đúng loại sự kiện. Đây là "Trigger F1" chính.
-3. Argument Identification (Argument F1): đúng trigger (vị trí + loại) và đúng vị trí thực thể
-   được nối, không xét vai trò.
-4. Relation / Argument Classification (Relation F1): như (3) và đúng cả vai trò.
-5. Event Exact Match: một sự kiện chỉ tính đúng khi trigger đúng (vị trí + loại) và tập
-   argument (vị trí + vai trò) trùng khớp hoàn toàn với gold.
+1. Trigger Identification (Trigger-I): exact trigger offsets (start, end), ignoring event type.
+2. Trigger Classification (Trigger-C): exact trigger offsets and event type; this is the main Trigger F1.
+3. Argument Identification (Argument F1): exact trigger (offsets + type) and linked entity offsets,
+   ignoring the role.
+4. Relation / Argument Classification (Relation F1): the conditions in (3), including the role.
+5. Event Exact Match: the trigger (offsets + type) and complete argument set (offsets + roles) match gold.
 
-Mỗi chỉ số có Precision, Recall, F1. Trigger-C và Relation có thêm điểm theo từng loại / vai trò.
+Each metric reports Precision, Recall, and F1. Trigger-C and Relation also report scores by type/role.
 """
 from collections import Counter, defaultdict
 
@@ -32,7 +31,7 @@ def _by_key(gold, pred, key):
 
 
 def collect(rows):
-    """Câu -> các tập tuple để so khớp."""
+    """Convert sentence records into sets of tuples for exact matching."""
     sets = defaultdict(set)
     for r in rows:
         aid = r["ann_id"]
@@ -54,7 +53,7 @@ def evaluate(gold_rows, pred_rows):
     extra = set(pred_by_id) - gold_ids
     if missing:
         raise ValueError(f"Thiếu dự đoán cho {len(missing)} câu, ví dụ: {sorted(missing)[:5]}")
-    pred_rows = [pred_by_id[r["ann_id"]] for r in gold_rows]     # bỏ câu thừa, giữ thứ tự gold
+    pred_rows = [pred_by_id[r["ann_id"]] for r in gold_rows]     # Drop extra rows and preserve gold order.
 
     g, p = collect(gold_rows), collect(pred_rows)
     return {
@@ -94,7 +93,7 @@ def format_report(res, title=""):
 
 
 def error_examples(gold_rows, pred_rows, limit=20):
-    """Liệt kê trigger bỏ sót / thừa / sai loại để phân tích lỗi."""
+    """List missed, extra, and misclassified triggers for error analysis."""
     pred_by_id = {r["ann_id"]: r for r in pred_rows}
     out = Counter()
     examples = []

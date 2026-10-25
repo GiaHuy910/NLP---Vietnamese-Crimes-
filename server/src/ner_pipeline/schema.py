@@ -62,7 +62,7 @@ def normalize_bio_label(label: str) -> str:
 
     return normalize_entity_label(label)
 
-# Tá»± Ä‘á»™ng sinh BIO tags
+# Generate BIO tags automatically.
 LABELS = ["O"]
 for ent in ENTITY_TYPES:
     LABELS.append(f"B-{ent}")
@@ -161,5 +161,4 @@ def read_annotated_csv(path: Path) -> list[AnnotatedExample]:
             f"{path.name}: CSV khÃ´ng cÃ³ dÃ²ng annotation nÃ o Ä‘á»ƒ xá»­ lÃ½."
         )
     return examples
-
 
