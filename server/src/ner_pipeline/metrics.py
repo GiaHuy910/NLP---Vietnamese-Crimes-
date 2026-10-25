@@ -1,20 +1,6 @@
 ﻿
 from typing import Iterable
-from .schema import ENTITY_TYPES
-
-LABEL_ALIASES = {
-    "PERSON": "PERSON",
-    "ORGANIZATION": "ORGANIZATION",
-    "LOCATION": "LOCATION",
-    "DATE/TIME": "DATE/TIME",
-    "TIME": "DATE/TIME",
-    "DATETIME": "DATE/TIME",
-    "MONEY": "MONEY",
-    "PRODUCT": "PRODUCT",
-    "DRUG": "DRUG",
-    "CRIME": "CRIME",
-}
-
+from .schema import ENTITY_TYPES, normalize_entity_label
 Span = tuple[int, int, str]
 
 def metrics_from_spans(
@@ -176,7 +162,7 @@ def spans_from_record(record: dict[str, object]) -> list[Span]:
             start = int(entity["start"])
             end = int(entity["end"])
             raw_label = str(entity["label"]).strip().upper()
-            label = LABEL_ALIASES.get(raw_label, raw_label)
+            label = normalize_entity_label(raw_label)
         except (KeyError, TypeError, ValueError) as exc:
             raise ValueError(
                 f"Entity thiếu start/end/label hoặc sai định dạng: {entity}"

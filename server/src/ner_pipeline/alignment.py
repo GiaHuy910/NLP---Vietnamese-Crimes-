@@ -1,11 +1,13 @@
 import re
 import unicodedata
 from typing import Callable
+import logging
+
 
 from .errors import NERPipelineError
-from .schema import AnnotatedExample, LABELS, Mention
+from .schema import AnnotatedExample, LABELS, Mention, normalize_entity_label
 
-
+logger = logging.getLogger(__name__)
 _SURFACE_TOKEN = re.compile(r"[^\W_]+|[^\w\s]", flags=re.UNICODE)
 _SEGMENT_TOKEN = re.compile(r"[^\W_]+(?:_[^\W_]+)*|[^\w\s]", flags=re.UNICODE)
 
@@ -41,29 +43,6 @@ def _fold_with_offsets(value: str) -> tuple[str, list[int], list[int]]:
 
     return "".join(folded), starts, ends
 
-
-def _fold_with_offsets_normalized(value: str):
-    folded = []
-    starts = []
-    ends = []
-
-    for index, character in enumerate(value):
-        # NFC first makes Vietnamese combining-mark order consistent.
-        character = character.replace("Ð", "Đ").replace("ð", "đ")
-        normalized = unicodedata.normalize("NFC", character).casefold()
-        normalized = unicodedata.normalize("NFD", normalized)
-
-        for result in normalized:
-            if unicodedata.category(result) == "Mn":
-                continue
-            folded.append(result)
-            starts.append(index)
-            ends.append(index + 1)
-
-    return "".join(folded), starts, ends
-
-
-
 def _find_mentions(
     sentence: str,
     mention_texts: tuple[tuple[str, str], ...],
@@ -91,7 +70,7 @@ def _find_mentions(
                 f"Dòng {row_number}: entity không có token hợp lệ."
             )
 
-        matches: list[tuple[int, int, bool]] = []
+        matches: list[tuple[int, int]] = []
 
         for index in range(len(normalized_sentence) - len(needle) + 1):
             if normalized_sentence[index:index + len(needle)] != needle:
@@ -99,20 +78,17 @@ def _find_mentions(
 
             start = sentence_tokens[index][1]
             end = sentence_tokens[index + len(needle) - 1][2]
+            matches.append((start, end))
 
-            # Ưu tiên cách viết hoa/thường khớp chính xác.
-            exact_case = sentence[start:end] == text
-            matches.append((start, end, exact_case))
+            if not matches:
+              raise NERPipelineError(
+                  f"Dòng {row_number}: không tìm thấy entity "
+                  f"{text!r} trong sentence. "
+                  f"Sentence={sentence!r}; "
+                  f"Entity tokens={entity_tokens!r}"
+              )
 
-        if not matches:
-            raise NERPipelineError(
-                f"Dòng {row_number}: không tìm thấy entity "
-                f"{text!r} trong sentence."
-            )
-
-        chosen = matches
-
-        for start, end, _ in chosen:
+        for start, end in matches:
             raw_candidates.append(
                 Mention(sentence[start:end], label, start, end)
             )
@@ -133,19 +109,10 @@ def _find_mentions(
 
 
 def _underthesea_segments(sentence: str) -> list[str]:
-    try:
-        from underthesea import word_tokenize
-    except ImportError as exc:
-        raise NERPipelineError(
-            "Thiếu underthesea. Cài dependency bằng "
-            "`pip install -r requirements-ner.txt` trong thư mục server."
-        ) from exc
+    from underthesea import word_tokenize
 
     segmented = word_tokenize(sentence, format="text")
-    return [match.group() for match in _SEGMENT_TOKEN.finditer(segmented)]
-
-
-
+    return segmented.split()
 
 
 def _segment_offsets(
@@ -269,12 +236,74 @@ def _split_tokens_at_entity_boundaries(
                 else syllable_end,
             )
         }
+        
+def _split_tokens_at_entity_boundaries(
+    sentence: str,
+    tokens: list[tuple[str, int, int]],
+    mentions: list[Mention],
+    *,
+    row_number: int,
+) -> list[tuple[str, int, int]]:
+    boundaries = {
+        boundary
+        for mention in mentions
+        for boundary in (mention.start, mention.end)
+    }
+
+    adjusted: list[tuple[str, int, int]] = []
+
+    for token, start, end in tokens:
+        internal_boundaries = {
+            boundary
+            for boundary in boundaries
+            if start < boundary < end
+        }
+
+        if not internal_boundaries:
+            adjusted.append((token, start, end))
+            continue
+
+        syllables = [
+            (match.group(), start + match.start(), start + match.end())
+            for match in re.finditer(r"[^_\s]+", sentence[start:end])
+        ]
+
+        valid_boundaries = set()
+
+        for _, _, syllable_end in syllables[:-1]:
+            valid_boundaries.add(syllable_end)
+
+            if (
+                syllable_end < end
+                and sentence[syllable_end].isspace()
+            ):
+                valid_boundaries.add(syllable_end + 1)
+
+        # Cho phép thực thể kết thúc trước dấu chấm trong chữ viết tắt,
+        # ví dụ token "M." nhưng thực thể được gắn nhãn là "M".
+        for boundary in internal_boundaries:
+            relative = boundary - start
+
+            if (
+                0 < relative < len(token)
+                and token[relative] == "."
+                and sentence[boundary] == "."
+            ):
+                valid_boundaries.add(boundary)
+
         if not internal_boundaries.issubset(valid_boundaries):
             raise NERPipelineError(
-                f"Dòng {row_number}: entity cắt giữa một token không thể tách "
-                "an toàn theo ranh giới âm tiết."
+                f"Dòng {row_number}: entity cắt giữa một token "
+                f"không thể tách an toàn theo ranh giới âm tiết. "
+                f"Token={token!r}, span=({start}, {end}), "
+                f"Token text={sentence[start:end]!r}, "
+                f"Internal boundaries={sorted(internal_boundaries)}, "
+                f"Valid boundaries={sorted(valid_boundaries)}, "
+                f"Mentions={[(m.text, m.label, m.start, m.end) for m in mentions]}"
             )
+
         adjusted.extend(syllables)
+
     return adjusted
 
 
@@ -321,7 +350,7 @@ def _resolve_overlapping_mentions(
         # Ưu tiên span dài hơn để tránh entity con chồng lấn.
         current_longer = all(
             (current.end - current.start)
-            >= (mention.end - mention.start)
+            > (mention.end - mention.start)
             for current in overlaps
         )
 
@@ -357,54 +386,167 @@ def align_example(
     row_number: int,
     segmenter: Callable[[str], list[str]] | None = None,
 ) -> dict[str, object]:
+    # Hạn chế chuẩn hóa NFC nếu nó làm lệch offset gốc. 
+    # Tốt nhất: Dữ liệu nên được chuẩn hóa NFC TRƯỚC KHI gán nhãn.
     sentence = unicodedata.normalize("NFC", example.sentence)
-    raw_mentions = tuple(
-        (unicodedata.normalize("NFC", mention.text), mention.label)
-        for mention in example.mentions
-    )
-    mentions = _find_mentions(sentence, raw_mentions, row_number=row_number)
+    
+    # SỬA LỖI P0: Sử dụng trực tiếp offset từ annotator, không tìm kiếm lại bằng text
+    mentions = []
+
+    for m in example.mentions:
+        normalized_mention_text = unicodedata.normalize(
+            "NFC", m.text
+        )
+        label = normalize_entity_label(m.label)
+
+        # Offset âm nghĩa là dữ liệu chưa cung cấp vị trí thực thể.
+        if m.start < 0 or m.end < 0:
+            pattern = r"\s+".join(
+                re.escape(part)
+                for part in normalized_mention_text.split()
+            )
+
+            matches = list(
+                re.finditer(pattern, sentence, flags=re.IGNORECASE)
+            )
+
+            if not matches:
+                raise NERPipelineError(
+                    f"Dòng {row_number}: Không tìm thấy entity "
+                    f"{m.text!r} trong câu."
+                )
+
+            for match in matches:
+                start, end = match.span()
+                mentions.append(
+                    Mention(sentence[start:end], label, start, end)
+                )
+
+            continue
+
+        start, end = m.start, m.end
+
+        if start < 0 or end > len(sentence) or start >= end:
+            raise NERPipelineError(
+                f"Dòng {row_number}: Offset không hợp lệ "
+                f"({start}:{end})."
+            )
+
+        span_text = sentence[start:end]
+
+        if span_text.casefold() != normalized_mention_text.casefold():
+            raise NERPipelineError(
+                f"Dòng {row_number}: Offset không khớp. "
+                f"Text annotator: {m.text!r}, "
+                f"Text tại offset ({start}:{end}): {span_text!r}"
+            )
+
+        mentions.append(
+            Mention(span_text, label, start, end)
+        )
+    # Xử lý entity chồng lấn
     mentions, overlap_count = _resolve_overlapping_mentions(
-      mentions, row_number=row_number, sentence=sentence
+        mentions,
+        row_number=row_number,
+        sentence=sentence,
     )
+
+    # Tách từ và khởi tạo nhãn BIO
     segments = (segmenter or _underthesea_segments)(sentence)
     tokens = _segment_offsets(sentence, segments)
-    tokens = _split_tokens_at_entity_boundaries(
-        sentence, tokens, mentions, row_number=row_number
-    )
+     # Tách token nếu ranh giới entity nằm giữa token.
+    boundaries = {
+        position
+        for mention in mentions
+        for position in (mention.start, mention.end)
+    }
+
+    split_tokens = []
+
+    for token, start, end in tokens:
+        cuts = sorted(
+            position
+            for position in boundaries
+            if start < position < end
+        )
+
+        positions = [start] + cuts + [end]
+
+        for left, right in zip(positions, positions[1:]):
+            while left < right and sentence[left].isspace():
+                left += 1
+            while right > left and sentence[right - 1].isspace():
+                right -= 1
+
+            if left < right:
+                piece = sentence[left:right].replace(" ", "_")
+                split_tokens.append((piece, left, right))
+
+    tokens = split_tokens
     labels = ["O"] * len(tokens)
 
+    # Gán nhãn BIO cho từng entity
     occupied: list[tuple[int, int, str]] = []
+
     for mention in mentions:
         covered = [
             index
             for index, (_, start, end) in enumerate(tokens)
             if start < mention.end and end > mention.start
         ]
+
         if not covered:
             raise NERPipelineError(
-                f"Dòng {row_number}: entity {mention.text!r} không khớp token."
+                f"Dòng {row_number}: entity {mention.text!r} "
+                "không khớp token."
             )
+
         first_start = tokens[covered[0]][1]
         last_end = tokens[covered[-1]][2]
-        if first_start != mention.start or last_end != mention.end:
-            raise NERPipelineError(
-                f"Dòng {row_number}: entity {mention.text!r} cắt giữa token đã "
-                "word-segment. Hãy sửa span annotation hoặc cách viết entity."
+
+        start_matches = first_start == mention.start
+        end_matches = last_end == mention.end
+
+        # Cho phép entity kết thúc trước dấu chấm trong "M."
+        if not end_matches and last_end == mention.end + 1:
+            end_matches = (
+                sentence[mention.end:last_end] == "."
+                and mention.text == sentence[mention.start:mention.end]
             )
+
+        if not start_matches or not end_matches:
+            raise NERPipelineError(
+                f"Dòng {row_number}: entity {mention.text!r} "
+                "cắt giữa token đã word-segment."
+            )
+
         for index in covered:
             for old_start, old_end, old_label in occupied:
-                if index >= old_start and index <= old_end and old_label != mention.label:
+                if (
+                    old_start <= index <= old_end
+                    and old_label != mention.label
+                ):
                     raise NERPipelineError(
-                        f"Dòng {row_number}: các entity chồng lấn có nhãn mâu thuẫn."
+                        f"Dòng {row_number}: các entity chồng lấn "
+                        "có nhãn mâu thuẫn."
                     )
+
             if labels[index] != "O":
                 raise NERPipelineError(
-                    f"Dòng {row_number}: annotation chứa các entity chồng lấn."
+                    f"Dòng {row_number}: annotation chứa "
+                    "các entity chồng lấn."
                 )
+
             labels[index] = (
-                f"B-{mention.label}" if index == covered[0] else f"I-{mention.label}"
+                f"B-{mention.label}"
+                if index == covered[0]
+                else f"I-{mention.label}"
             )
-        occupied.append((covered[0], covered[-1], mention.label))
+
+        occupied.append(
+            (covered[0], covered[-1], mention.label)
+        )
+
 
     if any(label not in LABELS for label in labels):
         raise NERPipelineError(f"Dòng {row_number}: BIO label ngoài tập cho phép.")

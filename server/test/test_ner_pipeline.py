@@ -214,7 +214,7 @@ def test_argument_schema_contains_expected_labels():
     "PERSON",
     "ORGANIZATION",
     "LOCATION",
-    "DATE/TIME",
+    "TIME",
     "MONEY",
     "PRODUCT",
     "DRUG",

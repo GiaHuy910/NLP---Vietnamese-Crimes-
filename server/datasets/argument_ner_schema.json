@@ -4,12 +4,12 @@
     "PERSON",
     "ORG",
     "LOC",
-    "DATE/TIME",
+    "TIME",
     "MONEY",
     "PRODUCT",
     "CRIME"
   ],
-  "label_aliases": {
+  "entity_types": {
     "ORG": "ORG",
     "LOC": "LOC"
   },
@@ -38,11 +38,11 @@
     ],
     "TOI_DANH": [],
     "MUC_AN": [
-      "DATE/TIME",
+      "TIME",
       "MONEY"
     ],
     "THOI_GIAN": [
-      "DATE/TIME"
+      "TIME"
     ],
     "DIA_DIEM": [
       "LOC"

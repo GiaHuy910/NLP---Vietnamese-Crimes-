@@ -182,6 +182,16 @@ def predict_records(
     ) -> list[list[Span]]:
         _require_model(model_dir)
         torch, _, AutoModelForTokenClassification, AutoTokenizer = _dependencies()
+        
+        # SỬA LỖI: Kiểm tra cấu hình checkpoint có khớp với mã nguồn hiện tại không
+        from transformers import AutoConfig
+        config = AutoConfig.from_pretrained(model_dir)
+        if config.num_labels != len(LABELS):
+             raise NERPipelineError(
+                 f"Checkpoint không tương thích! Model lưu {config.num_labels} nhãn, "
+                 f"nhưng code hiện tại (schema.py) yêu cầu {len(LABELS)} nhãn."
+             )
+        
         tokenizer = AutoTokenizer.from_pretrained(model_dir, use_fast=True)
         model = AutoModelForTokenClassification.from_pretrained(model_dir)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -192,25 +202,44 @@ def predict_records(
         ]
 
 
-def predict_sentence(
-        sentence: str, model_dir: Path = MODEL_DIR, max_length: int = 256
-    ) -> list[dict[str, str]]:
-        from .alignment import _underthesea_segments, _segment_offsets
 
-        _require_model(model_dir)
-        sentence = unicodedata.normalize("NFC", sentence)
-        segments = _underthesea_segments(sentence)
-        tokens_with_offsets = _segment_offsets(sentence, segments)
-        record = {
-            "sentence": sentence,
-            "tokens": [token for token, _, _ in tokens_with_offsets],
-            "token_offsets": [[start, end] for _, start, end in tokens_with_offsets],
+def predict_sentence(
+    sentence: str,
+    model_dir: Path = MODEL_DIR,
+    max_length: int = 256,
+) -> list[dict[str, Any]]:
+    from .alignment import _underthesea_segments, _segment_offsets
+
+    _require_model(model_dir)
+    sentence = unicodedata.normalize("NFC", sentence)
+
+    segments = _underthesea_segments(sentence)
+    tokens_with_offsets = _segment_offsets(sentence, segments)
+
+    record = {
+        "sentence": sentence,
+        "tokens": [token for token, _, _ in tokens_with_offsets],
+        "token_offsets": [
+            [start, end] for _, start, end in tokens_with_offsets
+        ],
+    }
+
+    spans = predict_records(
+        [record],
+        model_dir=model_dir,
+        max_length=max_length,
+    )[0]
+
+    return [
+        {
+            "text": sentence[start:end],
+            "label": label,
+            "start": start,
+            "end": end,
         }
-        spans = predict_records([record], model_dir=model_dir, max_length=max_length)[0]
-        return [
-            {"text": sentence[start:end], "label": label}
-            for start, end, label in spans
-        ]
+        for start, end, label in spans
+    ]
+
 
 def _validation_f1(
         records: list[dict[str, Any]],

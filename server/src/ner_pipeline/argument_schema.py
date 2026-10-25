@@ -1,6 +1,5 @@
 ﻿import json
 from pathlib import Path
-
 from .errors import NERPipelineError
 from .schema import ENTITY_TYPES
 
@@ -17,14 +16,6 @@ ARGUMENT_TYPES = (
     "DIA_DIEM",
 )
 
-_LABEL_ALIASES = {
-    "PERSON": "PERSON",
-    "ORGANIZATION": "ORGANIZATION",
-    "LOCATION": "LOCATION",
-    "DATE/TIME": "DATE/TIME",
-    "MONEY": "MONEY",
-    "PRODUCT": "PRODUCT",
-}
 
 _DEFAULT_MAPPING = {
     "DOI_TUONG": ["PERSON", "ORGANIZATION"],
@@ -34,19 +25,20 @@ _DEFAULT_MAPPING = {
     "TANG_VAT": ["PRODUCT"],
     "HUNG_KHI": ["PRODUCT"],
     "TOI_DANH": ["CRIME"],
-    "MUC_AN": ["DATE/TIME"],
-    "THOI_GIAN": ["DATE/TIME"],
+    "MUC_AN": ["TIME"],
+    "THOI_GIAN": ["TIME"],
     "DIA_DIEM": ["LOCATION"],
 }
 
 _SCHEMA_PATH = Path(__file__).with_name("argument_schema.json")
 
 def normalize_ner_label(label):
+    from .schema import normalize_entity_label
+
     if not isinstance(label, str):
         raise NERPipelineError(f"Invalid NER label: {label!r}")
 
-    raw_label = label.strip().upper()
-    normalized = _LABEL_ALIASES.get(raw_label, raw_label)
+    normalized = normalize_entity_label(label)
 
     if normalized not in ENTITY_TYPES:
         raise NERPipelineError(f"Unknown NER label: {label}")
@@ -77,7 +69,7 @@ def load_argument_schema(path=None):
     mapping = schema.get("argument_mapping")
 
     if not isinstance(ner_labels, list) or len(ner_labels) != len(ENTITY_TYPES):
-        raise NERPipelineError("Schema must contain exactly 7 NER labels")
+     raise NERPipelineError(f"Schema must contain exactly {len(ENTITY_TYPES)} NER labels")
 
     try:
         normalized_labels = [normalize_ner_label(label) for label in ner_labels]
@@ -121,4 +113,5 @@ def arguments_for_ner_label(label):
         for argument_type, ner_labels in schema["argument_mapping"].items()
         if normalized_label in ner_labels
     ]
+
 

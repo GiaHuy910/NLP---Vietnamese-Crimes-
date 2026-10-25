@@ -1,4 +1,4 @@
-﻿import argparse
+import argparse
 import json
 import sys
 from typing import Any
@@ -9,7 +9,7 @@ from .dataset import load_jsonl, prepare_dataset, prepare_predefined_splits
 from .error_analysis import analyze_sentence, summarize
 from .errors import NERPipelineError
 from .metrics import score_spans, spans_from_record
-from .paths import MODEL_DIR, PROCESSED_DIR
+from .paths import MODEL_DIR, PROCESSED_DIR, PREDICT_DIR
 from .phobert import predict_records, predict_sentence, train
 
 
@@ -58,15 +58,16 @@ def _parser() -> argparse.ArgumentParser:
     fitting.add_argument("--seed", type=int, default=42)
     fitting.add_argument("--class-weight-power", type=float, default=0.5)
     fitting.add_argument(
-    "--train-file",
-    default="train.jsonl",
-    help="File train trong server/datasets/processed/.",
-)
+        "--train-file",
+        default="train.jsonl",
+        help="File train trong server/datasets/processed/.",
+    )
     fitting.add_argument(
-    "--model-dir",
-    default=str(MODEL_DIR),
-    help="Thu muc luu checkpoint.",
-)
+        "--model-dir",
+        default=str(MODEL_DIR),
+        help="Thu muc luu checkpoint.",
+    )
+    
     baseline = commands.add_parser(
         "baseline",
         help="Evaluate rule-based NER without loading PhoBERT.",
@@ -78,10 +79,10 @@ def _parser() -> argparse.ArgumentParser:
     )
     evaluation.add_argument("--max-length", type=int, default=256)
     evaluation.add_argument(
-    "--model-dir",
-    default=str(MODEL_DIR),
-    help="Thu muc checkpoint PhoBERT dung de danh gia.",
-)
+        "--model-dir",
+        default=str(MODEL_DIR),
+        help="Thu muc checkpoint PhoBERT dung de danh gia.",
+    )
 
     prediction = commands.add_parser(
         "predict",
@@ -93,16 +94,38 @@ def _parser() -> argparse.ArgumentParser:
     )
     prediction.add_argument("--max-length", type=int, default=256)
 
+    # Thêm lệnh batch-predict
+    batch_prediction = commands.add_parser(
+        "batch-predict",
+        help="Du doan NER hang loat cho mot file JSONL va xuat Pseudo-label.",
+    )
+    batch_prediction.add_argument(
+        "--input",
+        required=True,
+        help="Duong dan toi file JSONL chua du lieu tho (can truong 'sentence').",
+    )
+    batch_prediction.add_argument(
+        "--output",
+        default="pseudo_labels.jsonl",
+        help="Ten file xuat ra (se duoc luu trong thu muc PREDICT_DIR).",
+    )
+    batch_prediction.add_argument("--max-length", type=int, default=256)
+    batch_prediction.add_argument(
+        "--model-dir",
+        default=str(MODEL_DIR),
+        help="Thu muc checkpoint PhoBERT dung de du doan.",
+    )
+
     analysis = commands.add_parser(
         "analyze",
         help="Analyze PhoBERT errors on the held-out test split.",
     )
     analysis.add_argument("--max-length", type=int, default=256)
     analysis.add_argument(
-    "--model-dir",
-    default=str(MODEL_DIR),
-    help="Thu muc checkpoint PhoBERT dung de phan tich loi.",
-)
+        "--model-dir",
+        default=str(MODEL_DIR),
+        help="Thu muc checkpoint PhoBERT dung de phan tich loi.",
+    )
 
     return parser
 
@@ -193,10 +216,10 @@ def _run(args: argparse.Namespace) -> None:
         records = load_jsonl(PROCESSED_DIR / "test.jsonl")
         baseline_spans = _spans_for_baseline(records, RuleBasedNER())
         phobert_spans = predict_records(
-    records,
-    model_dir=Path(args.model_dir),
-    max_length=args.max_length,
-)
+            records,
+            model_dir=Path(args.model_dir),
+            max_length=args.max_length,
+        )
 
         print(
             json.dumps(
@@ -225,12 +248,63 @@ def _run(args: argparse.Namespace) -> None:
             json.dumps(
                 predict_sentence(
                     sentence,
+                    model_dir=Path(args.model_dir),
                     max_length=args.max_length,
                 ),
                 ensure_ascii=False,
                 indent=2,
             )
         )
+        return
+
+    if args.command == "batch-predict":
+        input_path = Path(args.input)
+        output_path = PREDICT_DIR / args.output
+
+        if not input_path.is_file():
+            raise NERPipelineError(f"Khong tim thay file input: {input_path}")
+        
+        # Load dữ liệu chưa gán nhãn
+        records = load_jsonl(input_path)
+        print(f"Dang chay Batch Inference tren {len(records)} dong...")
+
+        # Dự đoán hàng loạt
+        predicted_spans_list = predict_records(
+            records,
+            model_dir=Path(args.model_dir),
+            max_length=args.max_length,
+        )
+
+        # Định dạng kết quả và đánh dấu Pseudo-label
+        output_records = []
+        for record, spans in zip(records, predicted_spans_list):
+            formatted_entities = [
+                {
+                    "text": record["sentence"][start:end],
+                    "label": label,
+                    "start": start,
+                    "end": end
+                }
+                for start, end, label in spans
+            ]
+            
+            output_records.append({
+                "record_id": record.get("record_id", "unknown_id"),
+                "sentence": record["sentence"],
+                "entities": formatted_entities,
+                "label_status": "PSEUDO_LABEL"
+            })
+
+        # Ghi ra file
+        try:
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(output_path, "w", encoding="utf-8") as f:
+                for out_rec in output_records:
+                    f.write(json.dumps(out_rec, ensure_ascii=False) + "\n")
+        except OSError as exc:
+            raise NERPipelineError(f"Khong the ghi output vao {output_path}: {exc}") from exc
+            
+        print(f"Hoan thanh! Ket qua pseudo-label luu an toan tai: {output_path}")
         return
 
     if args.command == "analyze":
