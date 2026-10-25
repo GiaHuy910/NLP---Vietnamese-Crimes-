@@ -40,8 +40,13 @@ Từ đây trở đi, mọi lệnh đều chạy trong `server/` với venv đã
 
 ## 3. Đặt model
 
-Model nặng khoảng 500 MB mỗi cái nên không có trên git; lấy file zip trên Drive của nhóm rồi giải nén
-vào `server/models/` sao cho cấu trúc như sau:
+Model nặng khoảng 500 MB mỗi cái nên không có trong git. Model được đính kèm ở mục **Releases** của
+repo GitHub (cột bên phải trang repo, mục Releases, bản `models-v1`):
+
+- `ner_model.zip`: model NER của luồng 1
+- `event_models.zip`: 2 model của luồng 2
+
+Tải về rồi giải nén vào `server/models/` sao cho cấu trúc như sau:
 
 ```
 server/
@@ -51,7 +56,7 @@ server/
     event_argument/                       (model vai trò của luồng 2)
 ```
 
-Các bước 4, 6 và 7 (baseline, kiểm tra bộ chấm) không cần model, có thể chạy trước.
+Không cần model: các lệnh baseline ở bước 4 và 5, và bước 7 (kiểm tra bộ chấm).
 
 ## 4. Luồng 1: NER
 
