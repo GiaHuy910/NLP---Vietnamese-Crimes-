@@ -1,0 +1,35 @@
+﻿{
+  "PERSON": [
+    "Nguyễn Văn A",
+    "Trần Văn B",
+    "Lê Văn C"
+  ],
+  "ORGANIZATION": [
+    "Công an",
+    "Công an TP.HCM",
+    "Công an tỉnh Đồng Nai",
+    "Công an tỉnh Bình Dương",
+    "Bộ Công an",
+    "Viện kiểm sát",
+    "Viện kiểm sát nhân dân",
+    "Tòa án nhân dân",
+    "Tòa án nhân dân TP.HCM",
+    "Cơ quan cảnh sát điều tra",
+    "UBND",
+    "Ủy ban nhân dân",
+    "Phòng PC 65"
+  ],
+  "LOCATION": [
+    "Hà Nội",
+    "TP.HCM",
+    "Thành phố Hồ Chí Minh",
+    "Đà Nẵng",
+    "Đồng Nai",
+    "Bình Dương",
+    "Biên Hòa",
+    "Hải Phòng",
+    "Cần Thơ",
+    "Thanh Hóa",
+    "Bắc Ninh"
+  ]
+}
