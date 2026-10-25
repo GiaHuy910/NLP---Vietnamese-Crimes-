@@ -26,3 +26,4 @@ server/datasets/*.before-*.jsonl
 
 # Model weights
 server/models/
+models/
