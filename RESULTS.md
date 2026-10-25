@@ -176,20 +176,4 @@ Hệ thống chọn, chi tiết trên test:
 
 ## 6. Chạy lại
 
-Trong thư mục `server/`, cần model ở `server/models/event_trigger` và `server/models/event_argument`.
-
-```powershell
-# Luồng 1
-python -m src.ner_pipeline.cli prepare-splits --train train_ner.csv --validation val_ner.csv --test test_ner.csv
-python -m src.ner_pipeline.cli baseline
-
-# Luồng 2: baseline luật
-python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --baseline
-
-# Luồng 2: hệ thống chọn (luật + PhoBERT)
-python -m src.event_pipeline.model predict --split test --trigger-source rules
-python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --pred datasets/processed/test_event_pred_rules.jsonl
-```
-
-Đổi `--trigger-source` thành `model` hoặc `gold` để chạy hai cấu hình còn lại; đổi `test` thành `val` để
-xem kết quả trên val.
+Cách cài đặt, đặt model và toàn bộ lệnh chạy (kèm kết quả mong đợi để đối chiếu) xem trong `RUN.md`.
