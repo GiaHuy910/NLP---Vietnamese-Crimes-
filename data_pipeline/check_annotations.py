@@ -1,10 +1,3 @@
-"""Kiểm tra tự động file JSON của Label Studio (file task có predictions HOẶC file export có annotations).
-
-Chạy:  python check_annotations.py <file.json>
-Ra  :  <file>_issues.csv   (mỗi dòng = 1 lỗi nghi ngờ: so_task, ann_id, loai_loi, chi_tiet, cau)
-
-Chỉ là CẢNH BÁO theo luật cố định -> người gán mở câu ra và tự quyết sửa hay không.
-"""
 import json
 import re
 import sys

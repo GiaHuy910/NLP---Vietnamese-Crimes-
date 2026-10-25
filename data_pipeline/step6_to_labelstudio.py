@@ -1,13 +1,3 @@
-"""Bước 6 - Chuyển file câu sang định dạng nhập (import) của Label Studio.
-
-Đầu vào : annotation/{train,val,test}_to_annotate.xlsx   (bước 5 tạo)
-Đầu ra  : annotation/{train,val,test}_tasks.json
-
-- TRAIN: kèm "predictions" = nhãn gán sẵn bằng luật (rules.py) -> trong Label Studio chỉ cần sửa.
-- VAL/TEST: KHÔNG gán sẵn, gán từ đầu -> nhãn không bị "dẫn dắt" bởi luật,
-  đánh giá baseline luật trên val/test mới công bằng.
-- Gán sẵn chỉ có thực thể + trigger; quan hệ (vai trò) bạn tự nối trong Label Studio.
-"""
 import json
 import sys
 

@@ -5,3 +5,4 @@ data/corpus news/
 data/analysis/
 data/annotation/*.xlsx
 ~$*
+data/annotation/*_issues.csv

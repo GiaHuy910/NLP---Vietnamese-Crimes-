@@ -1,15 +1,3 @@
-"""Bước 3 - Thu hẹp phạm vi: bỏ các nhóm trong EXCLUDE_SUBLABELS (config.py).
-
-Đầu vào/ra: corpus news/{train,val,test}.csv   (GHI ĐÈ cùng tên)
-
-Lý do bỏ "Vi phạm Giao thông": chỉ ~2% số bài vi phạm, quá ít để huấn luyện
-và đánh giá tin cậy theo từng loại sự kiện.
-
-Cách dùng:
-    python step3_apply_scope.py            # CHỈ XEM TRƯỚC, không sửa file nào
-    python step3_apply_scope.py --apply    # THỰC HIỆN
-Chạy --apply nhiều lần vẫn an toàn. Muốn lấy lại bản đầy đủ: chạy lại bước 2.
-"""
 import sys
 
 import pandas as pd

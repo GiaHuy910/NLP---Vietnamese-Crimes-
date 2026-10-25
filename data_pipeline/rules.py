@@ -1,11 +1,3 @@
-"""Luật nhận diện thực thể và trigger bằng từ khóa / regex.
-
-Dùng cho 2 việc:
-1. Gán nhãn sẵn (pre-annotation) cho tập train trong Label Studio -> người gán chỉ sửa.
-2. Làm BASELINE của luồng 2 (đề bài yêu cầu baseline regex/từ khóa).
-
-Mọi hàm trả về danh sách span: {"start", "end", "text", "label"} (start/end tính theo ký tự).
-"""
 import re
 
 from config import DRUG_WORDS, TRIGGER_LEXICON, TRIGGER_STOP

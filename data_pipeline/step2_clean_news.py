@@ -1,13 +1,3 @@
-"""Bước 2 - Xóa nhiễu, sửa nhãn, chống rò rỉ dữ liệu.
-
-Đầu vào : corpus news/{train,val,test}_clean.csv   (đầu ra bước 1)
-Đầu ra  : corpus news/{train,val,test}.csv         (thêm cột doc_id)
-
-- Xóa chú thích ảnh ("- Ảnh : Đ . BÌNH ."), tiền tố "XEM CLIP:", URL
-- Sửa SubLabel mâu thuẫn với Label: Label = "Khác" thì SubLabel = "Khác (Không vi phạm)"
-- Chống rò rỉ: test giữ nguyên; val bỏ bài trùng test; train bỏ bài trùng val/test
-  (trùng = giống nội dung, hoặc 200 ký tự đầu, hoặc tiêu đề; bỏ qua hoa/thường và dấu câu)
-"""
 import re
 
 import pandas as pd
@@ -20,7 +10,7 @@ def norm_key(s):
     return re.sub(r"\W+", " ", s.lower()).strip()
 
 
-# ---------- Nhiễu ----------
+# Nhiễu
 UPPER = "A-Z" + "".join(chr(i) for i in range(0xC0, 0x1EFA) if chr(i).isupper())
 NAME_TOKEN = rf"[{UPPER}][{UPPER}.]*"                                # QUANG, Đ, N.ẨN, V.CƯỜNG
 CAPTION = re.compile(

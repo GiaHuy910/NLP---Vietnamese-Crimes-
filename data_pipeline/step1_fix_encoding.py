@@ -1,16 +1,3 @@
-"""Bước 1 - Sửa mã hóa ký tự.
-
-Đầu vào : corpus news/{train,val,test}_cleaned_labeled.csv   (dữ liệu gốc)
-Đầu ra  : corpus news/{train,val,test}_clean.csv
-
-- Chuẩn hóa Unicode NFC (dấu tiếng Việt dạng rời -> ký tự dựng sẵn)
-- Gắn lại dấu bị tách khỏi chữ bởi khoảng trắng ("Ky ̀" -> "Kỳ")
-- Xóa ký tự ẩn: zero-width space, BOM lạc, soft hyphen
-- Thay ký tự hỏng \ufffd bằng khoảng trắng (không khôi phục được)
-- Gộp khoảng trắng thừa
-
-Hàm `clean_text` được dùng lại cho văn bản người dùng nhập ở API.
-"""
 import re
 import unicodedata
 

@@ -1,18 +1,3 @@
-"""Bước 7 - Chuyển file JSON của Label Studio sang dữ liệu train/đánh giá cho 2 luồng.
-
-Đọc được cả 2 loại file:
-- file task có "predictions" (nhãn silver, vd train_tasks_fixed.json)
-- file Export của Label Studio có "annotations" (nhãn gold gán tay, vd test)
-Câu nào có annotation thì lấy annotation, không có thì lấy prediction.
-
-Chạy:
-    python step7_export_dataset.py <file.json> train --val 80     # silver: tách 80 câu làm val
-    python step7_export_dataset.py <file_export_test.json> test   # gold
-
-Ra (trong thư mục dataset/):
-    {name}.jsonl      luồng 2: entities + triggers + relations (offset ký tự)
-    {name}_ner.csv    luồng 1: sentence, entities ("TEXT|LABEL; TEXT|LABEL")
-"""
 import argparse
 import json
 import random

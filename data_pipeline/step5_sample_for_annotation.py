@@ -1,15 +1,3 @@
-"""Bước 5 - Lấy mẫu câu để gán nhãn (NER + trigger + argument).
-
-Đầu vào : corpus news/{train,val,test}_sentences.csv
-Đầu ra  : annotation/{train,val,test}_to_annotate.xlsx
-
-- Chia đều theo SubLabel, mỗi bài tối đa MAX_PER_DOC câu.
-- TRAIN: TRAIN_KEYWORD_SHARE (50%) câu có từ khóa trigger + phần còn lại ngẫu nhiên.
-  Lý do: chỉ ~25-30% câu có sự kiện, lấy ngẫu nhiên thì mô hình có quá ít ví dụ trigger để học.
-- VAL/TEST: 100% ngẫu nhiên. Nếu chỉ chọn câu có sẵn "bắt", "khởi tố"... thì baseline
-  từ khóa được chấm trên đúng loại câu nó giỏi -> điểm bị thổi phồng.
-- N_DOUBLE câu train đánh dấu double_annotate: khoảng 1 tuần sau tự gán lại để đo độ nhất quán. (nếu thời gian nộp bài sau thay đổi cho phép)
-"""
 import pandas as pd
 
 from config import (ANNOTATION_DIR, DATA_DIR, MAX_PER_DOC, N_DOUBLE, N_PER_SPLIT, SEED,

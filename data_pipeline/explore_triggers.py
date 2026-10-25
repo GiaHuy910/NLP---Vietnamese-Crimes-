@@ -1,17 +1,3 @@
-"""Khám phá ứng viên trigger để soạn schema sự kiện (chỉ dùng tập TRAIN).
-
-Đầu vào : corpus news/train_sentences.csv  (câu tin vi phạm, 4 nhóm SubLabel)
-          corpus news/train.csv            (lấy câu tin "Khác" làm nền so sánh)
-Đầu ra  : analysis/trigger_candidates.xlsx
-
-Cách làm:
-1. Lấy mẫu N_PER_GROUP câu mỗi nhóm SubLabel + N_PER_GROUP câu tin không vi phạm (nền).
-2. Gán từ loại bằng underthesea.pos_tag, giữ các ĐỘNG TỪ (nhãn "V").
-3. Với mỗi động từ: % số câu có chứa nó trong từng nhóm.
-4. lift = % trong nhóm vi phạm / % trong tin thường. lift cao = động từ đặc trưng cho tin vi phạm
-   (ví dụ "bắt giữ"), lift ~1 = động từ chung chung (ví dụ "cho biết").
-Chỉ dùng train để không "nhìn trộm" val/test khi thiết kế schema.
-"""
 import random
 import time
 from collections import Counter

@@ -1,15 +1,3 @@
-"""Bước 4 - Tách bài báo thành câu (transform dùng chung cho luồng 1 và luồng 2).
-
-Đầu vào : corpus news/{train,val,test}.csv            (1 dòng = 1 bài)
-Đầu ra  : corpus news/{train,val,test}_sentences.csv  (1 dòng = 1 câu; ghi đè nếu đã có)
-
-- Chỉ lấy bài "Vi phạm pháp luật", bỏ các nhóm trong EXCLUDE_SUBLABELS
-- Đưa 2 kiểu văn bản về một dạng ("23/3 , Cơ quan" -> "23/3, Cơ quan")
-- Tách câu bằng underthesea, nối lại mảnh vỡ do cắt nhầm ở tên viết tắt
-- Bỏ câu đầu nếu trùng câu tóm tắt; bỏ câu < MIN_WORDS hoặc > MAX_WORDS chữ
-
-Hàm `split_sentences` được dùng lại cho bài báo người dùng nhập ở API.
-"""
 import re
 import time
 

@@ -1,14 +1,3 @@
-"""Cấu hình chung cho toàn bộ pipeline làm sạch và biến đổi dữ liệu.
-
-Cấu trúc thư mục (trong repo):
-    <repo>/
-    ├── data_pipeline/          các script này
-    └── data/
-        ├── corpus news/        dữ liệu tin tức thô + file trung gian (KHÔNG đưa lên git)
-        ├── annotation/         file gán nhãn (Label Studio)
-        ├── dataset/            dữ liệu cuối cho 2 luồng (bước 7 tạo)
-        └── analysis/           kết quả khám phá trigger
-"""
 from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent / "data"   # <repo>/data
