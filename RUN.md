@@ -41,51 +41,25 @@ From this point on, run commands from `server/` with the virtual environment act
 
 ## 3. Install the models
 
-Each model is about 500 MB and is not stored in Git. Download the model archive from the team's
-Drive and extract it into `server/models/` so the directory structure looks like this:
+Model nặng khoảng 500 MB mỗi cái nên không có trong git. Model được đính kèm ở mục **Releases** của
+repo GitHub (cột bên phải trang repo, mục Releases, bản `models-v1`):
+
+- `ner_model.zip`: model NER của luồng 1
+- `event_models.zip`: 2 model của luồng 2
+
+Tải về rồi giải nén vào `server/models/` sao cho cấu trúc như sau:
 
 ```
 server/
   models/
-    config.json, model.safetensors, ...   (Part 1 NER model, directly inside models/)
-    event_trigger/                        (Part 2 trigger model)
-    event_argument/                       (Part 2 role model)
+    config.json, model.safetensors, ...   (model NER của luồng 1, nằm trực tiếp trong models/)
+    event_trigger/                        (model trigger của luồng 2)
+    event_argument/                       (model vai trò của luồng 2)
 ```
 
-The baseline and metric-test steps do not require trained models and can be run first.
+Không cần model: các lệnh baseline ở bước 4 và 5, và bước 7 (kiểm tra bộ chấm).
 
-## 4. Part 1: NER
-
-### Run the entity-recognition API
-
-Make sure the NER model is in `server/models/`, then run this from `server/`:
-
-```powershell
-python -m src.main
-```
-
-Send text to `POST /api/process`:
-
-```powershell
-$body = @{ text = "Ngày 15/8, Công an quận Đống Đa đã khởi tố Nguyễn Văn A." } | ConvertTo-Json
-Invoke-RestMethod -Uri http://127.0.0.1:3001/api/process -Method Post `
-  -ContentType "application/json" -Body $body
-```
-
-The API returns `input_text` and an `entities` list. Each entity has `text`, `label`, `start`, and
-`end`. If the model is missing, the API returns HTTP 503 with an error message.
-
-The trigger-only endpoint does not require a model:
-
-```powershell
-$body = @{ text = "Công an đã khởi tố Nguyễn Văn A." } | ConvertTo-Json
-Invoke-RestMethod -Uri http://127.0.0.1:3001/api/process/event-trigger -Method Post `
-  -ContentType "application/json" -Body $body
-```
-
-It returns `input_text` and the `triggers` list produced by `detect_triggers`.
-
-### Evaluate NER from the command line
+## 4. Luồng 1: NER
 
 ```powershell
 # Prepare splits from manually annotated data.
@@ -131,6 +105,7 @@ foreach ($src in "model","rules","gold") {
 ```
 
 Meaning of `--trigger-source`:
+
 - `model`: PhoBERT detects triggers and classifies roles.
 - `rules`: rules detect triggers and PhoBERT classifies roles (the selected system).
 - `gold`: use manually annotated triggers with PhoBERT role classification (an upper bound for analysis).
@@ -164,7 +139,7 @@ Expected output: `Ran 4 tests ... OK`.
 ## Common issues
 
 | Error | Fix |
-|---|---|
+| --- | --- |
 | `No module named 'src'` | You are not in `server/`. Run all commands from that directory. |
 | `No module named 'torch'` / `transformers` / `underthesea` | The virtual environment is not active or dependencies are missing; repeat step 2. |
 | `unrecognized arguments: --trigger-source` | The code is outdated; run `git pull origin ninh`. |
