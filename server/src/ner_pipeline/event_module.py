@@ -1,4 +1,4 @@
-import re
+﻿import re
 
 # Luật trigger: (từ khóa, loại sự kiện[, từ bắt buộc, phạm vi kiểm tra]).
 # - Từ bắt buộc: phải xuất hiện để luật được áp dụng.
@@ -11,7 +11,7 @@ DRUG_OBJECTS = (
 )
 DECEPTION_OBJECTS = ("gian dối", "thông tin giả", "giả mạo")
 WEAPON_OBJECTS = ("hung khí", "dao", "súng", "gậy", "vũ khí")
-MONEY_OBJECTS = ("tiền", "tài sản", "tỉ đồng", "tỷ đồng", "triệu đồng", "đồng")
+MONEY_OBJECTS = ("tiền", "tài sản")
 
 TRIGGER_RULES = [
     # BAO_LUC
@@ -49,7 +49,6 @@ TRIGGER_RULES = [
     ("lừa đảo chiếm đoạt", "LUA_DAO"),
     ("lừa đảo", "LUA_DAO"),
     ("lừa", "LUA_DAO", MONEY_OBJECTS),
-    ("chiếm đoạt", "LUA_DAO", MONEY_OBJECTS),
     ("giả giọng", "LUA_DAO"),
     ("tự xưng", "LUA_DAO"),
     ("nhắn tin", "LUA_DAO", ("tiền",)),
@@ -60,7 +59,7 @@ TRIGGER_RULES = [
     ("vận chuyển", "MA_TUY", DRUG_OBJECTS, "sentence"),
     ("sản xuất", "MA_TUY", DRUG_OBJECTS, "sentence"),
     ("buôn", "MA_TUY", DRUG_OBJECTS, "sentence"),
-    ("mua", "MA_TUY", DRUG_OBJECTS, "clause_both"),
+    ("mua", "MA_TUY", DRUG_OBJECTS, "sentence", "clause"),
     ("bán sỉ", "MA_TUY", DRUG_OBJECTS, "sentence"),
     # Tàng trữ ma túy (gold gán MA_TUY); tàng trữ vũ khí không phải trigger này.
     ("tàng trữ", "MA_TUY", DRUG_OBJECTS),
@@ -91,8 +90,7 @@ NON_TRIGGER_PATTERNS = [
     r"tố\s+giác",
     r"đạn\s+bắn",                                   # "bị đạn bắn": nạn nhân bị thương, không phải hành vi
     r"loại\s+bắn",                                  # "súng loại bắn đạn chì": mô tả vũ khí
-    r"đối\s+tượng\s+chiếm\s+đoạt",                 # mệnh đề quan hệ mô tả nghi phạm, không phải sự kiện
-    r"tội\s+[\"'“‘]?\s*(?:giết|cướp|trộm|lừa|hiếp)",  # tên tội danh, không phải sự kiện
+    r"\btội\s+[\"'“‘]?\s*(?:giết|cướp|trộm|lừa|hiếp)[^,.;!?]*",  # tên tội danh, không phải sự kiện
 ]
 
 # Cụm hành chính: câu mô tả xử phạt hành chính không chứa trigger hình sự (guide B.7).
@@ -115,8 +113,7 @@ AFTER_PLAN_CUES = ("nằm trong kế hoạch", "theo kế hoạch", "trong kế 
 # Dấu hiệu nghi vấn sau trigger trong cùng mệnh đề: "... hay không".
 QUESTION_CUE = re.compile(r"\bhay\s+không\b|\?", re.IGNORECASE)
 
-# Dấu phẩy trong số thập phân (1,3) không phải ranh giới mệnh đề: chỉ tính khi theo sau là khoảng trắng.
-CLAUSE_SPLIT = re.compile(r"[;:]|,(?=\s)|\bnhưng\b|\bvà\s+sau\s+đó\b", re.IGNORECASE)
+CLAUSE_SPLIT = re.compile(r"[,;:]|\bnhưng\b|\bvà\s+sau\s+đó\b", re.IGNORECASE)
 
 
 def _is_abbreviation_dot(text: str, position: int) -> bool:
@@ -214,10 +211,6 @@ def _find_triggers(text: str) -> list[dict]:
                 if scope == "sentence":
                     s_start, s_end = _sentence_bounds(text, start)
                     context = text[s_start:s_end].lower()
-                elif scope == "clause_both":
-                    s_start, _ = _sentence_bounds(text, start)
-                    c_start = _clause_bounds(text, s_start, start)
-                    context = text[c_start:end].lower() + _clause_after(text, end)
                 else:
                     context = _clause_after(text, end)
                 if not any(word in context for word in required):
@@ -250,19 +243,6 @@ def _select_triggers(text: str, candidates: list[dict]) -> list[dict]:
             continue
         chosen.append(trigger)
     chosen.sort(key=lambda t: t["start"])
-
-    # "chiếm đoạt" là phần tiếp theo của hành vi lừa đảo đã gán trong cùng câu: không gán lại.
-    def _has_other_fraud(trigger):
-        s_start, s_end = _sentence_bounds(text, trigger["start"])
-        return any(
-            c is not trigger and c["event_type"] == "LUA_DAO" and c["text"].lower() != "chiếm đoạt"
-            and s_start <= c["start"] < s_end
-            for c in chosen
-        )
-    chosen = [
-        t for t in chosen
-        if not (t["text"].lower() == "chiếm đoạt" and _has_other_fraud(t))
-    ]
 
     # Cùng một hành động nhắc nhiều lần trong câu: chỉ xét lần đầu (guide B.3).
     # Quyết định khẳng định/chưa xảy ra áp dụng cho lần đầu đó.
