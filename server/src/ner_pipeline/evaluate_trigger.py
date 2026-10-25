@@ -1,12 +1,12 @@
-"""Đánh giá trigger (giữ lại cho lệnh cũ, nay dùng chung bộ chấm của luồng 2).
+"""Evaluate triggers (kept for the legacy command; now shares the Part 2 evaluator).
 
-Chạy trong server/:
+Run from server/:
     python -m src.ner_pipeline.evaluate_trigger                       # baseline trên datasets/test.jsonl
     python -m src.ner_pipeline.evaluate_trigger --data datasets/val.jsonl
     python -m src.ner_pipeline.evaluate_trigger --pred datasets/processed/test_pred.jsonl
 
-Dữ liệu là file .jsonl gold (do data_pipeline/step7_export_dataset.py tạo), không còn dùng
-trigger_test.csv. Kết quả gồm Trigger F1 và cả Argument F1, Relation F1, Event Exact Match.
+Data is a gold .jsonl file created by data_pipeline/step7_export_dataset.py; trigger_test.csv
+is no longer used. Results include Trigger F1, Argument F1, Relation F1, and Event Exact Match.
 """
 import argparse
 

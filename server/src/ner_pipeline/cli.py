@@ -94,7 +94,7 @@ def _parser() -> argparse.ArgumentParser:
     )
     prediction.add_argument("--max-length", type=int, default=256)
 
-    # Thêm lệnh batch-predict
+    # Add the batch-predict command.
     batch_prediction = commands.add_parser(
         "batch-predict",
         help="Du doan NER hang loat cho mot file JSONL va xuat Pseudo-label.",
@@ -264,18 +264,18 @@ def _run(args: argparse.Namespace) -> None:
         if not input_path.is_file():
             raise NERPipelineError(f"Khong tim thay file input: {input_path}")
         
-        # Load dữ liệu chưa gán nhãn
+        # Load the unlabeled data.
         records = load_jsonl(input_path)
         print(f"Dang chay Batch Inference tren {len(records)} dong...")
 
-        # Dự đoán hàng loạt
+        # Run batch predictions.
         predicted_spans_list = predict_records(
             records,
             model_dir=Path(args.model_dir),
             max_length=args.max_length,
         )
 
-        # Định dạng kết quả và đánh dấu Pseudo-label
+        # Format the output and mark pseudo-labels.
         output_records = []
         for record, spans in zip(records, predicted_spans_list):
             formatted_entities = [

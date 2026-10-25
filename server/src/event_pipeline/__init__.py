@@ -1,1 +1,1 @@
-"""Luồng 2: trích xuất sự kiện (Trigger -> Argument -> Relation) và đánh giá."""
+"""Part 2: event extraction (Trigger -> Argument -> Relation) and evaluation."""

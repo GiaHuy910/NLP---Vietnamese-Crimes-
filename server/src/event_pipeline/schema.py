@@ -1,10 +1,10 @@
-"""Schema luồng 2 (khớp với docs/annotation_guidelines.md và Label Studio)."""
+"""Part 2 schema, aligned with docs/annotation_guidelines.md and Label Studio."""
 
 ENTITY_TYPES = ("PERSON", "ORGANIZATION", "LOCATION", "TIME", "MONEY", "DRUG", "PRODUCT", "CRIME")
 
 EVENT_TYPES = ("LUA_DAO", "MA_TUY", "BAO_LUC", "CUOP_TROM", "BAT_GIU", "THU_GIU", "KHOI_TO", "XET_XU")
 
-# Vai trò -> các nhãn thực thể được phép nối tới
+# Role -> entity labels that may be linked to it.
 ROLE_TYPES = {
     "DOI_TUONG": {"PERSON", "ORGANIZATION"},
     "NAN_NHAN": {"PERSON", "ORGANIZATION"},

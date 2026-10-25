@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, UploadFile, File, status
 from pydantic import BaseModel
 from typing import Optional
 
-# Import Pipeline điều phối mà chúng ta đã dựng ở Bước 3
+# Import the pipeline orchestrator.
 from server.src.ner_pipeline.pipeline import LegalExtractionPipeline
 
 app = FastAPI(
@@ -10,11 +10,11 @@ app = FastAPI(
     description="Backend xử lý NLP cho bài toán vi phạm pháp luật tiếng Việt"
 )
 
-# Khởi tạo Pipeline ở cấp toàn cục (Chỉ load model 1 lần khi bật Server)
+# Initialize the pipeline once at module load so the model is loaded only once.
 nlp_pipeline = LegalExtractionPipeline()
 
 
-# 1. Định nghĩa Request Body cho chuỗi văn bản (Khớp chính xác trường "input" trong ảnh)
+# 1. Define the request body for text input.
 class TextProcessRequest(BaseModel):
     input: str
 
@@ -27,7 +27,7 @@ class TextProcessRequest(BaseModel):
 
 
 # =====================================================================
-# ENDPOINT 1: /api/process (Xử lý văn bản nhập trực tiếp)
+# ENDPOINT 1: /api/process (Process submitted text)
 # =====================================================================
 @app.post("/api/process", summary="Xử lý chuỗi văn bản nhập từ Client")
 @app.get("/api/process", summary="Xử lý chuỗi văn bản (Hỗ trợ fallback GET)")
@@ -40,7 +40,7 @@ def process_text_endpoint(payload: TextProcessRequest):
             detail="Trường 'input' không được để trống."
         )
     
-    # Chạy pipeline xử lý NER + Event Extraction
+    # Run NER and event extraction.
     result = nlp_pipeline.process(text)
     
     if "error" in result:
@@ -53,16 +53,16 @@ def process_text_endpoint(payload: TextProcessRequest):
 
 
 # =====================================================================
-# ENDPOINT 2: /api/process-file (Xử lý file tải lên từ Buffer)
+# ENDPOINT 2: /api/process-file (Process an uploaded file buffer)
 # =====================================================================
 @app.post("/api/process-file", summary="Xử lý file văn bản nạp từ Client")
 @app.get("/api/process-file", summary="Xử lý file văn bản (Hỗ trợ fallback GET)")
 async def process_file_endpoint(file: UploadFile = File(...)):
     try:
-        # Đọc dữ liệu thô (Buffer) từ file client gửi lên
+        # Read the raw buffer uploaded by the client.
         file_bytes = await file.read()
         
-        # Giải mã buffer sang dạng văn bản chuỗi (UTF-8)
+        # Decode the buffer as UTF-8 text.
         text = file_bytes.decode("utf-8")
     except Exception as e:
         raise HTTPException(
@@ -76,7 +76,7 @@ async def process_file_endpoint(file: UploadFile = File(...)):
             detail="Nội dung file rỗng."
         )
 
-    # Chạy pipeline xử lý
+    # Run the processing pipeline.
     result = nlp_pipeline.process(text)
     
     if "error" in result:

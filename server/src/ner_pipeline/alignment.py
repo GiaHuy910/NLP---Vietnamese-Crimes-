@@ -93,8 +93,8 @@ def _find_mentions(
                 Mention(sentence[start:end], label, start, end)
             )
 
-    # Loại các span trùng hoàn toàn cùng nhãn.
-    # Không tự động xóa span lồng nhau khác nhãn ở đây.
+    # Remove exact duplicate spans with the same label.
+    # Do not automatically remove nested spans with different labels.
     seen: set[tuple[int, int, str]] = set()
 
     for mention in raw_candidates:
@@ -127,8 +127,8 @@ def _segment_offsets(
     for segment in segments:
         folded_segment, _, _ = _fold_with_offsets(segment)
 
-        # Cho phép khớp token có dấu "_" với cụm chữ-số
-        # hoặc khoảng trắng trong câu gốc.
+        # Allow underscore-joined tokens to match syllables separated by
+        # whitespace or underscores in the original sentence.
         parts = segment.split("_")
         flexible = r"[\s_]*".join(
             re.escape(part) for part in parts
@@ -141,7 +141,7 @@ def _segment_offsets(
 
         candidates: list[tuple[int, int]] = []
 
-        # 1. Tim khop truc tiep trong cau goc.
+        # 1. Try a direct match in the original sentence.
         for match in re.finditer(
             flexible, sentence[cursor:], flags=re.IGNORECASE
         ):
@@ -150,7 +150,7 @@ def _segment_offsets(
             )
             break
 
-        # 2. Tim khop sau khi chuan hoa Unicode va bo dau.
+        # 2. Try again after Unicode normalization and accent folding.
         if not candidates and folded_pattern:
             for match in re.finditer(
                 folded_pattern,
@@ -279,8 +279,8 @@ def _split_tokens_at_entity_boundaries(
             ):
                 valid_boundaries.add(syllable_end + 1)
 
-        # Cho phép thực thể kết thúc trước dấu chấm trong chữ viết tắt,
-        # ví dụ token "M." nhưng thực thể được gắn nhãn là "M".
+        # Allow an entity to end before the period in an abbreviation,
+        # e.g. token "M." when the annotated entity is "M".
         for boundary in internal_boundaries:
             relative = boundary - start
 
@@ -336,7 +336,7 @@ def _resolve_overlapping_mentions(
             selected.append(mention)
             continue
 
-        # Nếu cùng span và cùng nhãn thì chỉ giữ một bản.
+        # Keep only one copy when spans and labels are identical.
         if all(
             current.start == mention.start
             and current.end == mention.end
@@ -346,8 +346,8 @@ def _resolve_overlapping_mentions(
             removed += 1
             continue
 
-        # Candidates được sắp xếp từ span dài đến span ngắn.
-        # Ưu tiên span dài hơn để tránh entity con chồng lấn.
+        # Sort candidates from longest to shortest.
+        # Prefer longer spans to avoid overlapping nested entities.
         current_longer = all(
             (current.end - current.start)
             > (mention.end - mention.start)
@@ -386,11 +386,11 @@ def align_example(
     row_number: int,
     segmenter: Callable[[str], list[str]] | None = None,
 ) -> dict[str, object]:
-    # Hạn chế chuẩn hóa NFC nếu nó làm lệch offset gốc. 
-    # Tốt nhất: Dữ liệu nên được chuẩn hóa NFC TRƯỚC KHI gán nhãn.
+    # Avoid NFC normalization if it would shift original offsets.
+    # Ideally, normalize the data to NFC before annotation.
     sentence = unicodedata.normalize("NFC", example.sentence)
     
-    # SỬA LỖI P0: Sử dụng trực tiếp offset từ annotator, không tìm kiếm lại bằng text
+    # Use annotator-provided offsets directly instead of searching again by text.
     mentions = []
 
     for m in example.mentions:
@@ -399,11 +399,11 @@ def align_example(
         )
         label = normalize_entity_label(m.label)
 
-        # Offset âm nghĩa là dữ liệu chưa cung cấp vị trí thực thể.
+        # Negative offsets mean the data did not provide entity positions.
         if m.start < 0 or m.end < 0:
-            # Khớp nguyên từ (không khớp chữ nằm giữa từ khác) và ưu tiên đúng hoa/thường.
-            # Trước đây khớp không phân biệt hoa/thường và không xét ranh giới từ, nên tên
-            # viết tắt "T." bị gán PERSON cho mọi chữ "t" trong câu.
+            # Match whole words and prefer exact case.
+            # Case-insensitive matching without word boundaries previously labeled every
+            # "t" in a sentence as PERSON when the annotated abbreviation was "T.".
             pattern = (
                 r"(?<!\w)"
                 + r"\s+".join(
@@ -453,17 +453,17 @@ def align_example(
         mentions.append(
             Mention(span_text, label, start, end)
         )
-    # Xử lý entity chồng lấn
+    # Handle overlapping entities.
     mentions, overlap_count = _resolve_overlapping_mentions(
         mentions,
         row_number=row_number,
         sentence=sentence,
     )
 
-    # Tách từ và khởi tạo nhãn BIO
+    # Segment the sentence and initialize BIO labels.
     segments = (segmenter or _underthesea_segments)(sentence)
     tokens = _segment_offsets(sentence, segments)
-     # Tách token nếu ranh giới entity nằm giữa token.
+     # Split tokens when an entity boundary falls inside a token.
     boundaries = {
         position
         for mention in mentions
@@ -494,7 +494,7 @@ def align_example(
     tokens = split_tokens
     labels = ["O"] * len(tokens)
 
-    # Gán nhãn BIO cho từng entity
+    # Assign BIO labels to each entity.
     occupied: list[tuple[int, int, str]] = []
 
     for mention in mentions:
@@ -516,7 +516,7 @@ def align_example(
         start_matches = first_start == mention.start
         end_matches = last_end == mention.end
 
-        # Cho phép entity kết thúc trước dấu chấm trong "M."
+        # Allow an entity to end before the period in "M.".
         if not end_matches and last_end == mention.end + 1:
             end_matches = (
                 sentence[mention.end:last_end] == "."

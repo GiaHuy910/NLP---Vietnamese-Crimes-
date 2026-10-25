@@ -11,7 +11,7 @@ from .schema import LABEL_ALIASES
 
 _TOKEN = re.compile(r"(?:[^\W_]|[\u0300-\u036f])+|[^\w\s]", flags=re.UNICODE)
 
-# Biến thể chính tả được chuẩn hóa khi so khớp; offset vẫn giữ theo câu gốc.
+# Normalize spelling variants during matching while preserving offsets in the source sentence.
 _SPELLING_VARIANTS = {
     "tuý": "túy",
     "uỷ": "ủy",
@@ -22,7 +22,7 @@ _CAPITALIZED_REST = re.compile(r"^[\w.-]*$", flags=re.UNICODE)
 _DAY_PART = r"(?:sáng|trưa|chiều|tối|đêm|khuya|sớm|rạng\s+sáng)"
 _WEEKDAY = r"(?:thứ\s+(?:hai|ba|tư|năm|sáu|bảy)|chủ\s+nhật)"
 
-# Các mẫu thời gian đơn lẻ (ưu tiên 100).
+# Simple time patterns (priority 100).
 _DATE_TIME = re.compile(
     r"\b(?:"
     rf"(?:{_DAY_PART}\s+(?:ngày\s+)?)?\d{{1,2}}[/-]\d{{1,2}}[/-]\d{{2,4}}"
@@ -35,7 +35,7 @@ _DATE_TIME = re.compile(
     flags=re.IGNORECASE,
 )
 
-# Các mẫu ghép có ưu tiên cao hơn, để không bị cắt thành năm đơn lẻ.
+# Composite patterns have higher priority so they are not split into isolated years.
 _TIME_COMPOSITE = (
     (re.compile(r"\b(?:đầu|giữa|cuối)\s+năm\s+(?:19|20)\d{2}\b", re.IGNORECASE), 115),
     (re.compile(r"\b(?:đầu|giữa|cuối)\s+tháng\s+\d{1,2}[/-]\d{4}\b", re.IGNORECASE), 115),
@@ -58,9 +58,9 @@ _DRUG_TERMS = (
     "meth", "ketamine", "cần sa", "thuốc lắc",
 )
 
-# PRODUCT: vật thể cụ thể trong bối cảnh tội phạm (gold gán nhãn này cho súng, dao, đạn...).
-# Các từ chung như xe máy, ô tô, điện thoại không nằm trong danh sách vì gold không gán chúng
-# trong các câu đã kiểm tra; chỉ nhận khi có tên hiệu/tên riêng đi kèm (xem _PRODUCT_BRAND_HEADS).
+# PRODUCT: concrete objects in crime contexts (gold labels include guns, knives, bullets, etc.).
+# Generic terms such as motorcycle, car, and phone are excluded because gold annotations
+# did not label them in reviewed sentences; recognize them only with a brand or proper name.
 _PRODUCT_TERMS = (
     "iPhone", "điện thoại iPhone",
     "súng", "súng ngắn", "súng trường", "súng hơi", "khẩu súng",
@@ -68,18 +68,18 @@ _PRODUCT_TERMS = (
     "lựu đạn", "hung khí",
 )
 
-# Từ đứng trước danh từ sản phẩm nhưng không thuộc tên sản phẩm (số đếm, loại từ).
+# Words before product nouns that are not part of the product name (numbers and classifiers).
 _PRODUCT_LEADING_NOISE = {
     "một", "các", "những", "hai", "ba", "bốn", "năm", "sáu", "bảy",
     "tám", "chín", "mười", "chiếc", "cái", "con", "khẩu", "quả", "cây",
 }
 
-# Từ trùng với từ khóa vũ khí nhưng thường không phải thực thể (dao động).
+# Words that overlap with weapon keywords but are usually not entities (e.g. "fluctuate").
 _PRODUCT_NEGATIVE_NEXT = {
     "dao": {"động"},
 }
 
-# Đầu của loại sản phẩm gọi theo hiệu: "tay ga hiệu Ari Blade".
+# Head terms for products named by brand, e.g. "scooter, Ari Blade brand".
 _PRODUCT_BRAND_HEADS = ("tay ga", "xe ga", "xe số", "xe tay ga", "điện thoại")
 
 _CRIME_TERMS = (
@@ -88,12 +88,12 @@ _CRIME_TERMS = (
     "tàng trữ trái phép chất ma túy",
 )
 
-# Cụm cơ quan/tổ chức đủ nghĩa để đứng một mình (vẫn cần viết hoa ở đầu).
+# Agency or organization phrases that can stand alone (must still be capitalized initially).
 _ORG_STANDALONE = (
     "quốc hội", "chính phủ", "đảng",
 )
 
-# Cụm cơ quan/tổ chức: chỉ tạo thực thể khi có phần tên theo sau.
+# Agency or organization phrases: create an entity only when followed by a proper name.
 _ORG_CUES = (
     "ủy ban", "uỷ ban", "tòa án", "viện kiểm sát", "công ty", "ngân hàng",
     "chi nhánh", "bộ", "sở", "cục", "đội", "tổng cục", "bệnh viện", "công an",
@@ -103,7 +103,7 @@ _ORG_CUES = (
     "tand", "vksnd", "cand", "ubnd", "ca", "cơ quan csđt",
 )
 
-# Cụm từ viết thường nằm trong tên tổ chức; được nhận như một khối.
+# Lowercase phrases that occur within organization names; recognize them as a unit.
 _ORG_UNITS = (
     ("sử", "dụng", "công", "nghệ", "cao"),
     ("thông", "vận", "tải"),
@@ -121,17 +121,17 @@ _ORG_UNITS = (
     ("chính", "trị"),
 )
 
-# Tiền tố số: số đứng sau các từ này là một phần của tên ("quận 10", "Q.2", "số 1").
+# Numeric prefixes: following numbers belong to the name ("District 10", "D.2", "No. 1").
 _ORG_NUMBER_PREFIX = {"quận", "phường", "huyện", "xã", "thị", "tỉnh", "số", "khu", "thôn", "ấp"}
 
-# Từ không bao giờ là một phần của tên tổ chức (ngữ pháp/động từ/giới từ).
+# Words that are never part of an organization name (grammatical words, verbs, prepositions).
 _ORG_BLOCK = {
     "của", "về", "tại", "ở", "do", "bị", "cho", "đã", "đang", "sẽ",
     "được", "với", "theo", "trong", "là", "có", "từ", "đến", "để",
     "khi", "nên", "vì", "sau", "trước", "khoảng", "hoặc",
 }
 
-# Từ thường nằm trong tên tổ chức, chỉ được nhận khi đứng sau một từ viết hoa hoặc từ thuộc tên.
+# Words commonly found in organization names; accept only after a capitalized or name word.
 _ORG_NAME_WORDS = {
     "thông", "vận", "tải", "nông", "nghiệp", "kinh", "tế", "trị", "nội", "nhân", "dân",
     "tối", "cao", "đa", "khoa", "nhà", "nước", "văn", "hóa", "thể", "thao", "du", "lịch",
@@ -144,10 +144,10 @@ _ORG_NAME_WORDS = {
     "đầu", "tư", "hạt", "kiểm", "lâm",
 }
 
-# Từ được phép đứng sau dấu phẩy trong tên (ví dụ "phòng, chống tội phạm").
+# Words allowed after a comma in a name (e.g. "department of, crime prevention").
 _ORG_COMMA_WORDS = {"phòng", "chống", "tội", "phạm", "công", "nghệ", "cao"}
 
-# Từ được phép đứng ngay sau cụm cơ quan (ví dụ "tòa án NHÂN dân", "sở XÂY dựng", "thanh tra TỈNH").
+# Words allowed immediately after an agency phrase (e.g. mixed-case official names).
 _ORG_NAME_AFTER_CUE = {
     "nhân", "dân", "tối", "cao", "đa", "khoa", "kiểm", "sát", "nội", "bộ", "tư", "pháp",
     "tỉnh", "huyện", "quận", "thành", "phố", "thị", "xã", "phường", "trấn", "nghiệp",
@@ -173,7 +173,7 @@ _LOC_DESIGNATOR_WORDS = {"tp", "tỉnh", "thành", "thị", "quận", "huyện",
 
 _LOC_PREPOSITIONS = ("ở", "tại", "thuộc")
 
-# Địa danh cấp tỉnh/thành và quốc gia phổ biến (kiến thức địa lý chung, không lấy từ tập test).
+# Common province, city, and country names from general geographic knowledge, not test data.
 _LOC_GAZETTEER = (
     "Việt Nam", "Trung Quốc", "Campuchia", "Lào", "Thái Lan", "Hàn Quốc",
     "Nhật Bản", "Hoa Kỳ", "Đài Loan",
@@ -195,13 +195,13 @@ _PERSON_TITLES = (
     "bác", "em", "nghi phạm", "bị can", "nạn nhân",
 )
 
-# Cụm vai trò đứng trước tên người (không thuộc span): "đối tượng Hùng", "bị hại Lan".
+# Role phrases before a person's name are outside the span (e.g. "suspect Hung", "victim Lan").
 _PERSON_ROLE_PHRASES = (
     "đối tượng", "bị can", "bị hại", "nghi phạm", "nạn nhân", "tên", "hung thủ",
     "chồng", "vợ", "cháu", "cha", "mẹ",
 )
 
-# Từ chỉ chức danh/vai trò đứng trước cơ quan hoặc tên người, không thuộc span.
+# Titles or roles before an agency or person's name are outside the span.
 _ROLE_WORDS = {"chánh", "phó", "trưởng", "giám", "đốc", "cấp"}
 
 _STOP_WORDS = {
@@ -213,7 +213,7 @@ _STOP_WORDS = {
     "vì", "sau", "trước", "khoảng", "trong đó",
 }
 
-# Họ phổ biến của người Việt; dùng để giảm FP của quy tắc tên không có danh xưng.
+# Common Vietnamese surnames, used to reduce false positives for names without titles.
 _VI_SURNAMES = {
     "nguyễn", "trần", "lê", "phạm", "hoàng", "huỳnh", "phan", "vũ", "võ",
     "đặng", "bùi", "đỗ", "hồ", "ngô", "dương", "lý", "đinh", "đào", "đoàn",
@@ -288,7 +288,7 @@ def _phrase_matches(
 
 
 def _is_capitalized(token: str) -> bool:
-    # Dải Unicode À-Ỹ bao gồm cả chữ thường có dấu, nên kiểm tra chữ hoa bằng isupper().
+    # Unicode range À-Ỹ includes lowercase accented letters too, so use isupper() to test case.
     value = unicodedata.normalize("NFC", token)
     return bool(value) and value[0].isupper() and bool(_CAPITALIZED_REST.match(value))
 
@@ -302,13 +302,13 @@ def _is_name_token(token: str) -> bool:
 
 
 def _cue_token_lists() -> list[list[str]]:
-    # "ca" (viết tắt Công an) chỉ là cue khi viết hoa; không dùng để chặn tên người ("ông Ca").
+    # "CA" (abbreviation for police) is a cue only when capitalized; do not block names like "Mr. Ca".
     phrases = [c for c in _ORG_CUES if c != "ca"] + list(_ORG_STANDALONE) + [" ".join(d) for d in _LOC_DESIGNATORS]
     return [[_normalize(t) for t, _, _ in _tokens(p)] for p in phrases]
 
 
 def _span_has_cue(normalized, start, end, cue_lists) -> bool:
-    """True nếu một cụm cue (cơ quan/đơn vị hành chính) chồng lấn đoạn [start, end)."""
+    """Return whether an agency/administrative cue overlaps the [start, end) span."""
     for cue in cue_lists:
         size = len(cue)
         for i in range(max(0, start - size + 1), min(end, len(normalized) - size + 1)):
@@ -323,7 +323,7 @@ def _consume_capitalized(
     index: int,
     max_tokens: int,
 ) -> int:
-    """Nuốt chuỗi từ viết hoa (tên người, tên địa danh). Dấu '.' chỉ được nuốt khi sau nó là tên thật."""
+    """Consume a capitalized sequence (person or place name). Include periods only when a name follows."""
     stop = index
     while stop < len(tokens) and stop - index < max_tokens:
         value = tokens[stop][0]
@@ -350,7 +350,7 @@ def _consume_place(
     index: int,
     max_tokens: int = 6,
 ) -> int:
-    """Nuốt tên địa danh: từ viết hoa, số (phường 5, thôn Chư Bồ 1) và dấu '-' giữa tên."""
+    """Consume a place name: capitalized words, numbers, and hyphens within the name."""
     stop = index
     while stop < len(tokens) and stop - index < max_tokens:
         value = tokens[stop][0]
@@ -371,7 +371,7 @@ def _consume_place(
     return stop
 
 
-# Từ viết thường thường đứng cuối tên tổ chức ("Tối cao", "tội phạm", "nội bộ").
+# Lowercase words that commonly end organization names ("Supreme", "crime", "internal").
 _ORG_NAME_FINAL = {
     "cao", "bộ", "khoa", "dựng", "tế", "thuật", "pháp", "mại", "vụ", "trị",
     "nội", "hạn", "phần", "nghiệp", "mạng", "phạm",
@@ -390,8 +390,10 @@ _ORG_CUE_HEADS = None
 
 
 def _lowercase_continues_name(tokens, normalized, index) -> bool:
-    """Từ viết thường trong tên chỉ được nhận khi từ kế tiếp tiếp tục tên (viết hoa, từ tên),
-    hoặc là dấu câu/kết thúc câu. Tránh nuốt "thông báo", "công bố", "thông tin"."""
+    """Accept a lowercase name token only when the next token continues the name or ends the phrase.
+
+    Avoid consuming reporting terms such as "thông báo", "công bố", or "thông tin".
+    """
     if normalized[index] in _ORG_NAME_FINAL:
         return True
     if index + 1 >= len(tokens):
@@ -408,13 +410,13 @@ def _consume_org(
     index: int,
     max_tokens: int = 14,
 ) -> int:
-    """Nuốt phần tên tổ chức sau một cụm cue.
+    """Consume the organization name following an organization cue.
 
-    - Từ viết hoa, số, '&', chữ viết tắt là phần tên.
-    - Từ viết thường chỉ được nhận khi nằm trong cụm đã biết (_ORG_UNITS), hoặc là từ
-      thuộc tên và từ kế tiếp tiếp tục tên (xem _lowercase_continues_name).
-    - Sau "Công an" chỉ tiếp tục bằng tên riêng hoặc từ thuộc _ORG_NAME_AFTER_CUE.
-    - "và" chỉ nối tiếp khi không mở đầu một cơ quan mới.
+    - Capitalized words, numbers, ampersands, and abbreviations are part of the name.
+    - Accept lowercase words only in known phrases (_ORG_UNITS), or when the word is part
+      of the name and the next token continues it (see _lowercase_continues_name).
+    - After "Công an", continue only with a proper name or a word in _ORG_NAME_AFTER_CUE.
+    - Continue across "và" only when it does not begin a new agency name.
     """
     global _ORG_CUE_HEADS
     if _ORG_CUE_HEADS is None:
@@ -427,7 +429,7 @@ def _consume_org(
         value = tokens[stop][0]
         norm = normalized[stop]
 
-        # Cụm cố định viết thường (ví dụ "đa khoa", "nội bộ").
+        # Fixed lowercase phrases (e.g. "general hospital", "internal").
         if prev_name and not after_cong_an:
             unit = next(
                 (u for u in _ORG_UNITS if tuple(normalized[stop:stop + len(u)]) == u),
@@ -457,7 +459,7 @@ def _consume_org(
             stop += 1
             continue
         if norm == "và":
-            # "và" nối các phần trong tên, nhưng không nối sang một cơ quan mới.
+            # "and" joins parts of a name but does not join a separate agency.
             starts_new_org = (
                 stop + 1 < len(tokens)
                 and normalized[stop + 1] in _ORG_CUE_HEADS
@@ -491,7 +493,7 @@ def _consume_org(
             continue
         break
 
-    # Cắt đuôi: từ không thể kết thúc tên, dấu nối, và số không thuộc tên.
+    # Trim trailing words that cannot end a name, hyphens, and numbers not part of the name.
     while stop > index:
         last = tokens[stop - 1][0]
         if _is_digit(last):
@@ -511,7 +513,7 @@ def _consume_org(
     return stop
 
 
-# Từ không bao giờ kết thúc một tên tổ chức; nếu đứng cuối thì bị cắt bỏ.
+# Words that cannot end an organization name; trim them when they appear at the end.
 _ORG_DANGLING = {
     "tỉnh", "quận", "huyện", "phường", "xã", "thành", "phố", "thị",
     "đa", "khoa", "nhập", "khẩu", "cổ", "phần", "trách", "nhiệm",
@@ -567,7 +569,7 @@ class RuleBasedNER:
             self.keywords[label].extend(values)
 
     def predict(self, sentence: str) -> list[dict[str, str | int]]:
-        # Chuẩn hóa NFC giống phobert.predict_sentence; offset tham chiếu chuỗi NFC.
+        # Normalize to NFC as in phobert.predict_sentence; offsets refer to the NFC string.
         sentence = unicodedata.normalize("NFC", sentence)
         tokens = _tokens(sentence)
 
@@ -595,18 +597,18 @@ class RuleBasedNER:
                 candidates[key] = (label, priority, rule)
 
         def phrase_priority(base, start_i, end_i):
-            # Cụm dài hơn trong cùng nhóm được ưu tiên hơn cụm ngắn.
+            # Prefer longer phrases within the same group.
             return base + (end_i - start_i)
 
-        # 1. Từ điển (từ file rule và danh sách mặc định).
+        # 1. Dictionary (from the rules file and built-in defaults).
         for label, phrases in self.keywords.items():
             for phrase in phrases:
                 for start_i, end_i in _phrase_matches(normalized, phrase):
                     add(start_i, end_i, label,
                         phrase_priority(120, start_i, end_i), "dict")
 
-        # 2. Tổ chức: cụm cơ quan + phần tên theo sau.
-        # Cụm viết thường (như "công an" trong câu thường) chỉ có hiệu lực khi tên theo sau viết hoa.
+        # 2. Organizations: agency phrase plus the following name.
+        # Lowercase phrases (such as "police" in ordinary text) apply only when followed by a capitalized name.
         def cue_is_valid(start_i, end_i):
             first_cap = _is_capitalized(tokens[start_i][0])
             next_ok = end_i < len(tokens) and (
@@ -633,7 +635,7 @@ class RuleBasedNER:
                 if stop > end_i:
                     add(start_i, stop, "ORGANIZATION", 110, "org_cue")
 
-        # 3. Địa danh sau giới từ (không lấy cụm bắt đầu bằng cơ quan/chức danh/danh từ đơn vị).
+        # 3. Locations after prepositions; exclude phrases beginning with agencies, titles, or unit nouns.
         for cue in _LOC_PREPOSITIONS:
             for _, cue_end in _phrase_matches(normalized, cue):
                 if cue_end >= len(tokens):
@@ -646,21 +648,21 @@ class RuleBasedNER:
                 if name_end > cue_end and not _span_has_cue(normalized, cue_end, name_end, cue_lists):
                     add(cue_end, name_end, "LOCATION", 65, "loc_prep")
 
-        # 3b. Địa danh theo tiền tố hành chính (tỉnh, huyện, TP., đường...).
+        # 3b. Locations after administrative prefixes (province, district, city, street, etc.).
         for designator in _LOC_DESIGNATORS:
             size = len(designator)
             for start_i in range(len(tokens) - size + 1):
                 if tuple(normalized[start_i:start_i + size]) != designator:
                     continue
                 name_start = start_i + size
-                # Bỏ dấu chấm của "TP." trước khi lấy tên.
+                # Remove the period from "TP." before capturing the name.
                 if name_start < len(tokens) and tokens[name_start][0] == ".":
                     name_start += 1
                 name_end = _consume_place(tokens, normalized, name_start, max_tokens=6)
                 if name_end > name_start:
                     add(start_i, name_end, "LOCATION", 80, "loc_designator")
 
-        # 3c. Địa danh từ gazetteer (không lấy khi đứng sau "người": đó là quốc tịch).
+        # 3c. Gazetteer locations; exclude those after "person/people", which indicate nationality.
         for name in _LOC_GAZETTEER:
             for start_i, end_i in _phrase_matches(normalized, name):
                 if start_i > 0 and (
@@ -670,7 +672,7 @@ class RuleBasedNER:
                     continue
                 add(start_i, end_i, "LOCATION", phrase_priority(72, start_i, end_i), "loc_gazetteer")
 
-        # 4. Tên người sau danh xưng (danh xưng không thuộc span).
+        # 4. Person names after titles; exclude the title from the span.
         for index, word in enumerate(normalized):
             if word not in _PERSON_TITLES:
                 continue
@@ -683,7 +685,7 @@ class RuleBasedNER:
             if name_end > name_start and not _span_has_cue(normalized, name_start, name_end, cue_lists):
                 add(name_start, name_end, "PERSON", 85, "person_title")
 
-        # 4b. Tên người sau cụm vai trò (đối tượng, bị hại, tên...).
+        # 4b. Person names after role phrases (suspect, victim, named, etc.).
         for role in _PERSON_ROLE_PHRASES:
             for _, role_end in _phrase_matches(normalized, role):
                 if role_end >= len(tokens) or not _is_capitalized(tokens[role_end][0]):
@@ -692,7 +694,7 @@ class RuleBasedNER:
                 if name_end > role_end and not _span_has_cue(normalized, role_end, name_end, cue_lists):
                     add(role_end, name_end, "PERSON", 60, "person_role")
 
-        # 5. Tên người không có danh xưng: 2–4 từ viết hoa liên tiếp, bắt đầu bằng họ phổ biến.
+        # 5. Untitled person names: 2–4 consecutive capitalized words beginning with a common surname.
         index = 0
         while index < len(tokens):
             if not _is_capitalized(tokens[index][0]) or normalized[index] in _NAME_BLOCKLIST:
@@ -715,9 +717,9 @@ class RuleBasedNER:
                 add(index, stop, "PERSON", 35, "person_generic")
             index = max(stop, index + 1)
 
-        # 5b. Địa danh từ tiền tố đã có; khoảng trống cho các nhóm khác bên dưới.
+        # 5b. Locations recognized from prefixes above; reserve space for later groups.
 
-        # 6. TIME: mẫu ghép trước, mẫu đơn sau.
+        # 6. TIME: composite patterns before simple patterns.
         for pattern, priority in _TIME_COMPOSITE:
             for match in pattern.finditer(sentence):
                 add(start_to_token.get(match.start()),
@@ -731,7 +733,7 @@ class RuleBasedNER:
 
         for match in _DATE_TIME.finditer(sentence):
             text = match.group(0)
-            # Năm sinh (SN 1999, sinh năm 1999) không phải thời gian sự kiện.
+            # Birth years ("born 1999", "year of birth 1999") are not event times.
             if re.fullmatch(r"(?:19|20)\d{2}", text) and _SN_PREFIX.search(sentence[:match.start()]):
                 continue
             add(start_to_token.get(match.start()),
@@ -744,7 +746,7 @@ class RuleBasedNER:
                 end_to_token.get(match.end()),
                 "MONEY", 105, "money")
 
-        # 8. DRUG, PRODUCT, CRIME từ cụm từ cố định.
+        # 8. DRUG, PRODUCT, and CRIME from fixed phrases.
         for label, phrases in (
             ("DRUG", _DRUG_TERMS),
             ("PRODUCT", _PRODUCT_TERMS),
@@ -760,7 +762,7 @@ class RuleBasedNER:
                     add(start_i, end_i, label,
                         phrase_priority(90, start_i, end_i), "phrase")
 
-        # 8b. PRODUCT: "tay ga hiệu Ari Blade" = loại xe + hiệu + tên riêng.
+        # 8b. PRODUCT: "Ari Blade brand scooter" = vehicle type + brand cue + proper name.
         for head in _PRODUCT_BRAND_HEADS:
             head_len = len(_tokens(head))
             for _, head_end in _phrase_matches(normalized, head):
@@ -769,7 +771,7 @@ class RuleBasedNER:
                     if name_end > head_end + 1:
                         add(head_end - head_len, name_end, "PRODUCT", 95, "product_brand")
 
-        # Chọn span: ưu tiên độ tin cậy của quy tắc; cùng mức thì span dài hơn.
+        # Select spans by rule priority; for equal priority, prefer the longer span.
         ordered = sorted(
             (
                 (start, end, label, priority, rule)

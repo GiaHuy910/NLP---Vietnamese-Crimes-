@@ -183,7 +183,7 @@ def predict_records(
         _require_model(model_dir)
         torch, _, AutoModelForTokenClassification, AutoTokenizer = _dependencies()
         
-        # SỬA LỖI: Kiểm tra cấu hình checkpoint có khớp với mã nguồn hiện tại không
+        # Verify that the checkpoint configuration matches the current code schema.
         from transformers import AutoConfig
         config = AutoConfig.from_pretrained(model_dir)
         if config.num_labels != len(LABELS):

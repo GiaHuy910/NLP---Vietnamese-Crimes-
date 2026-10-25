@@ -1,27 +1,23 @@
-# Vietnamese NER pipeline
+# Vietnamese NLP Extraction Pipeline
 
-This folder implements **Part 1 — Named Entity Recognition** for Vietnamese legal-news
-text. It does not implement event triggers, arguments, event structures, or relation
-extraction.
+The server provides two related components for Vietnamese legal-news text:
 
-Only `PERSON`, `ORGANIZATION`, and `LOCATION` are supported. The BIO vocabulary is
-`O`, `B-PERSON`, `I-PERSON`, `B-ORGANIZATION`, `I-ORGANIZATION`, `B-LOCATION`,
-`I-LOCATION`.
+- **Part 1 — NER:** PhoBERT token classification for 8 entity types: `PERSON`, `ORGANIZATION`,
+  `LOCATION`, `TIME`, `MONEY`, `PRODUCT`, `DRUG`, and `CRIME`.
+- **Part 2 — Event extraction:** rule-based or PhoBERT trigger detection and role/argument extraction
+  for 8 event types and 10 roles.
 
-No dataset, annotation, evaluation result, or trained model is included. You supply
-the data yourself; all raw and generated dataset files remain under `server/datasets/`.
+The Part 1 API is in `src/main.py`. The reusable NER inference code is in
+`src/ner_pipeline/phobert.py`; trigger rules and event extraction are in
+`src/ner_pipeline/event_module.py`. Part 2 training and evaluation commands are under
+`src/event_pipeline/`.
 
-## 1. Environment
+## 1. Requirements and installation
 
-- Python 3.10 or newer.
-- PyTorch should be installed for the machine's CPU/CUDA configuration. Follow the
-  [official PyTorch installation selector](https://pytorch.org/get-started/locally/)
-  if the default package installation does not match your hardware.
-- Fine-tuning downloads the pretrained `vinai/phobert-base-v2` model from Hugging Face
-  unless a different `--model-name` is given. This is a pretrained model checkpoint,
-  not an external replacement dataset.
-
-## 2. Installation
+- Python 3.10 or later.
+- Install a PyTorch build appropriate for your CPU/CUDA environment.
+- PhoBERT fine-tuning may download `vinai/phobert-base-v2` from Hugging Face unless a local model is
+  supplied.
 
 From the repository root:
 
@@ -32,155 +28,125 @@ python -m venv .venv
 python -m pip install -r requirements-ner.txt
 ```
 
-On macOS/Linux, activate with `source .venv/bin/activate`. Install a suitable PyTorch
-build first if needed, then install the remaining packages from `requirements-ner.txt`.
+On macOS/Linux, activate with `source .venv/bin/activate`.
 
-## 3. Dataset location and format
+## 2. Model files
 
-Put one or more UTF-8 CSV files directly in `server/datasets/`. The CSV must contain
-the columns `sentence` and `entities`; quote fields according to the CSV standard when
-they contain commas. The `entities` cell is `NONE` for a sentence without target
-entities, or semicolon-separated `TEXT|LABEL` items, where `LABEL` is one of the
-three supported entity types. Do not add other entity types.
+Model files are not committed to Git. Place the Part 1 model directly under `server/models/`. Part 2
+models, when used, belong in `server/models/event_trigger/` and `server/models/event_argument/`.
+The model directories should contain their `config.json`, weights, and tokenizer files.
 
-The pipeline does not download or generate example data automatically at runtime.
-Existing non-CSV files are ignored. With exactly one CSV, `prepare` discovers it;
-if there are multiple CSVs, pass `--input` with a filename or a `datasets/...` path
-inside `server/`.
+## 3. NER input data and preprocessing
 
-For a pipeline smoke test, the current `train.csv`, `valid.csv`, and `test.csv` each
-contain 100 extra, template-generated synthetic rows, appended after the supplied
-annotations. They are explicitly fictional and neutral, with one entity of each
-supported type per row. These rows are not real news or human-verified annotations;
-do not use metrics on this mixed test split as evidence of real-world model quality.
-The original examples remain before the appended synthetic rows.
+Place UTF-8 CSV files under `server/datasets/`. They must contain `sentence` and `entities` columns.
+Use `NONE` for a sentence without entities, or semicolon-separated `TEXT|LABEL` items. The accepted
+labels are the eight entity types listed above.
 
-An optional user-maintained `server/datasets/ner_rules.json` can provide baseline
-keywords, for example as a JSON object with `PERSON`, `ORGANIZATION`, and/or
-`LOCATION` keys whose values are arrays of strings. No keyword list is pre-filled.
-
-## 4. Preprocessing and annotation
-
-Create the CSV annotation yourself using the format above. `prepare` validates the
-schema and labels, aligns every annotated mention to the original sentence, performs
-Vietnamese word segmentation with underthesea, and generates BIO labels. Alignment
-is token-boundary based, whitespace tolerant, punctuation-aware, and marks every
-matching occurrence of an annotated entity. It reports unmatched, overlapping, or
-different-label overlapping annotations rather than silently assigning incorrect
-labels. Same-label overlapping mentions keep the longest span, and the removal
-count is reported for review.
-
-When rebuilding splits from one full corpus after earlier experimental training,
-use `--train-only` to keep the previously exposed sentences out of validation/test:
-
-```powershell
-python -m src.ner_pipeline.cli prepare `
-  --input valid.csv --train-only annotation_clean.csv --seed 42
-```
-
-The training-only CSV must be a matching subset of the source corpus. Its examples
-are forced into the new training split; it cannot contribute to validation or test.
-Same-label overlapping annotations are reduced to the longest span, and the number
-removed is reported. Different-label overlaps remain hard errors for manual review.
-
-```powershell
-python -m src.ner_pipeline.cli prepare
-# Or select a file when there is more than one:
-python -m src.ner_pipeline.cli prepare --input annotations.csv --seed 42
-```
-
-The deduplicated JSONL working files are written to `server/datasets/processed/`.
-The standard annotation CSVs are also written to `server/datasets/train.csv`,
-`server/datasets/valid.csv`, and `server/datasets/test.csv`. BIO token-level CSVs
-(`train_bio.csv`, `valid_bio.csv`, and `test_bio.csv`) include sentence and token IDs,
-token, BIO label, and source offsets. These six CSVs are generated outputs and replace
-same-named files in `server/datasets/`; preserve any originals separately before
-running `prepare` if you need them later.
-
-Identical
-sentences cannot cross splits; conflicting annotations for duplicate sentences stop
-preprocessing and must be resolved. At least three unique sentences are required.
-For small datasets each split contains at least one sentence, which leaves very little
-training data; the CLI reports actual split sizes. No stratification is performed,
-so check label coverage yourself before treating metrics as reliable.
-
-If you already have separate annotated files, keep their intended roles and use:
+Prepare separate, predefined splits without moving rows between them:
 
 ```powershell
 python -m src.ner_pipeline.cli prepare-splits `
-  --train train.csv --validation valid.csv --test test.csv
+  --train train_ner.csv --validation val_ner.csv --test test_ner.csv
 ```
 
-This validates and BIO-converts each file independently; it never moves test rows
-into training. It rejects duplicate sentences across the supplied splits, overlapping
-entity spans, and token alignment errors. It writes the same processed JSONL files
-only after all three inputs pass validation.
+Processed JSONL and BIO files are written to `server/datasets/processed/`. Identical or near-duplicate
+sentences across splits, conflicting annotations, overlapping spans, and alignment errors are checked
+during preprocessing.
 
-## 5. Train
+The local `train.csv`, `valid.csv`, and `test.csv` files may contain 100 template-generated synthetic
+rows appended for smoke testing. These are fictional and not human-verified. Do not use metrics on
+these mixed files as evidence of real-world quality. The separate annotated `*_ner.csv` files and
+event JSONL data are distinct artifacts; check their provenance before reporting scores.
+
+## 4. Train and evaluate NER
 
 ```powershell
 python -m src.ner_pipeline.cli train
-```
-
-Training reads only `train.jsonl`; the validation split selects the checkpoint by
-exact-span F1. The held-out `test.jsonl` is not used in training or checkpoint
-selection. The trained checkpoint and tokenizer are saved to
-`server/models/phobert-ner/`. Training requires real annotated data and will fail
-clearly if the data or dependencies are missing.
-Class-weighted token loss is used by default to counter the predominance of `O`
-labels; adjust it with `--class-weight-power` if validation indicates a different
-balance is appropriate.
-
-Optional controls include `--epochs`, `--batch-size`, `--learning-rate`,
-`--max-length`, `--seed`, and `--model-name`. Sentences that exceed `--max-length`
-are rejected rather than silently truncated. PhoBERT subword predictions are mapped back to word-level BIO labels using the
-checkpoint tokenizer's word-piece encoding.
-
-## 6. Evaluation
-
-```powershell
+python -m src.ner_pipeline.cli baseline
 python -m src.ner_pipeline.cli evaluate
-```
-
-Both the rule-based baseline and PhoBERT are evaluated against the same held-out
-`test.jsonl`, with strict exact-span precision, recall, and F1 overall and for each
-entity type. The baseline combines simple Vietnamese context cues with optional
-user-supplied keywords; it is a transparent reference baseline, not a trained model.
-No scores are printed unless the test split and trained model exist.
-Because the current test split includes generated synthetic examples, its scores
-are for pipeline validation only and must not be reported as evaluation on authentic
-Vietnamese legal-news data.
-
-## 7. Prediction
-
-```powershell
-python -m src.ner_pipeline.cli predict --text "Nhập câu tin tức cần nhận diện"
-```
-
-Omit `--text` to enter a sentence interactively. Results are JSON objects containing
-the entity text and label. If no trained checkpoint exists, prediction reports that
-the model must be trained; it does not substitute fabricated predictions.
-
-## 8. Error analysis
-
-```powershell
 python -m src.ner_pipeline.cli analyze
 ```
 
-The report is written to `server/datasets/processed/error-analysis.json` and counts
-missing/extra entities, truncation, person misrecognition, location-as-person,
-organization-as-location, multi-entity sentences, abbreviations, punctuation, and
-repeated gold mentions where observable.
+Training uses train data and selects checkpoints by exact-span F1 on validation. The held-out test
+split is not used for training or checkpoint selection. The baseline and PhoBERT are evaluated with
+exact-span Precision, Recall, and F1, overall and by entity label.
 
-## 9. Project files and tests
+For a one-sentence prediction from Python:
 
-- Pipeline code: `server/src/ner_pipeline/`
-- Raw user dataset and generated splits/reports: `server/datasets/`
-- Fine-tuned model: `server/models/phobert-ner/`
-- Dependencies: `server/requirements-ner.txt`
+```python
+from src.ner_pipeline.phobert import predict_sentence
 
-Run unit tests from the repository root with:
+entities = predict_sentence("Ngày 15/8, Công an quận Đống Đa đã khởi tố Nguyễn Văn A.")
+```
+
+The result is a list of dictionaries with `text`, `label`, `start`, and `end`. Offsets refer to
+characters in the normalized input sentence.
+
+## 5. Run the API
+
+Start from the `server/` directory:
+
+```powershell
+python -m src.main
+```
+
+The service listens at `http://127.0.0.1:3001`.
+
+### NER endpoint
+
+`POST /api/process` accepts a JSON body with a `text` field:
+
+```powershell
+$body = @{ text = "Ngày 15/8, Công an quận Đống Đa đã khởi tố Nguyễn Văn A." } | ConvertTo-Json
+Invoke-RestMethod -Uri http://127.0.0.1:3001/api/process -Method Post `
+  -ContentType "application/json" -Body $body
+```
+
+The response includes `input_text` and `entities`. Empty input returns HTTP 400. A missing NER model
+returns HTTP 503 with an actionable error message.
+
+### Trigger-only endpoint
+
+`POST /api/process/event-trigger` calls only `detect_triggers` from
+`src/ner_pipeline/event_module.py`; it does not run NER or load a model:
+
+```powershell
+$body = @{ text = "Công an đã khởi tố Nguyễn Văn A." } | ConvertTo-Json
+Invoke-RestMethod -Uri http://127.0.0.1:3001/api/process/event-trigger -Method Post `
+  -ContentType "application/json" -Body $body
+```
+
+The response includes `input_text` and a `triggers` list with event type and character offsets.
+
+## 6. Part 2: Event training and evaluation
+
+The event pipeline uses `datasets/train.jsonl`, `datasets/val.jsonl`, and `datasets/test.jsonl`.
+For example:
+
+```powershell
+# Evaluate the rule-based baseline.
+python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --baseline
+
+# Train both PhoBERT models (GPU recommended).
+python -m src.event_pipeline.model train --task all --epochs 15
+
+# Predict with rule-based triggers and PhoBERT role classification.
+python -m src.event_pipeline.model predict --split test --trigger-source rules
+python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --pred datasets/processed/test_event_pred_rules.jsonl
+```
+
+Part 2 metrics use gold entities by default, so they isolate event extraction and do not measure
+end-to-end NER error propagation. See `src/event_pipeline/README.md` for model details and metric
+definitions.
+
+## 7. Tests and error analysis
+
+From the repository root:
 
 ```powershell
 python -m unittest discover -s server/test -p "test_ner_pipeline.py"
+python -m unittest discover -s server/test -p "test_event_metrics.py"
+python -m unittest server.test.test_main_api
 ```
+
+NER error analysis is written to `server/datasets/processed/error-analysis.json`.

@@ -1,16 +1,15 @@
-"""Mô hình PhoBERT cho luồng 2: Trigger -> Argument -> Relation.
+"""PhoBERT models for Part 2: Trigger -> Argument -> Relation.
 
-Hai mô hình, train riêng:
-1. Trigger: gán nhãn chuỗi BIO trên từ (đã tách từ bằng underthesea) với 8 loại sự kiện.
-2. Argument: phân loại từng cặp (trigger, thực thể) trong cùng câu vào 10 vai trò hoặc NONE.
-   Đầu vào là câu có chèn dấu <t> </t> quanh trigger, <e> </e> quanh thực thể, kèm token loại
-   sự kiện và loại thực thể ở đầu. Lúc dự đoán chỉ cho phép các vai trò hợp lệ với nhãn thực thể
-   (ROLE_TYPES), ví dụ PERSON không thể là TANG_VAT.
+Two separately trained models:
+1. Trigger: BIO-tag underthesea-segmented words for 8 event types.
+2. Argument: classify each trigger/entity pair in a sentence into one of 10 roles or NONE.
+   The input marks the trigger with <t> </t>, the entity with <e> </e>, and prepends event/entity
+   type tokens. At inference, only roles allowed for the entity label (ROLE_TYPES) are considered.
 
-Thực thể lấy từ file đầu vào: mặc định là thực thể gold (đánh giá riêng luồng 2), hoặc truyền
---entities để dùng thực thể do mô hình NER của luồng 1 dự đoán (đánh giá nối tiếp 2 luồng).
+Entities come from the input file: by default, gold entities are used to evaluate Part 2 in isolation.
+Pass --entities to use entities predicted by the Part 1 NER model for a combined evaluation.
 
-Chạy trong server/ (nên dùng GPU, ví dụ Colab T4):
+Run from server/ (a GPU is recommended, e.g. a Colab T4):
     python -m src.event_pipeline.model train --task all --epochs 15
     python -m src.event_pipeline.model predict --split test
     python -m src.event_pipeline.evaluate --gold datasets/test.jsonl --pred datasets/processed/test_event_pred.jsonl
@@ -37,7 +36,7 @@ MARKERS = ["<t>", "</t>", "<e>", "</e>"]
 TYPE_TOKENS = [f"<{x}>" for x in EVENT_TYPES + ENTITY_TYPES]
 
 
-# ---------------------------------------------------------------- tách từ
+# ---------------------------------------------------------------- word segmentation
 _SYL = re.compile(r"\w+|[^\w\s]")
 
 
@@ -46,7 +45,7 @@ def _syllables(sentence):
 
 
 def segment(sentence):
-    """Câu -> danh sách (start, end) của từng từ. Dùng underthesea nếu có, nếu không thì tách âm tiết."""
+    """Return word (start, end) spans; use underthesea or fall back to syllable segmentation."""
     syl = _syllables(sentence)
     try:
         from underthesea import word_tokenize
@@ -58,7 +57,7 @@ def segment(sentence):
         n = len(_SYL.findall(w))
         if n == 0:
             continue
-        if i + n > len(syl):                         # không khớp được -> quay về âm tiết
+        if i + n > len(syl):                         # On mismatch, fall back to syllables.
             return syl
         spans.append((syl[i][0], syl[i + n - 1][1]))
         i += n
@@ -66,7 +65,7 @@ def segment(sentence):
 
 
 def split_at(spans, cuts):
-    """Tách từ tại các vị trí ranh giới (để span trigger/thực thể luôn trùng ranh giới từ)."""
+    """Split words at boundaries so trigger/entity spans align with word boundaries."""
     cuts = sorted(set(cuts))
     out = []
     for a, b in spans:
@@ -80,9 +79,9 @@ def word_text(sentence, span):
     return sentence[span[0]:span[1]].strip().replace(" ", "_") or "_"
 
 
-# ---------------------------------------------------------------- mã hóa
+# ---------------------------------------------------------------- encoding
 def encode_words(tokenizer, words, max_length=256):
-    """Danh sách từ -> input_ids và word_ids (chỉ số từ của mỗi subword, None cho token đặc biệt)."""
+    """Convert words to input_ids and word_ids (word index per subword, None for special tokens)."""
     ids, wids = [], []
     for i, w in enumerate(words):
         pieces = tokenizer.convert_tokens_to_ids(tokenizer.tokenize(w)) or [tokenizer.unk_token_id]
@@ -116,7 +115,7 @@ def _deps():
 
 # ---------------------------------------------------------------- trigger
 def trigger_examples(rows):
-    """Câu gold -> (danh sách từ, nhãn BIO theo từ, các span từ)."""
+    """Convert a gold sentence to words, word-level BIO labels, and word spans."""
     out = []
     for r in rows:
         s = r["sentence"]
@@ -191,7 +190,7 @@ def train_trigger(train_rows, val_rows, args):
                 seen.add(w)
                 y.append(lab2id[ex["labels"][w]])
         data.append((ids, y))
-    # trọng số lớp: giảm ảnh hưởng của nhãn O (chiếm đa số)
+    # Reduce the influence of O, the majority class.
     weights = torch.ones(len(TRIGGER_LABELS))
     weights[0] = args.o_weight
     loss_fn = torch.nn.CrossEntropyLoss(weight=weights.to(device), ignore_index=-100)
@@ -208,7 +207,7 @@ def _trigger_val_f1(model, tok, rows, device, args):
 
 # ---------------------------------------------------------------- argument
 def pair_words(sentence, base_spans, trigger, entity):
-    """Câu + 1 cặp (trigger, thực thể) -> danh sách từ có chèn dấu và token loại ở đầu."""
+    """Build marked input words for one sentence and trigger/entity pair."""
     spans = split_at(base_spans, [trigger["start"], trigger["end"], entity["start"], entity["end"]])
     words = [f"<{trigger['label']}>", f"<{entity['label']}>"]
     for a, b in spans:
@@ -225,7 +224,7 @@ def pair_words(sentence, base_spans, trigger, entity):
 
 
 def argument_pairs(rows, use_gold_relations=True):
-    """Mọi cặp (trigger, thực thể) trong câu, kèm vai trò gold (NONE nếu không nối)."""
+    """Return all trigger/entity pairs with gold roles (NONE when unlinked)."""
     out = []
     for r in rows:
         s = r["sentence"]
@@ -234,7 +233,7 @@ def argument_pairs(rows, use_gold_relations=True):
         for t in r.get("triggers", []):
             for e in r.get("entities", []):
                 if not (e["end"] <= t["start"] or e["start"] >= t["end"]):
-                    continue                             # thực thể chồng lên trigger
+                    continue                             # Exclude entities that overlap the trigger.
                 out.append({"row": r["ann_id"], "trigger": t, "entity": e,
                             "words": pair_words(s, base, t, e),
                             "role": gold.get((t["id"], e["id"]), "NONE")})
@@ -295,13 +294,13 @@ def _relations_from(pairs, roles):
 
 
 def _argument_val_f1(model, tok, rows, pairs, device, args):
-    """Relation F1 trên val khi dùng trigger gold (đo riêng khả năng nối vai trò)."""
+    """Compute validation Relation F1 with gold triggers to isolate role-linking performance."""
     rel = _relations_from(pairs, classify_pairs(model, tok, pairs, device, args.max_length))
     pred = [dict(r, relations=rel.get(r["ann_id"], [])) for r in rows]
     return evaluate(rows, pred)["relation"]["f1"]
 
 
-# ---------------------------------------------------------------- vòng train chung
+# ---------------------------------------------------------------- shared training loop
 def _fit(model, tok, data, loss_fn, args, device, out_dir, score_fn, token_level):
     torch = _deps()
     from transformers import get_linear_schedule_with_warmup
@@ -342,13 +341,14 @@ def _fit(model, tok, data, loss_fn, args, device, out_dir, score_fn, token_level
     return best
 
 
-# ---------------------------------------------------------------- dự đoán đầy đủ
+# ---------------------------------------------------------------- full prediction
 def predict(rows, entity_rows=None, max_length=256, trigger_dir=TRIGGER_DIR, argument_dir=ARGUMENT_DIR,
             trigger_source="model"):
-    """Câu -> trigger -> vai trò (mô hình 2). Trả về các dòng cùng định dạng jsonl.
+    """Predict triggers and roles for Part 2 and return records in the same JSONL format.
 
-    trigger_source: "model" (mô hình PhoBERT trigger), "rules" (baseline luật, cách kết hợp luật + mô hình)
-    hoặc "gold" (trigger gold, để đo riêng khả năng nối vai trò)."""
+    trigger_source: "model" (PhoBERT trigger model), "rules" (rule triggers with model role linking),
+    or "gold" (gold triggers to evaluate role-linking performance in isolation).
+    """
     torch = _deps()
     from transformers import AutoModelForSequenceClassification, AutoModelForTokenClassification, AutoTokenizer
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

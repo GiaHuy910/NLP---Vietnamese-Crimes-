@@ -17,7 +17,7 @@ ARGUMENT_TYPES = (
 )
 
 
-_DEFAULT_MAPPING = {   # khớp schema luồng 2 (src/event_pipeline/schema.py, ROLE_TYPES)
+_DEFAULT_MAPPING = {   # Match the event-pipeline schema (src/event_pipeline/schema.py, ROLE_TYPES).
     "DOI_TUONG": ["PERSON", "ORGANIZATION"],
     "NAN_NHAN": ["PERSON", "ORGANIZATION"],
     "CO_QUAN": ["ORGANIZATION"],
@@ -113,5 +113,4 @@ def arguments_for_ner_label(label):
         for argument_type, ner_labels in schema["argument_mapping"].items()
         if normalized_label in ner_labels
     ]
-
 

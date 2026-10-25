@@ -1,4 +1,6 @@
-"""Kiểm tra nhanh bộ chấm luồng 2. Chạy trong server/: python -m unittest discover -s test -p "test_event_metrics.py"."""
+"""Smoke tests for Part 2 metrics. Run in server/ with:
+python -m unittest discover -s test -p "test_event_metrics.py".
+"""
 import unittest
 
 from src.event_pipeline.metrics import evaluate
@@ -23,9 +25,9 @@ class EventMetricsTest(unittest.TestCase):
                                      {"trigger_id": "t1", "arg_id": "e2", "role": "NAN_NHAN"}])
         res = evaluate([GOLD], [pred])
         self.assertEqual(res["trigger_classification"]["f1"], 1.0)
-        self.assertEqual(res["argument_identification"]["f1"], 1.0)   # đúng thực thể
-        self.assertEqual(res["relation"]["tp"], 1)                     # sai 1 vai trò
-        self.assertEqual(res["event_exact_match"]["tp"], 0)            # sự kiện không khớp hoàn toàn
+        self.assertEqual(res["argument_identification"]["f1"], 1.0)   # Correct entity.
+        self.assertEqual(res["relation"]["tp"], 1)                     # One role is incorrect.
+        self.assertEqual(res["event_exact_match"]["tp"], 0)            # The event does not match exactly.
 
     def test_wrong_type(self):
         pred = dict(GOLD, triggers=[dict(GOLD["triggers"][0], label="KHOI_TO")])

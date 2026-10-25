@@ -12,29 +12,27 @@ from .errors import NERPipelineError
 from .paths import DATASET_DIR, PROCESSED_DIR, RAW_DIR, SERVER_DIR
 from .schema import read_annotated_csv
 
-# Thư mục gốc server/src/ner_pipeline
+# Package directory: server/src/ner_pipeline.
 PACKAGE_DIR = Path(__file__).resolve().parent
 
-# Thư mục server
+# Server directory.
 SERVER_DIR = PACKAGE_DIR.parents[1]
 
-# File quy tắc baseline
+# Baseline rules file.
 RULES_PATH = SERVER_DIR / "datasets" / "rules.json"
 
 def safe_save_dataset(dataframe, filename, output_dir=PROCESSED_DIR):
-    """
-    LÆ°u dataset an toÃ n, tuyá»‡t Ä‘á»‘i khÃ´ng ghi Ä‘Ã¨ vÃ o thÆ° má»¥c raw.
-    """
+    """Save a dataset safely and never overwrite files in the raw-data directory."""
     out_path = Path(output_dir)
     
-    # Kiá»ƒm tra rá»§i ro ghi Ä‘Ã¨ dá»¯ liá»‡u gá»‘c
+    # Check whether the output path could overwrite original data.
     if RAW_DIR in out_path.parents or out_path == RAW_DIR:
         raise PermissionError(f"CRITICAL: KhÃ´ng Ä‘Æ°á»£c phÃ©p ghi Ä‘Ã¨ file vÃ o thÆ° má»¥c raw gá»‘c ({RAW_DIR}).")
         
     out_path.mkdir(parents=True, exist_ok=True)
     file_path = out_path / filename
     
-    # Thá»±c hiá»‡n lÆ°u file (giáº£ Ä‘á»‹nh dÃ¹ng pandas)
+    # Save the file (assuming a pandas DataFrame).
     dataframe.to_csv(file_path, index=False, encoding="utf-8")
     print(f"ÄÃ£ lÆ°u an toÃ n: {file_path}")
     
@@ -118,13 +116,13 @@ def _annotation_key(record: dict[str, object]) -> list[tuple[str, str]]:
     )
 
 
-# --- Sá»¬A Lá»–I P0: HÃ m kiá»ƒm tra Ä‘á»™ tÆ°Æ¡ng Ä‘á»“ng má» (Fuzzy String Matching) ---
+# --- P0 FIX: Fuzzy string similarity check ---
 def _is_similar(str1: str, str2: str, threshold: float = 0.85) -> bool:
+    """Return whether two sentences have similarity greater than threshold.
+
+    A threshold of 0.85 captures sentences with small differences such as abbreviations or typos.
     """
-    So sÃ¡nh hai cÃ¢u, tráº£ vá» True náº¿u Ä‘á»™ tÆ°Æ¡ng Ä‘á»“ng lá»›n hÆ¡n threshold.
-    Threshold 0.85 giÃºp báº¯t cÃ¡c cÃ¢u chá»‰ khÃ¡c biá»‡t nhá» do viáº¿t táº¯t hoáº·c gÃµ sai.
-    """
-    # Náº¿u má»™t trong hai chuá»—i quÃ¡ ngáº¯n (dÆ°á»›i 10 kÃ½ tá»±), báº¯t buá»™c pháº£i khá»›p 100%
+    # If either string is shorter than 10 characters, require an exact match.
     if len(str1) < 10 or len(str2) < 10:
         return str1 == str2
     return difflib.SequenceMatcher(None, str1, str2).ratio() > threshold
@@ -143,11 +141,11 @@ def deduplicate_records(
         for unique in unique_records:
             unique_normalized = sentence_key(str(unique["sentence"]))
             
-            # Kiá»ƒm tra trÃ¹ng láº·p chÃ­nh xÃ¡c HOáº¶C gáº§n giá»‘ng nhau (Fuzzy Matching)
+            # Check for exact or fuzzy duplicates.
             if normalized_sentence == unique_normalized or _is_similar(normalized_sentence, unique_normalized):
                 is_duplicate = True
                 
-                # Náº¿u 2 cÃ¢u giá»‘ng há»‡t nhau nhÆ°ng gÃ¡n nhÃ£n khÃ¡c nhau thÃ¬ bÃ¡o lá»—i
+                # Raise an error if identical sentences have conflicting annotations.
                 if normalized_sentence == unique_normalized and _annotation_key(unique) != _annotation_key(record):
                     raise NERPipelineError(
                         f"CÃ³ cÃ¢u trÃ¹ng láº·p nhÆ°ng annotation khÃ¡c nhau; hÃ£y xá»­ lÃ½ "
@@ -164,7 +162,7 @@ def deduplicate_records(
 def ensure_splits_disjoint(
     splits: dict[str, list[dict[str, object]]],
 ) -> None:
-    seen = [] # Danh sÃ¡ch lÆ°u cÃ¡c tuple (normalized_sentence, split_name)
+    seen = [] # Tuples of (normalized_sentence, split_name).
     
     for split_name, records in splits.items():
         for record in records:
@@ -289,7 +287,7 @@ def load_jsonl(path: Path) -> list[dict[str, object]]:
                 try:
                     record = json.loads(line)
 
-                    # Chuẩn hóa nhãn entity trong dữ liệu cũ.
+                    # Normalize entity labels in legacy data.
                     for entity in record.get("entities", []):
                         if not isinstance(entity, dict):
                             continue
@@ -299,7 +297,7 @@ def load_jsonl(path: Path) -> list[dict[str, object]]:
                         if old_label in {"TIME", "TIME"}:
                             entity["label"] = "TIME"
 
-                    # Chuẩn hóa nhãn BIO cũ.
+                    # Normalize legacy BIO labels.
                     if isinstance(record.get("labels"), list):
                         normalized_labels = []
 
@@ -354,7 +352,7 @@ def prepare_dataset(
         )
     source = resolve_input_csv(input_path)
     aligned_records = create_records(source)
-    records = deduplicate_records(aligned_records) # Lá»c Fuzzy trÃ¹ng láº·p
+    records = deduplicate_records(aligned_records) # Remove fuzzy duplicates.
     unique_count = len(records)
     train_only_records: list[dict[str, object]] = []
     
@@ -411,7 +409,7 @@ def prepare_dataset(
         "test": test_records,
     }
     
-    # Kiá»ƒm tra rÃ² rá»‰ má» (Fuzzy leakage) giá»¯a cÃ¡c táº­p trÆ°á»›c khi lÆ°u
+    # Check for fuzzy leakage between splits before saving.
     ensure_splits_disjoint(splits)
     
     save_dataset_splits(splits)
